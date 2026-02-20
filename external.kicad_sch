@@ -1,0 +1,18 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "e594efe2-6530-4199-ab53-91f46cb7f558")
+	(paper "A4")
+	(lib_symbols)
+	(text "To-do \n- Connect 2 Servo PWM channels \n- Qwic connector with I2C peripheral\n- SPI peripheral connector\n\n"
+		(exclude_from_sim no)
+		(at 97.79 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1fffbbb2-f0b6-4f9f-b942-5786d6911d4c")
+	)
+)
