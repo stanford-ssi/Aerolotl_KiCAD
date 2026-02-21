@@ -5,4 +5,16 @@
 	(uuid "5a015979-3477-4ff0-afe7-4bdc60c54555")
 	(paper "A4")
 	(lib_symbols)
+	(text "TODO list:\n- RGB LED with PWM for status indication\n- LED indicators for each thing: (STM LED, 3.3V power LED, USB LED, SERVO LED, 12V LED, etc.\n- Add Buzzer too"
+		(exclude_from_sim no)
+		(at 145.796 99.822 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "4101ebcd-2325-4dd2-b247-154c4386fa0c")
+	)
 )
