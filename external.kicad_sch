@@ -846,13 +846,14 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "To-do \n- Connect 2 Servo PWM channels \n- Qwic connector with I2C peripheral\n- SPI peripheral connector\n\n"
+	(text "To-do \n- Connect 2 Servo PWM channels \n	-> DONE (from lawton)\n- Qwic connector with I2C peripheral\n	-> DONE (from lawton)\n- SPI peripheral connector\n	-> IN PROGRESS\n- Standard 0.1\" header pinout\n- Transceiver output\n"
 		(exclude_from_sim no)
 		(at 123.444 88.138 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+			(justify left)
 		)
 		(uuid "1fffbbb2-f0b6-4f9f-b942-5786d6911d4c")
 	)
