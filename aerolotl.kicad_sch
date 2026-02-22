@@ -591,6 +591,16 @@
 				(justify left top)
 			)
 		)
+		(pin "BMP{SCK, MOSI, MISO, INT, CSB}" bidirectional
+			(at 104.14 218.44 0)
+			(uuid "0b0d86a5-a235-4586-a1e4-2c7283e7973b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754"
