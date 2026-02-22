@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "aerolotl_custom")(type "KiCad")(uri "${KIPRJMOD}/libs/aerolotl_custom.pretty")(options "")(descr ""))
+)
