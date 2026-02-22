@@ -1,0 +1,30 @@
+# --- KiCAD Generated unnecessary files ---
+*.tmp
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.kicad_pro-bak
+*-secrets.txt
+*.kicad_prl
+*-cache.lib
+fp-info-cache
+*.dcm
+*.lib
+/backup/
+
+# Catch-all for other backups
+*.bak
+
+# KiCad lock files
+~*.lck
+
+# KiCad autosave files
+_autosave-*
+#*#
+
+# Mac OS folder settings
+.DS_Store
+
+# Zip archives (Optional: removes BNO085.zip, NEO-M9N.zip, etc.)
+*.zip
+
