@@ -681,36 +681,6 @@
 				(justify left top)
 			)
 		)
-		(pin "ADXL345{SCLK, SDI, SDO, CS, INT}" bidirectional
-			(at 104.14 214.63 0)
-			(uuid "073992ec-3352-44a4-b2ad-fbcd5bde148d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "ADXL375{SCLK, SDI, SDO, CS, INT}" bidirectional
-			(at 104.14 222.25 0)
-			(uuid "295da4a3-fadb-44df-ad38-55d82eb15112")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "BMP{SCK, MOSI, MISO, CSB, INT}" bidirectional
-			(at 104.14 229.87 0)
-			(uuid "a55cc8d8-9569-4d12-a9bb-d95264829403")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "BNO085{SDA, SCL}" bidirectional
 			(at 104.14 247.65 0)
 			(uuid "6913f877-69c4-42e9-ae02-eeadeb95d213")
@@ -724,6 +694,36 @@
 		(pin "NEOM9N{SDA, SCL}" bidirectional
 			(at 104.14 250.19 0)
 			(uuid "8067ea40-df28-4e07-a435-5dc41c5cc2ee")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ADXL345{CS, SCLK, SDI, SDO, INT}" bidirectional
+			(at 104.14 214.63 0)
+			(uuid "ccf46dcc-0c06-436c-8021-4d41f9e6b41f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ADXL375{CS, SCLK, SDI, SDO, INT}" bidirectional
+			(at 104.14 222.25 0)
+			(uuid "3253bb71-0db9-4901-b51b-07e707fb730c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "BMP{CSB, SCK, MOSI, MISO, INT}" bidirectional
+			(at 104.14 229.87 0)
+			(uuid "4bdbeecd-ec17-4e1c-ad78-d0f0132ac0c0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -883,29 +883,29 @@
 				(justify left)
 			)
 		)
-		(pin "ADXL345{CS, SCLK, SDI, SDO}" bidirectional
-			(at 134.62 160.02 180)
-			(uuid "3ac0b40b-abab-4f10-ae67-4066d7101791")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "ADXL375{CS, SCLK, SDI, SDO}" bidirectional
-			(at 134.62 165.1 180)
-			(uuid "623a3de1-0d4a-4f90-a375-a3e04d877ad4")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "BMP{CSB, SCK, MOSI, MISO, INT}" bidirectional
 			(at 134.62 170.18 180)
 			(uuid "823750f2-67af-42e0-8b85-b39ffea97e9c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ADXL345{CS, SCLK, SDI, SDO, INT}" bidirectional
+			(at 134.62 160.02 180)
+			(uuid "6a193809-100c-4a4f-9e8f-faa1f929dcfe")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ADXL375{CS, SCLK, SDI, SDO, INT}" bidirectional
+			(at 134.62 165.1 180)
+			(uuid "25ce393a-e542-4c70-b85a-a2a3919fcbc8")
 			(effects
 				(font
 					(size 1.27 1.27)
