@@ -972,7 +972,7 @@
 			(uuid "163d9ba2-5bd1-4296-89ba-eb251a0dcd44")
 		)
 		(instances
-			(project ""
+			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/5163456c-8297-491e-bf51-bada45954a82"
 					(reference "#PWR045")
 					(unit 1)
@@ -1039,7 +1039,7 @@
 			(uuid "5f50a99a-e51c-483b-8804-218dc82c7d30")
 		)
 		(instances
-			(project "nc_fc"
+			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/5163456c-8297-491e-bf51-bada45954a82"
 					(reference "#PWR046")
 					(unit 1)
@@ -1057,7 +1057,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "994bd59a-f0a2-435f-8307-d2b28da1c745")
-		(property "Reference" "Card2"
+		(property "Reference" "Card1"
 			(at 177.8 100.3299 0)
 			(effects
 				(font
@@ -1150,7 +1150,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/5163456c-8297-491e-bf51-bada45954a82"
-					(reference "Card2")
+					(reference "Card1")
 					(unit 1)
 				)
 			)
@@ -1215,7 +1215,7 @@
 			(uuid "b835dfbe-7197-472a-a7f1-55d921c21fad")
 		)
 		(instances
-			(project ""
+			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/5163456c-8297-491e-bf51-bada45954a82"
 					(reference "#PWR044")
 					(unit 1)

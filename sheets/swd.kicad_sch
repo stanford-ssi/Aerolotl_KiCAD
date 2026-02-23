@@ -895,7 +895,7 @@
 			(uuid "3a0ba6de-7d0e-43b6-9fd5-566d0ca9e8a6")
 		)
 		(instances
-			(project "nc_fc"
+			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/226d91b5-727a-47f8-9cda-891697ac9edb"
 					(reference "#PWR023")
 					(unit 1)
@@ -963,7 +963,7 @@
 			(uuid "90e1ca23-13d9-4cf0-b376-d82e4fb6de65")
 		)
 		(instances
-			(project ""
+			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/226d91b5-727a-47f8-9cda-891697ac9edb"
 					(reference "R4")
 					(unit 1)
@@ -1108,7 +1108,7 @@
 			(uuid "0207186c-d8fb-46d0-b163-087bb7751c15")
 		)
 		(instances
-			(project ""
+			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/226d91b5-727a-47f8-9cda-891697ac9edb"
 					(reference "J6")
 					(unit 1)
@@ -1176,7 +1176,7 @@
 			(uuid "0fc3fe62-036a-40fc-8c17-4bdca14c9b03")
 		)
 		(instances
-			(project ""
+			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/226d91b5-727a-47f8-9cda-891697ac9edb"
 					(reference "#PWR022")
 					(unit 1)

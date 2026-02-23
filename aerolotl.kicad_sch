@@ -17,7 +17,7 @@
 	)
 	(wire
 		(pts
-			(xy 271.78 160.02) (xy 271.78 199.39)
+			(xy 271.78 161.29) (xy 271.78 199.39)
 		)
 		(stroke
 			(width 0)
@@ -35,9 +35,29 @@
 		)
 		(uuid "2d27c37e-893e-4e0f-a6d8-52549ffdbbf9")
 	)
+	(bus
+		(pts
+			(xy 104.14 214.63) (xy 124.46 214.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "381a302b-aded-42a0-89c3-5404be1e7243")
+	)
+	(bus
+		(pts
+			(xy 132.08 229.87) (xy 132.08 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fd7fce7-7e28-434b-b792-25c1e755e067")
+	)
 	(wire
 		(pts
-			(xy 250.19 160.02) (xy 271.78 160.02)
+			(xy 250.19 161.29) (xy 271.78 161.29)
 		)
 		(stroke
 			(width 0)
@@ -47,7 +67,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 73.66) (xy 127 73.66)
+			(xy 105.41 59.69) (xy 127 59.69)
 		)
 		(stroke
 			(width 0)
@@ -125,9 +145,19 @@
 		)
 		(uuid "9c1a210f-853b-4b56-a042-b1ad6e7fadac")
 	)
+	(bus
+		(pts
+			(xy 104.14 222.25) (xy 128.27 222.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d1e987d-f714-4e76-8b57-6e82153bd947")
+	)
 	(wire
 		(pts
-			(xy 105.41 68.58) (xy 130.81 68.58)
+			(xy 105.41 55.88) (xy 130.81 55.88)
 		)
 		(stroke
 			(width 0)
@@ -145,6 +175,26 @@
 		)
 		(uuid "ad99d665-28d1-44a5-96c7-f0e0279beccf")
 	)
+	(bus
+		(pts
+			(xy 124.46 160.02) (xy 134.62 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b39f53d9-1d16-48c7-961a-93ab30721dc8")
+	)
+	(bus
+		(pts
+			(xy 128.27 222.25) (xy 128.27 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b75ed9f0-4294-4e86-af53-9fad3eb6543c")
+	)
 	(wire
 		(pts
 			(xy 250.19 165.1) (xy 267.97 165.1)
@@ -157,13 +207,23 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 68.58) (xy 130.81 91.44)
+			(xy 130.81 55.88) (xy 130.81 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "cb8f756e-4dcd-4809-9d85-cb2809b77853")
+	)
+	(bus
+		(pts
+			(xy 132.08 170.18) (xy 134.62 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf202510-1c2b-4ac9-b927-da5a5abe0a31")
 	)
 	(wire
 		(pts
@@ -185,6 +245,26 @@
 		)
 		(uuid "e1d6238b-5ea7-4b4e-a577-61babe8bf170")
 	)
+	(bus
+		(pts
+			(xy 124.46 214.63) (xy 124.46 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8c4f860-29e2-4e6a-bc33-6a6cabd46300")
+	)
+	(bus
+		(pts
+			(xy 104.14 229.87) (xy 132.08 229.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9bb8a8f-858a-47bd-bf54-53e87c6eb27e")
+	)
 	(wire
 		(pts
 			(xy 267.97 203.2) (xy 294.64 203.2)
@@ -195,9 +275,19 @@
 		)
 		(uuid "ea1ab451-95e9-4100-bb88-970fa744e929")
 	)
+	(bus
+		(pts
+			(xy 128.27 165.1) (xy 134.62 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0d14c2b-39ab-4054-a1de-be0281aaf0f5")
+	)
 	(wire
 		(pts
-			(xy 127 73.66) (xy 127 95.25)
+			(xy 127 59.69) (xy 127 95.25)
 		)
 		(stroke
 			(width 0)
@@ -240,7 +330,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "swd.kicad_sch"
+		(property "Sheetfile" "sheets/swd.kicad_sch"
 			(at 31.75 76.7846 0)
 			(effects
 				(font
@@ -249,9 +339,9 @@
 				(justify left top)
 			)
 		)
-		(pin "RXD" input
-			(at 105.41 73.66 0)
-			(uuid "343d7df8-84ef-4555-a309-f30064cb2389")
+		(pin "T_VCP_RX" input
+			(at 105.41 59.69 0)
+			(uuid "d3f6a2f3-d5b0-4f6d-82f2-939bd59b6a58")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -259,9 +349,9 @@
 				(justify right)
 			)
 		)
-		(pin "TXD" output
-			(at 105.41 68.58 0)
-			(uuid "dd91fcc0-d4a8-4d40-b865-0ab78b04b3b3")
+		(pin "T_VCP_TX" output
+			(at 105.41 55.88 0)
+			(uuid "7d22844c-d16d-40b3-a4e9-41f745113b08")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -302,7 +392,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "sd.kicad_sch"
+		(property "Sheetfile" "sheets/sd.kicad_sch"
 			(at 293.37 132.6646 0)
 			(effects
 				(font
@@ -354,7 +444,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "igniter.kicad_sch"
+		(property "Sheetfile" "sheets/igniter.kicad_sch"
 			(at 294.64 224.1046 0)
 			(effects
 				(font
@@ -436,7 +526,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "external.kicad_sch"
+		(property "Sheetfile" "sheets/external.kicad_sch"
 			(at 292.1 174.5746 0)
 			(effects
 				(font
@@ -478,7 +568,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "indicators.kicad_sch"
+		(property "Sheetfile" "sheets/indicators.kicad_sch"
 			(at 288.29 81.8646 0)
 			(effects
 				(font
@@ -520,7 +610,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "power.kicad_sch"
+		(property "Sheetfile" "sheets/power.kicad_sch"
 			(at 31.75 159.3346 0)
 			(effects
 				(font
@@ -582,7 +672,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "imu.kicad_sch"
+		(property "Sheetfile" "sheets/imu.kicad_sch"
 			(at 30.48 255.8546 0)
 			(effects
 				(font
@@ -591,9 +681,49 @@
 				(justify left top)
 			)
 		)
-		(pin "BMP{SCK, MOSI, MISO, INT, CSB}" bidirectional
-			(at 104.14 218.44 0)
-			(uuid "0b0d86a5-a235-4586-a1e4-2c7283e7973b")
+		(pin "ADXL345{SCLK, SDI, SDO, CS, INT}" bidirectional
+			(at 104.14 214.63 0)
+			(uuid "073992ec-3352-44a4-b2ad-fbcd5bde148d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ADXL375{SCLK, SDI, SDO, CS, INT}" bidirectional
+			(at 104.14 222.25 0)
+			(uuid "295da4a3-fadb-44df-ad38-55d82eb15112")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "BMP{SCK, MOSI, MISO, CSB, INT}" bidirectional
+			(at 104.14 229.87 0)
+			(uuid "a55cc8d8-9569-4d12-a9bb-d95264829403")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "BNO085{SDA, SCL}" bidirectional
+			(at 104.14 247.65 0)
+			(uuid "6913f877-69c4-42e9-ae02-eeadeb95d213")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "NEOM9N{SDA, SCL}" bidirectional
+			(at 104.14 250.19 0)
+			(uuid "8067ea40-df28-4e07-a435-5dc41c5cc2ee")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -634,7 +764,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "mcu.kicad_sch"
+		(property "Sheetfile" "sheets/mcu.kicad_sch"
 			(at 134.62 175.8446 0)
 			(effects
 				(font
@@ -664,7 +794,7 @@
 			)
 		)
 		(pin "IGNITE_0" output
-			(at 250.19 160.02 0)
+			(at 250.19 161.29 0)
 			(uuid "a3d606fb-9e7a-4776-965b-51b53592c3bc")
 			(effects
 				(font
@@ -746,6 +876,36 @@
 		(pin "USB_D_P" bidirectional
 			(at 134.62 114.3 180)
 			(uuid "f9718ffb-5129-4cc1-bab2-a7be086405dd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ADXL345{CS, SCLK, SDI, SDO}" bidirectional
+			(at 134.62 160.02 180)
+			(uuid "3ac0b40b-abab-4f10-ae67-4066d7101791")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ADXL375{CS, SCLK, SDI, SDO}" bidirectional
+			(at 134.62 165.1 180)
+			(uuid "623a3de1-0d4a-4f90-a375-a3e04d877ad4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BMP{CSB, SCK, MOSI, MISO, INT}" bidirectional
+			(at 134.62 170.18 180)
+			(uuid "823750f2-67af-42e0-8b85-b39ffea97e9c")
 			(effects
 				(font
 					(size 1.27 1.27)

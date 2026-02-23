@@ -2258,6 +2258,131 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+3V3"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+5V"
 			(power)
 			(pin_numbers
@@ -2484,131 +2609,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:VCC"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "VCC"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VCC\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "VCC_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VCC_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(text "To-do Reduce Battery voltage from 12V or whatever to 3V\n\nuse TI schematic"
 		(exclude_from_sim no)
@@ -2699,12 +2699,6 @@
 		(uuid "a421d605-1686-4c7d-8a6e-6b6bc6febd8a")
 	)
 	(junction
-		(at 137.16 118.11)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b0a53165-b385-4ae4-988b-e95c904dbcab")
-	)
-	(junction
 		(at 148.59 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2715,12 +2709,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bad40377-4428-4900-b7a4-01a34aeb2250")
-	)
-	(junction
-		(at 137.16 135.89)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bb17795e-477c-493c-8685-148fff71d835")
 	)
 	(junction
 		(at 214.63 128.27)
@@ -3004,16 +2992,6 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 118.11) (xy 137.16 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "717f846d-b79e-4df2-9ddd-51a36edd7fc7")
-	)
-	(wire
-		(pts
 			(xy 59.69 58.42) (xy 77.47 58.42)
 		)
 		(stroke
@@ -3101,16 +3079,6 @@
 			(type default)
 		)
 		(uuid "900fcac5-72ec-4fd3-b1b0-902d558fa840")
-	)
-	(wire
-		(pts
-			(xy 129.54 135.89) (xy 137.16 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "905126ff-5b90-406a-ac77-77b99f809510")
 	)
 	(wire
 		(pts
@@ -3708,7 +3676,7 @@
 			(uuid "5d50b8fb-1381-4894-9c1b-1c591e7f8e54")
 		)
 		(instances
-			(project "nc_fc"
+			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74cb3ba4-5441-4040-b144-f529fa281743"
 					(reference "U6")
 					(unit 1)
@@ -3844,7 +3812,7 @@
 			(uuid "72d2997e-08e8-4b07-b41c-1ad7fde461cd")
 		)
 		(instances
-			(project "nc_fc"
+			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74cb3ba4-5441-4040-b144-f529fa281743"
 					(reference "#PWR028")
 					(unit 1)
@@ -3981,7 +3949,7 @@
 			(uuid "63a1f672-a45d-4324-bc78-a00793bfcb18")
 		)
 		(instances
-			(project "nc_fc"
+			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74cb3ba4-5441-4040-b144-f529fa281743"
 					(reference "#PWR026")
 					(unit 1)
@@ -4048,7 +4016,7 @@
 			(uuid "2b1978d3-245c-407d-bd53-afeed8eaa299")
 		)
 		(instances
-			(project "nc_fc"
+			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74cb3ba4-5441-4040-b144-f529fa281743"
 					(reference "#PWR027")
 					(unit 1)
@@ -4185,7 +4153,7 @@
 			(uuid "1fb0f454-f957-4fd7-8343-97c8d33bbe82")
 		)
 		(instances
-			(project "nc_fc"
+			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74cb3ba4-5441-4040-b144-f529fa281743"
 					(reference "U9")
 					(unit 1)
@@ -4255,7 +4223,7 @@
 			(uuid "8ba74c77-eeb8-4e3a-9ea5-50ebb39585bb")
 		)
 		(instances
-			(project "nc_fc"
+			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74cb3ba4-5441-4040-b144-f529fa281743"
 					(reference "C26")
 					(unit 1)
@@ -4334,73 +4302,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
-		(at 210.82 63.5 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7465ef21-ae14-4d23-a7d6-56508dfa25c5")
-		(property "Reference" "#PWR038"
-			(at 214.63 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 207.01 63.4999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 210.82 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 210.82 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 210.82 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c8a24d57-4c16-4c0f-a36f-d11e6cdf4d67")
-		)
-		(instances
-			(project "nc_fc"
-				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74cb3ba4-5441-4040-b144-f529fa281743"
-					(reference "#PWR038")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 120.65 63.5 0)
 		(unit 1)
@@ -4471,7 +4372,7 @@
 			(uuid "431c4354-6226-4721-b848-43d7d002e01d")
 		)
 		(instances
-			(project "nc_fc"
+			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74cb3ba4-5441-4040-b144-f529fa281743"
 					(reference "C27")
 					(unit 1)
@@ -4608,7 +4509,7 @@
 			(uuid "675942b1-0809-46d9-b80b-73c33cfa4954")
 		)
 		(instances
-			(project "nc_fc"
+			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74cb3ba4-5441-4040-b144-f529fa281743"
 					(reference "#PWR029")
 					(unit 1)
@@ -4687,6 +4588,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 210.82 63.5 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9bf6abc1-b6c3-4238-af15-6b9202896d79")
+		(property "Reference" "#PWR038"
+			(at 214.63 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 207.01 63.754 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 210.82 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 210.82 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 210.82 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "21067641-c54e-4149-b73b-dcc823008489")
+		)
+		(instances
+			(project "aerolotl"
+				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74cb3ba4-5441-4040-b144-f529fa281743"
+					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 62.23 63.5 90)
 		(unit 1)
@@ -4745,7 +4711,7 @@
 			(uuid "caa8b18a-9a41-4540-9db8-df871e675ad1")
 		)
 		(instances
-			(project "nc_fc"
+			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74cb3ba4-5441-4040-b144-f529fa281743"
 					(reference "R5")
 					(unit 1)
@@ -4882,7 +4848,7 @@
 			(uuid "af963c98-2453-4a4f-b122-3f65a4198a01")
 		)
 		(instances
-			(project "nc_fc"
+			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74cb3ba4-5441-4040-b144-f529fa281743"
 					(reference "R6")
 					(unit 1)
@@ -5020,7 +4986,7 @@
 			(uuid "829a6f4d-a682-4133-bc1d-b3e429886041")
 		)
 		(instances
-			(project "nc_fc"
+			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74cb3ba4-5441-4040-b144-f529fa281743"
 					(reference "FB3")
 					(unit 1)
@@ -5093,7 +5059,7 @@
 			(uuid "62290d3b-fe40-4d09-9467-5ccd4599099c")
 		)
 		(instances
-			(project "nc_fc"
+			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74cb3ba4-5441-4040-b144-f529fa281743"
 					(reference "J5")
 					(unit 1)
