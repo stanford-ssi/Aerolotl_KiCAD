@@ -3147,7 +3147,7 @@
 	(footprint "Package_TO_SOT_SMD:SOT-23-6"
 		(layer "F.Cu")
 		(uuid "47cbb176-429b-4b94-b29d-0bae98c676e1")
-		(at 226.8625 61.95)
+		(at 243.3625 64.95)
 		(descr "SOT, 6 Pin (JEDEC MO-178 Var AB https://www.jedec.org/document_search?search_api_views_fulltext=MO-178), generated with kicad-footprint-generator ipc_gullwing_generator.py")
 		(tags "SOT TO_SOT_SMD")
 		(property "Reference" "U4"
@@ -8810,6 +8810,18 @@
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ced92eeb-ba67-4a3c-87f3-663c0564397d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C5219260"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "8a46cd66-05f8-47c0-b2b9-0b8509f3fe5b")
 			(effects
 				(font
 					(size 1.27 1.27)

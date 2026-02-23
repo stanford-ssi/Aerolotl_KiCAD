@@ -3960,7 +3960,7 @@
 		)
 		(uuid "83bd7bba-3a3e-4ef0-b687-7571d4ef55c5")
 	)
-	(label "NEOM9N.MOSI"
+	(label "NEOM9N.RX"
 		(at 134.62 64.77 0)
 		(effects
 			(font
@@ -4010,7 +4010,7 @@
 		)
 		(uuid "b1c53521-7a83-4652-a49e-9ab4e47fd6f7")
 	)
-	(label "NEOM9N.MISO"
+	(label "NEOM9N.TX"
 		(at 134.62 62.23 0)
 		(effects
 			(font
@@ -4133,7 +4133,7 @@
 		)
 		(uuid "3ae6ffef-b326-451d-b4cd-9fa88cf94fd6")
 	)
-	(hierarchical_label "NEOM9N{MISO, MOSI, PPS, RST}"
+	(hierarchical_label "NEOM9N{TX, RX, PPS, RST}"
 		(shape bidirectional)
 		(at 153.67 24.13 180)
 		(effects
@@ -5845,7 +5845,7 @@
 				)
 			)
 		)
-		(property "Footprint" "RF_GPS:ublox_NEO"
+		(property "Footprint" "aerolotl_custom:SparkfunM9N"
 			(at 125.73 19.812 0)
 			(effects
 				(font
