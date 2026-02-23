@@ -22,6 +22,7 @@ fp-info-cache
 # KiCad autosave files
 _autosave-*
 #*#
+#auto_saved_files#
 
 # Mac OS folder settings
 .DS_Store
