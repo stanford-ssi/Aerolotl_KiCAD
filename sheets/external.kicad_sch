@@ -177,38 +177,238 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "TPS54620RGYR:TPS54620RGYR"
+		(symbol "Connector:Conn_01x03_Pin"
 			(pin_names
 				(offset 1.016)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at -12.7 26.67 0)
+			(property "Reference" "J"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
-			(property "Value" "TPS54620RGYR"
-				(at -12.7 -26.67 0)
+			(property "Value" "Conn_01x03_Pin"
+				(at 0 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 				)
 			)
-			(property "Footprint" "TPS54620RGYR:QFN50P350X350X100-15N"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x03, script generated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x03_Pin_1_1"
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 0.8636 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "aerolotl_custom:+7V4_SERVO"
+			(power)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board no)
+			(property "Reference" "#PWR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+7V4_SERVO"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
 					(hide yes)
 				)
 			)
@@ -230,404 +430,48 @@
 					(hide yes)
 				)
 			)
-			(property "MF" "Texas Instruments"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
+			(symbol "+7V4_SERVO_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
 					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MAXIMUM_PACKAGE_HEIGHT" "1.00mm"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Package" "VQFN-14 Texas Instruments"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Price" "None"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Check_prices" "https://www.snapeda.com/parts/TPS54620RGYR/Texas+Instruments/view-part/?ref=eda"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "STANDARD" "IPC 7351B"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "PARTREV" "06/2011"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "SnapEDA_Link" "https://www.snapeda.com/parts/TPS54620RGYR/Texas+Instruments/view-part/?ref=snap"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MP" "TPS54620RGYR"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Description_1" "4.5-V to 17-V, 6-A synchronous SWIFT™ buck converter"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "Availability" "In Stock"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(property "MANUFACTURER" "Texas Instruments"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-					(hide yes)
-				)
-			)
-			(symbol "TPS54620RGYR_0_0"
-				(rectangle
-					(start -12.7 -25.4)
-					(end 12.7 25.4)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54) (xy -0.762 1.27) (xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+7V4_SERVO_1_1"
 				(pin power_in line
-					(at -17.78 22.86 0)
-					(length 5.08)
-					(name "PVIN_4"
+					(at 0 0 90)
+					(length 2.54)
+					(hide yes)
+					(name "#7V4_SERVO"
 						(effects
 							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -17.78 20.32 0)
-					(length 5.08)
-					(name "PVIN_5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -17.78 15.24 0)
-					(length 5.08)
-					(name "VIN"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -17.78 7.62 0)
-					(length 5.08)
-					(name "EN"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input clock
-					(at -17.78 2.54 0)
-					(length 5.08)
-					(name "RT/CLK"
-						(effects
-							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "1"
 						(effects
 							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -17.78 -5.08 0)
-					(length 5.08)
-					(name "VSENSE"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -17.78 -7.62 0)
-					(length 5.08)
-					(name "BOOT"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 17.78 7.62 180)
-					(length 5.08)
-					(name "COMP"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 17.78 2.54 180)
-					(length 5.08)
-					(name "PH_11"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 17.78 0 180)
-					(length 5.08)
-					(name "PH_12"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 17.78 -5.08 180)
-					(length 5.08)
-					(name "SS/TR"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 17.78 -12.7 180)
-					(length 5.08)
-					(name "EXP"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 17.78 -17.78 180)
-					(length 5.08)
-					(name "GND_2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 17.78 -20.32 180)
-					(length 5.08)
-					(name "GND_3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 17.78 -22.86 180)
-					(length 5.08)
-					(name "PWRGD"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -635,45 +479,40 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "aerolotl_custom:1812L150_PTC_Fuse"
-			(pin_names
-				(offset 0.254)
-			)
+		(symbol "aerolotl_custom:1812L300_24SLER"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "F"
-				(at 5.08 3.175 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Value" "1812L150/24MR"
-				(at 5.08 -3.175 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Footprint" "FUSE_1812L150/24_LTF"
-				(at 0 0 0)
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
+					)
+				)
+			)
+			(property "Value" "1812L300/24SLER"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "aerolotl_custom:F1812"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "1812L150/24MR"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
 					(hide yes)
 				)
@@ -687,16 +526,8 @@
 					(hide yes)
 				)
 			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "1812L150/24MR"
-				(at 0 0 0)
+			(property "LCSC Part" "C1512049"
+				(at 0 -10.16 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -704,34 +535,24 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "FUSE_1812L150/24_LTF FUSE_1812L150/24_LTF-M FUSE_1812L150/24_LTF-L"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "1812L150_PTC_Fuse_1_1"
-				(arc
-					(start 2.54 0)
-					(mid 3.81 1.2645)
-					(end 5.08 0)
+			(symbol "1812L300_24SLER_0_1"
+				(rectangle
+					(start -3.3 0.76)
+					(end 3.3 -0.76)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
-				(arc
-					(start 7.62 0)
-					(mid 6.35 -1.2645)
-					(end 5.08 0)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy 2.54 0)
+					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -739,7 +560,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 0 0 0)
+					(at -5.08 0 0)
 					(length 2.54)
 					(name "1"
 						(effects
@@ -757,7 +578,7 @@
 					)
 				)
 				(pin unspecified line
-					(at 10.16 0 180)
+					(at 5.08 0 180)
 					(length 2.54)
 					(name "2"
 						(effects
@@ -775,53 +596,116 @@
 					)
 				)
 			)
-			(symbol "1812L150_PTC_Fuse_1_2"
-				(arc
-					(start 0 7.62)
-					(mid 1.2645 6.35)
-					(end 0 5.08)
+			(embedded_fonts no)
+		)
+		(symbol "power:+3V3"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(arc
-					(start 0 2.54)
-					(mid -1.2645 3.81)
-					(end 0 5.08)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(pin unspecified line
-					(at 0 10.16 270)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
 					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
-				(pin unspecified line
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
 					(at 0 0 90)
-					(length 2.54)
-					(name "1"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -940,152 +824,15 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:VCC"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "VCC"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VCC\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "VCC_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VCC_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(junction
-		(at 133.985 100.33)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0025d14b-c5ff-4399-87ab-aebe2a5a8a2b")
-	)
-	(junction
-		(at 63.5 187.325)
+		(at 69.85 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "18725b67-146a-4e32-970c-f02228c6c4e2")
 	)
-	(junction
-		(at 133.985 110.49)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "48ec2efe-3ae7-43ca-be3d-76b546d685ab")
-	)
 	(bus_entry
-		(at 43.18 179.705)
+		(at 49.53 134.62)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -1094,7 +841,7 @@
 		(uuid "64e7fdbb-4f15-442a-8d25-f30b46ed4454")
 	)
 	(bus_entry
-		(at 43.18 182.245)
+		(at 49.53 137.16)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -1104,7 +851,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 172.085) (xy 60.96 179.705)
+			(xy 67.31 125.095) (xy 67.31 134.62)
 		)
 		(stroke
 			(width 0)
@@ -1114,7 +861,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.985 116.84) (xy 137.795 116.84)
+			(xy 143.51 126.365) (xy 147.32 126.365)
 		)
 		(stroke
 			(width 0)
@@ -1124,7 +871,17 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 182.245) (xy 66.04 182.245)
+			(xy 143.51 119.38) (xy 143.51 126.365)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d052e1e-8fee-45ca-b4bb-5f09d65958e8")
+	)
+	(wire
+		(pts
+			(xy 52.07 137.16) (xy 72.39 137.16)
 		)
 		(stroke
 			(width 0)
@@ -1134,7 +891,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 177.165) (xy 63.5 187.325)
+			(xy 69.85 132.08) (xy 69.85 142.24)
 		)
 		(stroke
 			(width 0)
@@ -1144,7 +901,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.285 114.3) (xy 137.795 114.3)
+			(xy 130.81 123.825) (xy 147.32 123.825)
 		)
 		(stroke
 			(width 0)
@@ -1154,7 +911,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 179.705) (xy 66.04 179.705)
+			(xy 67.31 134.62) (xy 72.39 134.62)
 		)
 		(stroke
 			(width 0)
@@ -1164,17 +921,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.985 110.49) (xy 133.985 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "219bd6dd-2d42-4d72-aab3-e912c5a965a9")
-	)
-	(wire
-		(pts
-			(xy 63.5 187.325) (xy 66.04 187.325)
+			(xy 69.85 142.24) (xy 72.39 142.24)
 		)
 		(stroke
 			(width 0)
@@ -1184,17 +931,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.985 109.22) (xy 133.985 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4006ae17-179c-4cff-aab6-cb1682b34e02")
-	)
-	(wire
-		(pts
-			(xy 39.37 22.86) (xy 39.37 26.67)
+			(xy 142.875 57.785) (xy 142.875 62.23)
 		)
 		(stroke
 			(width 0)
@@ -1204,7 +941,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 187.325) (xy 63.5 189.865)
+			(xy 69.85 142.24) (xy 69.85 144.78)
 		)
 		(stroke
 			(width 0)
@@ -1214,17 +951,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.985 100.33) (xy 133.985 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "60f54e41-7184-41b7-913b-3c53a66bf4cb")
-	)
-	(wire
-		(pts
-			(xy 133.985 96.52) (xy 133.985 100.33)
+			(xy 143.51 106.045) (xy 143.51 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1234,7 +961,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.795 119.38) (xy 133.985 119.38)
+			(xy 147.32 128.905) (xy 143.51 128.905)
 		)
 		(stroke
 			(width 0)
@@ -1244,7 +971,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 46.99) (xy 39.37 53.34)
+			(xy 142.875 82.55) (xy 142.875 88.9)
 		)
 		(stroke
 			(width 0)
@@ -1254,7 +981,7 @@
 	)
 	(bus
 		(pts
-			(xy 43.18 179.705) (xy 43.18 182.245)
+			(xy 49.53 134.62) (xy 49.53 137.16)
 		)
 		(stroke
 			(width 0)
@@ -1264,7 +991,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 41.91) (xy 43.18 41.91)
+			(xy 130.175 77.47) (xy 146.685 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1274,7 +1001,7 @@
 	)
 	(bus
 		(pts
-			(xy 43.18 177.165) (xy 43.18 179.705)
+			(xy 49.53 132.08) (xy 49.53 134.62)
 		)
 		(stroke
 			(width 0)
@@ -1284,7 +1011,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 184.785) (xy 66.04 184.785)
+			(xy 52.07 139.7) (xy 72.39 139.7)
 		)
 		(stroke
 			(width 0)
@@ -1294,7 +1021,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 36.83) (xy 39.37 44.45)
+			(xy 142.875 72.39) (xy 142.875 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1304,7 +1031,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.985 119.38) (xy 133.985 125.73)
+			(xy 143.51 128.905) (xy 143.51 135.255)
 		)
 		(stroke
 			(width 0)
@@ -1314,7 +1041,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 44.45) (xy 43.18 44.45)
+			(xy 142.875 80.01) (xy 146.685 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1324,7 +1051,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 46.99) (xy 43.18 46.99)
+			(xy 142.875 82.55) (xy 146.685 82.55)
 		)
 		(stroke
 			(width 0)
@@ -1334,7 +1061,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 177.165) (xy 63.5 177.165)
+			(xy 72.39 132.08) (xy 69.85 132.08)
 		)
 		(stroke
 			(width 0)
@@ -1343,7 +1070,7 @@
 		(uuid "fe88816b-b893-467c-958a-0a86b0fc889e")
 	)
 	(label "EXT_I2C.SCL"
-		(at 45.72 184.785 0)
+		(at 52.07 139.7 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1353,7 +1080,7 @@
 		(uuid "3c77b8e1-8993-4cd5-8df4-5c527ef3a9c8")
 	)
 	(label "EXT_I2C.SDA"
-		(at 45.72 182.245 0)
+		(at 52.07 137.16 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1364,7 +1091,7 @@
 	)
 	(hierarchical_label "EXT_I2C{SDA, SCL}"
 		(shape bidirectional)
-		(at 43.18 177.165 180)
+		(at 49.53 132.08 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1375,7 +1102,7 @@
 	)
 	(hierarchical_label "SERVO_PWM1"
 		(shape input)
-		(at 26.67 41.91 180)
+		(at 130.175 77.47 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1386,7 +1113,7 @@
 	)
 	(hierarchical_label "SERVO_PWM2"
 		(shape input)
-		(at 121.285 114.3 180)
+		(at 130.81 123.825 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1396,80 +1123,8 @@
 		(uuid "ce147f38-ca8a-4724-a32d-e8d5e6a6628c")
 	)
 	(symbol
-		(lib_id "aerolotl_custom:1812L150_PTC_Fuse")
-		(at 133.985 110.49 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "04c2432e-eaab-4816-a843-f0cc2f6bff44")
-		(property "Reference" "F4"
-			(at 136.525 104.1399 90)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1812L150/24MR"
-			(at 136.525 106.6799 90)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "aerolotl_custom:FUSE_1812L150&slash_24_LTF"
-			(at 133.985 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "1812L150/24MR"
-			(at 133.985 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 133.985 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "497df120-56e2-4b81-b5f1-070f5074bd0d")
-		)
-		(pin "2"
-			(uuid "973b15ed-6d44-40e6-a539-27356ec88277")
-		)
-		(instances
-			(project "aerolotl"
-				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/5f72b0ed-0324-499f-bb98-18e31eb15f1d"
-					(reference "F4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 133.985 125.73 0)
+		(at 143.51 135.255 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1478,7 +1133,7 @@
 		(fields_autoplaced yes)
 		(uuid "101cd6f9-74be-459c-9d70-78269f88a280")
 		(property "Reference" "#PWR085"
-			(at 133.985 132.08 0)
+			(at 143.51 141.605 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1487,15 +1142,16 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 133.985 130.81 0)
+			(at 143.51 140.335 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
-			(at 133.985 125.73 0)
+			(at 143.51 135.255 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1504,7 +1160,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 133.985 125.73 0)
+			(at 143.51 135.255 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1513,7 +1169,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 133.985 125.73 0)
+			(at 143.51 135.255 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1535,7 +1191,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 39.37 53.34 0)
+		(at 142.875 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1544,7 +1200,7 @@
 		(fields_autoplaced yes)
 		(uuid "1c28d636-70ac-4087-92f1-92cfc3b35879")
 		(property "Reference" "#PWR081"
-			(at 39.37 59.69 0)
+			(at 142.875 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1553,7 +1209,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 39.37 58.42 0)
+			(at 142.875 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1562,7 +1218,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 39.37 53.34 0)
+			(at 142.875 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1571,7 +1227,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 39.37 53.34 0)
+			(at 142.875 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1580,7 +1236,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 39.37 53.34 0)
+			(at 142.875 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1601,43 +1257,43 @@
 		)
 	)
 	(symbol
-		(lib_id "TPS54620RGYR:TPS54620RGYR")
-		(at 139.065 47.625 0)
+		(lib_id "aerolotl_custom:+7V4_SERVO")
+		(at 143.51 106.045 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
+		(in_bom no)
+		(on_board no)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "27c76e80-c9ab-4fc2-95e4-8b5fb8d4c8d9")
-		(property "Reference" "U8"
-			(at 139.065 17.78 0)
+		(uuid "359cf1ed-8ef1-405f-b210-d7bf1839b574")
+		(property "Reference" "#PWR080"
+			(at 143.51 106.045 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+7V4_SERVO"
+			(at 143.51 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "TPS54620RGYR"
-			(at 139.065 20.32 0)
+		(property "Footprint" ""
+			(at 143.51 106.045 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "Footprint" "aerolotl_custom:TPS54620_7v4buck"
-			(at 139.065 47.625 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.065 47.625 0)
+			(at 143.51 106.045 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1646,183 +1302,21 @@
 			)
 		)
 		(property "Description" ""
-			(at 139.065 47.625 0)
+			(at 143.51 106.045 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "MF" "Texas Instruments"
-			(at 139.065 47.625 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "1.00mm"
-			(at 139.065 47.625 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Package" "VQFN-14 Texas Instruments"
-			(at 139.065 47.625 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Price" "None"
-			(at 139.065 47.625 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/TPS54620RGYR/Texas+Instruments/view-part/?ref=eda"
-			(at 139.065 47.625 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" "IPC 7351B"
-			(at 139.065 47.625 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "06/2011"
-			(at 139.065 47.625 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/TPS54620RGYR/Texas+Instruments/view-part/?ref=snap"
-			(at 139.065 47.625 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MP" "TPS54620RGYR"
-			(at 139.065 47.625 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "4.5-V to 17-V, 6-A synchronous SWIFT™ buck converter"
-			(at 139.065 47.625 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 139.065 47.625 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "Texas Instruments"
-			(at 139.065 47.625 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-				(hide yes)
-			)
-		)
-		(pin "14"
-			(uuid "61cc1cb8-8c92-4c49-b29e-9bd36a9ac958")
-		)
-		(pin "4"
-			(uuid "dcbbab45-eedc-4622-aeeb-af389488922e")
-		)
-		(pin "5"
-			(uuid "4362345d-8a88-42b6-b966-7fdc1036792f")
-		)
-		(pin "6"
-			(uuid "e1ca3c7a-3a9e-47f4-9368-82411540573a")
-		)
-		(pin "10"
-			(uuid "4bdf7624-4472-4897-802b-5d315bf4a39a")
 		)
 		(pin "1"
-			(uuid "2bbf6c22-afd8-444b-9f69-c978b9d352f1")
-		)
-		(pin "7"
-			(uuid "2dadb4b0-9dff-4a0d-8173-cc0a91b657eb")
-		)
-		(pin "13"
-			(uuid "48106d1b-7d82-4f50-ab86-364879dd0e1c")
-		)
-		(pin "8"
-			(uuid "ac7b1797-89a1-4f95-80d3-ba11e43daef4")
-		)
-		(pin "11"
-			(uuid "204fe34a-cf28-4428-b1fe-10e48b053996")
-		)
-		(pin "12"
-			(uuid "61172a06-847e-427a-9314-174d2e524e69")
-		)
-		(pin "9"
-			(uuid "8eb714e2-c714-4f1b-b1eb-24a05735b9ee")
-		)
-		(pin "15"
-			(uuid "c1e7c81b-c579-464a-b1fe-a2fe4ed27c7b")
-		)
-		(pin "2"
-			(uuid "1ef1aac7-6e6f-4d02-b5ed-5effd96c213f")
-		)
-		(pin "3"
-			(uuid "8190eebc-ffda-4f4d-a027-b269c7304bab")
+			(uuid "ad37d9ae-9b05-4187-badf-f2aeb27410b0")
 		)
 		(instances
-			(project ""
+			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/5f72b0ed-0324-499f-bb98-18e31eb15f1d"
-					(reference "U8")
+					(reference "#PWR080")
 					(unit 1)
 				)
 			)
@@ -1830,7 +1324,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 63.5 189.865 0)
+		(at 69.85 144.78 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1839,7 +1333,7 @@
 		(fields_autoplaced yes)
 		(uuid "3e32c454-317a-4856-afbf-01b02c4b7199")
 		(property "Reference" "#PWR083"
-			(at 63.5 196.215 0)
+			(at 69.85 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1848,15 +1342,16 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 63.5 194.945 0)
+			(at 69.85 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 189.865 0)
+			(at 69.85 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1865,7 +1360,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 189.865 0)
+			(at 69.85 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1874,7 +1369,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 63.5 189.865 0)
+			(at 69.85 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1895,17 +1390,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
-		(at 60.96 172.085 0)
+		(lib_id "power:+3V3")
+		(at 67.31 125.095 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "597b7e4f-4044-4cf4-a5f6-222164c15060")
+		(uuid "4f00b578-25a4-4a54-8cc2-b350754b2b59")
 		(property "Reference" "#PWR082"
-			(at 60.96 175.895 0)
+			(at 67.31 128.905 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1913,8 +1408,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VCC"
-			(at 60.96 167.005 0)
+		(property "Value" "+3V3"
+			(at 67.31 120.015 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1922,7 +1417,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 60.96 172.085 0)
+			(at 67.31 125.095 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1931,7 +1426,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 172.085 0)
+			(at 67.31 125.095 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1939,8 +1434,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 60.96 172.085 0)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 67.31 125.095 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1949,7 +1444,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "2b638650-176a-4440-978e-fab4886c9e20")
+			(uuid "05a7b62c-6f3e-4b33-94c8-216a58b32094")
 		)
 		(instances
 			(project "aerolotl"
@@ -1961,34 +1456,35 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VCC")
-		(at 39.37 22.86 0)
+		(lib_id "aerolotl_custom:1812L300_24SLER")
+		(at 142.875 67.31 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "bd0fa824-938a-4681-b38f-56695ff190af")
-		(property "Reference" "#PWR080"
-			(at 39.37 26.67 0)
+		(uuid "6f74f50e-9684-4a67-98f4-e89b401f443d")
+		(property "Reference" "F3"
+			(at 145.415 66.0399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
-		(property "Value" "VCC"
-			(at 39.37 17.78 0)
+		(property "Value" "1812L300/24SLER"
+			(at 145.415 68.5799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 39.37 22.86 0)
+		(property "Footprint" "aerolotl_custom:F1812"
+			(at 135.255 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1997,140 +1493,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 39.37 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 39.37 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6e54e7be-9dd4-44e2-bc54-dbc003ca61ea")
-		)
-		(instances
-			(project "aerolotl"
-				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/5f72b0ed-0324-499f-bb98-18e31eb15f1d"
-					(reference "#PWR080")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 133.985 96.52 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cf3b3919-dd6a-4a6a-ba6c-d566cdc5e2c5")
-		(property "Reference" "#PWR084"
-			(at 133.985 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 133.985 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 133.985 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 133.985 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 133.985 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ae7f5a00-17e0-4cee-ac62-b9083b51ef3a")
-		)
-		(instances
-			(project "aerolotl"
-				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/5f72b0ed-0324-499f-bb98-18e31eb15f1d"
-					(reference "#PWR084")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "CONN-SMD_BM04B-SRSS-TB:BM04B-SRSS-TB(LF)(SN)")
-		(at 71.12 182.245 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "eba1eb89-6f74-4338-8f5e-a526c78e9f16")
-		(property "Reference" "CN3"
-			(at 77.47 180.9749 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "STE_I2C_QT"
-			(at 77.47 183.5149 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "easyeda2kicad:CONN-SMD_BM04B-SRSS-TB"
-			(at 71.12 194.945 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Others_JST-Sales-America__JST-Sales-America-BM04B-SRSS-TB-LF-SN_C160390.html"
-			(at 71.12 197.485 0)
+			(at 142.875 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2139,7 +1502,311 @@
 			)
 		)
 		(property "Description" ""
-			(at 71.12 182.245 0)
+			(at 142.875 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C1512049"
+			(at 132.715 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "694677a4-0f2d-43a6-acd5-53dcebc439b4")
+		)
+		(pin "2"
+			(uuid "3c3c7a1c-d26a-4d1d-853e-166d46dfbcd8")
+		)
+		(instances
+			(project ""
+				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/5f72b0ed-0324-499f-bb98-18e31eb15f1d"
+					(reference "F3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "aerolotl_custom:1812L300_24SLER")
+		(at 143.51 114.3 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a42d8327-6b7a-4c47-ab28-761a51c93efd")
+		(property "Reference" "F4"
+			(at 146.05 113.0299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1812L300/24SLER"
+			(at 146.05 115.5699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "aerolotl_custom:F1812"
+			(at 135.89 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 143.51 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C1512049"
+			(at 133.35 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d9682d67-a4dd-4bce-a4b0-b01be0343daf")
+		)
+		(pin "2"
+			(uuid "3cae4a3d-40e5-4262-930d-23664f8ec828")
+		)
+		(instances
+			(project "aerolotl"
+				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/5f72b0ed-0324-499f-bb98-18e31eb15f1d"
+					(reference "F4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x03_Pin")
+		(at 151.765 80.01 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dd149d4d-8b74-411b-a257-07b746dbdcef")
+		(property "Reference" "J8"
+			(at 153.035 78.7399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x03_Pin"
+			(at 153.035 81.2799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 151.765 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 151.765 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 151.765 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "98686817-a38b-4177-a47b-ebfd93540c03")
+		)
+		(pin "2"
+			(uuid "795b41b5-36aa-4628-9567-e02ae5ca37e0")
+		)
+		(pin "3"
+			(uuid "f9b7e267-79cf-4720-a193-669cd6361ba1")
+		)
+		(instances
+			(project ""
+				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/5f72b0ed-0324-499f-bb98-18e31eb15f1d"
+					(reference "J8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x03_Pin")
+		(at 152.4 126.365 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e9e12d9b-a12a-45c0-a560-cb2de9092687")
+		(property "Reference" "J9"
+			(at 153.67 125.0949 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_01x03_Pin"
+			(at 153.67 127.6349 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 126.365 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 152.4 126.365 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 152.4 126.365 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0452c007-e348-4bc6-959e-895796acf445")
+		)
+		(pin "2"
+			(uuid "e0e95577-5dc1-4652-b47e-5a8e376f6d7d")
+		)
+		(pin "3"
+			(uuid "dfa9f418-e293-45c8-8487-6b5fb2177659")
+		)
+		(instances
+			(project "aerolotl"
+				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/5f72b0ed-0324-499f-bb98-18e31eb15f1d"
+					(reference "J9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "CONN-SMD_BM04B-SRSS-TB:BM04B-SRSS-TB(LF)(SN)")
+		(at 77.47 137.16 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eba1eb89-6f74-4338-8f5e-a526c78e9f16")
+		(property "Reference" "CN3"
+			(at 83.82 135.8899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "STE_I2C_QT"
+			(at 83.82 138.4299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "easyeda2kicad:CONN-SMD_BM04B-SRSS-TB"
+			(at 77.47 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Others_JST-Sales-America__JST-Sales-America-BM04B-SRSS-TB-LF-SN_C160390.html"
+			(at 77.47 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 77.47 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2148,7 +1815,7 @@
 			)
 		)
 		(property "LCSC Part" "C160390"
-			(at 71.12 200.025 0)
+			(at 77.47 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2175,6 +1842,72 @@
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/5f72b0ed-0324-499f-bb98-18e31eb15f1d"
 					(reference "CN3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "aerolotl_custom:+7V4_SERVO")
+		(at 142.875 57.785 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f587ac37-7348-4799-a361-456c32b8ac0e")
+		(property "Reference" "#PWR069"
+			(at 142.875 57.785 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+7V4_SERVO"
+			(at 142.875 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 142.875 57.785 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.875 57.785 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 142.875 57.785 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4a37f8f2-2f85-4705-addc-2b68543efba5")
+		)
+		(instances
+			(project ""
+				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/5f72b0ed-0324-499f-bb98-18e31eb15f1d"
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)
