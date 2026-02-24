@@ -2302,7 +2302,7 @@
 		)
 		(uuid "5e5110f6-6cc3-4425-933b-f2d52755613a")
 	)
-	(text "NEOM9N uses sparkfun breakout board"
+	(text "NEOM9N uses sparkfun breakout board, use as daughterboard"
 		(exclude_from_sim no)
 		(at 122.936 95.504 0)
 		(effects
@@ -3704,16 +3704,6 @@
 			(type default)
 		)
 		(uuid "f63e12f8-2a7e-493a-8d6c-2320239fe97e")
-	)
-	(bus
-		(pts
-			(xy 153.67 71.12) (xy 153.67 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f76ddc35-f642-4530-8bcd-9388fc4f2bda")
 	)
 	(wire
 		(pts
