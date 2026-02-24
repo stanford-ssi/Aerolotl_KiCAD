@@ -489,6 +489,131 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+3V3"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -625,16 +750,6 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 93.98) (xy 121.92 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "09fd64df-d7f3-4e57-8d02-2f1a52112bd9")
-	)
-	(wire
-		(pts
 			(xy 91.44 104.14) (xy 87.63 104.14)
 		)
 		(stroke
@@ -672,6 +787,16 @@
 			(type default)
 		)
 		(uuid "8a8ada9d-b43e-4ae5-833e-6397c4fad90a")
+	)
+	(wire
+		(pts
+			(xy 113.03 89.535) (xy 113.03 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b712397-d700-44c0-ac09-f0026e286d72")
 	)
 	(wire
 		(pts
@@ -745,6 +870,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 93.98) (xy 121.92 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e49fc15b-f842-477b-97c0-7049f2079e76")
+	)
+	(wire
+		(pts
 			(xy 87.63 104.14) (xy 87.63 107.95)
 		)
 		(stroke
@@ -753,25 +888,15 @@
 		)
 		(uuid "ec3d4ef9-2063-4356-9d79-ba671f40ee52")
 	)
-	(label "T_NRST"
-		(at 152.4 104.14 0)
+	(label "GNDDetect"
+		(at 110.49 104.14 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "1abf8dd8-bf05-486d-8ea4-44046a944fc2")
-	)
-	(label "T_SWO"
-		(at 152.4 99.06 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6f6d2ccf-d650-4000-9eee-b4abc85c8add")
+		(uuid "1ab43174-4bfd-48b7-bdd0-8e06cc3b33b5")
 	)
 	(label "Key"
 		(at 119.38 99.06 0)
@@ -783,26 +908,6 @@
 		)
 		(uuid "750d368f-d844-4234-b426-4b90f05a764a")
 	)
-	(label "T_SWDIO"
-		(at 152.4 93.98 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "863f4824-cbab-424b-9b48-6a0e58dc0c7b")
-	)
-	(label "T_SWCLK"
-		(at 152.4 96.52 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a43c53b3-395f-4526-a2c5-148148a93077")
-	)
 	(label "T_VCC"
 		(at 115.57 93.98 0)
 		(effects
@@ -812,6 +917,28 @@
 			(justify left bottom)
 		)
 		(uuid "c8aef9e6-e33e-4b1a-995b-b64f20a0ffab")
+	)
+	(hierarchical_label "T_SWCLK"
+		(shape output)
+		(at 152.4 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "182a88b0-3003-4efe-b2f6-79b5c22b277b")
+	)
+	(hierarchical_label "T_SWO"
+		(shape input)
+		(at 152.4 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2b284290-2cab-47de-8c69-c0d32b818adf")
 	)
 	(hierarchical_label "T_VCP_RX"
 		(shape input)
@@ -823,6 +950,28 @@
 			(justify left)
 		)
 		(uuid "9bc57b47-1d8c-4902-b983-846b0bbf7cfa")
+	)
+	(hierarchical_label "T_SWDIO"
+		(shape bidirectional)
+		(at 152.4 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "aefd2a3f-eb06-4e87-8d1d-733b88b5e8cd")
+	)
+	(hierarchical_label "T_NRST"
+		(shape bidirectional)
+		(at 152.4 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c3be7d64-0896-4557-b193-2e25fe2360d9")
 	)
 	(hierarchical_label "T_VCP_TX"
 		(shape output)
@@ -966,6 +1115,72 @@
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/226d91b5-727a-47f8-9cda-891697ac9edb"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 113.03 89.535 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8a692eaf-401f-4ed1-9a93-c5b809689460")
+		(property "Reference" "#PWR068"
+			(at 113.03 93.345 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 113.03 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.03 89.535 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 89.535 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 113.03 89.535 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0ebee96d-7a12-4224-9f83-6cb5e0df065e")
+		)
+		(instances
+			(project ""
+				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/226d91b5-727a-47f8-9cda-891697ac9edb"
+					(reference "#PWR068")
 					(unit 1)
 				)
 			)

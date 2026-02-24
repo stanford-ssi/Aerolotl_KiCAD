@@ -5850,6 +5850,16 @@
 		)
 		(uuid "0387f1fd-dd55-4f5a-9886-6344a1c0a5d3")
 	)
+	(wire
+		(pts
+			(xy 251.46 71.12) (xy 265.43 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03d82b78-b795-41a7-9080-2423d66a81b3")
+	)
 	(bus
 		(pts
 			(xy 355.6 29.21) (xy 355.6 31.75)
@@ -5899,6 +5909,16 @@
 			(type default)
 		)
 		(uuid "0582ab83-b234-4659-91e2-bf10087b4127")
+	)
+	(wire
+		(pts
+			(xy 351.79 121.92) (xy 356.87 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05af095e-d0be-4d1a-80a1-bd5057efcebe")
 	)
 	(wire
 		(pts
@@ -8062,16 +8082,6 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 71.12) (xy 265.43 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e75d95be-6533-4cc7-900d-d85c6b593124")
-	)
-	(wire
-		(pts
 			(xy 107.95 36.83) (xy 119.38 36.83)
 		)
 		(stroke
@@ -8729,7 +8739,7 @@
 		(uuid "f8b683f5-cd1f-4cdb-bf4f-4f52640135d0")
 	)
 	(hierarchical_label "SWCLK"
-		(shape bidirectional)
+		(shape input)
 		(at 356.87 106.68 0)
 		(effects
 			(font
@@ -8760,6 +8770,17 @@
 			(justify left)
 		)
 		(uuid "36645a56-4a47-4f94-9f44-65b65713f1bc")
+	)
+	(hierarchical_label "SWO"
+		(shape output)
+		(at 356.87 121.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "370034bb-8060-42a6-b097-e5617dc0c48c")
 	)
 	(hierarchical_label "BMP{CSB, SCK, MOSI, MISO, INT}"
 		(shape bidirectional)
@@ -8837,6 +8858,17 @@
 			(justify left)
 		)
 		(uuid "9c6701f8-4f4c-49a9-ae9d-4d35d168a822")
+	)
+	(hierarchical_label "T_NRST"
+		(shape bidirectional)
+		(at 251.46 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c6d21940-21e6-421e-9458-e3a977ff956e")
 	)
 	(hierarchical_label "SENSE_I0"
 		(shape input)

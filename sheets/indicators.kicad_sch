@@ -1414,6 +1414,190 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "aerolotl_custom:+12V_ARM"
+			(power)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board no)
+			(property "Reference" "#PWR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+12V_ARM"
+				(at 0 4.064 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+12V_ARM_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54) (xy -0.762 1.27) (xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+12V_ARM_1_1"
+				(pin power_in line
+					(at 0 0 0)
+					(length 2.54)
+					(hide yes)
+					(name "+12V_ARM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "aerolotl_custom:+7V4_SERVO"
+			(power)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board no)
+			(property "Reference" "#PWR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+7V4_SERVO"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+7V4_SERVO_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54) (xy -0.762 1.27) (xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+7V4_SERVO_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 2.54)
+					(hide yes)
+					(name "#7V4_SERVO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+3V3"
 			(power)
 			(pin_numbers
@@ -1893,36 +2077,13 @@
 	)
 	(text "todo: decide on a \n	  GPIO pin for LED\n"
 		(exclude_from_sim no)
-		(at 127 31.115 0)
+		(at 127 22.225 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "0b4e373b-7fbf-4d7c-8712-d4a9e45705bd")
-	)
-	(text "TODO list:\n- RGB LED with PWM for status indication\n	-> DONE (from lawton)\n- LED indicators for each thing: (STM LED, 3.3V power LED, USB LED, SERVO LED, 12V LED, etc.\n	-> DONE (from lawton)\n- Add Buzzer too\n	-> DONE (from lawton)"
-		(exclude_from_sim no)
-		(at 45.974 86.614 0)
-		(effects
-			(font
-				(size 2.54 2.54)
-				(thickness 0.508)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "4101ebcd-2325-4dd2-b247-154c4386fa0c")
-	)
-	(text "todo: make a +7.4V_SERVO \n	   power symbol and stick here\n"
-		(exclude_from_sim no)
-		(at 188.595 27.94 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "ce00f029-5e9b-4e3f-bc55-3b7c577122bb")
 	)
 	(junction
 		(at 82.55 43.18)
@@ -1935,6 +2096,53 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ed437709-fb27-44f5-8e0f-37a78091c246")
+	)
+	(bus_entry
+		(at 44.45 45.085)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "668e4429-a13a-46e3-b05b-c92202a7a957")
+	)
+	(bus_entry
+		(at 44.45 34.925)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7614ae01-28b0-4482-a632-bd4cb71a3ca0")
+	)
+	(bus_entry
+		(at 44.45 40.005)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "764ba90c-ddd6-4e22-a045-50965f4615c2")
+	)
+	(wire
+		(pts
+			(xy 36.83 37.465) (xy 41.91 37.465)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0693c7d2-f7cf-4d0d-a05c-b3327489bae4")
+	)
+	(wire
+		(pts
+			(xy 186.69 31.115) (xy 186.69 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e6297d6-3e83-479b-9f80-f9f226c888af")
 	)
 	(wire
 		(pts
@@ -1966,6 +2174,16 @@
 		)
 		(uuid "51dbc69b-85b2-4dac-80bd-feb9d9cb58d2")
 	)
+	(bus
+		(pts
+			(xy 44.45 29.21) (xy 44.45 34.925)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52c680df-862f-4878-9a24-ff937a303df2")
+	)
 	(wire
 		(pts
 			(xy 69.85 43.18) (xy 82.55 43.18)
@@ -1986,9 +2204,19 @@
 		)
 		(uuid "63b3b995-6ea2-4fc5-9a90-2a0caa6fb625")
 	)
+	(bus
+		(pts
+			(xy 44.45 40.005) (xy 44.45 45.085)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66c109fe-e070-4086-9e87-d85d3dd84010")
+	)
 	(wire
 		(pts
-			(xy 35.56 43.18) (xy 36.83 43.18)
+			(xy 25.4 42.545) (xy 26.67 42.545)
 		)
 		(stroke
 			(width 0)
@@ -2028,6 +2256,26 @@
 	)
 	(wire
 		(pts
+			(xy 235.585 31.115) (xy 235.585 34.925)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b29e42bb-f1c3-4302-b11e-23692c2ac845")
+	)
+	(bus
+		(pts
+			(xy 44.45 34.925) (xy 44.45 40.005)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b30c04f3-78e3-42da-82a4-4fb0d3896ace")
+	)
+	(wire
+		(pts
 			(xy 82.55 31.75) (xy 82.55 30.48)
 		)
 		(stroke
@@ -2046,80 +2294,77 @@
 		)
 		(uuid "cb19f24d-4b28-49fc-a464-687098749a1c")
 	)
-	(label "Buzzer"
-		(at 69.85 43.18 0)
+	(wire
+		(pts
+			(xy 41.91 47.625) (xy 36.83 47.625)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7b1aa30-2a84-4d6c-ba8b-526e1f65f76f")
+	)
+	(wire
+		(pts
+			(xy 41.91 42.545) (xy 36.83 42.545)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4e3be4c-a67c-446f-b936-07387b480fa7")
+	)
+	(label "LED.R"
+		(at 36.83 37.465 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "2ebe87a6-a798-412d-8da3-dfdc0c32dded")
+		(uuid "70cdf346-98d1-47c6-a1c8-cbfbd9e683b2")
 	)
-	(symbol
-		(lib_id "power:GND")
-		(at 54.61 38.1 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "14c5704d-3457-4bd4-817f-a27f615c655f")
-		(property "Reference" "#PWR067"
-			(at 60.96 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
+	(label "LED.G"
+		(at 36.83 42.545 0)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify left bottom)
 		)
-		(property "Value" "GND"
-			(at 58.674 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
+		(uuid "b015a384-be99-44f3-9056-30f6376876ac")
+	)
+	(label "LED.B"
+		(at 36.83 47.625 0)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify left bottom)
 		)
-		(property "Footprint" ""
-			(at 54.61 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
+		(uuid "f7866865-ad54-4c25-b06c-a7d90138aab2")
+	)
+	(hierarchical_label "BUZZER"
+		(shape input)
+		(at 69.85 43.18 180)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify right)
 		)
-		(property "Datasheet" ""
-			(at 54.61 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
+		(uuid "9119c40b-db2e-4403-a5b8-97f02f6dba16")
+	)
+	(hierarchical_label "LED{R, G, B}"
+		(shape input)
+		(at 44.45 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify left)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 54.61 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "df246004-5e47-4554-8b2d-b63f10f8da0f")
-		)
-		(instances
-			(project "aerolotl"
-				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
-					(reference "#PWR067")
-					(unit 1)
-				)
-			)
-		)
+		(uuid "ce1c864d-cc3b-4ae5-8a76-f3338f0be3d5")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -2342,73 +2587,6 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 50.8 43.18 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2d736eae-097e-40b6-b584-8c5296ce59ba")
-		(property "Reference" "R16"
-			(at 50.8 40.894 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "330"
-			(at 50.8 43.18 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 50.8 44.958 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 50.8 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 50.8 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ee0d69af-946a-4a2e-9de7-bb79eac2c057")
-		)
-		(pin "2"
-			(uuid "cbb2204e-59b0-4d37-b0f2-5571ccca26dd")
-		)
-		(instances
-			(project "aerolotl"
-				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
-					(reference "R16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
 		(at 169.545 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2546,7 +2724,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 35.56 43.18 90)
+		(at 25.4 42.545 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2555,7 +2733,7 @@
 		(fields_autoplaced yes)
 		(uuid "34e3a0c7-cc73-4f05-933e-d1056c622c5f")
 		(property "Reference" "#PWR066"
-			(at 39.37 43.18 0)
+			(at 29.21 42.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2564,7 +2742,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 31.75 43.1799 90)
+			(at 21.59 42.5449 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2573,7 +2751,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 43.18 0)
+			(at 25.4 42.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2582,7 +2760,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 43.18 0)
+			(at 25.4 42.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2591,7 +2769,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 35.56 43.18 0)
+			(at 25.4 42.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2877,6 +3055,71 @@
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
 					(reference "#PWR064")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "aerolotl_custom:+7V4_SERVO")
+		(at 186.69 31.115 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(uuid "51d87ce4-f9f0-49d2-a416-16ece2b334de")
+		(property "Reference" "#PWR067"
+			(at 186.69 31.115 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+7V4_SERVO"
+			(at 186.69 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 186.69 31.115 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 31.115 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 186.69 31.115 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a27ed8b4-ad75-4fe1-8687-2e6ea4c2742e")
+		)
+		(instances
+			(project ""
+				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -3244,73 +3487,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 50.8 48.26 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "740fff31-fadd-4e75-a506-2578b0db8be1")
-		(property "Reference" "R17"
-			(at 50.8 45.974 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "330"
-			(at 50.8 48.26 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 50.8 50.038 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 50.8 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 50.8 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "84e7d43d-5717-4548-b61e-548bf4d177c4")
-		)
-		(pin "2"
-			(uuid "cd02548e-c880-4583-80ba-97f219b241dc")
-		)
-		(instances
-			(project "aerolotl"
-				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
-					(reference "R17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 169.545 31.115 0)
 		(unit 1)
@@ -3330,7 +3506,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 169.545 26.035 0)
+			(at 169.545 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3371,6 +3547,72 @@
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
 					(reference "#PWR072")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "aerolotl_custom:+12V_ARM")
+		(at 235.585 31.115 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "91299d3b-50d9-494c-9c56-9bc274a71a38")
+		(property "Reference" "#PWR097"
+			(at 235.585 31.115 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V_ARM"
+			(at 235.585 26.035 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 235.585 31.115 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 235.585 31.115 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 235.585 31.115 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "7533ab10-352c-4150-be17-c612128d438d")
+		)
+		(instances
+			(project ""
+				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
+					(reference "#PWR097")
 					(unit 1)
 				)
 			)
@@ -3517,71 +3759,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 54.61 48.26 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c13072ad-2396-4d0b-9f3f-875f492008f4")
-		(property "Reference" "#PWR068"
-			(at 60.96 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 58.674 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 54.61 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 54.61 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 54.61 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1ad27643-9e23-40ce-83ab-f2520d3ade12")
-		)
-		(instances
-			(project "aerolotl"
-				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
-					(reference "#PWR068")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED")
 		(at 235.585 38.735 90)
 		(unit 1)
@@ -3655,73 +3832,6 @@
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
 					(reference "D8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 50.8 38.1 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c5f2a316-6ef5-41ee-a6a3-21c9c3ae888c")
-		(property "Reference" "R15"
-			(at 50.8 35.814 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "330"
-			(at 50.8 38.1 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 50.8 39.878 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 50.8 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 50.8 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "89b55e62-a287-4348-bbdc-9375098202ed")
-		)
-		(pin "2"
-			(uuid "364b365c-f03d-43d0-88b3-0e59497e6456")
-		)
-		(instances
-			(project "aerolotl"
-				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
-					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -3871,7 +3981,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED_ARGB")
-		(at 41.91 43.18 0)
+		(at 31.75 42.545 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3880,7 +3990,7 @@
 		(dnp no)
 		(uuid "dd8264a7-ce06-4e79-97ee-4e549981ef0a")
 		(property "Reference" "D3"
-			(at 41.91 29.21 0)
+			(at 31.75 28.575 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3888,7 +3998,7 @@
 			)
 		)
 		(property "Value" "LED_ARGB"
-			(at 41.91 31.75 0)
+			(at 31.75 31.115 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3896,7 +4006,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 41.91 44.45 0)
+			(at 31.75 43.815 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3905,7 +4015,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 41.91 44.45 0)
+			(at 31.75 43.815 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3914,7 +4024,7 @@
 			)
 		)
 		(property "Description" "RGB LED, anode/red/green/blue"
-			(at 41.91 43.18 0)
+			(at 31.75 42.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4154,71 +4264,6 @@
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
 					(reference "D5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 54.61 43.18 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f8bf472c-bab5-44b7-ab93-2a6af98e1a13")
-		(property "Reference" "#PWR069"
-			(at 60.96 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 58.674 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 54.61 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 54.61 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 54.61 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e9689ee9-9a04-43e4-b4ac-2d203fd6d17b")
-		)
-		(instances
-			(project "aerolotl"
-				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
-					(reference "#PWR069")
 					(unit 1)
 				)
 			)
