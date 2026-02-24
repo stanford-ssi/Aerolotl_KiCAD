@@ -871,18 +871,8 @@
 				(justify left top)
 			)
 		)
-		(pin "EXT_I2C{SDA, SCL}" bidirectional
-			(at 292.1 151.13 180)
-			(uuid "72007680-0be9-4af0-ab95-7662cde282ad")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "SERVO_PWM1" input
-			(at 292.1 154.94 180)
+			(at 292.1 163.83 180)
 			(uuid "74ce1e4a-2402-41d4-9bc4-30a8658a4b42")
 			(effects
 				(font
@@ -892,8 +882,38 @@
 			)
 		)
 		(pin "SERVO_PWM2" input
-			(at 292.1 158.115 180)
+			(at 292.1 167.64 180)
 			(uuid "2cdc26e3-f833-4da0-8681-186c04f5d843")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2C2{SDA, SCL}" bidirectional
+			(at 292.1 151.13 180)
+			(uuid "addda78b-e89f-437a-983e-e20082f5aa2c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2C3{SDA, SCL}" bidirectional
+			(at 292.1 154.94 180)
+			(uuid "b0bdf01f-df8f-4eb2-b982-4429af5a8c0f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2C4{SDA, SCL}" bidirectional
+			(at 292.1 158.75 180)
+			(uuid "58158a41-7fbb-481b-ab45-0230b55f5555")
 			(effects
 				(font
 					(size 1.27 1.27)
