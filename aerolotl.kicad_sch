@@ -118,6 +118,16 @@
 		)
 		(uuid "0a61e004-00b5-4bc9-8414-aab8a97fc44b")
 	)
+	(bus
+		(pts
+			(xy 250.19 153.67) (xy 293.37 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0aa55f49-b6ad-4468-b852-b7a6ff439342")
+	)
 	(wire
 		(pts
 			(xy 276.86 56.515) (xy 293.37 56.515)
@@ -668,6 +678,16 @@
 		)
 		(uuid "e1d6238b-5ea7-4b4e-a577-61babe8bf170")
 	)
+	(bus
+		(pts
+			(xy 250.19 155.575) (xy 293.37 155.575)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e350c188-ea2f-4715-a233-bb9da597cae8")
+	)
 	(wire
 		(pts
 			(xy 250.19 144.78) (xy 293.37 144.78)
@@ -1201,6 +1221,26 @@
 		(pin "TARGET_TX" output
 			(at 293.37 142.875 180)
 			(uuid "5a751c3c-7e4c-4027-91ac-6ece5ce6fab1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI2{SCK, MISO, MOSI}" bidirectional
+			(at 293.37 153.67 180)
+			(uuid "7f5dd98a-752d-4795-a47a-3f0e0df66776")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI4{SCK, MISO, MOSI}" bidirectional
+			(at 293.37 155.575 180)
+			(uuid "b516a8cf-186d-4d8a-a251-e54272f2c7e1")
 			(effects
 				(font
 					(size 1.27 1.27)
