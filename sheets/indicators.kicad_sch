@@ -2075,16 +2075,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "todo: decide on a \n	  GPIO pin for LED\n"
-		(exclude_from_sim no)
-		(at 127 22.225 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "0b4e373b-7fbf-4d7c-8712-d4a9e45705bd")
-	)
 	(junction
 		(at 82.55 43.18)
 		(diameter 0)
@@ -2153,6 +2143,16 @@
 			(type default)
 		)
 		(uuid "2a9d4048-fd22-4f8e-bc8c-9804a519c554")
+	)
+	(wire
+		(pts
+			(xy 135.89 29.21) (xy 135.89 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d8bd64c-3e5e-4680-87d0-96aef2ff7aa5")
 	)
 	(wire
 		(pts
@@ -2383,6 +2383,17 @@
 			(justify left bottom)
 		)
 		(uuid "f7866865-ad54-4c25-b06c-a7d90138aab2")
+	)
+	(hierarchical_label "LED"
+		(shape input)
+		(at 135.89 29.21 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "75a4a060-3ed3-4294-b77c-ebd5b4afc780")
 	)
 	(hierarchical_label "BUZZER"
 		(shape input)

@@ -148,6 +148,16 @@
 		)
 		(uuid "21033db8-abc6-453d-8e0d-d1827891358e")
 	)
+	(wire
+		(pts
+			(xy 250.19 87.63) (xy 272.415 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21ae946c-be00-478f-be4e-a08ece849d10")
+	)
 	(bus
 		(pts
 			(xy 182.88 239.395) (xy 104.14 239.395)
@@ -678,6 +688,16 @@
 		)
 		(uuid "e8c4f860-29e2-4e6a-bc33-6a6cabd46300")
 	)
+	(wire
+		(pts
+			(xy 272.415 52.07) (xy 293.37 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9677da3-2b79-4f94-bd33-1d28dfe1e9f4")
+	)
 	(bus
 		(pts
 			(xy 104.14 229.87) (xy 123.825 229.87)
@@ -727,6 +747,16 @@
 			(type default)
 		)
 		(uuid "f3fd0b49-815d-4818-bc19-d6e81f7cb4fe")
+	)
+	(wire
+		(pts
+			(xy 272.415 87.63) (xy 272.415 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f565ee49-81cd-4ae4-bc56-53ebd0761659")
 	)
 	(wire
 		(pts
@@ -1233,6 +1263,16 @@
 		(pin "LED{R, G, B}" input
 			(at 293.37 46.99 180)
 			(uuid "bb55e7dc-1ea2-480f-b5ee-8ef212dc5757")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LED" output
+			(at 293.37 52.07 180)
+			(uuid "0e82fa74-4286-4277-a957-6dfa0c00deaa")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1819,6 +1859,16 @@
 		(pin "SPARE_ADC2" input
 			(at 250.19 107.315 0)
 			(uuid "c329301c-88be-4ab6-afce-c057118dd925")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED" output
+			(at 250.19 87.63 0)
+			(uuid "9c7a17c9-553b-4e62-81d1-bf792728cbcb")
 			(effects
 				(font
 					(size 1.27 1.27)
