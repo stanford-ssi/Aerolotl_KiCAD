@@ -6,6 +6,15 @@
 	(paper "A3")
 	(lib_symbols)
 	(bus_entry
+		(at 226.695 46.99)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0888954a-cb58-4240-b7a5-f38238e146e0")
+	)
+	(bus_entry
 		(at 204.47 193.675)
 		(size 2.54 -2.54)
 		(stroke
@@ -13,6 +22,15 @@
 			(type default)
 		)
 		(uuid "25ff5a0c-29c6-4a59-9cfa-d1425f370b62")
+	)
+	(bus_entry
+		(at 229.87 46.99)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2aa765f9-eb7a-4e8b-bdda-4e9a71cb9504")
 	)
 	(bus_entry
 		(at 190.5 193.675)
@@ -40,6 +58,15 @@
 			(type default)
 		)
 		(uuid "a75ad865-bb5b-4bbc-8196-c05bfeee6eae")
+	)
+	(bus_entry
+		(at 223.52 46.99)
+		(size -2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e09d7d44-fd29-401d-a347-4d2f02606bec")
 	)
 	(bus
 		(pts
@@ -101,6 +128,16 @@
 		)
 		(uuid "0f9d6fc0-a7b0-49ca-a3db-9c7d06842faa")
 	)
+	(bus
+		(pts
+			(xy 223.52 46.99) (xy 226.695 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1bdcdb0d-d39d-4847-bb48-526faacaeddf")
+	)
 	(wire
 		(pts
 			(xy 250.19 172.72) (xy 293.37 172.72)
@@ -140,6 +177,16 @@
 			(type default)
 		)
 		(uuid "251cbfd5-dafd-4aaa-9236-257093256214")
+	)
+	(wire
+		(pts
+			(xy 227.33 49.53) (xy 227.33 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2635b121-7250-4bfc-a410-892d7f5e7786")
 	)
 	(bus
 		(pts
@@ -253,6 +300,16 @@
 	)
 	(wire
 		(pts
+			(xy 224.155 49.53) (xy 224.155 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5689a0a5-c9b5-4750-9bdb-792287e2aef7")
+	)
+	(wire
+		(pts
 			(xy 105.41 52.07) (xy 127 52.07)
 		)
 		(stroke
@@ -320,6 +377,16 @@
 			(type default)
 		)
 		(uuid "6e2cbf7b-80cf-4db1-8528-cfca70e39b19")
+	)
+	(bus
+		(pts
+			(xy 229.87 46.99) (xy 293.37 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7518513f-4f89-4003-84ea-79b2cfb4e702")
 	)
 	(wire
 		(pts
@@ -403,6 +470,16 @@
 	)
 	(wire
 		(pts
+			(xy 220.98 49.53) (xy 220.98 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "972f35e5-e543-4dca-85a5-e9166bfa439f")
+	)
+	(wire
+		(pts
 			(xy 250.19 170.815) (xy 293.37 170.815)
 		)
 		(stroke
@@ -440,6 +517,16 @@
 			(type default)
 		)
 		(uuid "9e618238-4168-42a6-b4ab-058605496752")
+	)
+	(bus
+		(pts
+			(xy 226.695 46.99) (xy 229.87 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0801132-9547-4eac-9908-730c47bc8c77")
 	)
 	(wire
 		(pts
@@ -671,6 +758,26 @@
 		)
 		(uuid "1ea0e9e1-0b54-4eb4-8120-f368145493e6")
 	)
+	(label "LED.B"
+		(at 227.33 55.245 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "374a60f5-eaac-4351-ae3e-16523dbc8fab")
+	)
+	(label "LED.G"
+		(at 224.155 55.245 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4413ad83-699e-4fb7-843e-69f200e9e5bf")
+	)
 	(label "NEOM9N.RST"
 		(at 207.01 191.135 90)
 		(effects
@@ -690,6 +797,16 @@
 			(justify left bottom)
 		)
 		(uuid "8ed5848b-d314-40f8-9a31-428820550195")
+	)
+	(label "LED.R"
+		(at 220.98 55.245 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a81d9be8-dbed-48df-abbb-fd6e3bd0a859")
 	)
 	(label "NEOM9N.RX"
 		(at 193.04 191.135 90)
@@ -1662,6 +1779,46 @@
 		(pin "SPI4{SCK, MISO, MOSI}" bidirectional
 			(at 250.19 155.575 0)
 			(uuid "546d6e70-6f22-4535-8290-1236cd93de19")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_B" output
+			(at 227.33 85.09 90)
+			(uuid "52541d40-8854-4267-9b67-8b5dd49a6047")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_G" output
+			(at 224.155 85.09 90)
+			(uuid "45dd468c-07ff-4a97-b28c-2f5ef7e35b7a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_R" output
+			(at 220.98 85.09 90)
+			(uuid "43ab5125-4c02-44d1-8ad6-db59a3982649")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SPARE_ADC2" input
+			(at 250.19 107.315 0)
+			(uuid "c329301c-88be-4ab6-afce-c057118dd925")
 			(effects
 				(font
 					(size 1.27 1.27)

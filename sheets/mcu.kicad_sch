@@ -5301,7 +5301,7 @@
 		)
 		(uuid "b9506676-ee46-4eb4-ab7d-9a06d4f22eb3")
 	)
-	(text "TOdo:\n- route PWM\n- route GPIO\n- route voltage sense\n"
+	(text "Todo:\n- route PWM\n- route GPIO\n- route voltage sense\n"
 		(exclude_from_sim no)
 		(at 213.36 145.415 0)
 		(effects
@@ -6769,6 +6769,16 @@
 	)
 	(wire
 		(pts
+			(xy 353.06 124.46) (xy 351.79 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36ae951c-a8a6-4e1b-84f5-ee95874ec34a")
+	)
+	(wire
+		(pts
 			(xy 220.98 34.29) (xy 220.98 31.75)
 		)
 		(stroke
@@ -7199,6 +7209,16 @@
 	)
 	(wire
 		(pts
+			(xy 353.06 126.365) (xy 355.6 126.365)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52b12081-9eed-4076-9bfc-15e653cddfee")
+	)
+	(wire
+		(pts
 			(xy 217.17 103.505) (xy 224.79 103.505)
 		)
 		(stroke
@@ -7466,6 +7486,16 @@
 			(type default)
 		)
 		(uuid "6a149b16-2124-46f5-b9d2-3aa478b37103")
+	)
+	(wire
+		(pts
+			(xy 353.06 123.825) (xy 353.06 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c1d42c6-3da1-406a-81a4-b65e3d8c7d76")
 	)
 	(wire
 		(pts
@@ -7889,6 +7919,16 @@
 	)
 	(wire
 		(pts
+			(xy 351.79 109.22) (xy 356.87 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9267911b-1552-42e2-a225-ac59d2cfc936")
+	)
+	(wire
+		(pts
 			(xy 266.7 24.13) (xy 266.7 29.21)
 		)
 		(stroke
@@ -8219,6 +8259,16 @@
 	)
 	(wire
 		(pts
+			(xy 351.79 127) (xy 353.06 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0ecd06a-9cb5-4996-976a-94c331260dbd")
+	)
+	(wire
+		(pts
 			(xy 157.48 92.71) (xy 157.48 93.98)
 		)
 		(stroke
@@ -8276,6 +8326,26 @@
 			(type default)
 		)
 		(uuid "b9d3d85e-4f80-4057-9a52-178804195089")
+	)
+	(wire
+		(pts
+			(xy 353.06 127) (xy 353.06 126.365)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba030c51-7cf6-4ba4-892c-4c252fbd8de2")
+	)
+	(wire
+		(pts
+			(xy 353.06 123.825) (xy 355.6 123.825)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba3c1018-7d52-429d-bf5d-335029dfe325")
 	)
 	(wire
 		(pts
@@ -9688,6 +9758,17 @@
 		)
 		(uuid "185fe942-bcb8-4cfe-961c-ddb67a4e1e6d")
 	)
+	(hierarchical_label "LED_G"
+		(shape output)
+		(at 355.6 126.365 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "214e86b9-cb8a-4a29-a0e3-662453101f1c")
+	)
 	(hierarchical_label "SPI2{SCK, MISO, MOSI}"
 		(shape bidirectional)
 		(at 368.935 143.51 0)
@@ -9776,6 +9857,17 @@
 		)
 		(uuid "5270901e-1233-4459-ac8a-bbf50a4ac7a9")
 	)
+	(hierarchical_label "LED_B"
+		(shape output)
+		(at 356.87 109.22 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5e12a517-a667-41a3-8600-07d98472d6fa")
+	)
 	(hierarchical_label "IGNITE_1"
 		(shape output)
 		(at 244.475 175.26 180)
@@ -9786,6 +9878,17 @@
 			(justify right)
 		)
 		(uuid "62d7d041-d17c-4011-b773-324670cc92b0")
+	)
+	(hierarchical_label "LED_R"
+		(shape output)
+		(at 355.6 123.825 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "68ed898e-3629-4061-a111-4471763613cc")
 	)
 	(hierarchical_label "SPARE_ADC1"
 		(shape input)
