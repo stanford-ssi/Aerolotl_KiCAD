@@ -1344,6 +1344,54 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 17.145 15.875)
+		(end 145.415 101.6)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid cdf76117-46e4-4600-9eaf-4abee4f1aefe)
+	)
+	(rectangle
+		(start 17.78 107.315)
+		(end 146.05 193.04)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid f1bb37e0-29d4-4b8b-82cd-2a91245c61b0)
+	)
+	(text "Drogue"
+		(exclude_from_sim no)
+		(at 136.525 98.425 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "a9c4d168-de27-4d33-8689-22f7302e7f0d")
+	)
+	(text "Main"
+		(exclude_from_sim no)
+		(at 137.16 187.96 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "df3d2616-3ed1-433d-b871-238492b9c499")
+	)
 	(junction
 		(at 113.03 50.8)
 		(diameter 0)

@@ -120,7 +120,7 @@
 	)
 	(bus
 		(pts
-			(xy 250.19 140.335) (xy 294.005 140.335)
+			(xy 250.19 138.43) (xy 294.005 138.43)
 		)
 		(stroke
 			(width 0)
@@ -260,7 +260,7 @@
 	)
 	(bus
 		(pts
-			(xy 250.19 138.43) (xy 294.005 138.43)
+			(xy 250.19 136.525) (xy 294.005 136.525)
 		)
 		(stroke
 			(width 0)
@@ -650,7 +650,7 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 147.955) (xy 294.005 147.955)
+			(xy 250.19 149.225) (xy 294.005 149.225)
 		)
 		(stroke
 			(width 0)
@@ -687,6 +687,16 @@
 			(type default)
 		)
 		(uuid "b0983b15-b731-47b9-9e34-86c9329c03d6")
+	)
+	(wire
+		(pts
+			(xy 250.19 140.97) (xy 294.005 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1ea1306-d643-4ecc-892d-fba7dcc21738")
 	)
 	(bus
 		(pts
@@ -750,7 +760,7 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 146.05) (xy 294.005 146.05)
+			(xy 250.19 147.32) (xy 294.005 147.32)
 		)
 		(stroke
 			(width 0)
@@ -877,6 +887,16 @@
 			(type default)
 		)
 		(uuid "f3fd0b49-815d-4818-bc19-d6e81f7cb4fe")
+	)
+	(wire
+		(pts
+			(xy 250.19 143.51) (xy 294.005 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f42853b5-a663-499e-a317-f4393aae25fc")
 	)
 	(wire
 		(pts
@@ -1158,7 +1178,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "52f7934e-6b3c-4046-8930-cc057f9c6816")
-		(property "Sheetname" "Igniters"
+		(property "Sheetname" "Igniter"
 			(at 294.005 211.3784 0)
 			(effects
 				(font
@@ -1279,7 +1299,7 @@
 			)
 		)
 		(pin "I2C2{SDA, SCL}" bidirectional
-			(at 294.005 138.43 180)
+			(at 294.005 136.525 180)
 			(uuid "addda78b-e89f-437a-983e-e20082f5aa2c")
 			(effects
 				(font
@@ -1289,7 +1309,7 @@
 			)
 		)
 		(pin "I2C4{SDA, SCL}" bidirectional
-			(at 294.005 140.335 180)
+			(at 294.005 138.43 180)
 			(uuid "58158a41-7fbb-481b-ab45-0230b55f5555")
 			(effects
 				(font
@@ -1459,7 +1479,7 @@
 			)
 		)
 		(pin "USART3_TARGET_RX" input
-			(at 294.005 146.05 180)
+			(at 294.005 147.32 180)
 			(uuid "bccadf5c-7fa0-479f-9a80-2b9768027ec5")
 			(effects
 				(font
@@ -1469,8 +1489,28 @@
 			)
 		)
 		(pin "USART3_TARGET_TX" output
-			(at 294.005 147.955 180)
+			(at 294.005 149.225 180)
 			(uuid "81e14399-8e49-4cae-a7b7-9dc0e97e07cd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PWM1" input
+			(at 294.005 140.97 180)
+			(uuid "1df2b331-4ffb-46dc-9aa6-f6f1fd0bb580")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PWM2" input
+			(at 294.005 143.51 180)
+			(uuid "5fbfd84a-743b-499d-9269-5c8dcbbb4b30")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1967,7 +2007,7 @@
 			)
 		)
 		(pin "I2C2{SDA, SCL}" input
-			(at 250.19 138.43 0)
+			(at 250.19 136.525 0)
 			(uuid "45d4b578-e0e3-43b3-a597-e5aead898426")
 			(effects
 				(font
@@ -1977,7 +2017,7 @@
 			)
 		)
 		(pin "I2C4{SDA, SCL}" input
-			(at 250.19 140.335 0)
+			(at 250.19 138.43 0)
 			(uuid "730a4d1b-4134-4199-a383-55ab7275d734")
 			(effects
 				(font
@@ -2017,7 +2057,7 @@
 			)
 		)
 		(pin "USART3_RX" input
-			(at 250.19 146.05 0)
+			(at 250.19 147.32 0)
 			(uuid "078d8e02-80d3-46fd-a4f4-e348cf02ad6d")
 			(effects
 				(font
@@ -2027,7 +2067,7 @@
 			)
 		)
 		(pin "USART3_TX" output
-			(at 250.19 147.955 0)
+			(at 250.19 149.225 0)
 			(uuid "a1c682f0-adcd-4103-9bd7-fcea39401597")
 			(effects
 				(font
@@ -2239,6 +2279,26 @@
 		(pin "UART8_TX" output
 			(at 250.19 154.94 0)
 			(uuid "39944a94-b595-4242-b11b-897c9c81bab4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PWM1" output
+			(at 250.19 140.97 0)
+			(uuid "9096cf63-c89d-47c3-9335-f0132f82a2d3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PWM2" output
+			(at 250.19 143.51 0)
+			(uuid "f175e75a-2009-4314-92df-7aa597c7c67d")
 			(effects
 				(font
 					(size 1.27 1.27)
