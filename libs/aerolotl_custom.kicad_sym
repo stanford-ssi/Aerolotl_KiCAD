@@ -3068,7 +3068,9 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+		)
+		(symbol "StemmaQT_1_1"
+			(pin power_in line
 				(at -5.08 5.08 0)
 				(length 2.54)
 				(name "1"
@@ -3086,7 +3088,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_in line
 				(at -5.08 2.54 0)
 				(length 2.54)
 				(name "2"
@@ -3104,7 +3106,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin bidirectional line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "3"
@@ -3122,7 +3124,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin bidirectional line
 				(at -5.08 -2.54 0)
 				(length 2.54)
 				(name "4"
@@ -3140,7 +3142,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_in line
 				(at -5.08 -5.08 0)
 				(length 2.54)
 				(name "0"
@@ -3860,24 +3862,6 @@
 					)
 				)
 			)
-			(pin output line
-				(at 17.78 2.54 180)
-				(length 5.08)
-				(name "PH_12"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "12"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
 			(pin input line
 				(at 17.78 -8.89 180)
 				(length 5.08)
@@ -3907,6 +3891,26 @@
 					)
 				)
 				(number "8"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+		)
+		(symbol "TPS54620RGYR_1_0"
+			(pin passive line
+				(at 17.78 2.54 180)
+				(length 5.08)
+				(name "PH_12"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "12"
 					(effects
 						(font
 							(size 1.016 1.016)

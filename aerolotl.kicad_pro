@@ -226,7 +226,20 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "pin_to_pin|660400|2209800|addea888-21df-44ef-b5a1-bc4264aead40|13ac1d86-dd1c-489a-9b86-4a67f1829a9f|/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/ab6692e5-8cdb-4044-acef-dc950a39c5fc|/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/ab6692e5-8cdb-4044-acef-dc950a39c5fc|/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/ab6692e5-8cdb-4044-acef-dc950a39c5fc",
+        "All VCAP pins can be connected"
+      ],
+      [
+        "pin_to_pin|660400|2235200|13ac1d86-dd1c-489a-9b86-4a67f1829a9f|321abc23-8933-4b21-a4f4-0b305dabf013|/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/ab6692e5-8cdb-4044-acef-dc950a39c5fc|/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/ab6692e5-8cdb-4044-acef-dc950a39c5fc|/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/ab6692e5-8cdb-4044-acef-dc950a39c5fc",
+        "All VCAP pins can be connected"
+      ],
+      [
+        "power_pin_not_driven|660400|1066800|e1fc4591-2e40-4086-a241-d478ba72b509|00000000-0000-0000-0000-000000000000|/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/ab6692e5-8cdb-4044-acef-dc950a39c5fc|/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/ab6692e5-8cdb-4044-acef-dc950a39c5fc|",
+        "VLXSMPS is switching regulator to generate lower voltage for core, is a voltage out"
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -700,7 +713,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "revs/",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",

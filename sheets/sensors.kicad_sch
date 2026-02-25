@@ -1757,7 +1757,9 @@
 						(type none)
 					)
 				)
-				(pin unspecified line
+			)
+			(symbol "StemmaQT_1_1"
+				(pin power_in line
 					(at -5.08 5.08 0)
 					(length 2.54)
 					(name "1"
@@ -1775,7 +1777,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at -5.08 2.54 0)
 					(length 2.54)
 					(name "2"
@@ -1793,7 +1795,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at -5.08 0 0)
 					(length 2.54)
 					(name "3"
@@ -1811,7 +1813,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at -5.08 -2.54 0)
 					(length 2.54)
 					(name "4"
@@ -1829,7 +1831,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at -5.08 -5.08 0)
 					(length 2.54)
 					(name "0"
@@ -2057,131 +2059,6 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "power:VDD"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "VDD"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VDD\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "VDD_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VDD_1_1"
-				(pin power_in line
-					(at 0 0 90)
 					(length 0)
 					(name "~"
 						(effects
@@ -3257,7 +3134,7 @@
 	)
 	(wire
 		(pts
-			(xy 267.97 69.85) (xy 267.97 72.39)
+			(xy 267.97 67.31) (xy 267.97 72.39)
 		)
 		(stroke
 			(width 0)
@@ -4050,7 +3927,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "073b5b48-7b7e-4019-9aaa-338179d8e9d0")
-		(property "Reference" "#PWR053"
+		(property "Reference" "#PWR049"
 			(at 90.17 67.31 0)
 			(effects
 				(font
@@ -4100,7 +3977,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "#PWR053")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -4116,7 +3993,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0ef4b91c-618d-4c60-92e8-8f6a590508d0")
-		(property "Reference" "#PWR092"
+		(property "Reference" "#PWR064"
 			(at 254 132.08 0)
 			(effects
 				(font
@@ -4167,7 +4044,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "#PWR092")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -4183,7 +4060,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "120befab-a9aa-4c3a-993f-b140d9eb09a7")
-		(property "Reference" "C32"
+		(property "Reference" "C42"
 			(at 26.67 158.7499 0)
 			(effects
 				(font
@@ -4237,7 +4114,73 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "C32")
+					(reference "C42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 172.72 53.34 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2038fc87-f963-47dd-be49-4fc07e4a3c9d")
+		(property "Reference" "#PWR054"
+			(at 176.53 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 172.72 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 172.72 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 172.72 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1bbd145b-bf41-4a4a-ac8e-9c2442d112b2")
+		)
+		(instances
+			(project "aerolotl"
+				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -4253,7 +4196,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "21f00ea7-220c-46f3-944d-cde2ad272b64")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR061"
 			(at 223.52 38.1 0)
 			(effects
 				(font
@@ -4304,7 +4247,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "#PWR058")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -4320,7 +4263,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "222b5e9c-1298-4458-ae8a-fa92a73a06cd")
-		(property "Reference" "#PWR088"
+		(property "Reference" "#PWR059"
 			(at 186.69 124.46 0)
 			(effects
 				(font
@@ -4371,7 +4314,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "#PWR088")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -4387,7 +4330,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "28378df3-56a9-4b31-8646-7e194eff814c")
-		(property "Reference" "#PWR048"
+		(property "Reference" "#PWR042"
 			(at 33.02 142.24 0)
 			(effects
 				(font
@@ -4437,7 +4380,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "#PWR048")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -4523,7 +4466,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2dd993b3-8df0-4def-b383-5de479d58d0f")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR062"
 			(at 232.41 26.67 0)
 			(effects
 				(font
@@ -4573,7 +4516,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "#PWR055")
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -4589,7 +4532,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2eb92d73-0032-48fd-9b33-64594d9e3843")
-		(property "Reference" "#PWR062"
+		(property "Reference" "#PWR060"
 			(at 184.15 127 0)
 			(effects
 				(font
@@ -4640,7 +4583,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "#PWR062")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -4656,7 +4599,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2f0dda12-8bc0-4a12-8da3-f95313f919ae")
-		(property "Reference" "U7"
+		(property "Reference" "U8"
 			(at 203.2 33.02 0)
 			(effects
 				(font
@@ -4885,7 +4828,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "U7")
+					(reference "U8")
 					(unit 1)
 				)
 			)
@@ -4901,7 +4844,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2f55fed4-bc49-4fb3-889d-1a66d0ae976b")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR044"
 			(at 52.07 30.48 0)
 			(effects
 				(font
@@ -4951,7 +4894,7 @@
 		(instances
 			(project ""
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "#PWR034")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -5037,7 +4980,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "38a6590e-72ea-4ae4-a92d-5404499fdd9e")
-		(property "Reference" "R24"
+		(property "Reference" "R17"
 			(at 35.56 143.5099 0)
 			(effects
 				(font
@@ -5091,7 +5034,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "R24")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -5107,7 +5050,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "39823771-2dd5-450c-afe7-6774c2e4b42c")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR041"
 			(at 22.86 170.18 0)
 			(effects
 				(font
@@ -5158,72 +5101,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "#PWR050")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VDD")
-		(at 172.72 53.34 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "45aa1e86-46af-413f-980c-80ab58fede7f")
-		(property "Reference" "#PWR090"
-			(at 176.53 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDD"
-			(at 168.91 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 172.72 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 172.72 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 172.72 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "46dc6b42-4432-4442-b893-da910a6c9300")
-		)
-		(instances
-			(project "aerolotl"
-				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "#PWR090")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -5239,7 +5117,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5ac993f2-97a8-4e96-a073-82df6b6af3e2")
-		(property "Reference" "R25"
+		(property "Reference" "R18"
 			(at 76.2 143.5099 0)
 			(effects
 				(font
@@ -5293,72 +5171,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "R25")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VDD")
-		(at 267.97 69.85 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "611c4373-e12b-49ce-bc1f-8f325399ce6c")
-		(property "Reference" "#PWR057"
-			(at 267.97 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDD"
-			(at 267.97 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 267.97 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 267.97 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 267.97 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8addef97-7918-4c66-a19a-90862bd852f0")
-		)
-		(instances
-			(project "aerolotl"
-				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "#PWR057")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -5513,7 +5326,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "828f3e1a-0591-4dde-940f-dd7f765d7e73")
-		(property "Reference" "#PWR087"
+		(property "Reference" "#PWR053"
 			(at 170.18 124.46 0)
 			(effects
 				(font
@@ -5564,7 +5377,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "#PWR087")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -5580,7 +5393,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "887712e5-653b-415c-9667-3e02f2a6bc55")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR066"
 			(at 267.97 88.9 0)
 			(effects
 				(font
@@ -5631,7 +5444,74 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "#PWR059")
+					(reference "#PWR066")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 179.07 129.54 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "88a2c00b-ed7a-446c-ac2a-373c07fed63f")
+		(property "Reference" "#PWR057"
+			(at 182.88 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 175.26 129.5399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 179.07 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "80865a09-b707-4b33-8410-ac4c9288ff8d")
+		)
+		(instances
+			(project "aerolotl"
+				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -5647,7 +5527,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "898de5ce-f3d6-4797-8a57-20112c6257bc")
-		(property "Reference" "#PWR086"
+		(property "Reference" "#PWR046"
 			(at 78.74 172.72 0)
 			(effects
 				(font
@@ -5699,7 +5579,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "#PWR086")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -5715,7 +5595,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "90190b06-bea6-4bbb-9a31-a673559238fa")
-		(property "Reference" "U3"
+		(property "Reference" "U6"
 			(at 115.57 31.75 0)
 			(effects
 				(font
@@ -5806,7 +5686,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "U3")
+					(reference "U6")
 					(unit 1)
 				)
 			)
@@ -5822,7 +5702,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "907b9601-6f29-4e12-acd2-dd7f025f59fd")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR050"
 			(at 92.71 58.42 0)
 			(effects
 				(font
@@ -5872,7 +5752,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "#PWR054")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -5888,7 +5768,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9523c722-74ff-42d3-9847-ec79a1d4228d")
-		(property "Reference" "#PWR089"
+		(property "Reference" "#PWR055"
 			(at 167.64 55.88 0)
 			(effects
 				(font
@@ -5939,7 +5819,95 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "#PWR089")
+					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "aerolotl_custom:StemmaQT")
+		(at 62.23 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9fd1fbc0-b641-4c0d-8b8b-05cba23237b0")
+		(property "Reference" "CN1"
+			(at 68.58 35.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "StemmaQT"
+			(at 68.58 38.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "aerolotl_custom:CONN-SMD_BM04B-SRSS-TB"
+			(at 62.23 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Others_JST-Sales-America__JST-Sales-America-BM04B-SRSS-TB-LF-SN_C160390.html"
+			(at 62.23 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 62.23 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C160390"
+			(at 62.23 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "70a8cff5-90d4-40bc-a078-ab434c02410a")
+		)
+		(pin "2"
+			(uuid "a802162f-4887-4e9f-bd47-6d23524c412b")
+		)
+		(pin "0"
+			(uuid "c89e8680-fe3d-405f-9ba9-5041141d2ebb")
+		)
+		(pin "3"
+			(uuid "290dd0a8-5da2-4946-b80b-4ae8a76dbe4a")
+		)
+		(pin "4"
+			(uuid "4845575d-2699-4df3-afb3-b00d9a0b73d6")
+		)
+		(instances
+			(project ""
+				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
+					(reference "CN1")
 					(unit 1)
 				)
 			)
@@ -5955,7 +5923,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a1be9268-9394-49c7-ae9a-60ca0f144ef6")
-		(property "Reference" "C33"
+		(property "Reference" "C43"
 			(at 82.55 154.9399 0)
 			(effects
 				(font
@@ -6009,7 +5977,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "C33")
+					(reference "C43")
 					(unit 1)
 				)
 			)
@@ -6025,7 +5993,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a3ad0e77-0e75-4212-b1f5-f6056d40e09c")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR045"
 			(at 54.61 50.8 0)
 			(effects
 				(font
@@ -6075,7 +6043,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "#PWR047")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -6091,7 +6059,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a8852d22-b2b9-4a71-8ba1-bb5f1451d475")
-		(property "Reference" "U2"
+		(property "Reference" "U7"
 			(at 54.61 160.02 0)
 			(effects
 				(font
@@ -6176,42 +6144,24 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "U2")
+					(reference "U7")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "aerolotl_custom:StemmaQT")
-		(at 62.23 36.83 0)
+		(lib_id "power:+3V3")
+		(at 267.97 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ace5c460-2027-4d9e-8fa0-9c1ee6181c25")
-		(property "Reference" "CN1"
-			(at 68.58 35.5599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "StemmaQT"
-			(at 68.58 38.0999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "aerolotl_custom:CONN-SMD_BM04B-SRSS-TB"
-			(at 62.23 49.53 0)
+		(uuid "ac436b8a-04d3-4d06-94da-55e71891a542")
+		(property "Reference" "#PWR065"
+			(at 267.97 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6219,8 +6169,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Others_JST-Sales-America__JST-Sales-America-BM04B-SRSS-TB-LF-SN_C160390.html"
-			(at 62.23 52.07 0)
+		(property "Value" "+3V3"
+			(at 267.97 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 267.97 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6228,8 +6186,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 62.23 36.83 0)
+		(property "Datasheet" ""
+			(at 267.97 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6237,34 +6195,22 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C160390"
-			(at 62.23 54.61 0)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 267.97 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "4"
-			(uuid "d92c38ae-b9f5-4b62-92e4-d6b6c78ce7e9")
-		)
-		(pin "0"
-			(uuid "c4406c1c-8690-4e12-979b-0b0e5366e2bf")
-		)
-		(pin "3"
-			(uuid "5509d103-3005-4d17-b6f9-20301a09d285")
 		)
 		(pin "1"
-			(uuid "11c0f1f3-2119-445c-b92e-47a80448b20d")
-		)
-		(pin "2"
-			(uuid "d9781045-43ad-466e-812e-3466f132c1c4")
+			(uuid "8b9675f1-5ff5-4804-b1d8-2667bec53df7")
 		)
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "CN1")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -6280,7 +6226,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b4ced3db-1b96-4b9f-b7fe-49a05752985e")
-		(property "Reference" "U5"
+		(property "Reference" "U9"
 			(at 220.98 116.84 0)
 			(effects
 				(font
@@ -6296,7 +6242,7 @@
 				)
 			)
 		)
-		(property "Footprint" "aerolotl_custom:LGA-14_L5.0-W3.0-P0.80-BL"
+		(property "Footprint" "aerolotl_custom:ADXL375_LGA-14_L5.0-W3.0-P0.80-BL"
 			(at 220.98 147.32 0)
 			(effects
 				(font
@@ -6377,7 +6323,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "U5")
+					(reference "U9")
 					(unit 1)
 				)
 			)
@@ -6393,7 +6339,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b81ef8f4-fdcd-40b2-b967-bf4520ffdbfb")
-		(property "Reference" "#PWR061"
+		(property "Reference" "#PWR058"
 			(at 182.88 107.95 0)
 			(effects
 				(font
@@ -6443,7 +6389,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "#PWR061")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -6459,7 +6405,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bc811b31-1e36-4c84-a802-87bcfef986a3")
-		(property "Reference" "#PWR094"
+		(property "Reference" "#PWR051"
 			(at 137.16 52.07 0)
 			(effects
 				(font
@@ -6509,7 +6455,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "#PWR094")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -6525,7 +6471,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c07e5845-6904-4641-b615-ad68f63e7031")
-		(property "Reference" "#PWR060"
+		(property "Reference" "#PWR056"
 			(at 177.8 107.95 0)
 			(effects
 				(font
@@ -6575,7 +6521,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "#PWR060")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -6591,7 +6537,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c408d7e2-1612-41cb-9336-fa0dbbc42841")
-		(property "Reference" "#PWR093"
+		(property "Reference" "#PWR052"
 			(at 140.97 58.42 0)
 			(effects
 				(font
@@ -6641,7 +6587,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "#PWR093")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -6657,7 +6603,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cdca9c43-fa64-4814-b43e-bc83188f4c58")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR047"
 			(at 73.66 142.24 0)
 			(effects
 				(font
@@ -6707,72 +6653,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "#PWR049")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VDD")
-		(at 179.07 129.54 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d7fc56f3-6be6-4da5-a475-e40aad0ba410")
-		(property "Reference" "#PWR091"
-			(at 182.88 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDD"
-			(at 175.26 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 179.07 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 179.07 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 179.07 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0ae03cb8-335b-4dff-af69-642f78cba2c5")
-		)
-		(instances
-			(project "aerolotl"
-				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "#PWR091")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -6788,7 +6669,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f1a5d88c-4dd1-4b46-bcd3-7d9482143a7b")
-		(property "Reference" "#PWR052"
+		(property "Reference" "#PWR043"
 			(at 33.02 170.18 0)
 			(effects
 				(font
@@ -6840,7 +6721,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "#PWR052")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -6856,7 +6737,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f9796f4a-6beb-4060-bc3e-f61c6291f7ae")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR048"
 			(at 78.74 166.37 0)
 			(effects
 				(font
@@ -6907,7 +6788,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "#PWR051")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -6923,7 +6804,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f9f0e157-0183-48d8-881c-4c190a2cc80f")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR063"
 			(at 232.41 77.47 0)
 			(effects
 				(font
@@ -6974,7 +6855,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "#PWR056")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)

@@ -1949,146 +1949,21 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:VCC"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "VCC"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VCC\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "VCC_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VCC_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(junction
-		(at 82.55 43.18)
+		(at 91.44 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "177e82d0-f358-4417-ba17-44f1278d0894")
 	)
 	(junction
-		(at 82.55 30.48)
+		(at 91.44 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ed437709-fb27-44f5-8e0f-37a78091c246")
 	)
 	(bus_entry
-		(at 53.34 45.085)
+		(at 55.88 39.37)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -2097,7 +1972,7 @@
 		(uuid "668e4429-a13a-46e3-b05b-c92202a7a957")
 	)
 	(bus_entry
-		(at 53.34 34.925)
+		(at 55.88 29.21)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -2106,7 +1981,7 @@
 		(uuid "7614ae01-28b0-4482-a632-bd4cb71a3ca0")
 	)
 	(bus_entry
-		(at 53.34 40.005)
+		(at 55.88 34.29)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -2116,7 +1991,27 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 31.115) (xy 186.69 34.29)
+			(xy 21.59 36.83) (xy 24.13 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "036fb8eb-64f6-45a7-8409-3f1be63c75a9")
+	)
+	(wire
+		(pts
+			(xy 44.45 36.83) (xy 53.34 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "074716b9-94fa-42b8-82f5-dd28c915e134")
+	)
+	(wire
+		(pts
+			(xy 194.31 26.67) (xy 194.31 31.75)
 		)
 		(stroke
 			(width 0)
@@ -2126,7 +2021,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 46.99) (xy 82.55 43.18)
+			(xy 91.44 44.45) (xy 91.44 40.64)
 		)
 		(stroke
 			(width 0)
@@ -2136,7 +2031,17 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 35.56) (xy 95.25 38.1)
+			(xy 194.31 49.53) (xy 194.31 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28952054-936d-496c-95e6-0156433003cd")
+	)
+	(wire
+		(pts
+			(xy 104.14 33.02) (xy 104.14 35.56)
 		)
 		(stroke
 			(width 0)
@@ -2146,7 +2051,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 29.21) (xy 135.89 34.29)
+			(xy 144.78 26.67) (xy 144.78 31.75)
 		)
 		(stroke
 			(width 0)
@@ -2156,17 +2061,37 @@
 	)
 	(wire
 		(pts
-			(xy 45.085 47.625) (xy 50.8 47.625)
+			(xy 44.45 41.91) (xy 53.34 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3bffd343-f5cd-460b-9103-d037165bd789")
+		(uuid "34ebd131-5515-4607-9a76-a6ed3a9f0082")
 	)
 	(wire
 		(pts
-			(xy 151.13 31.75) (xy 151.13 34.29)
+			(xy 34.29 41.91) (xy 36.83 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40cc83e5-f819-4fba-ab12-6762f14c1963")
+	)
+	(wire
+		(pts
+			(xy 177.8 41.91) (xy 177.8 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ece42ed-cae7-4e44-b915-5cc510821a7a")
+	)
+	(wire
+		(pts
+			(xy 160.02 29.21) (xy 160.02 31.75)
 		)
 		(stroke
 			(width 0)
@@ -2176,7 +2101,7 @@
 	)
 	(bus
 		(pts
-			(xy 53.34 29.21) (xy 53.34 34.925)
+			(xy 55.88 24.13) (xy 55.88 29.21)
 		)
 		(stroke
 			(width 0)
@@ -2186,7 +2111,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 43.18) (xy 82.55 43.18)
+			(xy 78.74 40.64) (xy 91.44 40.64)
 		)
 		(stroke
 			(width 0)
@@ -2196,7 +2121,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 43.18) (xy 82.55 39.37)
+			(xy 91.44 40.64) (xy 91.44 36.83)
 		)
 		(stroke
 			(width 0)
@@ -2206,7 +2131,7 @@
 	)
 	(bus
 		(pts
-			(xy 53.34 40.005) (xy 53.34 45.085)
+			(xy 55.88 34.29) (xy 55.88 39.37)
 		)
 		(stroke
 			(width 0)
@@ -2216,17 +2141,17 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 42.545) (xy 26.67 42.545)
+			(xy 44.45 31.75) (xy 53.34 31.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "756a8602-5c45-4c79-86e2-7c3a8f6ff7e4")
+		(uuid "75e52a6b-6a80-4f51-9b69-cf0c768100e7")
 	)
 	(wire
 		(pts
-			(xy 82.55 30.48) (xy 95.25 30.48)
+			(xy 91.44 27.94) (xy 104.14 27.94)
 		)
 		(stroke
 			(width 0)
@@ -2236,7 +2161,17 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 43.18) (xy 87.63 43.18)
+			(xy 34.29 31.75) (xy 36.83 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a3ed3f0-5107-415d-a888-b0bd808af550")
+	)
+	(wire
+		(pts
+			(xy 91.44 40.64) (xy 96.52 40.64)
 		)
 		(stroke
 			(width 0)
@@ -2246,7 +2181,17 @@
 	)
 	(wire
 		(pts
-			(xy 169.545 31.115) (xy 169.545 34.29)
+			(xy 213.36 52.07) (xy 213.36 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "859caae0-00a1-4502-8df0-e6bf29c713c6")
+	)
+	(wire
+		(pts
+			(xy 177.8 26.67) (xy 177.8 30.48)
 		)
 		(stroke
 			(width 0)
@@ -2256,37 +2201,37 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 37.465) (xy 37.465 37.465)
+			(xy 91.44 24.13) (xy 91.44 27.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9c5ea099-268c-4c3e-a2b5-1ed884e791e3")
+		(uuid "9afebc09-0f02-4269-a2b7-3872acdb12cc")
 	)
 	(wire
 		(pts
-			(xy 36.83 47.625) (xy 37.465 47.625)
+			(xy 34.29 36.83) (xy 36.83 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a1c9e333-f75b-4ad8-9e8a-a0c7e2f94473")
+		(uuid "9cdb096e-9931-4a98-811e-5b2bc2b4c23b")
 	)
 	(wire
 		(pts
-			(xy 45.085 37.465) (xy 50.8 37.465)
+			(xy 194.31 41.91) (xy 194.31 39.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ae952874-8ca0-4401-9735-ba4d68e18980")
+		(uuid "9f56b9cf-99fc-4f1d-887b-ca49032a0415")
 	)
 	(wire
 		(pts
-			(xy 204.47 31.115) (xy 204.47 34.925)
+			(xy 213.36 29.21) (xy 213.36 31.75)
 		)
 		(stroke
 			(width 0)
@@ -2296,7 +2241,7 @@
 	)
 	(bus
 		(pts
-			(xy 53.34 34.925) (xy 53.34 40.005)
+			(xy 55.88 29.21) (xy 55.88 34.29)
 		)
 		(stroke
 			(width 0)
@@ -2306,7 +2251,17 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 31.75) (xy 82.55 30.48)
+			(xy 213.36 40.64) (xy 213.36 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5c94ade-bef3-417e-8963-20cd7dced712")
+	)
+	(wire
+		(pts
+			(xy 91.44 29.21) (xy 91.44 27.94)
 		)
 		(stroke
 			(width 0)
@@ -2316,7 +2271,17 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 56.515) (xy 82.55 54.61)
+			(xy 177.8 50.8) (xy 177.8 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7916b12-62a6-4785-836a-639e906a1172")
+	)
+	(wire
+		(pts
+			(xy 91.44 58.42) (xy 91.44 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2324,38 +2289,8 @@
 		)
 		(uuid "c47d7e31-8b2b-477f-8bfb-d7fbfb824e9c")
 	)
-	(wire
-		(pts
-			(xy 82.55 28.575) (xy 82.55 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cb19f24d-4b28-49fc-a464-687098749a1c")
-	)
-	(wire
-		(pts
-			(xy 36.83 42.545) (xy 37.465 42.545)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e995591f-709c-4d87-825f-40219a1facc7")
-	)
-	(wire
-		(pts
-			(xy 45.085 42.545) (xy 50.8 42.545)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f9568d36-70bd-4ed1-af45-9f7169ed3f61")
-	)
 	(label "LED.R"
-		(at 45.72 37.465 0)
+		(at 48.26 31.75 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2365,7 +2300,7 @@
 		(uuid "70cdf346-98d1-47c6-a1c8-cbfbd9e683b2")
 	)
 	(label "LED.G"
-		(at 45.72 42.545 0)
+		(at 48.26 36.83 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2375,7 +2310,7 @@
 		(uuid "b015a384-be99-44f3-9056-30f6376876ac")
 	)
 	(label "LED.B"
-		(at 45.72 47.625 0)
+		(at 48.26 41.91 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2386,7 +2321,7 @@
 	)
 	(hierarchical_label "LED"
 		(shape input)
-		(at 135.89 29.21 90)
+		(at 144.78 26.67 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2397,7 +2332,7 @@
 	)
 	(hierarchical_label "BUZZER"
 		(shape input)
-		(at 69.85 43.18 180)
+		(at 78.74 40.64 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2408,7 +2343,7 @@
 	)
 	(hierarchical_label "LED{R, G, B}"
 		(shape input)
-		(at 53.34 29.21 0)
+		(at 55.88 24.13 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2419,15 +2354,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 41.275 47.625 90)
+		(at 40.64 41.91 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "02670440-2fa8-46a9-b55b-f6bc6079efd9")
-		(property "Reference" "R38"
-			(at 41.275 47.625 90)
+		(property "Reference" "R21"
+			(at 40.64 41.91 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2435,7 +2370,7 @@
 			)
 		)
 		(property "Value" "330"
-			(at 45.72 48.895 90)
+			(at 45.085 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2443,7 +2378,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 41.275 49.403 90)
+			(at 40.64 43.688 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2452,7 +2387,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 41.275 47.625 0)
+			(at 40.64 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2461,7 +2396,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 41.275 47.625 0)
+			(at 40.64 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2478,7 +2413,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
-					(reference "R38")
+					(reference "R21")
 					(unit 1)
 				)
 			)
@@ -2486,15 +2421,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 41.275 37.465 90)
+		(at 40.64 31.75 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "14412ac6-ba6e-493b-ac2e-0b43c5a45ae6")
-		(property "Reference" "R36"
-			(at 41.275 37.465 90)
+		(property "Reference" "R19"
+			(at 40.64 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2502,7 +2437,7 @@
 			)
 		)
 		(property "Value" "330"
-			(at 45.72 38.735 90)
+			(at 45.085 33.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2510,7 +2445,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 41.275 39.243 90)
+			(at 40.64 33.528 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2519,7 +2454,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 41.275 37.465 0)
+			(at 40.64 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2528,7 +2463,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 41.275 37.465 0)
+			(at 40.64 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2545,7 +2480,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
-					(reference "R36")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -2553,7 +2488,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 82.55 50.8 0)
+		(at 91.44 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2561,8 +2496,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1dae4d44-1b4b-480f-ae6a-cf98f85113b6")
-		(property "Reference" "R18"
-			(at 85.09 49.5299 0)
+		(property "Reference" "R22"
+			(at 93.98 46.9899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2571,7 +2506,7 @@
 			)
 		)
 		(property "Value" "3.3k"
-			(at 85.09 52.0699 0)
+			(at 93.98 49.5299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2580,7 +2515,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 80.772 50.8 90)
+			(at 89.662 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2589,7 +2524,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 82.55 50.8 0)
+			(at 91.44 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2598,7 +2533,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 82.55 50.8 0)
+			(at 91.44 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2615,7 +2550,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
-					(reference "R18")
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -2623,7 +2558,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 151.13 45.72 0)
+		(at 160.02 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2631,8 +2566,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "20abfa3d-ef7b-4ba0-aeb0-21f8c46eabe9")
-		(property "Reference" "R20"
-			(at 153.67 44.4499 0)
+		(property "Reference" "R24"
+			(at 162.56 41.9099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2641,7 +2576,7 @@
 			)
 		)
 		(property "Value" "330"
-			(at 153.67 46.9899 0)
+			(at 162.56 44.4499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2650,7 +2585,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 149.352 45.72 90)
+			(at 158.242 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2659,7 +2594,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 151.13 45.72 0)
+			(at 160.02 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2668,7 +2603,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 151.13 45.72 0)
+			(at 160.02 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2685,7 +2620,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
-					(reference "R20")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -2693,7 +2628,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 135.89 38.1 90)
+		(at 144.78 35.56 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2701,8 +2636,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2101f811-b8d1-417f-b3e1-9969a4b4161b")
-		(property "Reference" "D4"
-			(at 139.7 38.4174 90)
+		(property "Reference" "D2"
+			(at 148.59 35.8774 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2711,7 +2646,7 @@
 			)
 		)
 		(property "Value" "STM LED"
-			(at 139.7 40.9574 90)
+			(at 148.59 38.4174 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2720,7 +2655,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 135.89 38.1 0)
+			(at 144.78 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2729,7 +2664,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 135.89 38.1 0)
+			(at 144.78 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2738,7 +2673,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 135.89 38.1 0)
+			(at 144.78 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2747,7 +2682,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 135.89 38.1 0)
+			(at 144.78 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2764,33 +2699,33 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
-					(reference "D4")
+					(reference "D2")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 169.545 45.72 0)
+		(lib_id "power:+3V3")
+		(at 21.59 36.83 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "31b99947-e315-491a-92e2-c2472ab484d0")
-		(property "Reference" "R21"
-			(at 172.085 44.4499 0)
+		(uuid "2f0aa401-8d71-4f75-9018-09e1fc90bb50")
+		(property "Reference" "#PWR067"
+			(at 25.4 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Value" "820"
-			(at 172.085 46.9899 0)
+		(property "Value" "+3V3"
+			(at 17.78 36.8299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2799,7 +2734,140 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 167.767 45.72 90)
+			(at 21.59 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 21.59 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 21.59 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ad1186ce-9f73-4105-9bc0-94515158541d")
+		)
+		(instances
+			(project "aerolotl"
+				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
+					(reference "#PWR067")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 91.44 24.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "319df5c2-2142-48be-9987-30a4aa0761da")
+		(property "Reference" "#PWR068"
+			(at 91.44 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 91.44 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.44 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 91.44 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e30a9db2-1a13-4d54-9ba4-53585fa2c710")
+		)
+		(instances
+			(project ""
+				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
+					(reference "#PWR068")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 177.8 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "31b99947-e315-491a-92e2-c2472ab484d0")
+		(property "Reference" "R25"
+			(at 180.34 44.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "820"
+			(at 180.34 46.9899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 176.022 45.72 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2808,7 +2876,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 169.545 45.72 0)
+			(at 177.8 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2817,7 +2885,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 169.545 45.72 0)
+			(at 177.8 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2834,7 +2902,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
-					(reference "R21")
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -2842,7 +2910,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 135.89 49.53 0)
+		(at 144.78 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2850,8 +2918,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3255ff00-092b-4741-bbde-b4eeb45b697d")
-		(property "Reference" "#PWR070"
-			(at 135.89 55.88 0)
+		(property "Reference" "#PWR071"
+			(at 144.78 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2860,7 +2928,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 135.89 54.61 0)
+			(at 144.78 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2869,7 +2937,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 135.89 49.53 0)
+			(at 144.78 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2878,7 +2946,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 135.89 49.53 0)
+			(at 144.78 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2887,7 +2955,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 135.89 49.53 0)
+			(at 144.78 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2901,74 +2969,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
-					(reference "#PWR070")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 25.4 42.545 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "34e3a0c7-cc73-4f05-933e-d1056c622c5f")
-		(property "Reference" "#PWR066"
-			(at 29.21 42.545 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 21.59 42.5449 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 25.4 42.545 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 25.4 42.545 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 25.4 42.545 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "dab0ab71-2f6f-4273-9985-8a73e20ab536")
-		)
-		(instances
-			(project "aerolotl"
-				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
-					(reference "#PWR066")
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -2976,7 +2977,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 204.47 46.355 0)
+		(at 213.36 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2984,8 +2985,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "36a4c114-5516-42f7-91c3-cfae48125f14")
-		(property "Reference" "R23"
-			(at 207.01 45.0849 0)
+		(property "Reference" "R27"
+			(at 215.9 43.1799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2994,7 +2995,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 207.01 47.6249 0)
+			(at 215.9 45.7199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3003,7 +3004,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 202.692 46.355 90)
+			(at 211.582 44.45 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3012,7 +3013,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 204.47 46.355 0)
+			(at 213.36 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3021,7 +3022,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 204.47 46.355 0)
+			(at 213.36 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3038,7 +3039,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
-					(reference "R23")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -3046,7 +3047,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 82.55 56.515 0)
+		(at 91.44 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3054,8 +3055,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "44b5cb4d-f56a-4e63-b771-f0ea60a301d3")
-		(property "Reference" "#PWR065"
-			(at 82.55 62.865 0)
+		(property "Reference" "#PWR069"
+			(at 91.44 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3064,7 +3065,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 82.55 61.595 0)
+			(at 91.44 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3073,7 +3074,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 82.55 56.515 0)
+			(at 91.44 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3082,7 +3083,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 82.55 56.515 0)
+			(at 91.44 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3091,7 +3092,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 82.55 56.515 0)
+			(at 91.44 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3105,7 +3106,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
-					(reference "#PWR065")
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)
@@ -3113,7 +3114,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 151.13 49.53 0)
+		(at 160.02 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3122,7 +3123,7 @@
 		(fields_autoplaced yes)
 		(uuid "479666d2-79ed-4d05-b7d0-3884bd2d2736")
 		(property "Reference" "#PWR073"
-			(at 151.13 55.88 0)
+			(at 160.02 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3131,7 +3132,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 151.13 54.61 0)
+			(at 160.02 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3140,7 +3141,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 151.13 49.53 0)
+			(at 160.02 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3149,7 +3150,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 151.13 49.53 0)
+			(at 160.02 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3158,7 +3159,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 151.13 49.53 0)
+			(at 160.02 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3180,7 +3181,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 95.25 48.26 0)
+		(at 104.14 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3188,8 +3189,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4bdeac8a-13d2-48af-b7c7-23b1057f2574")
-		(property "Reference" "#PWR064"
-			(at 95.25 54.61 0)
+		(property "Reference" "#PWR070"
+			(at 104.14 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3198,7 +3199,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 95.25 53.34 0)
+			(at 104.14 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3207,7 +3208,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 95.25 48.26 0)
+			(at 104.14 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3216,7 +3217,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 95.25 48.26 0)
+			(at 104.14 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3225,7 +3226,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 95.25 48.26 0)
+			(at 104.14 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3239,7 +3240,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
-					(reference "#PWR064")
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -3247,15 +3248,15 @@
 	)
 	(symbol
 		(lib_id "aerolotl_custom:+7V4_SERVO")
-		(at 186.69 31.115 0)
+		(at 194.31 26.67 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
 		(dnp no)
 		(uuid "51d87ce4-f9f0-49d2-a416-16ece2b334de")
-		(property "Reference" "#PWR067"
-			(at 186.69 31.115 0)
+		(property "Reference" "#PWR076"
+			(at 194.31 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3264,7 +3265,7 @@
 			)
 		)
 		(property "Value" "+7V4_SERVO"
-			(at 186.69 26.67 0)
+			(at 194.31 22.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3272,7 +3273,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 186.69 31.115 0)
+			(at 194.31 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3281,7 +3282,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 186.69 31.115 0)
+			(at 194.31 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3290,7 +3291,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 186.69 31.115 0)
+			(at 194.31 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3304,7 +3305,7 @@
 		(instances
 			(project ""
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
-					(reference "#PWR067")
+					(reference "#PWR076")
 					(unit 1)
 				)
 			)
@@ -3312,7 +3313,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 151.13 31.75 0)
+		(at 160.02 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3320,8 +3321,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5431f718-b699-4dc3-b778-471129f88cdd")
-		(property "Reference" "#PWR071"
-			(at 151.13 35.56 0)
+		(property "Reference" "#PWR072"
+			(at 160.02 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3330,7 +3331,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 151.13 26.67 0)
+			(at 160.02 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3338,7 +3339,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 151.13 31.75 0)
+			(at 160.02 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3347,7 +3348,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 151.13 31.75 0)
+			(at 160.02 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3356,7 +3357,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 151.13 31.75 0)
+			(at 160.02 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3370,7 +3371,7 @@
 		(instances
 			(project ""
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
-					(reference "#PWR071")
+					(reference "#PWR072")
 					(unit 1)
 				)
 			)
@@ -3378,7 +3379,7 @@
 	)
 	(symbol
 		(lib_id "Device:Buzzer")
-		(at 97.79 33.02 0)
+		(at 106.68 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3387,7 +3388,7 @@
 		(fields_autoplaced yes)
 		(uuid "5a31ba13-750d-412e-b8d4-19b7803e2e44")
 		(property "Reference" "BZ1"
-			(at 101.6 31.7499 0)
+			(at 110.49 29.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3396,7 +3397,7 @@
 			)
 		)
 		(property "Value" "Buzzer"
-			(at 101.6 34.2899 0)
+			(at 110.49 31.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3405,7 +3406,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 97.155 30.48 90)
+			(at 106.045 27.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3414,7 +3415,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 97.155 30.48 90)
+			(at 106.045 27.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3423,7 +3424,7 @@
 			)
 		)
 		(property "Description" "Buzzer, polarized"
-			(at 97.79 33.02 0)
+			(at 106.68 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3448,7 +3449,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 186.69 38.1 90)
+		(at 194.31 35.56 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3456,8 +3457,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5bd49e55-c7ce-4cab-9bc4-3052a2410565")
-		(property "Reference" "D7"
-			(at 190.5 38.4174 90)
+		(property "Reference" "D5"
+			(at 198.12 35.8774 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3466,7 +3467,7 @@
 			)
 		)
 		(property "Value" "SERVO LED"
-			(at 190.5 40.9574 90)
+			(at 198.12 38.4174 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3475,7 +3476,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 186.69 38.1 0)
+			(at 194.31 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3484,7 +3485,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 186.69 38.1 0)
+			(at 194.31 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3493,7 +3494,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 186.69 38.1 0)
+			(at 194.31 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3502,7 +3503,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 186.69 38.1 0)
+			(at 194.31 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3519,7 +3520,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
-					(reference "D7")
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -3527,7 +3528,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 186.69 49.53 0)
+		(at 194.31 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3536,7 +3537,7 @@
 		(fields_autoplaced yes)
 		(uuid "640a884d-2a81-494e-8fce-64650b071030")
 		(property "Reference" "#PWR077"
-			(at 186.69 55.88 0)
+			(at 194.31 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3545,7 +3546,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 186.69 54.61 0)
+			(at 194.31 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3554,7 +3555,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 186.69 49.53 0)
+			(at 194.31 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3563,7 +3564,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 186.69 49.53 0)
+			(at 194.31 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3572,7 +3573,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 186.69 49.53 0)
+			(at 194.31 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3594,7 +3595,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 169.545 38.1 90)
+		(at 177.8 34.29 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3602,8 +3603,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6dc6384a-9862-4b83-8fb2-a6a04a21b59a")
-		(property "Reference" "D6"
-			(at 173.355 38.4174 90)
+		(property "Reference" "D4"
+			(at 181.61 34.6074 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3612,7 +3613,7 @@
 			)
 		)
 		(property "Value" "USB LED"
-			(at 173.355 40.9574 90)
+			(at 181.61 37.1474 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3621,7 +3622,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 169.545 38.1 0)
+			(at 177.8 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3630,7 +3631,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 169.545 38.1 0)
+			(at 177.8 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3639,7 +3640,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 169.545 38.1 0)
+			(at 177.8 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3648,7 +3649,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 169.545 38.1 0)
+			(at 177.8 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3665,7 +3666,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
-					(reference "D6")
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -3673,7 +3674,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 169.545 31.115 0)
+		(at 177.8 26.67 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3681,8 +3682,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7d27fff4-f903-4441-9411-95be39eee1df")
-		(property "Reference" "#PWR072"
-			(at 169.545 34.925 0)
+		(property "Reference" "#PWR074"
+			(at 177.8 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3691,7 +3692,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 169.545 26.67 0)
+			(at 177.8 22.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3699,7 +3700,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 169.545 31.115 0)
+			(at 177.8 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3708,7 +3709,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 169.545 31.115 0)
+			(at 177.8 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3717,7 +3718,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 169.545 31.115 0)
+			(at 177.8 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3731,7 +3732,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
-					(reference "#PWR072")
+					(reference "#PWR074")
 					(unit 1)
 				)
 			)
@@ -3739,7 +3740,7 @@
 	)
 	(symbol
 		(lib_id "aerolotl_custom:+12V_ARM")
-		(at 204.47 31.115 0)
+		(at 213.36 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -3747,8 +3748,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "91299d3b-50d9-494c-9c56-9bc274a71a38")
-		(property "Reference" "#PWR097"
-			(at 204.47 31.115 0)
+		(property "Reference" "#PWR078"
+			(at 213.36 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3757,7 +3758,7 @@
 			)
 		)
 		(property "Value" "+12V_ARM"
-			(at 204.47 26.035 0)
+			(at 213.36 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3765,7 +3766,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 204.47 31.115 0)
+			(at 213.36 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3774,7 +3775,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 204.47 31.115 0)
+			(at 213.36 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3783,7 +3784,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 204.47 31.115 0)
+			(at 213.36 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3797,7 +3798,7 @@
 		(instances
 			(project ""
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
-					(reference "#PWR097")
+					(reference "#PWR078")
 					(unit 1)
 				)
 			)
@@ -3805,7 +3806,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 82.55 35.56 0)
+		(at 91.44 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3813,8 +3814,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a2906821-43b6-474a-a99c-4e540e58b046")
-		(property "Reference" "C34"
-			(at 86.36 34.2899 0)
+		(property "Reference" "C44"
+			(at 95.25 31.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3823,7 +3824,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 86.36 36.8299 0)
+			(at 95.25 34.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3832,7 +3833,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 83.5152 39.37 0)
+			(at 92.4052 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3841,7 +3842,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 82.55 35.56 0)
+			(at 91.44 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3850,7 +3851,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 82.55 35.56 0)
+			(at 91.44 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3867,7 +3868,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
-					(reference "C34")
+					(reference "C44")
 					(unit 1)
 				)
 			)
@@ -3875,7 +3876,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 135.89 45.72 0)
+		(at 144.78 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3883,8 +3884,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ad490241-54ab-4342-bc3f-5115e820c822")
-		(property "Reference" "R19"
-			(at 138.43 44.4499 0)
+		(property "Reference" "R23"
+			(at 147.32 41.9099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3893,7 +3894,7 @@
 			)
 		)
 		(property "Value" "330"
-			(at 138.43 46.9899 0)
+			(at 147.32 44.4499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3902,7 +3903,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 134.112 45.72 90)
+			(at 143.002 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3911,7 +3912,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 135.89 45.72 0)
+			(at 144.78 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3920,7 +3921,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 135.89 45.72 0)
+			(at 144.78 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3937,7 +3938,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
-					(reference "R19")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -3945,7 +3946,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 204.47 38.735 90)
+		(at 213.36 35.56 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3953,8 +3954,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c5b0f219-e9b9-4808-9fad-48c6ae833db6")
-		(property "Reference" "D8"
-			(at 208.28 39.0524 90)
+		(property "Reference" "D6"
+			(at 217.17 35.8774 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3963,7 +3964,7 @@
 			)
 		)
 		(property "Value" "12V LED"
-			(at 208.28 41.5924 90)
+			(at 217.17 38.4174 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3972,7 +3973,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 204.47 38.735 0)
+			(at 213.36 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3981,7 +3982,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 204.47 38.735 0)
+			(at 213.36 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3990,7 +3991,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 204.47 38.735 0)
+			(at 213.36 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3999,7 +4000,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 204.47 38.735 0)
+			(at 213.36 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4016,7 +4017,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
-					(reference "D8")
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -4024,7 +4025,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:AO3400A")
-		(at 92.71 43.18 0)
+		(at 101.6 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4032,8 +4033,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "da3cdcfd-49c1-4b56-b5ea-b10f67717b8a")
-		(property "Reference" "Q3"
-			(at 99.06 41.9099 0)
+		(property "Reference" "Q1"
+			(at 107.95 39.3699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4042,7 +4043,7 @@
 			)
 		)
 		(property "Value" "AO3400A"
-			(at 99.06 44.4499 0)
+			(at 107.95 41.9099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4051,7 +4052,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 97.79 45.085 0)
+			(at 106.68 42.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4062,7 +4063,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
-			(at 97.79 46.99 0)
+			(at 106.68 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4072,7 +4073,7 @@
 			)
 		)
 		(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
-			(at 92.71 43.18 0)
+			(at 101.6 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4092,73 +4093,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
-					(reference "Q3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 82.55 28.575 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dc270f71-cad1-46bf-8b03-836353b6e723")
-		(property "Reference" "#PWR063"
-			(at 82.55 32.385 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 82.55 23.495 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 82.55 28.575 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 82.55 28.575 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 82.55 28.575 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "56cb7496-2075-487e-932b-706f6f162d54")
-		)
-		(instances
-			(project "aerolotl"
-				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
-					(reference "#PWR063")
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -4166,7 +4101,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED_ARGB")
-		(at 31.75 42.545 0)
+		(at 29.21 36.83 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4174,8 +4109,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dd8264a7-ce06-4e79-97ee-4e549981ef0a")
-		(property "Reference" "D3"
-			(at 31.75 28.575 0)
+		(property "Reference" "D1"
+			(at 29.21 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4183,7 +4118,7 @@
 			)
 		)
 		(property "Value" "LED_ARGB"
-			(at 31.75 31.115 0)
+			(at 29.21 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4191,7 +4126,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 31.75 43.815 0)
+			(at 29.21 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4200,7 +4135,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 31.75 43.815 0)
+			(at 29.21 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4209,7 +4144,7 @@
 			)
 		)
 		(property "Description" "RGB LED, anode/red/green/blue"
-			(at 31.75 42.545 0)
+			(at 29.21 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4232,7 +4167,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
-					(reference "D3")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -4240,7 +4175,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 186.69 45.72 0)
+		(at 194.31 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4248,8 +4183,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e7cae546-05c2-40a6-8ab7-d1c3f1613d1e")
-		(property "Reference" "R22"
-			(at 189.23 44.4499 0)
+		(property "Reference" "R26"
+			(at 196.85 44.4499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4258,7 +4193,7 @@
 			)
 		)
 		(property "Value" "820"
-			(at 189.23 46.9899 0)
+			(at 196.85 46.9899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4267,7 +4202,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 184.912 45.72 90)
+			(at 192.532 45.72 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4276,7 +4211,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 186.69 45.72 0)
+			(at 194.31 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4285,7 +4220,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 186.69 45.72 0)
+			(at 194.31 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4302,7 +4237,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
-					(reference "R22")
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -4310,15 +4245,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 41.275 42.545 90)
+		(at 40.64 36.83 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "e840b965-d807-4f43-9000-4b20e0d5559b")
-		(property "Reference" "R37"
-			(at 41.275 42.545 90)
+		(property "Reference" "R20"
+			(at 40.64 36.83 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4326,7 +4261,7 @@
 			)
 		)
 		(property "Value" "330"
-			(at 45.72 43.815 90)
+			(at 45.085 38.1 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4334,7 +4269,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 41.275 44.323 90)
+			(at 40.64 38.608 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4343,7 +4278,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 41.275 42.545 0)
+			(at 40.64 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4352,7 +4287,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 41.275 42.545 0)
+			(at 40.64 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4369,7 +4304,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
-					(reference "R37")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -4377,7 +4312,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 169.545 49.53 0)
+		(at 177.8 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4386,7 +4321,7 @@
 		(fields_autoplaced yes)
 		(uuid "f325e512-4e83-4b4f-bb3f-4d6cfa7f4388")
 		(property "Reference" "#PWR075"
-			(at 169.545 55.88 0)
+			(at 177.8 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4395,7 +4330,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 169.545 54.61 0)
+			(at 177.8 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4404,7 +4339,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 169.545 49.53 0)
+			(at 177.8 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4413,7 +4348,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 169.545 49.53 0)
+			(at 177.8 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4422,7 +4357,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 169.545 49.53 0)
+			(at 177.8 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4444,7 +4379,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 151.13 38.1 90)
+		(at 160.02 35.56 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4452,8 +4387,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f4fd3263-1f68-47bf-a74b-8e5a86f0a50c")
-		(property "Reference" "D5"
-			(at 154.94 38.4174 90)
+		(property "Reference" "D3"
+			(at 163.83 35.8774 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4462,7 +4397,7 @@
 			)
 		)
 		(property "Value" "3V3 LED"
-			(at 154.94 40.9574 90)
+			(at 163.83 38.4174 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4471,7 +4406,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 151.13 38.1 0)
+			(at 160.02 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4480,7 +4415,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 151.13 38.1 0)
+			(at 160.02 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4489,7 +4424,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 151.13 38.1 0)
+			(at 160.02 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4498,7 +4433,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 151.13 38.1 0)
+			(at 160.02 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4515,7 +4450,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/661f4fc2-097f-41c0-811b-86b5718b26e2"
-					(reference "D5")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -4523,7 +4458,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 204.47 50.165 0)
+		(at 213.36 52.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4532,7 +4467,7 @@
 		(fields_autoplaced yes)
 		(uuid "fd4a49f4-5297-4005-84ce-623223df22e1")
 		(property "Reference" "#PWR079"
-			(at 204.47 56.515 0)
+			(at 213.36 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4541,7 +4476,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 204.47 55.245 0)
+			(at 213.36 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4550,7 +4485,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 204.47 50.165 0)
+			(at 213.36 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4559,7 +4494,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 204.47 50.165 0)
+			(at 213.36 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4568,7 +4503,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 204.47 50.165 0)
+			(at 213.36 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)

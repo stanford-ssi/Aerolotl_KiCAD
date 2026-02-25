@@ -1417,10 +1417,10 @@
 		(uuid "5eddce2c-0a11-45ae-b4a6-5da5c9c54db7")
 	)
 	(junction
-		(at 82.55 165.735)
+		(at 111.76 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7b5c9ff8-fc73-43fa-a141-f99d43cb69d9")
+		(uuid "726f0bcf-872a-4416-aeed-ec7383c65174")
 	)
 	(junction
 		(at 53.34 151.13)
@@ -1435,18 +1435,6 @@
 		(uuid "b2b31f8c-be64-40dd-92cb-bb4744c21444")
 	)
 	(junction
-		(at 111.76 139.7)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bbfba929-5769-4378-88fc-dd36e45ee030")
-	)
-	(junction
-		(at 92.71 153.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bf4e66e0-63ba-489b-8e75-d05b20b9c39a")
-	)
-	(junction
 		(at 41.91 151.13)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1457,12 +1445,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e7745868-1116-44f2-9125-e1f2625e4ba7")
-	)
-	(junction
-		(at 111.76 127)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ebe71e0a-6686-46ff-bc15-ae2591bc5f87")
 	)
 	(junction
 		(at 82.55 139.7)
@@ -1492,23 +1474,13 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 127) (xy 111.76 129.54)
+			(xy 111.76 123.19) (xy 111.76 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "099dc2d7-bf3c-4755-858b-3422e506fdc0")
-	)
-	(wire
-		(pts
-			(xy 82.55 153.67) (xy 92.71 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "11287b29-f97e-4d60-be71-bf535e25df59")
+		(uuid "15cc2935-ba7d-4506-8067-45d255ad5429")
 	)
 	(wire
 		(pts
@@ -1519,16 +1491,6 @@
 			(type default)
 		)
 		(uuid "18dd4827-d267-4aa6-86be-56cd8b4ae312")
-	)
-	(wire
-		(pts
-			(xy 111.76 137.16) (xy 111.76 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1b7d4926-edef-4fe0-9f3c-bb4ef0602750")
 	)
 	(wire
 		(pts
@@ -1559,16 +1521,6 @@
 			(type default)
 		)
 		(uuid "2526a023-3977-42af-bc92-03085d5d340e")
-	)
-	(wire
-		(pts
-			(xy 92.71 163.83) (xy 92.71 165.735)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "25dc4691-383a-4d40-aa78-2aa147022dfe")
 	)
 	(wire
 		(pts
@@ -1672,7 +1624,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 153.67) (xy 95.25 153.67)
+			(xy 82.55 153.67) (xy 95.25 153.67)
 		)
 		(stroke
 			(width 0)
@@ -1702,26 +1654,6 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 165.735) (xy 82.55 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "55a84c4e-8f72-42d0-8dfe-d9df3f33384f")
-	)
-	(wire
-		(pts
-			(xy 111.76 124.46) (xy 111.76 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5bcca582-50a4-4c02-b0b7-398f917b404c")
-	)
-	(wire
-		(pts
 			(xy 53.34 151.13) (xy 59.69 151.13)
 		)
 		(stroke
@@ -1729,16 +1661,6 @@
 			(type default)
 		)
 		(uuid "6226fedf-e9bc-468f-8ca5-48c4dc07eb0d")
-	)
-	(wire
-		(pts
-			(xy 82.55 163.83) (xy 82.55 165.735)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "682a0aa6-dbb0-45d5-822d-9e61119d556e")
 	)
 	(wire
 		(pts
@@ -1782,6 +1704,16 @@
 	)
 	(wire
 		(pts
+			(xy 82.55 163.83) (xy 82.55 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70a2d298-b139-4d35-abf2-57e4a746167e")
+	)
+	(wire
+		(pts
 			(xy 43.18 77.47) (xy 43.18 81.28)
 		)
 		(stroke
@@ -1809,16 +1741,6 @@
 			(type default)
 		)
 		(uuid "88a9ff45-dcd8-4f1c-a6a5-8681ea0f4039")
-	)
-	(wire
-		(pts
-			(xy 92.71 153.67) (xy 92.71 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8b0b7e0f-95cf-4392-bc0d-2e84564f3096")
 	)
 	(wire
 		(pts
@@ -1962,6 +1884,16 @@
 	)
 	(wire
 		(pts
+			(xy 111.76 137.16) (xy 111.76 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d81617de-993f-4b51-8412-e7b48390ea45")
+	)
+	(wire
+		(pts
 			(xy 67.31 146.05) (xy 67.31 139.7)
 		)
 		(stroke
@@ -1969,16 +1901,6 @@
 			(type default)
 		)
 		(uuid "e1eeeed5-03dc-4089-8ce7-780f1e8ee102")
-	)
-	(wire
-		(pts
-			(xy 92.71 165.735) (xy 82.55 165.735)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ec08354c-dfdd-4cde-bd88-a0d0aeaca1ad")
 	)
 	(wire
 		(pts
@@ -2064,7 +1986,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "048729be-7228-41bd-b3a7-22fbe0afbdbc")
-		(property "Reference" "Q1"
+		(property "Reference" "Q3"
 			(at 72.39 60.9599 0)
 			(effects
 				(font
@@ -2124,7 +2046,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
-					(reference "Q1")
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -2139,7 +2061,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0dc10dd9-fb9b-42c1-b681-59f7c81ca321")
-		(property "Reference" "R14"
+		(property "Reference" "R44"
 			(at 85.09 158.7499 0)
 			(effects
 				(font
@@ -2193,7 +2115,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
-					(reference "R14")
+					(reference "R44")
 					(unit 1)
 				)
 			)
@@ -2209,7 +2131,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "18240102-d2bf-4b3b-9d77-87898dfb90cd")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR0122"
 			(at 83.82 85.09 0)
 			(effects
 				(font
@@ -2260,7 +2182,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
-					(reference "#PWR030")
+					(reference "#PWR0122")
 					(unit 1)
 				)
 			)
@@ -2276,7 +2198,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1c5c9efb-ba37-4ad5-a68c-3c7b3321ce61")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR0119"
 			(at 67.31 165.1 0)
 			(effects
 				(font
@@ -2327,7 +2249,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
-					(reference "#PWR040")
+					(reference "#PWR0119")
 					(unit 1)
 				)
 			)
@@ -2343,7 +2265,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1e2f7764-57af-479f-92ff-f4de2dec205b")
-		(property "Reference" "C24"
+		(property "Reference" "C47"
 			(at 116.84 57.1499 0)
 			(effects
 				(font
@@ -2397,7 +2319,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
-					(reference "C24")
+					(reference "C47")
 					(unit 1)
 				)
 			)
@@ -2413,7 +2335,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2486bbba-6021-48c7-9ee1-921badc494ed")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR0118"
 			(at 54.61 86.36 0)
 			(effects
 				(font
@@ -2464,7 +2386,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
-					(reference "#PWR033")
+					(reference "#PWR0118")
 					(unit 1)
 				)
 			)
@@ -2479,7 +2401,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2b674fb8-9c55-469e-895a-9f184b827aef")
-		(property "Reference" "R12"
+		(property "Reference" "R41"
 			(at 54.61 161.29 0)
 			(effects
 				(font
@@ -2533,7 +2455,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
-					(reference "R12")
+					(reference "R41")
 					(unit 1)
 				)
 			)
@@ -2548,7 +2470,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2cccf647-2b5d-43e6-a136-e41709afe892")
-		(property "Reference" "R11"
+		(property "Reference" "R39"
 			(at 35.56 172.72 0)
 			(effects
 				(font
@@ -2602,7 +2524,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
-					(reference "R11")
+					(reference "R39")
 					(unit 1)
 				)
 			)
@@ -2618,7 +2540,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3a9c7be4-d732-4dd3-939c-c48e133aa09f")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR0120"
 			(at 68.58 76.2 0)
 			(effects
 				(font
@@ -2669,7 +2591,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
-					(reference "#PWR036")
+					(reference "#PWR0120")
 					(unit 1)
 				)
 			)
@@ -2677,7 +2599,7 @@
 	)
 	(symbol
 		(lib_id "Power:+12V_ARM")
-		(at 111.76 124.46 0)
+		(at 111.76 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -2685,8 +2607,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "401c817b-55a6-48d5-b4ce-27fa3274ffc3")
-		(property "Reference" "#PWR042"
-			(at 111.76 124.46 0)
+		(property "Reference" "#PWR0123"
+			(at 111.76 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2695,7 +2617,7 @@
 			)
 		)
 		(property "Value" "+12V_ARM"
-			(at 111.76 119.38 0)
+			(at 111.76 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2703,7 +2625,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 111.76 124.46 0)
+			(at 111.76 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2712,7 +2634,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 111.76 124.46 0)
+			(at 111.76 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2721,7 +2643,7 @@
 			)
 		)
 		(property "Description" "For ARMING ematches."
-			(at 111.76 124.46 0)
+			(at 111.76 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2735,7 +2657,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
-					(reference "#PWR042")
+					(reference "#PWR0123")
 					(unit 1)
 				)
 			)
@@ -2751,7 +2673,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "403f8f27-f963-44c2-8aee-a01631af4552")
-		(property "Reference" "#PWR037"
+		(property "Reference" "#PWR0115"
 			(at 41.91 186.69 0)
 			(effects
 				(font
@@ -2802,7 +2724,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
-					(reference "#PWR037")
+					(reference "#PWR0115")
 					(unit 1)
 				)
 			)
@@ -2818,7 +2740,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4a4264ef-8b29-4a05-8732-aa5310feba29")
-		(property "Reference" "C25"
+		(property "Reference" "C46"
 			(at 115.57 146.0499 0)
 			(effects
 				(font
@@ -2872,7 +2794,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
-					(reference "C25")
+					(reference "C46")
 					(unit 1)
 				)
 			)
@@ -2888,7 +2810,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5adcd88a-8ccd-4582-bb83-8d2fad2b55f8")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR0125"
 			(at 113.03 34.925 0)
 			(effects
 				(font
@@ -2938,7 +2860,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
-					(reference "#PWR024")
+					(reference "#PWR0125")
 					(unit 1)
 				)
 			)
@@ -2954,7 +2876,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5cc19bef-5e0c-4829-8b23-f5f22cc0f514")
-		(property "Reference" "F1"
+		(property "Reference" "F4"
 			(at 115.57 41.9099 90)
 			(effects
 				(font
@@ -3010,7 +2932,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
-					(reference "F1")
+					(reference "F4")
 					(unit 1)
 				)
 			)
@@ -3025,7 +2947,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6363bebc-4d94-4dad-9af3-697eda2488f3")
-		(property "Reference" "R9"
+		(property "Reference" "R42"
 			(at 55.88 72.39 0)
 			(effects
 				(font
@@ -3079,7 +3001,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
-					(reference "R9")
+					(reference "R42")
 					(unit 1)
 				)
 			)
@@ -3095,7 +3017,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "658cd1c9-b474-4c0d-a4a8-57469021016d")
-		(property "Reference" "#PWR039"
+		(property "Reference" "#PWR0117"
 			(at 53.34 175.26 0)
 			(effects
 				(font
@@ -3146,77 +3068,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
-					(reference "#PWR039")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 92.71 160.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7d036f41-ae21-45f6-bf05-7082d148c491")
-		(property "Reference" "C36"
-			(at 96.52 158.7499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10n"
-			(at 96.52 161.2899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 93.6752 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 92.71 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 92.71 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3af2756f-5cfb-484d-bc81-6393393f952e")
-		)
-		(pin "2"
-			(uuid "187f91f4-a27f-4c2e-956e-33c81f374973")
-		)
-		(instances
-			(project "aerolotl"
-				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
-					(reference "C36")
+					(reference "#PWR0117")
 					(unit 1)
 				)
 			)
@@ -3231,7 +3083,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "82c36d69-39cd-4a20-a282-b1692e6ed8a6")
-		(property "Reference" "J2"
+		(property "Reference" "J19"
 			(at 95.25 40.64 90)
 			(effects
 				(font
@@ -3286,7 +3138,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
-					(reference "J2")
+					(reference "J19")
 					(unit 1)
 				)
 			)
@@ -3302,7 +3154,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "85695722-a81f-4de9-afc1-9dc6ca7bf9bd")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR0126"
 			(at 113.03 73.66 0)
 			(effects
 				(font
@@ -3353,7 +3205,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
-					(reference "#PWR025")
+					(reference "#PWR0126")
 					(unit 1)
 				)
 			)
@@ -3369,7 +3221,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9e5826d0-19d9-4777-a8c0-5010cbb50c2e")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR0116"
 			(at 43.18 97.79 0)
 			(effects
 				(font
@@ -3420,7 +3272,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
-					(reference "#PWR035")
+					(reference "#PWR0116")
 					(unit 1)
 				)
 			)
@@ -3436,7 +3288,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a5ef8dd5-2517-495d-81cd-240932b858d0")
-		(property "Reference" "F2"
+		(property "Reference" "F3"
 			(at 114.3 130.8099 90)
 			(effects
 				(font
@@ -3492,7 +3344,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
-					(reference "F2")
+					(reference "F3")
 					(unit 1)
 				)
 			)
@@ -3508,7 +3360,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a60556c3-5543-4779-8814-d0dec45ff256")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR0121"
 			(at 82.55 173.99 0)
 			(effects
 				(font
@@ -3559,7 +3411,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
-					(reference "#PWR041")
+					(reference "#PWR0121")
 					(unit 1)
 				)
 			)
@@ -3574,7 +3426,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b3fb1973-f605-44fa-8e97-ccb7019a4f1f")
-		(property "Reference" "D1"
+		(property "Reference" "D8"
 			(at 38.1 73.66 90)
 			(effects
 				(font
@@ -3638,7 +3490,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
-					(reference "D1")
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -3654,7 +3506,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b6748225-4701-49a9-a9a4-59dd4327fce5")
-		(property "Reference" "R7"
+		(property "Reference" "R45"
 			(at 86.36 57.1499 0)
 			(effects
 				(font
@@ -3708,7 +3560,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
-					(reference "R7")
+					(reference "R45")
 					(unit 1)
 				)
 			)
@@ -3724,7 +3576,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bee0c349-9ddd-4cf4-b38d-1220823c31e9")
-		(property "Reference" "R13"
+		(property "Reference" "R43"
 			(at 85.09 146.0499 0)
 			(effects
 				(font
@@ -3778,7 +3630,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
-					(reference "R13")
+					(reference "R43")
 					(unit 1)
 				)
 			)
@@ -3793,7 +3645,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cfc380ad-f235-476b-aecd-21ecdac6146f")
-		(property "Reference" "J4"
+		(property "Reference" "J18"
 			(at 93.98 129.54 90)
 			(effects
 				(font
@@ -3848,7 +3700,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
-					(reference "J4")
+					(reference "J18")
 					(unit 1)
 				)
 			)
@@ -3863,7 +3715,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d2ba5a73-f3bb-4ed0-94b8-a86c406ea35e")
-		(property "Reference" "R8"
+		(property "Reference" "R46"
 			(at 86.36 69.8499 0)
 			(effects
 				(font
@@ -3917,7 +3769,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
-					(reference "R8")
+					(reference "R46")
 					(unit 1)
 				)
 			)
@@ -3933,7 +3785,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d448a650-0276-4e77-9c5e-87f4a766070d")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR0124"
 			(at 111.76 162.56 0)
 			(effects
 				(font
@@ -3984,7 +3836,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
-					(reference "#PWR043")
+					(reference "#PWR0124")
 					(unit 1)
 				)
 			)
@@ -4075,7 +3927,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e8a63327-e85e-48fb-9a84-5ea193ae4ba4")
-		(property "Reference" "R10"
+		(property "Reference" "R40"
 			(at 36.83 83.82 0)
 			(effects
 				(font
@@ -4129,7 +3981,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
-					(reference "R10")
+					(reference "R40")
 					(unit 1)
 				)
 			)
@@ -4144,7 +3996,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f1155eb6-c3b1-438a-8def-ff7fa213f8ba")
-		(property "Reference" "D2"
+		(property "Reference" "D7"
 			(at 36.83 162.56 90)
 			(effects
 				(font
@@ -4208,7 +4060,7 @@
 		(instances
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
-					(reference "D2")
+					(reference "D7")
 					(unit 1)
 				)
 			)

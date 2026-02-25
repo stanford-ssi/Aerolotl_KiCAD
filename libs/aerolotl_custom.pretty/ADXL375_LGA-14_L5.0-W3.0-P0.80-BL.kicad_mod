@@ -1,4 +1,4 @@
-(footprint "LGA-14_L5.0-W3.0-P0.80-BL"
+(footprint "ADXL375_LGA-14_L5.0-W3.0-P0.80-BL"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
@@ -6,7 +6,7 @@
 	(property "Reference" "REF**"
 		(at 0 -5.41 0)
 		(layer "F.SilkS")
-		(uuid "00000000-0000-0000-0000-000000000000")
+		(uuid "a90c48f9-cb16-4e2b-9df6-9ed164b0b523")
 		(effects
 			(font
 				(size 1 1)
@@ -14,10 +14,10 @@
 			)
 		)
 	)
-	(property "Value" "LGA-14_L5.0-W3.0-P0.80-BL"
+	(property "Value" "ADXL375_LGA-14_L5.0-W3.0-P0.80-BL"
 		(at 0 5.41 0)
 		(layer "F.Fab")
-		(uuid "00000000-0000-0000-0000-000000000000")
+		(uuid "f3fe1a94-9880-4e7e-8df4-031eb8fe5964")
 		(effects
 			(font
 				(size 1 1)
@@ -29,7 +29,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "00000000-0000-0000-0000-000000000000")
+		(uuid "f1907bde-f24d-4ed0-a5c5-0adaef17f9ef")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -41,7 +41,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "00000000-0000-0000-0000-000000000000")
+		(uuid "e669266a-f48b-47c3-883f-d9053367b738")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -58,7 +58,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "00000000-0000-0000-0000-000000000000")
+		(uuid "9d501343-939a-4131-881a-2ec8323d5108")
 	)
 	(fp_line
 		(start -2.58 -0.54)
@@ -68,7 +68,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "00000000-0000-0000-0000-000000000000")
+		(uuid "18c9c1fa-e33d-4fa8-8540-5e078bb7984f")
 	)
 	(fp_line
 		(start -2.58 0.54)
@@ -78,7 +78,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "00000000-0000-0000-0000-000000000000")
+		(uuid "43fd596c-e21b-4d9a-a860-9037d5ccb769")
 	)
 	(fp_line
 		(start -2.58 1.58)
@@ -88,7 +88,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "00000000-0000-0000-0000-000000000000")
+		(uuid "cfeef157-1574-4092-8b12-fcc7fe5c8b5f")
 	)
 	(fp_line
 		(start 2.58 -1.58)
@@ -98,7 +98,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "00000000-0000-0000-0000-000000000000")
+		(uuid "e74fd7f8-8f9e-429d-9f5c-47ee6594c189")
 	)
 	(fp_line
 		(start 2.58 -0.54)
@@ -108,7 +108,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "00000000-0000-0000-0000-000000000000")
+		(uuid "bb8cf631-b625-48cc-ba1e-d33dd0ba4073")
 	)
 	(fp_line
 		(start 2.58 0.54)
@@ -118,7 +118,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "00000000-0000-0000-0000-000000000000")
+		(uuid "60ce3ea3-e978-487a-a658-ed208de40994")
 	)
 	(fp_line
 		(start 2.58 1.58)
@@ -128,7 +128,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "00000000-0000-0000-0000-000000000000")
+		(uuid "8a6f4b39-808e-4205-80a9-a3ead5586a8b")
 	)
 	(fp_circle
 		(center -2 2.59)
@@ -139,7 +139,7 @@
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "00000000-0000-0000-0000-000000000000")
+		(uuid "901e58bb-7b16-4997-90a1-128fc1796531")
 	)
 	(fp_circle
 		(center -2 1.8)
@@ -150,7 +150,7 @@
 		)
 		(fill no)
 		(layer "Cmts.User")
-		(uuid "00000000-0000-0000-0000-000000000000")
+		(uuid "684dedf3-6826-4438-b8da-88c5f01ee105")
 	)
 	(fp_circle
 		(center -2.5 1.5)
@@ -161,12 +161,12 @@
 		)
 		(fill no)
 		(layer "F.Fab")
-		(uuid "00000000-0000-0000-0000-000000000000")
+		(uuid "e404ae39-09b0-4306-bb4d-f436dc70e65d")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0 0 0)
 		(layer "F.Fab")
-		(uuid "00000000-0000-0000-0000-000000000000")
+		(uuid "75eee9f8-1ba3-49a2-b1e8-40c863ba4e34")
 		(effects
 			(font
 				(size 1 1)
@@ -178,85 +178,85 @@
 		(at -2 1.41)
 		(size 0.45 1.77)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "00000000-0000-0000-0000-000000000000")
+		(uuid "24e927b8-41dd-426e-9912-b6493660cd8d")
 	)
 	(pad "2" smd oval
 		(at -1.2 1.41)
 		(size 0.45 1.77)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "00000000-0000-0000-0000-000000000000")
+		(uuid "d9b94de3-0145-495e-aacf-77817b715bd1")
 	)
 	(pad "3" smd oval
 		(at -0.4 1.41)
 		(size 0.45 1.77)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "00000000-0000-0000-0000-000000000000")
+		(uuid "74c90ffe-943c-48e4-96a6-6cec9cd69ef4")
 	)
 	(pad "4" smd oval
 		(at 0.4 1.41)
 		(size 0.45 1.77)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "00000000-0000-0000-0000-000000000000")
+		(uuid "41e7e011-72f1-4295-9f5c-8286bc20479d")
 	)
 	(pad "5" smd oval
 		(at 1.2 1.41)
 		(size 0.45 1.77)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "00000000-0000-0000-0000-000000000000")
+		(uuid "a3e2576a-e73c-43f8-8fb6-d76f689ac9e6")
 	)
 	(pad "6" smd oval
 		(at 2 1.41)
 		(size 0.45 1.77)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "00000000-0000-0000-0000-000000000000")
+		(uuid "0b6a2ce0-5500-4445-8d00-318162fc9cb1")
 	)
 	(pad "7" smd rect
 		(at 2.3 0)
 		(size 1.55 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "00000000-0000-0000-0000-000000000000")
+		(uuid "2ba49596-0dff-45c0-b42e-7b43d8d52c0d")
 	)
 	(pad "8" smd oval
 		(at 2 -1.41)
 		(size 0.45 1.77)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "00000000-0000-0000-0000-000000000000")
+		(uuid "2809ca19-dbc6-4461-bc10-bb54ca70d979")
 	)
 	(pad "9" smd oval
 		(at 1.2 -1.41)
 		(size 0.45 1.77)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "00000000-0000-0000-0000-000000000000")
+		(uuid "a3e443fa-f0d4-4f7c-9489-c2851e4716b4")
 	)
 	(pad "10" smd oval
 		(at 0.4 -1.41)
 		(size 0.45 1.77)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "00000000-0000-0000-0000-000000000000")
+		(uuid "c7a4cbfa-7165-462f-ac3c-63f77f7461b2")
 	)
 	(pad "11" smd oval
 		(at -0.4 -1.41)
 		(size 0.45 1.77)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "00000000-0000-0000-0000-000000000000")
+		(uuid "b125396c-fcbc-40e0-b0c9-174a86447bd1")
 	)
 	(pad "12" smd oval
 		(at -1.2 -1.41)
 		(size 0.45 1.77)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "00000000-0000-0000-0000-000000000000")
+		(uuid "b1aec22e-f9b6-468a-a5a2-ff5158e4705e")
 	)
 	(pad "13" smd oval
 		(at -2 -1.41)
 		(size 0.45 1.77)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "00000000-0000-0000-0000-000000000000")
+		(uuid "e412879d-aa3c-41ef-8740-ffee799d34be")
 	)
 	(pad "14" smd rect
 		(at -2.3 0)
 		(size 1.55 0.6)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "00000000-0000-0000-0000-000000000000")
+		(uuid "8296b6a4-4a7a-44ab-98c5-995c36844bf2")
 	)
 	(embedded_fonts no)
 	(model "${EASYEDA2KICAD}/easyeda2kicad.3dshapes/LGA-14_L3.0-W5.0-H1.0-P0.80.wrl"
