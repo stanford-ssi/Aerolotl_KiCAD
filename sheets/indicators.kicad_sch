@@ -2286,7 +2286,7 @@
 	)
 	(wire
 		(pts
-			(xy 235.585 31.115) (xy 235.585 34.925)
+			(xy 204.47 31.115) (xy 204.47 34.925)
 		)
 		(stroke
 			(width 0)
@@ -2976,7 +2976,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 235.585 46.355 0)
+		(at 204.47 46.355 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2985,7 +2985,7 @@
 		(fields_autoplaced yes)
 		(uuid "36a4c114-5516-42f7-91c3-cfae48125f14")
 		(property "Reference" "R23"
-			(at 238.125 45.0849 0)
+			(at 207.01 45.0849 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2994,7 +2994,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 238.125 47.6249 0)
+			(at 207.01 47.6249 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3003,7 +3003,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 233.807 46.355 90)
+			(at 202.692 46.355 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3012,7 +3012,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 235.585 46.355 0)
+			(at 204.47 46.355 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3021,7 +3021,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 235.585 46.355 0)
+			(at 204.47 46.355 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3739,7 +3739,7 @@
 	)
 	(symbol
 		(lib_id "aerolotl_custom:+12V_ARM")
-		(at 235.585 31.115 0)
+		(at 204.47 31.115 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -3748,7 +3748,7 @@
 		(fields_autoplaced yes)
 		(uuid "91299d3b-50d9-494c-9c56-9bc274a71a38")
 		(property "Reference" "#PWR097"
-			(at 235.585 31.115 0)
+			(at 204.47 31.115 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3757,7 +3757,7 @@
 			)
 		)
 		(property "Value" "+12V_ARM"
-			(at 235.585 26.035 0)
+			(at 204.47 26.035 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3765,7 +3765,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 235.585 31.115 0)
+			(at 204.47 31.115 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3774,7 +3774,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 235.585 31.115 0)
+			(at 204.47 31.115 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3783,7 +3783,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 235.585 31.115 0)
+			(at 204.47 31.115 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3945,7 +3945,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 235.585 38.735 90)
+		(at 204.47 38.735 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3954,7 +3954,7 @@
 		(fields_autoplaced yes)
 		(uuid "c5b0f219-e9b9-4808-9fad-48c6ae833db6")
 		(property "Reference" "D8"
-			(at 239.395 39.0524 90)
+			(at 208.28 39.0524 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3963,7 +3963,7 @@
 			)
 		)
 		(property "Value" "12V LED"
-			(at 239.395 41.5924 90)
+			(at 208.28 41.5924 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3972,7 +3972,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 235.585 38.735 0)
+			(at 204.47 38.735 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3981,7 +3981,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 235.585 38.735 0)
+			(at 204.47 38.735 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3990,7 +3990,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 235.585 38.735 0)
+			(at 204.47 38.735 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3999,7 +3999,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 235.585 38.735 0)
+			(at 204.47 38.735 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4523,7 +4523,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 235.585 50.165 0)
+		(at 204.47 50.165 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4532,7 +4532,7 @@
 		(fields_autoplaced yes)
 		(uuid "fd4a49f4-5297-4005-84ce-623223df22e1")
 		(property "Reference" "#PWR079"
-			(at 235.585 56.515 0)
+			(at 204.47 56.515 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4541,7 +4541,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 235.585 55.245 0)
+			(at 204.47 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4550,7 +4550,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 235.585 50.165 0)
+			(at 204.47 50.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4559,7 +4559,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 235.585 50.165 0)
+			(at 204.47 50.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4568,7 +4568,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 235.585 50.165 0)
+			(at 204.47 50.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
