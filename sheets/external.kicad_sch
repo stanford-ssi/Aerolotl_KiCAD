@@ -1684,6 +1684,18 @@
 		)
 	)
 	(rectangle
+		(start 13.335 170.18)
+		(end 123.19 193.675)
+		(stroke
+			(width 0.2032)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 37e23a88-8380-41fe-bd4f-6f4aae9b3c71)
+	)
+	(rectangle
 		(start 131.445 111.76)
 		(end 270.51 147.955)
 		(stroke
@@ -1697,7 +1709,7 @@
 	)
 	(rectangle
 		(start 72.39 90.805)
-		(end 129.54 174.625)
+		(end 129.54 167.005)
 		(stroke
 			(width 0.2032)
 			(type solid)
@@ -1721,7 +1733,7 @@
 	)
 	(rectangle
 		(start 13.335 90.805)
-		(end 70.485 174.625)
+		(end 70.485 167.005)
 		(stroke
 			(width 0.2032)
 			(type solid)
@@ -1793,7 +1805,7 @@
 	)
 	(text "UART"
 		(exclude_from_sim no)
-		(at 79.375 172.085 0)
+		(at 78.74 164.465 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -1815,9 +1827,21 @@
 		)
 		(uuid "dce9675c-7950-45a7-a1cc-f70105f2769f")
 	)
+	(text "PWM"
+		(exclude_from_sim no)
+		(at 20.32 189.865 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+		)
+		(uuid "f1e1e1eb-9381-40ae-b54a-e1a5efc955e1")
+	)
 	(text "ADCs"
 		(exclude_from_sim no)
-		(at 20.32 172.085 0)
+		(at 19.05 164.465 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -1942,6 +1966,16 @@
 			(type default)
 		)
 		(uuid "0329d0c2-e1e7-41df-9623-1db75160ab55")
+	)
+	(wire
+		(pts
+			(xy 94.615 178.435) (xy 101.6 178.435)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "060f8391-90f0-40ae-b930-8402dbfb93a5")
 	)
 	(wire
 		(pts
@@ -2295,6 +2329,16 @@
 	)
 	(wire
 		(pts
+			(xy 42.545 184.15) (xy 44.45 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "689e8dc0-e1a7-4c16-9c18-7b8d54890a49")
+	)
+	(wire
+		(pts
 			(xy 40.005 70.485) (xy 64.135 70.485)
 		)
 		(stroke
@@ -2395,6 +2439,16 @@
 	)
 	(wire
 		(pts
+			(xy 37.465 179.07) (xy 44.45 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "875e7cdc-2d81-4a8e-9b54-0b04e2dad951")
+	)
+	(wire
+		(pts
 			(xy 210.82 49.53) (xy 207.01 49.53)
 		)
 		(stroke
@@ -2402,6 +2456,16 @@
 			(type default)
 		)
 		(uuid "88e71849-c17d-4a4d-8b34-0e1089de5a2a")
+	)
+	(wire
+		(pts
+			(xy 99.695 183.515) (xy 101.6 183.515)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bd0f112-cc9e-43ed-88a0-64e1176addbb")
 	)
 	(wire
 		(pts
@@ -2415,6 +2479,16 @@
 	)
 	(wire
 		(pts
+			(xy 99.695 186.69) (xy 99.695 183.515)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "925140a9-c3d0-49e3-b5e4-a76b8233c727")
+	)
+	(wire
+		(pts
 			(xy 100.33 151.765) (xy 103.505 151.765)
 		)
 		(stroke
@@ -2422,6 +2496,16 @@
 			(type default)
 		)
 		(uuid "94e9ad9e-48dc-40a8-967c-1cd4f71b132a")
+	)
+	(wire
+		(pts
+			(xy 42.545 187.325) (xy 42.545 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "962a111d-a886-46fb-b927-dc6502605b21")
 	)
 	(wire
 		(pts
@@ -2963,6 +3047,28 @@
 		)
 		(uuid "ee776045-d116-43fd-ad29-536e1aa1cc75")
 	)
+	(hierarchical_label "PWM2"
+		(shape input)
+		(at 94.615 178.435 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "043ff258-76d3-417f-8d4c-ba1d709edfd5")
+	)
+	(hierarchical_label "PWM1"
+		(shape input)
+		(at 37.465 179.07 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "06c39738-babf-4e5e-bdbf-76bceb7212fd")
+	)
 	(hierarchical_label "UART8_TARGET_TX"
 		(shape output)
 		(at 93.98 146.685 180)
@@ -3400,6 +3506,74 @@
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/5f72b0ed-0324-499f-bb98-18e31eb15f1d"
 					(reference "#PWR0121")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 99.695 186.69 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "10b21614-ac71-4641-9761-07f8207e5c9d")
+		(property "Reference" "#PWR0126"
+			(at 99.695 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 99.695 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.695 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.695 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 99.695 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "506a9539-85d9-460f-ab16-e6afed70ee6d")
+		)
+		(instances
+			(project "aerolotl"
+				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/5f72b0ed-0324-499f-bb98-18e31eb15f1d"
+					(reference "#PWR0126")
 					(unit 1)
 				)
 			)
@@ -4862,6 +5036,74 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 42.545 187.325 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "71aa8080-35d6-4641-b162-eaf926b8c4f4")
+		(property "Reference" "#PWR0129"
+			(at 42.545 193.675 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 42.545 192.405 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 42.545 187.325 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 42.545 187.325 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 42.545 187.325 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "741dff5f-7fe7-4344-9e66-8d2293bcaa69")
+		)
+		(instances
+			(project "aerolotl"
+				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/5f72b0ed-0324-499f-bb98-18e31eb15f1d"
+					(reference "#PWR0129")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 41.91 95.885 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4989,6 +5231,79 @@
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/5f72b0ed-0324-499f-bb98-18e31eb15f1d"
 					(reference "#PWR0118")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x03_Pin")
+		(at 106.68 180.975 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8fc8f5d9-85cb-424e-a0d0-6355ebb42f0a")
+		(property "Reference" "J7"
+			(at 107.95 179.7049 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "PWM2"
+			(at 107.95 182.2449 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 180.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 106.68 180.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 106.68 180.975 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e3ae46b4-303a-4b2e-becb-507853102f4d")
+		)
+		(pin "2"
+			(uuid "0160c362-6dbd-4980-86ca-29a8020549c7")
+		)
+		(pin "3"
+			(uuid "1105601b-9e5c-418e-8bcc-aca396acc2a0")
+		)
+		(instances
+			(project "aerolotl"
+				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/5f72b0ed-0324-499f-bb98-18e31eb15f1d"
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -6167,6 +6482,79 @@
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/5f72b0ed-0324-499f-bb98-18e31eb15f1d"
 					(reference "CN3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x03_Pin")
+		(at 49.53 181.61 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eed50c80-8b08-4ab2-bb0e-383c38319c49")
+		(property "Reference" "J19"
+			(at 50.8 180.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "PWM1"
+			(at 50.8 182.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 49.53 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 49.53 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c48841d7-8669-4f07-bc38-11997f97c154")
+		)
+		(pin "2"
+			(uuid "fb6c6cbc-b112-478c-bc7b-41d386d14277")
+		)
+		(pin "3"
+			(uuid "d05b6d7a-ddcc-4553-87e9-77053f0f7325")
+		)
+		(instances
+			(project "aerolotl"
+				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/5f72b0ed-0324-499f-bb98-18e31eb15f1d"
+					(reference "J19")
 					(unit 1)
 				)
 			)

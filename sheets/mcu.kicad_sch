@@ -6787,6 +6787,16 @@
 		)
 		(uuid "35acac29-1a90-460d-839c-5e531f0d224d")
 	)
+	(wire
+		(pts
+			(xy 257.81 168.91) (xy 263.525 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3620ae5d-97d9-42a2-ae65-8ccab33a70d1")
+	)
 	(bus
 		(pts
 			(xy 367.03 130.81) (xy 367.03 131.445)
@@ -8989,6 +8999,16 @@
 	)
 	(wire
 		(pts
+			(xy 257.81 171.45) (xy 263.525 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebfc992c-8e58-4a7b-bfb8-a0fb99db9008")
+	)
+	(wire
+		(pts
 			(xy 153.67 24.13) (xy 142.24 24.13)
 		)
 		(stroke
@@ -9978,6 +9998,17 @@
 		)
 		(uuid "3cf6f00c-1478-4be2-b421-7a5893e99fbe")
 	)
+	(hierarchical_label "PWM2"
+		(shape output)
+		(at 257.81 171.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3ff27b27-4d56-413c-a891-4b77ec5d7adf")
+	)
 	(hierarchical_label "BMP{CSB, SCK, MOSI, MISO, INT}"
 		(shape bidirectional)
 		(at 396.875 22.86 180)
@@ -10285,6 +10316,17 @@
 			(justify right)
 		)
 		(uuid "c6d21940-21e6-421e-9458-e3a977ff956e")
+	)
+	(hierarchical_label "PWM1"
+		(shape output)
+		(at 257.81 168.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d2580650-9195-4b29-a29a-a1cf246d5fa5")
 	)
 	(hierarchical_label "VOLT_SENSE"
 		(shape input)
