@@ -3405,7 +3405,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "aerolotl_custom:BUZ-TH_BD12.0-P6.50-D0.6-FD"
 			(at 106.045 27.94 90)
 			(effects
 				(font
