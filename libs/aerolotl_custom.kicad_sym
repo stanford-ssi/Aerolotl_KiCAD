@@ -289,7 +289,7 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 0 0 0)
 				(length 2.54)
 				(name "1"
@@ -307,7 +307,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 10.16 0 180)
 				(length 2.54)
 				(name "2"
@@ -470,7 +470,9 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+		)
+		(symbol "1812L300_24SLER_1_1"
+			(pin passive line
 				(at -5.08 0 0)
 				(length 2.54)
 				(name "1"
@@ -488,7 +490,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 5.08 0 180)
 				(length 2.54)
 				(name "2"
@@ -1051,204 +1053,6 @@
 				)
 			)
 			(pin unspecified line
-				(at -24.13 7.62 0)
-				(length 2.54)
-				(name "VDDI/O"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at -24.13 5.08 0)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at -24.13 2.54 0)
-				(length 2.54)
-				(name "RESERVED"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at -24.13 0 0)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at -24.13 -2.54 0)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at -24.13 -5.08 0)
-				(length 2.54)
-				(name "VS"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at -24.13 -7.62 0)
-				(length 2.54)
-				(name "~{CS}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 24.13 7.62 180)
-				(length 2.54)
-				(name "SCL/SCLK"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "14"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 24.13 5.08 180)
-				(length 2.54)
-				(name "SDA/SDI/SDIO"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "13"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 24.13 2.54 180)
-				(length 2.54)
-				(name "SDO/ALTADDRESS"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "12"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
-				(at 24.13 0 180)
-				(length 2.54)
-				(name "RESERVED"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "11"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin unspecified line
 				(at 24.13 -2.54 180)
 				(length 2.54)
 				(name "NC"
@@ -1284,7 +1088,207 @@
 					)
 				)
 			)
-			(pin unspecified line
+		)
+		(symbol "ADXL375BCCZ-RL7_1_1"
+			(pin power_in line
+				(at -24.13 7.62 0)
+				(length 2.54)
+				(name "VDDI/O"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -24.13 5.08 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -24.13 2.54 0)
+				(length 2.54)
+				(name "RESERVED"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -24.13 0 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -24.13 -2.54 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -24.13 -5.08 0)
+				(length 2.54)
+				(name "VS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -24.13 -7.62 0)
+				(length 2.54)
+				(name "~{CS}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 24.13 7.62 180)
+				(length 2.54)
+				(name "SCL/SCLK"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 24.13 5.08 180)
+				(length 2.54)
+				(name "SDA/SDI/SDIO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 24.13 2.54 180)
+				(length 2.54)
+				(name "SDO/ALTADDRESS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 24.13 0 180)
+				(length 2.54)
+				(name "RESERVED"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
 				(at 24.13 -7.62 180)
 				(length 2.54)
 				(name "INT1"
@@ -1384,7 +1388,9 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+		)
+		(symbol "BMP581_1_1"
+			(pin power_in line
 				(at -11.43 5.08 0)
 				(length 2.54)
 				(name "VDDIO"
@@ -1402,7 +1408,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at -11.43 2.54 0)
 				(length 2.54)
 				(name "SCK"
@@ -1420,7 +1426,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_in line
 				(at -11.43 0 0)
 				(length 2.54)
 				(name "VSS"
@@ -1438,7 +1444,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin bidirectional line
 				(at -11.43 -2.54 0)
 				(length 2.54)
 				(name "SDI"
@@ -1456,7 +1462,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin bidirectional line
 				(at -11.43 -5.08 0)
 				(length 2.54)
 				(name "SDO"
@@ -1474,7 +1480,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_in line
 				(at 11.43 5.08 180)
 				(length 2.54)
 				(name "VDD"
@@ -1492,7 +1498,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_in line
 				(at 11.43 2.54 180)
 				(length 2.54)
 				(name "VSS"
@@ -1510,7 +1516,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin power_in line
 				(at 11.43 0 180)
 				(length 2.54)
 				(name "VSS"
@@ -1528,7 +1534,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin output line
 				(at 11.43 -2.54 180)
 				(length 2.54)
 				(name "INT"
@@ -1546,7 +1552,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin input line
 				(at 11.43 -5.08 180)
 				(length 2.54)
 				(name "CSB"
@@ -2637,6 +2643,186 @@
 		)
 		(embedded_fonts no)
 	)
+	(symbol "SEA-12095-16"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "BUZ"
+			(at 0 6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SEA-12095-16"
+			(at 0 -6.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "aerolotl_custom:BUZ-TH_BD12.0-P6.50-D0.6-FD"
+			(at 0 -8.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Buzzers_12-9-5-Passive-Electromagnetic-buzzer_C2859.html"
+			(at 0 -11.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C2859"
+			(at 0 -13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "SEA-12095-16_0_1"
+			(polyline
+				(pts
+					(xy -1.27 1.78) (xy -1.27 -1.78)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 1.78) (xy 1.27 1.78)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -1.27 -1.78) (xy 1.27 -1.78)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 1.78) (xy 1.27 -1.78)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 1.27 -1.78) (xy 3.56 -3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.56 3.81) (xy 1.27 1.78)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 3.56 3.81) (xy 3.56 -3.81)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin unspecified line
+				(at -3.81 1.27 0)
+				(length 2.54)
+				(name "+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin unspecified line
+				(at -3.81 -1.27 0)
+				(length 2.54)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "SparkfunM9N"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2716,42 +2902,6 @@
 			)
 		)
 		(symbol "SparkfunM9N_1_1"
-			(pin output line
-				(at 55.88 52.07 0)
-				(length 2.54)
-				(name "TIMEPULSE"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 55.88 49.53 0)
-				(length 2.54)
-				(name "~{RESET}"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin input line
 				(at 55.88 46.99 0)
 				(length 2.54)
@@ -2917,7 +3067,7 @@
 			(pin output line
 				(at 91.44 39.37 180)
 				(length 2.54)
-				(name "LNA_EN"
+				(name "CS"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2971,7 +3121,7 @@
 			(pin input line
 				(at 91.44 31.75 180)
 				(length 2.54)
-				(name "RF_IN"
+				(name "SCK"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2979,6 +3129,42 @@
 					)
 				)
 				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 91.44 27.94 180)
+				(length 2.54)
+				(name "TIMEPULSE"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 91.44 25.4 180)
+				(length 2.54)
+				(name "~{RESET}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3221,8 +3407,8 @@
 		)
 		(symbol "TF-102-15_SD_read_0_1"
 			(rectangle
-				(start -8.89 11.43)
-				(end 11.43 -11.43)
+				(start -10.16 11.43)
+				(end 10.16 -11.43)
 				(stroke
 					(width 0)
 					(type default)
@@ -3232,7 +3418,7 @@
 				)
 			)
 			(circle
-				(center -8.38 10.92)
+				(center -9.65 10.92)
 				(radius 0.38)
 				(stroke
 					(width 0)
@@ -3242,8 +3428,10 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
-				(at -11.43 8.89 0)
+		)
+		(symbol "TF-102-15_SD_read_1_1"
+			(pin bidirectional line
+				(at -12.7 8.89 0)
 				(length 2.54)
 				(name "DAT2"
 					(effects
@@ -3260,8 +3448,8 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at -11.43 6.35 0)
+			(pin bidirectional line
+				(at -12.7 6.35 0)
 				(length 2.54)
 				(name "CD/DAT3"
 					(effects
@@ -3278,8 +3466,8 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at -11.43 3.81 0)
+			(pin bidirectional line
+				(at -12.7 3.81 0)
 				(length 2.54)
 				(name "CMD"
 					(effects
@@ -3296,8 +3484,8 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at -11.43 1.27 0)
+			(pin power_in line
+				(at -12.7 1.27 0)
 				(length 2.54)
 				(name "VDD"
 					(effects
@@ -3314,8 +3502,8 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at -11.43 -1.27 0)
+			(pin input line
+				(at -12.7 -1.27 0)
 				(length 2.54)
 				(name "CLK"
 					(effects
@@ -3332,8 +3520,8 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at -11.43 -3.81 0)
+			(pin power_in line
+				(at -12.7 -3.81 0)
 				(length 2.54)
 				(name "VSS"
 					(effects
@@ -3350,8 +3538,8 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at -11.43 -6.35 0)
+			(pin bidirectional line
+				(at -12.7 -6.35 0)
 				(length 2.54)
 				(name "DAT0"
 					(effects
@@ -3368,8 +3556,8 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at -11.43 -8.89 0)
+			(pin bidirectional line
+				(at -12.7 -8.89 0)
 				(length 2.54)
 				(name "DAT1"
 					(effects
@@ -3386,8 +3574,8 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at 5.08 16.51 270)
+			(pin passive line
+				(at 3.81 16.51 270)
 				(length 5.08)
 				(name "SHELL"
 					(effects
@@ -3404,8 +3592,8 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at 5.08 -16.51 90)
+			(pin passive line
+				(at 3.81 -16.51 90)
 				(length 5.08)
 				(name "SHELL"
 					(effects
@@ -3422,8 +3610,8 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at 7.62 16.51 270)
+			(pin passive line
+				(at 6.35 16.51 270)
 				(length 5.08)
 				(name "SHELL"
 					(effects
@@ -3440,8 +3628,8 @@
 					)
 				)
 			)
-			(pin unspecified line
-				(at 7.62 -16.51 90)
+			(pin passive line
+				(at 6.35 -16.51 90)
 				(length 5.08)
 				(name "SHELL"
 					(effects
@@ -3921,107 +4109,4 @@
 		)
 		(embedded_fonts no)
 	)
-
-  (symbol "SEA-12095-16"
-    (in_bom yes)
-    (on_board yes)
-    (property
-      "Reference"
-      "BUZ"
-      (id 0)
-      (at 0 6.35 0)
-      (effects (font (size 1.27 1.27) ) )
-    )
-    (property
-      "Value"
-      "SEA-12095-16"
-      (id 1)
-      (at 0 -6.35 0)
-      (effects (font (size 1.27 1.27) ) )
-    )
-    (property
-      "Footprint"
-      "aerolotl_custom:BUZ-TH_BD12.0-P6.50-D0.6-FD"
-      (id 2)
-      (at 0 -8.89 0)
-      (effects (font (size 1.27 1.27) ) hide)
-    )
-    (property
-      "Datasheet"
-      "https://lcsc.com/product-detail/Buzzers_12-9-5-Passive-Electromagnetic-buzzer_C2859.html"
-      (id 3)
-      (at 0 -11.43 0)
-      (effects (font (size 1.27 1.27) ) hide)
-    )
-    (property
-      "LCSC Part"
-      "C2859"
-      (id 5)
-      (at 0 -13.97 0)
-      (effects (font (size 1.27 1.27) ) hide)
-    )
-    (symbol "SEA-12095-16_0_1"
-      (polyline
-        (pts
-          (xy 3.56 3.81) (xy 1.27 1.78)
-        )
-        (stroke (width 0) (type default) (color 0 0 0 0))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 1.27 -1.78) (xy 3.56 -3.81)
-        )
-        (stroke (width 0) (type default) (color 0 0 0 0))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 3.56 3.81) (xy 3.56 -3.81)
-        )
-        (stroke (width 0) (type default) (color 0 0 0 0))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy 1.27 1.78) (xy 1.27 -1.78)
-        )
-        (stroke (width 0) (type default) (color 0 0 0 0))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -1.27 1.78) (xy -1.27 -1.78)
-        )
-        (stroke (width 0) (type default) (color 0 0 0 0))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -1.27 -1.78) (xy 1.27 -1.78)
-        )
-        (stroke (width 0) (type default) (color 0 0 0 0))
-        (fill (type none))
-      )
-      (polyline
-        (pts
-          (xy -1.27 1.78) (xy 1.27 1.78)
-        )
-        (stroke (width 0) (type default) (color 0 0 0 0))
-        (fill (type none))
-      )
-      (pin unspecified line
-        (at -3.81 1.27 0)
-        (length 2.54)
-        (name "+" (effects (font (size 1.27 1.27))))
-        (number "1" (effects (font (size 1.27 1.27))))
-      )
-      (pin unspecified line
-        (at -3.81 -1.27 0)
-        (length 2.54)
-        (name "2" (effects (font (size 1.27 1.27))))
-        (number "2" (effects (font (size 1.27 1.27))))
-      )
-    )
-  )
 )

@@ -1479,7 +1479,7 @@
 			)
 			(symbol "+12V_ARM_1_1"
 				(pin power_in line
-					(at 0 0 0)
+					(at 0 0 90)
 					(length 2.54)
 					(hide yes)
 					(name "+12V_ARM"
@@ -2231,7 +2231,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 29.21) (xy 213.36 31.75)
+			(xy 213.36 26.67) (xy 213.36 31.75)
 		)
 		(stroke
 			(width 0)
@@ -3740,16 +3740,16 @@
 	)
 	(symbol
 		(lib_id "aerolotl_custom:+12V_ARM")
-		(at 213.36 29.21 0)
+		(at 213.36 26.67 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board no)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "91299d3b-50d9-494c-9c56-9bc274a71a38")
+		(uuid "9a53e5e9-c116-4431-ba09-9dd6a6f64d57")
 		(property "Reference" "#PWR078"
-			(at 213.36 29.21 0)
+			(at 213.36 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3758,7 +3758,7 @@
 			)
 		)
 		(property "Value" "+12V_ARM"
-			(at 213.36 24.13 0)
+			(at 213.36 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3766,7 +3766,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 213.36 29.21 0)
+			(at 213.36 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3775,7 +3775,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 213.36 29.21 0)
+			(at 213.36 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3784,7 +3784,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 213.36 29.21 0)
+			(at 213.36 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3793,7 +3793,7 @@
 			)
 		)
 		(pin ""
-			(uuid "7533ab10-352c-4150-be17-c612128d438d")
+			(uuid "4ad20ab5-e0d0-42bd-aeba-1a4178b3934f")
 		)
 		(instances
 			(project ""

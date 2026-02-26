@@ -1276,104 +1276,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Power:+12V_ARM"
-			(power)
-			(exclude_from_sim no)
-			(in_bom no)
-			(on_board no)
-			(property "Reference" "#PWR"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+12V_ARM"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "For ARMING ematches."
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+12V_ARM_0_1"
-				(polyline
-					(pts
-						(xy 0 2.54) (xy -0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 1.27) (xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+12V_ARM_1_1"
-				(pin power_in line
-					(at 0 0 0)
-					(length 2.54)
-					(hide yes)
-					(name "+12V_ARM"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Power_Protection:USBLC6-2P6"
 			(pin_names
 				(hide yes)
@@ -2454,6 +2356,92 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "aerolotl_custom:+12V_ARM"
+			(power)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board no)
+			(property "Reference" "#PWR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+12V_ARM"
+				(at 0 4.064 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+12V_ARM_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54) (xy -0.762 1.27) (xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+12V_ARM_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 2.54)
+					(hide yes)
+					(name "+12V_ARM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5150,7 +5138,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 147.955) (xy 161.29 149.86)
+			(xy 161.29 147.32) (xy 161.29 149.86)
 		)
 		(stroke
 			(width 0)
@@ -7998,71 +7986,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Power:+12V_ARM")
-		(at 201.93 132.08 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(dnp no)
-		(uuid "a69ce61b-4735-4a10-b802-d9159de72a92")
-		(property "Reference" "#PWR036"
-			(at 201.93 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V_ARM"
-			(at 193.04 132.08 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 201.93 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 201.93 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "For ARMING ematches."
-			(at 201.93 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin ""
-			(uuid "89d3294d-f77d-4912-a67e-80c2b2c7f4c5")
-		)
-		(instances
-			(project "aerolotl"
-				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74cb3ba4-5441-4040-b144-f529fa281743"
-					(reference "#PWR036")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 204.47 132.08 0)
 		(unit 1)
@@ -8394,6 +8317,73 @@
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74cb3ba4-5441-4040-b144-f529fa281743"
 					(reference "SW4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "aerolotl_custom:+12V_ARM")
+		(at 201.93 132.08 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b206767f-215e-4684-8c5a-751009cee3c3")
+		(property "Reference" "#PWR036"
+			(at 201.93 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V_ARM"
+			(at 198.12 132.0799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 201.93 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 201.93 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 201.93 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "f16c64fd-1cda-4197-9872-c79fa751343f")
+		)
+		(instances
+			(project ""
+				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74cb3ba4-5441-4040-b144-f529fa281743"
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -8885,7 +8875,7 @@
 	)
 	(symbol
 		(lib_id "aerolotl_custom:+7V4_SERVO")
-		(at 161.29 147.955 0)
+		(at 161.29 147.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -8894,7 +8884,7 @@
 		(fields_autoplaced yes)
 		(uuid "d3a63a7a-6aff-4fcc-94ce-93e172f81adb")
 		(property "Reference" "#PWR034"
-			(at 161.29 147.955 0)
+			(at 161.29 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8903,7 +8893,7 @@
 			)
 		)
 		(property "Value" "+7V4_SERVO"
-			(at 161.29 143.51 0)
+			(at 161.29 142.875 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8911,7 +8901,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 161.29 147.955 0)
+			(at 161.29 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8920,7 +8910,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 161.29 147.955 0)
+			(at 161.29 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8929,7 +8919,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 161.29 147.955 0)
+			(at 161.29 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)

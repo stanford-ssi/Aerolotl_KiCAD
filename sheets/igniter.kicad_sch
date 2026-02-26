@@ -5,6 +5,210 @@
 	(uuid "b3495c47-0b4a-49ad-815d-202b98472ccf")
 	(paper "A4")
 	(lib_symbols
+		(symbol "1812L150_PTC_Fuse_1"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "F"
+				(at 5.08 3.175 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "1812L150/24MR"
+				(at 5.08 -3.175 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "FUSE_1812L150/24_LTF"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "1812L150/24MR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "1812L150/24MR"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "FUSE_1812L150/24_LTF FUSE_1812L150/24_LTF-M FUSE_1812L150/24_LTF-L"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1812L150_PTC_Fuse_1_1_1"
+				(arc
+					(start 2.54 0)
+					(mid 3.81 1.2645)
+					(end 5.08 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 7.62 0)
+					(mid 6.35 -1.2645)
+					(end 5.08 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "1812L150_PTC_Fuse_1_1_2"
+				(arc
+					(start 0 7.62)
+					(mid 1.2645 6.35)
+					(end 0 5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 2.54)
+					(mid -1.2645 3.81)
+					(end 0 5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at 0 10.16 270)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Screw_Terminal_01x02"
 			(pin_names
 				(offset 1.016)
@@ -641,104 +845,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Power:+12V_ARM"
-			(power)
-			(exclude_from_sim no)
-			(in_bom no)
-			(on_board no)
-			(property "Reference" "#PWR"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+12V_ARM"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "For ARMING ematches."
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+12V_ARM_0_1"
-				(polyline
-					(pts
-						(xy 0 2.54) (xy -0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 1.27) (xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+12V_ARM_1_1"
-				(pin power_in line
-					(at 0 0 0)
-					(length 2.54)
-					(hide yes)
-					(name "+12V_ARM"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Transistor_FET:AO3400A"
 			(pin_names
 				(offset 0)
@@ -1038,45 +1144,42 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "aerolotl_custom:1812L150_PTC_Fuse"
-			(pin_names
-				(offset 0.254)
-			)
+		(symbol "aerolotl_custom:+12V_ARM"
+			(power)
 			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "F"
-				(at 5.08 3.175 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Value" "1812L150/24MR"
-				(at 5.08 -3.175 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Footprint" "FUSE_1812L150/24_LTF"
+			(in_bom no)
+			(on_board no)
+			(property "Reference" "#PWR"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "1812L150/24MR"
+			(property "Value" "+12V_ARM"
+				(at 0 4.064 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
 					(hide yes)
 				)
@@ -1090,148 +1193,33 @@
 					(hide yes)
 				)
 			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
+			(symbol "+12V_ARM_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54) (xy -0.762 1.27) (xy 0 2.54) (xy 0.762 1.27)
 					)
-				)
-			)
-			(property "ki_keywords" "1812L150/24MR"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "FUSE_1812L150/24_LTF FUSE_1812L150/24_LTF-M FUSE_1812L150/24_LTF-L"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "1812L150_PTC_Fuse_1_1"
-				(arc
-					(start 2.54 0)
-					(mid 3.81 1.2645)
-					(end 5.08 0)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(arc
-					(start 7.62 0)
-					(mid 6.35 -1.2645)
-					(end 5.08 0)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin unspecified line
-					(at 0 0 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 10.16 0 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 			)
-			(symbol "1812L150_PTC_Fuse_1_2"
-				(arc
-					(start 0 7.62)
-					(mid 1.2645 6.35)
-					(end 0 5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 2.54)
-					(mid -1.2645 3.81)
-					(end 0 5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin unspecified line
-					(at 0 10.16 270)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
+			(symbol "+12V_ARM_1_1"
+				(pin power_in line
 					(at 0 0 90)
 					(length 2.54)
-					(name "1"
+					(hide yes)
+					(name "+12V_ARM"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1494,16 +1482,6 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 34.925) (xy 113.03 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "224359df-6d37-4324-8f5f-02613b170e5a")
-	)
-	(wire
-		(pts
 			(xy 43.18 62.23) (xy 43.18 69.85)
 		)
 		(stroke
@@ -1621,6 +1599,16 @@
 			(type default)
 		)
 		(uuid "44c0c2e3-f9f6-4bfa-b42d-59e8cdf5eb61")
+	)
+	(wire
+		(pts
+			(xy 113.03 33.02) (xy 113.03 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "472bcda1-6b89-4357-8272-e3714711fd43")
 	)
 	(wire
 		(pts
@@ -2393,6 +2381,79 @@
 		)
 	)
 	(symbol
+		(lib_name "1812L150_PTC_Fuse_1")
+		(lib_id "aerolotl_custom:1812L150_PTC_Fuse")
+		(at 113.03 48.26 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "299a0f3e-3cc2-4f40-9d97-cb0264195371")
+		(property "Reference" "F4"
+			(at 115.57 41.9099 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1812L150/24MR"
+			(at 115.57 44.4499 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "aerolotl_custom:FUSE_1812L150&slash_24_LTF"
+			(at 113.03 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "1812L150/24MR"
+			(at 113.03 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 113.03 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a9cea3f1-ac1b-49ad-bd42-7bac473e1d1e")
+		)
+		(pin "1"
+			(uuid "9ad07b8a-69cb-453d-9b6c-c7403f64cf0c")
+		)
+		(instances
+			(project ""
+				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
+					(reference "F4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 53.34 162.56 0)
 		(unit 1)
@@ -2598,72 +2659,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Power:+12V_ARM")
-		(at 111.76 123.19 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "401c817b-55a6-48d5-b4ce-27fa3274ffc3")
-		(property "Reference" "#PWR0123"
-			(at 111.76 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V_ARM"
-			(at 111.76 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 111.76 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 111.76 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "For ARMING ematches."
-			(at 111.76 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin ""
-			(uuid "2b73a8af-cb5a-4056-8045-5e7b71bf2008")
-		)
-		(instances
-			(project "aerolotl"
-				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
-					(reference "#PWR0123")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 41.91 180.34 0)
 		(unit 1)
@@ -2795,144 +2790,6 @@
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
 					(reference "C46")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Power:+12V_ARM")
-		(at 113.03 34.925 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5adcd88a-8ccd-4582-bb83-8d2fad2b55f8")
-		(property "Reference" "#PWR0125"
-			(at 113.03 34.925 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V_ARM"
-			(at 113.03 29.845 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 113.03 34.925 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 113.03 34.925 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "For ARMING ematches."
-			(at 113.03 34.925 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin ""
-			(uuid "823f3ff9-26c2-41a9-859d-3cecb342a196")
-		)
-		(instances
-			(project "aerolotl"
-				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
-					(reference "#PWR0125")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "aerolotl_custom:1812L150_PTC_Fuse")
-		(at 113.03 48.26 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5cc19bef-5e0c-4829-8b23-f5f22cc0f514")
-		(property "Reference" "F4"
-			(at 115.57 41.9099 90)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1812L150/24MR"
-			(at 115.57 44.4499 90)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "aerolotl_custom:FUSE_1812L150&slash_24_LTF"
-			(at 113.03 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "1812L150/24MR"
-			(at 113.03 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 113.03 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a03e4af6-3388-428d-bce4-e0b58e474343")
-		)
-		(pin "2"
-			(uuid "4bed62c0-8a33-4d10-8371-ad25450c574c")
-		)
-		(instances
-			(project "aerolotl"
-				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
-					(reference "F4")
 					(unit 1)
 				)
 			)
@@ -3273,78 +3130,6 @@
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
 					(reference "#PWR0116")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "aerolotl_custom:1812L150_PTC_Fuse")
-		(at 111.76 137.16 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a5ef8dd5-2517-495d-81cd-240932b858d0")
-		(property "Reference" "F3"
-			(at 114.3 130.8099 90)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1812L150/24MR"
-			(at 114.3 133.3499 90)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "aerolotl_custom:FUSE_1812L150&slash_24_LTF"
-			(at 111.76 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "1812L150/24MR"
-			(at 111.76 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 111.76 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "631ee25d-05d4-41ee-a3c5-07a4762b8dbe")
-		)
-		(pin "2"
-			(uuid "d038a481-dc21-40a6-9bdb-30b1c04e95df")
-		)
-		(instances
-			(project "aerolotl"
-				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
-					(reference "F3")
 					(unit 1)
 				)
 			)
@@ -3776,6 +3561,79 @@
 		)
 	)
 	(symbol
+		(lib_name "1812L150_PTC_Fuse_1")
+		(lib_id "aerolotl_custom:1812L150_PTC_Fuse")
+		(at 111.76 137.16 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d3f0b590-1930-4708-bc7c-7b710d19f84f")
+		(property "Reference" "F3"
+			(at 114.3 130.8099 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1812L150/24MR"
+			(at 114.3 133.3499 90)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "aerolotl_custom:FUSE_1812L150&slash_24_LTF"
+			(at 111.76 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "1812L150/24MR"
+			(at 111.76 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 111.76 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "db340ef0-58ed-4d9b-9b82-9f96b1e67e04")
+		)
+		(pin "1"
+			(uuid "7ec1cb91-19cf-48f3-9a88-189ff1bf9c6d")
+		)
+		(instances
+			(project "aerolotl"
+				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
+					(reference "F3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 111.76 156.21 0)
 		(unit 1)
@@ -4061,6 +3919,138 @@
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
 					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "aerolotl_custom:+12V_ARM")
+		(at 113.03 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f3c07cc3-66db-4f97-8e6e-596be23ee2bf")
+		(property "Reference" "#PWR0125"
+			(at 113.03 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V_ARM"
+			(at 113.03 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.03 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 113.03 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "eb83d92e-654f-49ed-badf-2dba74c1cf28")
+		)
+		(instances
+			(project ""
+				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
+					(reference "#PWR0125")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "aerolotl_custom:+12V_ARM")
+		(at 111.76 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f92bf8d6-abaa-4526-9977-2f2dfe0f92f5")
+		(property "Reference" "#PWR0123"
+			(at 111.76 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V_ARM"
+			(at 111.76 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 111.76 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "f542cf74-848e-40a1-ad02-c004b858ab4e")
+		)
+		(instances
+			(project "aerolotl"
+				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/52f7934e-6b3c-4046-8930-cc057f9c6816"
+					(reference "#PWR0123")
 					(unit 1)
 				)
 			)

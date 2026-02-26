@@ -228,6 +228,14 @@
   "erc": {
     "erc_exclusions": [
       [
+        "lib_symbol_mismatch|1092200|1803400|64647d78-9e9e-44ad-9283-537dac12c2e5|00000000-0000-0000-0000-000000000000|||",
+        "Separated Power pins from others"
+      ],
+      [
+        "lib_symbol_mismatch|3073400|1562100|7378de30-8203-4679-9111-a8e2bfb2d99e|00000000-0000-0000-0000-000000000000|||",
+        "Separated Power pins from GPIOs"
+      ],
+      [
         "pin_to_pin|660400|2209800|addea888-21df-44ef-b5a1-bc4264aead40|13ac1d86-dd1c-489a-9b86-4a67f1829a9f|/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/ab6692e5-8cdb-4044-acef-dc950a39c5fc|/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/ab6692e5-8cdb-4044-acef-dc950a39c5fc|/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/ab6692e5-8cdb-4044-acef-dc950a39c5fc",
         "All VCAP pins can be connected"
       ],
