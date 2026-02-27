@@ -4455,7 +4455,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "aerolotl_custom:F1812"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 144.78 35.56 0)
 			(effects
 				(font
