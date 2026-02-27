@@ -11333,7 +11333,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm"
+		(property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm"
 			(at 226.06 104.14 0)
 			(effects
 				(font
@@ -11351,7 +11351,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "-40℃~+85℃ 12.5pF 32.768kHz 70kΩ Crystal Oscillator ±20ppm SMD3215-2P Crystals ROHS"
+		(property "Description" ""
 			(at 226.06 104.14 0)
 			(effects
 				(font
@@ -11360,7 +11360,7 @@
 				(hide yes)
 			)
 		)
-		(property "mfr. part no." "ABS07-32.768KHZ-T"
+		(property "mfr. part no." ""
 			(at 226.06 104.14 0)
 			(effects
 				(font
