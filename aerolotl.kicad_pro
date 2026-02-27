@@ -598,7 +598,7 @@
           "group_by": false,
           "label": "ESR",
           "name": "ESR",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -719,6 +719,30 @@
           "label": "Field5",
           "name": "Field5",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Note",
+          "name": "Note",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Voltage",
+          "name": "Voltage",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Dielectric",
+          "name": "Dielectric",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Tolerance",
+          "name": "Tolerance",
+          "show": true
         }
       ],
       "filter_string": "",

@@ -4,11 +4,30 @@
 	(generator_version "9.0")
 	(uuid "3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754")
 	(paper "A3")
+	(title_block
+		(title "AEROLOTL NEW COLLINS FLIGHT COMPUTER")
+		(date "2026-02-27")
+		(rev "2")
+		(company "Stanford Space Initiative")
+		(comment 1 "By KOICHI KIMOTO")
+		(comment 2 "Implemented Logan's comments")
+	)
 	(lib_symbols)
 	(bus_alias "SENSE_SPI"
 		(members "SCK" "MISO" "MOSI" "CS_345" "CS_375" "CS_BMP" "INT_345" "INT_375"
 			"INT_BMP"
 		)
+	)
+	(text "NOTES:\n\n1. UNLESS OTHERWISE SPECIFIED, ALL CAPACITORS ARE 16V X7R 10%.\n\n2. UNLESS OTHERWISE SPECIFIED, ALL RESISTORS ARE 1/10W 1%.\n\n3. APPLY SILICONE CONFORMAL COATING POST-ASSEMBLY."
+		(exclude_from_sim no)
+		(at 152.4 27.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0e00713f-d45e-4ac1-add6-40cc993fd719")
 	)
 	(bus_entry
 		(at 227.33 46.99)
