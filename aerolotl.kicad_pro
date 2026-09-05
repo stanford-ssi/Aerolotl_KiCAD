@@ -3,6 +3,8 @@
     "3dviewports": [],
     "design_settings": {
       "defaults": {
+        "apply_defaults_to_fp_barcodes": false,
+        "apply_defaults_to_fp_dimensions": false,
         "apply_defaults_to_fp_fields": false,
         "apply_defaults_to_fp_shapes": false,
         "apply_defaults_to_fp_text": false,
@@ -48,7 +50,23 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "border_display_style": 2,
+          "border_hatch_pitch": 0.5,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
+          "fill_mode": 0,
+          "hatch_gap": 1.5,
+          "hatch_orientation": 0.0,
+          "hatch_smoothing_level": 0,
+          "hatch_smoothing_value": 0.1,
+          "hatch_thickness": 1.0,
+          "min_clearance": 0.5,
+          "min_island_area": 10.0,
+          "min_thickness": 0.25,
+          "pad_connection": 1,
+          "remove_islands": 0,
+          "thermal_relief_gap": 0.5,
+          "thermal_relief_spoke_width": 0.5
         }
       },
       "diff_pair_dimensions": [],
@@ -71,6 +89,7 @@
         "extra_footprint": "warning",
         "footprint": "error",
         "footprint_filters_mismatch": "ignore",
+        "footprint_symbol_field_mismatch": "warning",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
@@ -88,6 +107,7 @@
         "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "ignore",
         "missing_footprint": "warning",
+        "missing_tuning_profile": "warning",
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "ignore",
@@ -107,9 +127,12 @@
         "too_many_vias": "error",
         "track_angle": "error",
         "track_dangling": "warning",
+        "track_not_centered_on_via": "ignore",
+        "track_on_post_machined_layer": "error",
         "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
+        "tuning_profile_track_geometries": "ignore",
         "unconnected_items": "error",
         "unresolved_variable": "error",
         "via_dangling": "warning",
@@ -211,17 +234,28 @@
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
+      "bom_rev": "",
       "dist": "",
       "distpn": "",
       "internal_id": "",
       "mfg": "",
-      "mpn": ""
+      "mpn": "",
+      "sch_revision": ""
     },
     "layer_pairs": [],
     "layer_presets": [],
     "viewports": []
   },
   "boards": [],
+  "component_class_settings": {
+    "assignments": [],
+    "meta": {
+      "version": 0
+    },
+    "sheet_component_classes": {
+      "enabled": false
+    }
+  },
   "cvpcb": {
     "equivalence_files": []
   },
@@ -234,6 +268,10 @@
       [
         "lib_symbol_mismatch|3073400|1562100|7378de30-8203-4679-9111-a8e2bfb2d99e|00000000-0000-0000-0000-000000000000|||",
         "Separated Power pins from GPIOs"
+      ],
+      [
+        "pin_to_pin|622300|584200|064fce25-5ce9-4a47-95f5-c38ddb2654d0|3e00ca24-1275-4ce2-b492-aaa594e6a052|/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3|/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3|/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3",
+        "SDO1 and SDO2 can be the same net"
       ],
       [
         "pin_to_pin|660400|2209800|addea888-21df-44ef-b5a1-bc4264aead40|13ac1d86-dd1c-489a-9b86-4a67f1829a9f|/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/ab6692e5-8cdb-4044-acef-dc950a39c5fc|/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/ab6692e5-8cdb-4044-acef-dc950a39c5fc|/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/ab6692e5-8cdb-4044-acef-dc950a39c5fc",
@@ -432,11 +470,14 @@
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
+      "field_name_whitespace": "warning",
       "footprint_filter": "ignore",
       "footprint_link_issues": "warning",
       "four_way_junction": "ignore",
       "global_label_dangling": "warning",
+      "ground_pin_not_ground": "warning",
       "hier_label_mismatch": "error",
+      "isolated_pin_label": "warning",
       "label_dangling": "error",
       "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
@@ -459,6 +500,7 @@
       "similar_power": "warning",
       "simulation_model_issue": "ignore",
       "single_global_label": "ignore",
+      "stacked_pin_name": "warning",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
       "undefined_netclass": "error",
@@ -491,13 +533,14 @@
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
+        "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
       }
     ],
     "meta": {
-      "version": 4
+      "version": 5
     },
     "net_colors": null,
     "netclass_assignments": null,
@@ -519,6 +562,10 @@
   },
   "schematic": {
     "annotate_start_num": 0,
+    "annotation": {
+      "method": 0,
+      "sort_order": 0
+    },
     "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
@@ -737,6 +784,12 @@
           "label": "Tolerance",
           "name": "Tolerance",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "DCR",
+          "name": "DCR",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -746,6 +799,33 @@
       "sort_asc": true,
       "sort_field": "Reference"
     },
+    "bus_aliases": {
+      "PORT_G": [
+        "PG7_IO",
+        "PG8_IO",
+        "PG9_IO",
+        "PG10_IO",
+        "PG11_IO",
+        "PG12_IO",
+        "PG13_IO",
+        "PG14_IO"
+      ],
+      "SENSE_SPI": [
+        "SCK",
+        "MISO",
+        "MOSI",
+        "CS_345",
+        "CS_375",
+        "CS_BMP",
+        "INT_345",
+        "INT_375",
+        "INT_BMP",
+        "CS_IMU_ACC",
+        "CS_IMU_GYRO",
+        "INT_IMU_ACC",
+        "INT_IMU_GYRO"
+      ]
+    },
     "connection_grid_size": 50.0,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,
@@ -753,6 +833,7 @@
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
       "field_names": [],
+      "hop_over_size_choice": 0,
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
       "intersheets_ref_short": false,
@@ -784,6 +865,7 @@
     },
     "page_layout_descr_file": "",
     "plot_directory": "revs/",
+    "reuse_designators": true,
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -792,7 +874,16 @@
     "spice_save_all_dissipations": false,
     "spice_save_all_voltages": false,
     "subpart_first_id": 65,
-    "subpart_id_separator": 0
+    "subpart_id_separator": 0,
+    "top_level_sheets": [
+      {
+        "filename": "aerolotl.kicad_sch",
+        "name": "aerolotl",
+        "uuid": "00000000-0000-0000-0000-000000000000"
+      }
+    ],
+    "used_designators": "C55",
+    "variants": []
   },
   "sheets": [
     [
@@ -830,7 +921,17 @@
     [
       "52f7934e-6b3c-4046-8930-cc057f9c6816",
       "Igniter"
+    ],
+    [
+      "2b568165-af67-4ca2-b339-ae849884a109",
+      "airlift"
     ]
   ],
-  "text_variables": {}
+  "text_variables": {},
+  "tuning_profiles": {
+    "meta": {
+      "version": 0
+    },
+    "tuning_profiles_impedance_geometric": []
+  }
 }

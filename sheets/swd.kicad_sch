@@ -744,7 +744,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 106.68) (xy 165.1 106.68)
+			(xy 154.94 106.68) (xy 160.02 106.68)
 		)
 		(stroke
 			(width 0)
@@ -926,7 +926,7 @@
 	)
 	(hierarchical_label "T_VCP_RX"
 		(shape input)
-		(at 165.1 106.68 0)
+		(at 160.02 106.68 0)
 		(effects
 			(font
 				(size 1.27 1.27)
