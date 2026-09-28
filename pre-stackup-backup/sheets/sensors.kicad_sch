@@ -2062,7 +2062,7 @@
 				)
 			)
 			(symbol "B39162B4300F210_1_1"
-				(pin passive line
+				(pin input line
 					(at -8.89 2.54 0)
 					(length 2.54)
 					(name "IN"
@@ -2442,27 +2442,29 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "AE"
-				(at 2.2606 6.985 0)
+			(property "Reference" "AE1"
+				(at 3.81 7.6201 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
 					)
+					(justify left)
 				)
 			)
 			(property "Value" "GP.1575.18.4.A.02"
-				(at 2.2606 3.175 0)
+				(at 3.81 5.0801 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.524 1.524)
 					)
+					(justify left)
 				)
 			)
-			(property "Footprint" "ANT_GP.1575.18.4.A.02_TAL"
+			(property "Footprint" "aerolotl_custom:ANT_GP.1575.18.4.A.02_TAL"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3041,17 +3043,6 @@
 		)
 		(uuid "2049fd31-269f-4b0b-97c7-601919af693e")
 	)
-	(text "RF (GPS antenna -> SAW -> RF_IN): net class RF\n50 ohm CPWG, L1 ref L2 GND\n\nStackup JLC04161H-7628 (7628 prepreg 0.2104 mm, er~4.4)\nWidth 0.306 mm (12.04 mil), gap to GND pour 0.203 mm (8 mil)\n\nStitch GND vias both sides."
-		(exclude_from_sim no)
-		(at 81.28 137.16 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3158da26-5035-4ebd-91bb-1757bc0412da")
-	)
 	(text "ADXL375"
 		(exclude_from_sim no)
 		(at 156.21 109.22 0)
@@ -3111,6 +3102,16 @@
 			)
 		)
 		(uuid "9cfe334a-27d8-40c8-a928-5e4d59605155")
+	)
+	(text "netclass with impedance matching"
+		(exclude_from_sim no)
+		(at 120.65 128.27 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "b8adfffe-557f-49e8-b360-1ce6e1df4dbf")
 	)
 	(text "BMP581"
 		(exclude_from_sim no)
@@ -4902,16 +4903,6 @@
 		)
 		(uuid "1d0ce1e0-3d38-4ca5-9cf0-5660da1d7304")
 	)
-	(label "GPS_RF_IN"
-		(at 101.6 119.38 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2aac8223-d5a9-49aa-9100-2430e7f82bb9")
-	)
 	(label "SPI1.CS_375"
 		(at 246.38 160.02 0)
 		(effects
@@ -5363,106 +5354,6 @@
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
 					(reference "#PWR064")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "aerolotl_custom:B39162B4300F210")
-		(at 115.57 107.95 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0f703bd6-c087-4e4d-8fde-fa6542603b0e")
-		(property "Reference" "SAW2"
-			(at 115.57 97.79 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "B39162B4300F210"
-			(at 115.57 100.33 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "aerolotl_custom:FILTER-SMD_5P-L1.4-W1.1_RSFPXXXXD"
-			(at 115.57 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 115.57 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 115.57 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C2650962"
-			(at 115.57 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "7a86a99e-f46f-4bb6-b858-f6befe15dc37")
-		)
-		(pin "4"
-			(uuid "997b344e-03fa-4643-8adf-7de72902dea9")
-		)
-		(pin "5"
-			(uuid "7baefa26-7f42-444a-8c4f-eb9e8fc1ddf0")
-		)
-		(pin "1"
-			(uuid "a15f17c8-f8cb-4723-9d6d-666af328ca6b")
-		)
-		(pin "2"
-			(uuid "cbf3dabd-3d77-4622-a9d4-f90702496cc4")
-		)
-		(instances
-			(project "aerolotl"
-				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "SAW2")
 					(unit 1)
 				)
 			)
@@ -7099,7 +6990,7 @@
 				)
 			)
 		)
-		(property "Footprint" "aerolotl_custom:ADXL345"
+		(property "Footprint" "ADXL345BCCZ-RL7:PQFN80P500X300X100-14N"
 			(at 199.39 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -8792,87 +8683,6 @@
 		)
 	)
 	(symbol
-		(lib_id "aerolotl_custom:GP.1575.18.4.A.02")
-		(at 104.14 96.52 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b71c211f-324b-4bfa-b124-28d930705e05")
-		(property "Reference" "AE1"
-			(at 107.95 88.8999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "GP.1575.18.4.A.02"
-			(at 107.95 91.4399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "ANT_GP.1575.18.4.A.02_TAL"
-			(at 104.14 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "GP.1575.18.4.A.02"
-			(at 104.14 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 104.14 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1b3ddf63-106d-4071-be81-9033a0dd779b")
-		)
-		(instances
-			(project "aerolotl"
-				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
-					(reference "AE1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "RF_GPS:MAX-M10S")
 		(at 66.04 119.38 0)
 		(unit 1)
@@ -9521,6 +9331,87 @@
 		)
 	)
 	(symbol
+		(lib_id "aerolotl_custom:GP.1575.18.4.A.02")
+		(at 104.14 96.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d2ede3a4-b49d-4d26-9059-c99a0efcfd49")
+		(property "Reference" "AE1"
+			(at 107.95 88.8999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "GP.1575.18.4.A.02"
+			(at 107.95 91.4399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "aerolotl_custom:ANT_GP.1575.18.4.A.02_TAL"
+			(at 104.14 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "GP.1575.18.4.A.02"
+			(at 104.14 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 104.14 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "57ab5894-a30c-46ed-8344-ae9834d09230")
+		)
+		(instances
+			(project "aerolotl"
+				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
+					(reference "AE1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 60.96 91.44 0)
 		(unit 1)
@@ -9593,6 +9484,106 @@
 			(project "aerolotl"
 				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
 					(reference "#PWR050")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "aerolotl_custom:B39162B4300F210")
+		(at 115.57 107.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dd5ebca1-b712-412b-800d-eb6ca912469d")
+		(property "Reference" "SAW1"
+			(at 115.57 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "B39162B4300F210"
+			(at 115.57 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "aerolotl_custom:FILTER-SMD_5P-L1.4-W1.1_RSFPXXXXD"
+			(at 115.57 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 115.57 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 115.57 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C2650962"
+			(at 115.57 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "97d9fa0f-5955-4911-8026-9783e917d633")
+		)
+		(pin "2"
+			(uuid "55ac8f0c-dc5a-4801-852d-873a8eff38d4")
+		)
+		(pin "5"
+			(uuid "f408191b-79c3-46e4-ae09-706a143b87a9")
+		)
+		(pin "3"
+			(uuid "aa39fe66-df1b-4344-8abd-91d86931befe")
+		)
+		(pin "4"
+			(uuid "70c53a89-84de-4443-be3b-ae9184e26d6a")
+		)
+		(instances
+			(project "aerolotl"
+				(path "/3f5bc5ea-feaa-4ed9-b0e0-c918b1fb5754/74e9b1e9-3a21-4de4-9795-bce3dd5092b3"
+					(reference "SAW1")
 					(unit 1)
 				)
 			)

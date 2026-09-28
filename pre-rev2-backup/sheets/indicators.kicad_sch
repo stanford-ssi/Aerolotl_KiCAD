@@ -2385,7 +2385,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" ""
 			(at 62.23 61.468 90)
 			(hide yes)
 			(show_name no)
@@ -2508,7 +2508,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" ""
 			(at 62.23 51.308 90)
 			(hide yes)
 			(show_name no)
@@ -2634,7 +2634,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" ""
 			(at 36.322 128.27 90)
 			(hide yes)
 			(show_name no)
@@ -2760,7 +2760,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" ""
 			(at 181.102 62.23 90)
 			(hide yes)
 			(show_name no)
@@ -3043,7 +3043,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" ""
 			(at 215.392 62.23 90)
 			(hide yes)
 			(show_name no)
@@ -3248,7 +3248,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" ""
 			(at 250.952 60.96 90)
 			(hide yes)
 			(show_name no)
@@ -3950,7 +3950,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "aerolotl_custom:BUZ-TH_BD9.0-P5.00-D0.6-FD"
+		(property "Footprint" ""
 			(at 52.705 107.95 90)
 			(hide yes)
 			(show_name no)
@@ -4357,7 +4357,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" ""
 			(at 84.7852 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -4380,17 +4380,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 83.82 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C45783"
 			(at 83.82 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -4494,7 +4483,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" ""
 			(at 148.082 63.5 90)
 			(hide yes)
 			(show_name no)
@@ -4802,7 +4791,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" ""
 			(at 72.0852 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -4825,17 +4814,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 71.12 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C1525"
 			(at 71.12 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -5068,7 +5046,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" ""
 			(at 62.23 56.388 90)
 			(hide yes)
 			(show_name no)

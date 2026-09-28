@@ -7099,7 +7099,7 @@
 				)
 			)
 		)
-		(property "Footprint" "aerolotl_custom:ADXL345"
+		(property "Footprint" "ADXL345BCCZ-RL7:PQFN80P500X300X100-14N"
 			(at 199.39 57.15 0)
 			(hide yes)
 			(show_name no)

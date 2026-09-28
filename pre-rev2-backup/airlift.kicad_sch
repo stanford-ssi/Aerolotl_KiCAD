@@ -732,26 +732,6 @@
 		)
 		(uuid "d3b712e1-33d2-40ab-88c8-3736aa38f5fa")
 	)
-	(label "SPI2.BUSY"
-		(at 160.02 107.95 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "11c8cdc1-2312-4f66-b93e-801ddff39a28")
-	)
-	(label "SPI2.CS"
-		(at 129.54 107.95 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7756edd2-f2e3-4192-9c4a-6909c734c5cb")
-	)
 	(label "SPI2.MISO"
 		(at 116.84 102.87 0)
 		(effects
@@ -761,16 +741,6 @@
 			(justify left bottom)
 		)
 		(uuid "9d83e6b7-0de6-481f-80ee-52d3c3e6000b")
-	)
-	(label "SPI2.RST"
-		(at 129.54 92.71 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "a1f955ca-467a-491b-9048-8ea093ecd59d")
 	)
 	(label "SPI2.SCK"
 		(at 116.84 100.33 0)
@@ -792,7 +762,7 @@
 		)
 		(uuid "dbe1f4d2-359b-4021-88cb-8850e8fc0a29")
 	)
-	(hierarchical_label "SPI2{SCK, MISO, MOSI, CS, BUSY, RST}"
+	(hierarchical_label "SPI2{SCK, MISO, MOSI}"
 		(shape bidirectional)
 		(at 114.3 90.17 180)
 		(effects
@@ -916,7 +886,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x12_P2.54mm_Vertical"
+		(property "Footprint" ""
 			(at 132.08 88.9 0)
 			(hide yes)
 			(show_name no)

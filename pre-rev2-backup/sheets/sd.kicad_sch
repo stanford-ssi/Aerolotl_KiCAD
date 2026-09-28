@@ -1433,7 +1433,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" ""
 			(at 129.032 78.74 90)
 			(hide yes)
 			(show_name no)
@@ -1456,17 +1456,6 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 130.81 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C25744"
 			(at 130.81 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -1570,7 +1559,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" ""
 			(at 148.082 78.74 90)
 			(hide yes)
 			(show_name no)
@@ -1593,17 +1582,6 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 149.86 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C25744"
 			(at 149.86 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -1707,7 +1685,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" ""
 			(at 118.872 78.74 90)
 			(hide yes)
 			(show_name no)
@@ -1730,17 +1708,6 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 120.65 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C25744"
 			(at 120.65 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -1920,7 +1887,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" ""
 			(at 110.49 116.078 90)
 			(hide yes)
 			(show_name no)
@@ -2046,7 +2013,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" ""
 			(at 139.192 78.74 90)
 			(hide yes)
 			(show_name no)
@@ -2069,17 +2036,6 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 140.97 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C25744"
 			(at 140.97 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -2341,7 +2297,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" ""
 			(at 156.972 78.74 90)
 			(hide yes)
 			(show_name no)
@@ -2364,17 +2320,6 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 158.75 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C25744"
 			(at 158.75 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -2475,7 +2420,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" ""
 			(at 110.49 113.538 90)
 			(hide yes)
 			(show_name no)
@@ -2598,7 +2543,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" ""
 			(at 110.49 98.298 90)
 			(hide yes)
 			(show_name no)
@@ -2967,7 +2912,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" ""
 			(at 110.49 103.378 90)
 			(hide yes)
 			(show_name no)
@@ -3168,7 +3113,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" ""
 			(at 110.49 108.458 90)
 			(hide yes)
 			(show_name no)
@@ -3291,7 +3236,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" ""
 			(at 110.49 100.838 90)
 			(hide yes)
 			(show_name no)

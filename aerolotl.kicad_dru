@@ -1,0 +1,19 @@
+(version 1)
+# Stackup: JLC04161H-7628 (7628 prepreg 0.2104 mm), values from JLCPCB impedance calculator
+
+(rule "RF CPWG: 8 mil gap to ground pour"
+	(condition "A.NetClass == 'RF' && B.Type == 'Zone'")
+	(constraint clearance (min 0.2032mm)))
+
+(rule "USB non-coplanar: keep pours 0.5 mm away"
+	(condition "A.NetClass == 'USB' && B.Type == 'Zone'")
+	(constraint clearance (min 0.5mm)))
+
+# ---- JLCPCB 4-layer fabrication limits (standard pricing) ----
+(rule "JLC: PTH annular ring >= 0.15mm"
+	(condition "A.Type == 'Pad' && A.Pad_Type == 'Through-hole'")
+	(constraint annular_width (min 0.15mm)))
+
+(rule "JLC: no blind/buried/micro vias"
+	(condition "A.Type == 'Via' && A.Via_Type != 'Through'")
+	(constraint disallow via))

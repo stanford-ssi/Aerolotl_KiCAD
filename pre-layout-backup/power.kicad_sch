@@ -6827,7 +6827,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12"
+		(property "Footprint" ""
 			(at 41.91 60.96 0)
 			(hide yes)
 			(show_name no)
