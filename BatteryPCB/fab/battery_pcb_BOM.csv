@@ -15,13 +15,13 @@ Board (solder on),1,3,J6,JST XH 2-pin vertical header (to the Aerolotl),JST,B2B-
 Board (solder on),1,3,L1,"Power inductor 4.7 uH 4.5 A, 6 x 6 mm",Bourns,SRN6045TA-4R7M,L_Bourns_SRN6045TA,
 Board (solder on),2,10,"R2, R4","Resistor 100 k 1%, 0603",Yageo,RC0603FR-07100KL,R_0603_1608Metric,
 Board (solder on),1,10,R3,"Resistor 13.7 k 1%, 0603",Yageo,RC0603FR-0713K7L,R_0603_1608Metric,
-Board (solder on),1,10,R5,"Resistor 47 k 1%, 0603",Yageo,RC0603FR-0747KL,R_0603_1608Metric,
+Board (solder on),1,10,R5,"Resistor 39 k 1%, 0603",Yageo,RC0603FR-0739KL,R_0603_1608Metric,
 Board (solder on),1,10,R6,"Resistor 1 k 1%, 0603",Yageo,RC0603FR-071KL,R_0603_1608Metric,
 Board (solder on),2,10,"R7, R8","Resistor 100 ohm 1%, 0603",Yageo,RC0603FR-07100RL,R_0603_1608Metric,
 Board (solder on),1,3,U1,"Buck converter 4.5-36 V in, 3 A, SOT-23-6 (makes the 5 V rail)",Texas Instruments,LMR51430XFDDCR,SOT-23-6,
 Board hardware,4,8,H7-H10,"SMT steel standoff, M2 thread, 5 mm (camera mounts, back side)",Wurth Elektronik,9774050243,,Soldered like a part
 Plugs in / mounts on,1,2,,"ESP32 dev board, DevKitC V4",Espressif,ESP32-DevKitC-32E,,Plugs into J1/J2 from the back
-Plugs in / mounts on,1,2,,"Camera, RunCam Split 4",RunCam,Split 4,,Sits on H7-H10; check its cable ends in a JST GH 5-pin for J3
+Plugs in / mounts on,1,2,,"Camera, RunCam Split 4",RunCam,Split 4,,"Sits on H7-H10. Build its harness: J3 (JST GH 5-pin) to the camera's 3-pin power/video plug (VCC, GND, video) + 2 wires soldered to its RX/TX pads"
 Plugs in / mounts on,4,8,,"Screw M2 x 4 mm, pan head",,,,Camera to standoffs
 Plugs in / mounts on,4,8,,"18650 Li-ion cell, flat top, high drain",Molicel,INR-18650-P28A,,Or any high-drain flat-top 18650; never mix cells in the series pair
 Cable side,4,8,"SW1, SW2, SW3, J5","Micro-Fit 3.0 receptacle housing, 2-pin",Molex,0436450200,,

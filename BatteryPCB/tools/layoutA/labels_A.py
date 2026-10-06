@@ -8,6 +8,8 @@ L, C, R = pcbnew.GR_TEXT_H_ALIGN_LEFT, pcbnew.GR_TEXT_H_ALIGN_CENTER, pcbnew.GR_
 MID, PIN = (1.0, 0.15), (0.8, 0.13)
 FRONT = [
     ("CAM PWR SW",  -29.00,  60.60, MID, C),
+    ("5V",           23.80,  13.30, PIN, C), ("GND", 23.80, 22.80, PIN, C),   # test points TP1 / TP3 (BT3-BT4 gap)
+    ("VBAT",        -36.50,  47.30 + kc.BAT_DY - 2.25, PIN, C), ("GND", -40.50, 47.30 + kc.BAT_DY - 2.25, PIN, C),   # TP2 / TP4 (above: a notch is below)
     ("COTS OUT",     25.00,  46.05 + kc.COTS_DY, PIN, C),     # to the TeleMetrum (switched by the COTS pin switch)
     ("+",            26.50,  56.00 + kc.COTS_DY, PIN, C), ("-", 23.50, 56.00 + kc.COTS_DY, PIN, C),   # J5 turned 180
     ("SRAD OUT",     38.75,  46.05 + kc.COTS_DY, PIN, C),     # to the Aerolotl (switched by the SRAD pin switch)

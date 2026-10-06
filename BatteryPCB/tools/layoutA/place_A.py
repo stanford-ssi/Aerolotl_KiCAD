@@ -33,6 +33,9 @@ for r in ("BT1", "BT2", "BT3", "BT4"):
     newfp[r] = pcbnew.FootprintLoad(PRETTY, BH[1])
 cam = [pcbnew.FootprintLoad(PRETTY, SMSI[1]) for _ in range(4)]
 camboard = pcbnew.FootprintLoad(PRETTY, "RunCam_Split4_OnStandoffs")
+# bench test points (6 Oct 2026): plain 2 mm through-hole pads, probe-able from either side
+TPFP = ("TestPoint", "TestPoint_THTPad_D2.0mm_Drill1.0mm")
+tpfp = [pcbnew.FootprintLoad(kc.FPLIB + "/%s.pretty" % TPFP[0], TPFP[1]) for _ in range(4)]
 
 # ---------------------------------------------------------------- clear copper, zones, outline, old holes, labels
 for t in list(b.GetTracks()):
@@ -168,6 +171,7 @@ for ref, x in (("J1", 23.8), ("J2", -1.6)):
 DX, DY = -33.6, -22.0 + kc.ESP_DY
 for ref in ("U1", "L1", "C1", "C2", "C3", "C4", "C5", "C6", "C7", "R2", "R3", "D1", "D3", "R4"):
     x, y = kc.rel(fps[ref].GetPosition()); fps[ref].SetPosition(kc.P(x + DX, y + DY))
+x, y = kc.rel(fps["D3"].GetPosition()); fps["D3"].SetPosition(kc.P(x, y + 0.2))   # silk 0.15 mm clear of D1
 def move_back(ref, x, y, rot):
     f = fps[ref]
     f.SetOrientationDegrees(rot if True else 0)
@@ -182,6 +186,7 @@ for ref, (ox, oy) in (("R5", (37.3 - 33.66, 0.0)), ("C8", (37.3 - 33.66, -17.3 +
     x, y = kc.rel(fps[ref].GetPosition()); fps[ref].SetPosition(kc.P(J5p[0] - ox, J5p[1] + oy))
 for ref in ("R5", "C8"):
     fps[ref].SetOrientationDegrees(fps[ref].GetOrientationDegrees() + 180)
+fps["R5"].SetValue("39k")   # was 47k: keeps VBAT_SENSE inside the ESP32 ADC range at a full 8.4 V pack
 # status LED beside J2-15 (IO2), to the left of the J2 column
 J15 = (-1.6, PIN1_Y + 14 * 2.54)
 for ref, ox in (("R6", 62.6 - 59.06), ("D2", 66.2 - 59.06)):
@@ -195,6 +200,29 @@ for d in b.GetDrawings():
         d.SetPosition(kc.P(0.0, 56.5))
 # fuse behind BT1 + (same offset as before)
 fps["F1"].SetPosition(kc.P(-47.4 + 11.91, 32.6 + kc.BAT_DY))
+
+# bench test points, in spots that are open on BOTH sides (no cell, holder, DevKit or camera over them):
+# TP1 +5V just past J1-19 and TP3 GND below it, in the 4.6 mm gap between the BT3 and BT4 holders;
+# TP2 VBAT+ (2S pack, before the fuse) just past BT1's + tab and TP4 GND beside it. Symbols: tools/add_testpoints.py
+POWER_SHEET, BUCK_SHEET = "/ae01c8e7-4191-4202-a535-afc32959794b", "/1914f4ed-278a-4026-a86a-769e5e361ab6"
+padnet = lambda ref, num: [p.GetNet() for p in fps[ref].Pads() if p.GetNumber() == num][0]
+bx, by = kc.rel(fps["BT1"].GetPosition())
+for f, (ref, val, sheet, suid, sname, sfile, (x, y), net) in zip(tpfp, (
+        ("TP1", "TP_5V", BUCK_SHEET, "b1000000-0000-4000-8000-000000000001", "2. Buck to 5 V", "sheets/buck_5v.kicad_sch",
+         (23.8, J19[1] + 5.4), padnet("J1", "19")),
+        ("TP3", "TP_GND", POWER_SHEET, "b1000000-0000-4000-8000-000000000003", "1. Battery 2S + protection",
+         "sheets/power_in.kicad_sch", (23.8, J19[1] + 9.9), padnet("J2", "1")),
+        ("TP2", "TP_VBAT", POWER_SHEET, "b1000000-0000-4000-8000-000000000002", "1. Battery 2S + protection",
+         "sheets/power_in.kicad_sch", (bx, by + 47.25), padnet("BT1", "1")),
+        ("TP4", "TP_GND", POWER_SHEET, "b1000000-0000-4000-8000-000000000004", "1. Battery 2S + protection",
+         "sheets/power_in.kicad_sch", (bx - 4.0, by + 47.25), padnet("J2", "1")))):
+    f.SetFPID(pcbnew.LIB_ID(*TPFP)); b.Add(f)
+    f.SetReference(ref); f.SetValue(val)
+    f.SetPath(pcbnew.KIID_PATH(sheet + "/" + suid)); f.SetSheetname(sname); f.SetSheetfile(sfile)
+    f.SetPosition(kc.P(x, y)); f.Reference().SetVisible(False); f.Value().SetVisible(False)
+    f.SetField("Description", "Bench test point")
+    for p in f.Pads():
+        p.SetNet(net)
 
 pcbnew.SaveBoard(OUT, b, True)
 print("placed")

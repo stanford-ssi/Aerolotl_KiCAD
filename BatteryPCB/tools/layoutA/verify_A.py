@@ -91,6 +91,9 @@ check("zones + keepouts present", {"GND_front", "GND_back", "VIN", "+5V", "ESP32
 check("GND pours filled", all(z.IsFilled() for z in b.Zones() if z.GetZoneName().startswith("GND")))
 check("all parts linked to schematic", all(f.GetPath().AsString() for r, f in fps.items() if not r.startswith("H") and not r.startswith("CAM")))
 labels = {d.GetText().strip() for d in b.GetDrawings() if d.GetClass() == "PCB_TEXT" and d.GetLayer() in (pcbnew.F_SilkS, pcbnew.B_SilkS)}
+tpn = {r: {p.GetNetname().split("/")[-1] for p in fps[r].Pads()} for r in ("TP1", "TP2", "TP3", "TP4") if r in fps}
+check("test points: TP1 +5V, TP2 VBAT+, TP3/TP4 GND (through-hole)", tpn == {"TP1": {"+5V"}, "TP2": {"VBAT+"}, "TP3": {"GND"}, "TP4": {"GND"}}
+      and all(p.GetAttribute() == pcbnew.PAD_ATTRIB_PTH for r in tpn for p in fps[r].Pads()), str(tpn))
 need = {"CAM PWR SW", "CAMERA", "COTS OUT", "SRAD OUT", "COTS ARM", "SRAD ARM", "CAM 2S PACK", "ANTENNA END", "USB END", "3V3", "5V", "CLK"}
 check("connector labels on silk", need <= labels, str(need - labels) if need - labels else "(%d texts)" % len(labels))
 print("\nALL PASS" if ok else "\nSOME CHECKS FAILED")

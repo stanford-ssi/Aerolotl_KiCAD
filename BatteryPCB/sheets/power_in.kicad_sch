@@ -10,6 +10,129 @@
 		(rev "A")
 	)
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 (symbol "Device:Battery_Cell"
 		(pin_numbers
 			(hide yes)
@@ -1731,5 +1854,165 @@
 		(at 138.43 118.11 0)
 		(effects (font (size 1.8 1.8) (bold yes)) (justify left bottom))
 		(uuid "cc067501-b1b3-4d2f-a09d-0ccb3f6651be")
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 233.68 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "b1000000-0000-4000-8000-000000000002")
+		(property "Reference" "TP2"
+			(at 236.22 40.64 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "TP_VBAT"
+			(at 236.22 43.18 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 233.68 45.72 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 233.68 45.72 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Description" "Bench test point"
+			(at 233.68 45.72 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "3fd00e41-ee4e-4546-865f-02c1131ad2bf"))
+		(instances
+			(project "battery_pcb"
+				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/ae01c8e7-4191-4202-a535-afc32959794b"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts (xy 233.68 45.72) (xy 233.68 50.80))
+		(stroke (width 0) (type default))
+		(uuid "0f4299c3-c0b5-4122-9c47-a7e979296d07")
+	)
+	(label "VBAT+"
+		(at 233.68 50.80 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "06e41a49-601e-4447-8ec1-a2a01ba8513a")
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 251.46 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "b1000000-0000-4000-8000-000000000003")
+		(property "Reference" "TP3"
+			(at 254.00 40.64 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "TP_GND"
+			(at 254.00 43.18 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 251.46 45.72 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 251.46 45.72 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Description" "Bench test point"
+			(at 251.46 45.72 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "77c316fe-f1e6-4820-bf25-d54e2d51c1f8"))
+		(instances
+			(project "battery_pcb"
+				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/ae01c8e7-4191-4202-a535-afc32959794b"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts (xy 251.46 45.72) (xy 251.46 50.80))
+		(stroke (width 0) (type default))
+		(uuid "fef9d9a0-53e7-4c6a-b329-acb05bbbf6e6")
+	)
+	(global_label "GND"
+		(shape input)
+		(at 251.46 50.80 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "9fb459b5-9f44-4e1e-9b40-71f69fe6e8a5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 251.46 55.80 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 264.16 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "b1000000-0000-4000-8000-000000000004")
+		(property "Reference" "TP4"
+			(at 266.70 40.64 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "TP_GND"
+			(at 266.70 43.18 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 264.16 45.72 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 264.16 45.72 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Description" "Bench test point"
+			(at 264.16 45.72 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "0767dab6-fdb1-4ce7-b571-3e86afb9c02c"))
+		(instances
+			(project "battery_pcb"
+				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/ae01c8e7-4191-4202-a535-afc32959794b"
+					(reference "TP4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts (xy 264.16 45.72) (xy 264.16 50.80))
+		(stroke (width 0) (type default))
+		(uuid "a9607361-7111-438c-9010-168616566ba4")
+	)
+	(global_label "GND"
+		(shape input)
+		(at 264.16 50.80 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "2485d09c-31b7-4749-bb6f-8476d3ad1c67")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 264.16 55.80 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
 	)
 )

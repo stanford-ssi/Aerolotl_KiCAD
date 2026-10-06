@@ -179,3 +179,9 @@ Pin numbers didn't change, so the schematic is unchanged. The J5/J6 latches now 
 - v16: every symbol carries hidden Manufacturer / MPN fields (`tools/annotate_mpn.py`), and the build copies them onto the footprints (`tools/layoutA/fields_A.py`), so DRC schematic parity stays at 0. F1 is a Littelfuse 1812L200/12DR (2 A hold, 12 V; the 2S pack is 8.4 V max).
 - Ordering files in `fab/`: BOM (`tools/make_bom.py`), Gerbers + drill zip, schematic PDF. The tool scripts no longer hard-code paths.
 - Geometry is unchanged since v14, so the Onshape models (AVBay1 import) are current. The personal "Switchband Assembly" Onshape doc still holds v12.
+
+## v17 — test points, strict rules, review (6 Oct 2026)
+- Test points: TP1 +5V (J1-19, BT3/BT4 gap), TP2 VBAT+ (below BT1's + tab), TP3/TP4 GND. 2 mm through-hole pads in spots open on both sides. Symbols from `tools/add_testpoints.py`, board side in `tools/layoutA`.
+- Strict design rules (README, "Design rules"). Fixes they needed: the GND trace under U1 between its pin rows is 0.3 mm (was 0.5), a GND via moved 0.1 mm off R4, VBAT_SENSE now drops onto C8 from above, D3 moved 0.2 mm (silk off D1), TP4's label sits above it (away from a notch).
+- R5 47k -> 39k: VBAT_SENSE now tops out at 2.36 V, inside the ESP32 ADC's 11 dB range (2.45 V). Firmware scale: VIN = VBAT_SENSE x 139/39.
+- Review: every schematic pin matches its board pad's net (115/115); the LMR51430 symbol is KiCad's library part (GND 1, SW 2, VIN 3, FB 4, EN 5, CB 6; Vref 0.6 V -> 4.98 V out); the ESP32 sockets match Espressif's DevKitC V4 header tables.

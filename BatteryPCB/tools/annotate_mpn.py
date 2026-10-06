@@ -29,7 +29,7 @@ PARTS = {
     "L1": ("Bourns", "SRN6045TA-4R7M"),
     "R2": (YAGEO, "RC0603FR-07100KL"), "R4": (YAGEO, "RC0603FR-07100KL"),
     "R3": (YAGEO, "RC0603FR-0713K7L"),
-    "R5": (YAGEO, "RC0603FR-0747KL"),
+    "R5": (YAGEO, "RC0603FR-0739KL"),             # 39 k: VBAT_SENSE <= 2.36 V, inside the ESP32 ADC 11 dB range (<= 2.45 V)
     "R6": (YAGEO, "RC0603FR-071KL"),
     "R7": (YAGEO, "RC0603FR-07100RL"), "R8": (YAGEO, "RC0603FR-07100RL"),
     "U1": ("Texas Instruments", "LMR51430XFDDCR"),

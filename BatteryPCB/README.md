@@ -7,7 +7,7 @@ RunCam Split 4 camera on the back. Formerly called CamControl.
 Open `battery_pcb.kicad_pro` in KiCad 10. The board is a 5.72 in (145.3 mm) round, 2-layer disc
 for the AV bay, placed and fully routed.
 
-**Status (v16, 6 Oct 2026):** ERC 0 errors · DRC 0 violations with full schematic parity ·
+**Status (v17, 6 Oct 2026):** ERC 0 errors · DRC 0 violations (warnings included) under the strict rules below, with full schematic parity ·
 `tools/layoutA/verify_A.py` ALL PASS. Ready to order: see [Ordering](#ordering).
 [`LAYOUT_NOTES.md`](LAYOUT_NOTES.md) has the history of every layout decision.
 
@@ -24,7 +24,8 @@ for the AV bay, placed and fully routed.
 | Camera harness | J3 — JST GH 5-pin (+5V, GND, RX, TX, VIDEO), on the back |
 | Camera mount | H7–H10 — four M2 × 5 mm SMT standoffs on a 25.5 mm square, on the back |
 | Status LED | R6 + D2 on GPIO2 |
-| Pack voltage telemetry | R4/R5 divider + C8 → GPIO34 |
+| Pack voltage telemetry | R4 100k / R5 39k divider + C8 → GPIO34 (`VBAT_SENSE = VIN × 39/139`, ≤ 2.36 V) |
+| Test points | TP1 +5V (buck output), TP2 VBAT+ (2S pack, before the fuse), TP3/TP4 GND: 2 mm through-hole pads, open on both sides |
 | COTS supply | BT3 → SW2 (COTS pin switch plug) → J5 Micro-Fit to the TeleMetrum |
 | SRAD supply | BT4 → SW3 (SRAD pin switch plug) → J6 JST XH to the Aerolotl |
 
@@ -75,6 +76,19 @@ Do not "clean this up" by merging the grounds.
 
 ---
 
+## Which ESP32
+
+Buy the **Espressif ESP32-DevKitC V4 with a WROOM module: `ESP32-DevKitC-32E`** (or `-32UE` for an
+external antenna). The sockets are 2 × 19 pins with the rows 1.0 in (25.4 mm) apart, wired to
+Espressif's V4 header table pin for pin.
+
+- **Not the WROVER version (`ESP32-DevKitC-VE`):** it uses GPIO16/17 for its PSRAM, and this board uses
+  them for the camera UART.
+- **Not a 30-pin (2 × 15) "ESP32 DevKit" clone:** it won't fit the 2 × 19 sockets. The AVBay1 Onshape model
+  currently shows a 2 × 15 DevKit; it should be the 38-pin DevKitC.
+- It plugs in from the **back**, components facing away from this board, antenna end toward the top
+  (the "ANTENNA END" silkscreen).
+
 ## ESP32 pin map
 
 | Function | Pin | Net |
@@ -121,6 +135,23 @@ Source: [RunCam Split 4 manual](https://www.runcam.com/download/split4k/RC_Split
    series resistors are protection, not translation.
 
 Layout-specific items are in [`LAYOUT_NOTES.md`](LAYOUT_NOTES.md).
+
+---
+
+## Design rules
+
+Stricter than the fab's minimums, to leave margin (all in `battery_pcb.kicad_pro`):
+
+| Rule | Value |
+|---|---|
+| Copper clearance | 0.25 mm signals, 0.3 mm power and ground, 0.4 mm for the isolated COTS/SRAD battery nets |
+| Track width (min) | 0.25 mm; pyro paths ≥ 1.0 mm, 2S power ≥ 1.5 mm (checked by `verify_A.py`) |
+| Copper to board edge | 0.5 mm |
+| Hole clearance / hole to hole | 0.3 mm / 0.5 mm |
+| Via | ≥ 0.6 mm pad, 0.3 mm drill (0.15 mm ring); power vias 0.8 / 0.4 mm |
+| Silkscreen | 0.15 mm to other silk and to the edge; text ≥ 0.8 mm |
+
+DRC runs with every check as an error (`tools/drc.sh`).
 
 ---
 
