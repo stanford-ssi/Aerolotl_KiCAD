@@ -3,4 +3,4 @@
 ## Boards in this repo
 
 - Aerolotl SRAD flight computer: the KiCad project at the top level.
-- [CamControl](CamControl/README.md): the AV bay battery, arming and camera board, with its ordering BOM and Gerbers in `CamControl/fab/`.
+- [Battery PCB](BatteryPCB/README.md): the AV bay battery, arming and camera board, with its ordering BOM and Gerbers in `BatteryPCB/fab/`.

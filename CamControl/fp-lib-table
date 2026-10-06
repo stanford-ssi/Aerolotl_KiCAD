@@ -1,4 +1,0 @@
-(fp_lib_table
-  (version 7)
-  (lib (name "camcontrol")(type "KiCad")(uri "${KIPRJMOD}/camcontrol.pretty")(options "")(descr "Project footprints"))
-)

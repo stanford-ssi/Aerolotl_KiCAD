@@ -30,3 +30,6 @@ _autosave-*
 # Zip archives (Optional: removes BNO085.zip, NEO-M9N.zip, etc.)
 *.zip
 
+
+# Battery PCB fab package: keep its Gerber zip under version control
+!BatteryPCB/fab/*.zip
