@@ -1,0 +1,1566 @@
+(kicad_sch
+	(version 20250114)
+	(generator "camcontrol-gen")
+	(generator_version "10.0")
+	(uuid "1914f4ed-278a-4026-a86a-769e5e361ab6")
+	(paper "A4")
+	(title_block
+		(title "2. Buck 8.4 V -> 5.0 V")
+		(company "Stanford SSI")
+		(rev "A")
+	)
+	(lib_symbols
+(symbol "Device:C"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.254)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 0.635 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0.9652 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "cap capacitor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "C_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "C_0_1"
+			(polyline
+				(pts
+					(xy -2.032 0.762) (xy 2.032 0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.032 -0.762) (xy 2.032 -0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "C_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 2.794)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 2.794)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Device:L"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "L"
+			(at -1.27 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "L"
+			(at 1.905 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "inductor choke coil reactor magnetic"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "L_0_1"
+			(arc
+				(start 0 2.54)
+				(mid 0.6323 1.905)
+				(end 0 1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0 1.27)
+				(mid 0.6323 0.635)
+				(end 0 0)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0 0)
+				(mid 0.6323 -0.635)
+				(end 0 -1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0 -1.27)
+				(mid 0.6323 -1.905)
+				(end 0 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "L_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Device:R"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "R"
+			(at 2.032 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 0 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -1.778 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "R res resistor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "R_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "R_0_1"
+			(rectangle
+				(start -1.016 -2.54)
+				(end 1.016 2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "R_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Regulator_Switching:LMR51430"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at -7.62 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "LMR51430"
+			(at 0 6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 1.27 -8.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lmr51430.pdf"
+			(at 1.27 -11.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "4.5-V to 36-V, 3-A synchronous buck converter with 40-µA IQ, SOT-23-6"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "switching buck converter power-supply voltage regulator"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "SOT?23*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "LMR51430_0_1"
+			(rectangle
+				(start -7.62 5.08)
+				(end 7.62 -5.08)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "LMR51430_1_1"
+			(pin power_in line
+				(at 0 -7.62 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "SW"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "VIN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "FB"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "EN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "CB"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "power:PWR_FLAG"
+		(power global)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "#FLG"
+			(at 0 1.905 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 0 3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "flag power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_0"
+			(pin power_out line
+				(at 0 0 90)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_1"
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	)
+	(text "LMR51430   Vout = 0.6 x (1 + 100k / 13k7) = 4.98 V"
+		(exclude_from_sim no)
+		(at 20.32 20.32 0)
+		(effects (font (size 1.8 1.8) (bold yes)) (justify left bottom))
+		(uuid "70677d3e-8cef-468f-a8f3-b95fa12e6291")
+	)
+	(symbol
+		(lib_id "Regulator_Switching:LMR51430")
+		(at 64.77 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "412fa74b-607d-42dd-9074-e6c2f908d2bb")
+		(property "Reference" "U1"
+			(at 68.58 57.15 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "LMR51430XFDDCR"
+			(at 68.58 60.96 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 64.77 59.69 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 64.77 59.69 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 64.77 59.69 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "MPN" "LMR51430XFDDCR"
+			(at 64.77 59.69 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "a3a5ea1d-09d9-49d5-96d4-a795a6af73a8"))
+		(pin "2" (uuid "555b59d9-f7ba-4f63-8eea-24839850f6c0"))
+		(pin "3" (uuid "b0a7bb0c-456f-4c08-8327-e8a843520596"))
+		(pin "4" (uuid "4f62f517-bd09-46e9-a2ae-5a018eed91cd"))
+		(pin "5" (uuid "d9b1aa27-34b9-4521-9327-9ac65753ee88"))
+		(pin "6" (uuid "5eb278e0-397c-4de9-9bab-97590bc2fe30"))
+		(instances
+			(project "camcontrol"
+				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts (xy 54.61 57.15) (xy 49.53 57.15))
+		(stroke (width 0) (type default))
+		(uuid "071451d9-b7aa-4dfc-9dc9-173e632ecd26")
+	)
+	(hierarchical_label "VIN"
+		(shape passive)
+		(at 49.53 57.15 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "3ec4f70e-779a-4275-842e-aaf05a9a4f9f")
+	)
+	(wire
+		(pts (xy 54.61 62.23) (xy 49.53 62.23))
+		(stroke (width 0) (type default))
+		(uuid "a4a976d1-5746-4357-ad80-1ba7a1b5b7a3")
+	)
+	(label "VIN"
+		(at 49.53 62.23 180)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "af3e3c7d-881d-48f7-8259-6b1ed150d167")
+	)
+	(wire
+		(pts (xy 64.77 67.31) (xy 64.77 72.39))
+		(stroke (width 0) (type default))
+		(uuid "40149559-eaeb-42c6-9bd0-d6c4b81f266d")
+	)
+	(global_label "GND"
+		(at 64.77 72.39 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "5ee616e3-5017-4b60-86fa-f9a5aeb4f7a8")
+	)
+	(wire
+		(pts (xy 74.93 59.69) (xy 80.01 59.69))
+		(stroke (width 0) (type default))
+		(uuid "8dfe8892-5d58-4703-baa2-4ab2f1b40ee3")
+	)
+	(label "SW"
+		(at 80.01 59.69 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "fe6d332c-bb44-4e3e-a427-b7492f19360d")
+	)
+	(wire
+		(pts (xy 74.93 57.15) (xy 80.01 57.15))
+		(stroke (width 0) (type default))
+		(uuid "5442c058-2cbd-4224-8c81-27d659aeff78")
+	)
+	(label "CBOOT"
+		(at 80.01 57.15 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "208e8241-60b6-474f-a9a8-bcac2b8d1cde")
+	)
+	(wire
+		(pts (xy 74.93 62.23) (xy 80.01 62.23))
+		(stroke (width 0) (type default))
+		(uuid "4ac7a32d-7aaa-44f3-9923-9528e7dedb97")
+	)
+	(label "FB"
+		(at 80.01 62.23 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "cea3f683-d2c0-4b06-ab81-f9644b39dd02")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 100.33 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "df9c61c0-0a05-43b4-8b09-78e59d2b1662")
+		(property "Reference" "C3"
+			(at 104.14 35.56 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "100n"
+			(at 104.14 39.37 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 100.33 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 100.33 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 100.33 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "MPN" "CL10B104KB8NNNC"
+			(at 100.33 38.1 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "7fd51786-3001-4d50-8312-1b22f2f5bff8"))
+		(pin "2" (uuid "1fa9e3be-b7be-4f2b-817a-41fc68b8cd48"))
+		(instances
+			(project "camcontrol"
+				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts (xy 100.33 34.29) (xy 100.33 29.21))
+		(stroke (width 0) (type default))
+		(uuid "e9081865-a4ac-490a-ab41-cb74c4946ea9")
+	)
+	(label "CBOOT"
+		(at 100.33 29.21 90)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "49a57ad3-02af-4977-b34d-31f5acbaa2e6")
+	)
+	(wire
+		(pts (xy 100.33 41.91) (xy 100.33 46.99))
+		(stroke (width 0) (type default))
+		(uuid "c5de9c9c-73a6-4d77-ab64-30ccd57a17cb")
+	)
+	(label "SW"
+		(at 100.33 46.99 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "2b820e86-7578-4e7a-a4d5-db1e0bb6d09e")
+	)
+	(symbol
+		(lib_id "Device:L")
+		(at 124.46 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "75c73d34-7c9b-4441-8de2-be03b8125981")
+		(property "Reference" "L1"
+			(at 128.27 57.15 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "4u7 / 3A"
+			(at 128.27 60.96 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" "Inductor_SMD:L_Bourns_SRN6045TA"
+			(at 124.46 59.69 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 124.46 59.69 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Manufacturer" "Bourns"
+			(at 124.46 59.69 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "MPN" "SRN6045TA-4R7M"
+			(at 124.46 59.69 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "f3721ddc-7333-4790-82f1-17721f1c996a"))
+		(pin "2" (uuid "347a4c0f-a5bd-4ed1-bd58-f5b788cf5d8c"))
+		(instances
+			(project "camcontrol"
+				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
+					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts (xy 124.46 55.88) (xy 124.46 50.8))
+		(stroke (width 0) (type default))
+		(uuid "df732b73-5e58-4ad4-99af-31902963d682")
+	)
+	(label "SW"
+		(at 124.46 50.8 90)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "26b7e5a9-fb3a-4ca9-8d3f-bff5fa90f07d")
+	)
+	(wire
+		(pts (xy 124.46 63.5) (xy 124.46 68.58))
+		(stroke (width 0) (type default))
+		(uuid "b70c67f5-9926-467b-8839-62c9f8a88da2")
+	)
+	(hierarchical_label "+5V"
+		(shape passive)
+		(at 124.46 68.58 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "513ca7a4-5858-4b94-8093-828782d8f96f")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 149.86 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00c9b54e-47b1-4089-bc8d-0b6324214e73")
+		(property "Reference" "C4"
+			(at 153.67 57.15 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "22u / 16V"
+			(at 153.67 60.96 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 149.86 59.69 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 149.86 59.69 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 149.86 59.69 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "MPN" "CL21A226MOQNNNE"
+			(at 149.86 59.69 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "917f2558-fdd5-48aa-b515-b73b1c7324c5"))
+		(pin "2" (uuid "d70e473e-a6a9-429a-bcf5-beb8dbaa7ce7"))
+		(instances
+			(project "camcontrol"
+				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts (xy 149.86 55.88) (xy 149.86 50.8))
+		(stroke (width 0) (type default))
+		(uuid "deb6c8d8-5b36-4b87-8e7e-29c2717a442f")
+	)
+	(label "+5V"
+		(at 149.86 50.8 90)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "1d0ae4a2-94ff-4bcf-b1fb-396cc43edfd1")
+	)
+	(wire
+		(pts (xy 149.86 63.5) (xy 149.86 68.58))
+		(stroke (width 0) (type default))
+		(uuid "708938a8-ae5c-4c7d-a47c-d06d92a2171f")
+	)
+	(global_label "GND"
+		(at 149.86 68.58 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "0eb99ffe-2cf3-4489-9835-97d560a03674")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 170.18 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "27c9d896-6350-498d-a120-7a1fc1a8d30a")
+		(property "Reference" "C5"
+			(at 173.99 57.15 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "22u / 16V"
+			(at 173.99 60.96 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 170.18 59.69 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 170.18 59.69 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 170.18 59.69 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "MPN" "CL21A226MOQNNNE"
+			(at 170.18 59.69 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "ebc89210-85ca-4356-9737-cf2cc3855570"))
+		(pin "2" (uuid "28bc9c08-a535-4b61-8bfe-1a8c84a074e9"))
+		(instances
+			(project "camcontrol"
+				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts (xy 170.18 55.88) (xy 170.18 50.8))
+		(stroke (width 0) (type default))
+		(uuid "2faa2050-0cf9-4ded-ace1-a3009dedf866")
+	)
+	(label "+5V"
+		(at 170.18 50.8 90)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "93b8c68e-824d-4367-b1df-cac7e75bd263")
+	)
+	(wire
+		(pts (xy 170.18 63.5) (xy 170.18 68.58))
+		(stroke (width 0) (type default))
+		(uuid "95e147fb-4aa9-4e44-9e52-8985aac9a3fc")
+	)
+	(global_label "GND"
+		(at 170.18 68.58 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "b0003b99-7460-4449-9312-0751b9dadc28")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 190.5 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d2c7988c-aed6-4889-b747-58dd66691869")
+		(property "Reference" "C6"
+			(at 194.31 57.15 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "100n"
+			(at 194.31 60.96 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 190.5 59.69 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 190.5 59.69 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 190.5 59.69 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "MPN" "CL10B104KB8NNNC"
+			(at 190.5 59.69 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "512a1a26-9cc0-42d6-b917-2a26c7e2a10b"))
+		(pin "2" (uuid "a79e6465-a354-48c3-8e38-b323ab5fbd16"))
+		(instances
+			(project "camcontrol"
+				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts (xy 190.5 55.88) (xy 190.5 50.8))
+		(stroke (width 0) (type default))
+		(uuid "fce5debc-1181-4649-b4ac-dd2fcb37c8a1")
+	)
+	(label "+5V"
+		(at 190.5 50.8 90)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "5b6fe87e-7077-4b6d-a1a7-ef815f77c0a1")
+	)
+	(wire
+		(pts (xy 190.5 63.5) (xy 190.5 68.58))
+		(stroke (width 0) (type default))
+		(uuid "8d59bead-1ecc-4696-9093-1fa3ff8c7a12")
+	)
+	(global_label "GND"
+		(at 190.5 68.58 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "4017302b-30c1-43c1-84ea-5371432ad989")
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 219.71 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dc6590e0-1d12-4aaa-9158-96dfe0bfaff3")
+		(property "Reference" "R2"
+			(at 223.52 41.91 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "100k 1%"
+			(at 223.52 45.72 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 219.71 44.45 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 219.71 44.45 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Manufacturer" "Yageo"
+			(at 219.71 44.45 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "MPN" "RC0603FR-07100KL"
+			(at 219.71 44.45 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "9bf529b9-f52a-45cd-9a2b-e24dd6e28546"))
+		(pin "2" (uuid "502b2944-0ce6-440d-9296-2e7661a5dc7c"))
+		(instances
+			(project "camcontrol"
+				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 219.71 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e7a5e14e-5d15-4391-9f93-c33a82bc5ee8")
+		(property "Reference" "R3"
+			(at 223.52 69.85 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "13k7 1%"
+			(at 223.52 73.66 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 219.71 72.39 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 219.71 72.39 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Manufacturer" "Yageo"
+			(at 219.71 72.39 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "MPN" "RC0603FR-0713K7L"
+			(at 219.71 72.39 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "f2bb885a-fc1c-4f62-8ec7-aaeadba0ea69"))
+		(pin "2" (uuid "6793daf6-015b-4087-a958-8085ab66dc22"))
+		(instances
+			(project "camcontrol"
+				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts (xy 219.71 48.26) (xy 219.71 68.58))
+		(stroke (width 0) (type default))
+		(uuid "0df063ec-197b-4d2a-9f6f-4519935c62c1")
+	)
+	(wire
+		(pts (xy 219.71 40.64) (xy 219.71 35.56))
+		(stroke (width 0) (type default))
+		(uuid "66f9f3bf-4c39-448d-9945-ec4cbe0610cf")
+	)
+	(label "+5V"
+		(at 219.71 35.56 90)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "eaa1a670-a0cb-4c81-8a5d-ef9fd498e818")
+	)
+	(wire
+		(pts (xy 219.71 76.2) (xy 219.71 81.28))
+		(stroke (width 0) (type default))
+		(uuid "889c8288-8dd1-46f2-925b-4862108a815e")
+	)
+	(global_label "GND"
+		(at 219.71 81.28 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "09a54b6c-7d1a-421e-8973-c8e58c5edb7f")
+	)
+	(junction (at 219.71 58.42) (diameter 0) (color 0 0 0 0) (uuid "15d57bfd-cd86-494e-adc1-4e257a0987f4"))
+	(wire
+		(pts (xy 219.71 58.42) (xy 232.41 58.42))
+		(stroke (width 0) (type default))
+		(uuid "ed2c34c9-fbc2-4e8c-ae6c-312c545d4abf")
+	)
+	(label "FB"
+		(at 232.41 58.42 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "cb9ae0ce-3eba-486d-80d5-20f5ff8dec41")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 255.27 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "856ad7b5-eed5-4405-9240-ce8abbbd60ef")
+		(property "Reference" "C7"
+			(at 259.08 41.91 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "22p"
+			(at 259.08 45.72 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 255.27 44.45 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 255.27 44.45 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 255.27 44.45 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "MPN" "CL10C220JB8NNNC"
+			(at 255.27 44.45 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "db09f05d-0f21-4961-8f3b-d9f5764b6191"))
+		(pin "2" (uuid "a6b148e7-5aab-47cf-98bf-3abc3c47f6e4"))
+		(instances
+			(project "camcontrol"
+				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
+					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts (xy 255.27 40.64) (xy 255.27 35.56))
+		(stroke (width 0) (type default))
+		(uuid "d23d7e6c-a6ce-4fc9-b012-9713d2635a64")
+	)
+	(label "+5V"
+		(at 255.27 35.56 90)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left))
+		(uuid "5f6ab6d0-9d3b-452a-9296-826dae269c0c")
+	)
+	(wire
+		(pts (xy 255.27 48.26) (xy 255.27 53.34))
+		(stroke (width 0) (type default))
+		(uuid "99daaee9-fe68-4900-a36a-53173325db5b")
+	)
+	(label "FB"
+		(at 255.27 53.34 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "8a37b93c-6e15-4675-a802-5503de4c9800")
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 54.61 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9843a337-aadf-40b0-bec1-fb75b27c2867")
+		(property "Reference" "#FLG1"
+			(at 58.42 102.87 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "PWR_FLAG"
+			(at 58.42 106.68 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 54.61 105.41 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 54.61 105.41 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "0eb3119f-274e-4629-87c9-260fbeafb753"))
+		(instances
+			(project "camcontrol"
+				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
+					(reference "#FLG1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts (xy 54.61 105.41) (xy 54.61 110.49))
+		(stroke (width 0) (type default))
+		(uuid "56c58e0c-2350-4b0c-9fa9-9d57826fcc1d")
+	)
+	(label "+5V"
+		(at 54.61 110.49 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "f6b81ae4-3e6a-4175-a582-c74a4824fb8b")
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 90.17 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2ad83899-8967-4869-a117-e6f16633dd9f")
+		(property "Reference" "#FLG2"
+			(at 93.98 102.87 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "PWR_FLAG"
+			(at 93.98 106.68 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" ""
+			(at 90.17 105.41 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 90.17 105.41 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "4d63cb39-a472-459d-91b7-fc0282aac133"))
+		(instances
+			(project "camcontrol"
+				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
+					(reference "#FLG2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts (xy 90.17 105.41) (xy 90.17 110.49))
+		(stroke (width 0) (type default))
+		(uuid "51f9702b-be40-4e2a-8a59-6d584bb6fd0a")
+	)
+	(global_label "GND"
+		(at 90.17 110.49 270)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify right))
+		(uuid "0ee1153e-f547-4c1d-8483-642bee62d46d")
+	)
+	(text "Power flags - ERC only, not real parts."
+		(exclude_from_sim no)
+		(at 44.45 118.11 0)
+		(effects (font (size 1.8 1.8) (bold yes)) (justify left bottom))
+		(uuid "4c19709b-f6b5-432d-bbaa-f3784f7256c1")
+	)
+)
