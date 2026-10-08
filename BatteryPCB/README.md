@@ -164,6 +164,7 @@ Everything to order is in `fab/`:
 | `fab/battery_pcb_BOM.csv` | Ordering BOM: every soldered part with manufacturer + MPN (paste the MPNs into the DigiKey or Mouser BOM tool), plus the camera standoffs, plug-in modules, cells, cable-side connectors and the PCB. "Order qty" covers 2 boards plus spares. |
 | `fab/battery_pcb_gerbers.zip` | Gerbers + drill file. Upload as-is to JLCPCB (or any fab): 2 layers, 1.6 mm FR-4, 1 oz copper. |
 | `fab/battery_pcb_schematic.pdf` | The schematic, for review and for soldering. |
+| `fab/battery_pcb_kicad_project.zip` | The whole KiCad project in one file, to share: unzip it and open `battery_pcb.kicad_pro` (KiCad 9 or newer). Downloading only `battery_pcb.kicad_sch` gives a blank schematic, because its six pages live in `sheets/`. |
 
 `cad/battery_pcb.step` is the board with all parts for CAD.
 `cad/avbay1_board_and_pin_switch_stack.step` is the board plus the exact pin-switch stack,
