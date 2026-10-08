@@ -707,7 +707,7 @@
 			(at 158.75 55.88 0)
 			(effects (font (size 1.27 1.27)) (justify left))
 		)
-		(property "Footprint" "battery_pcb:Molex_Micro-Fit_3.0_43650-0215_1x02_P3.00mm_Vertical"
+		(property "Footprint" "battery_pcb:AMASS_XT30UPB-F_1x02_P5.0mm_Vertical"
 			(at 154.94 54.61 0)
 			(effects (font (size 1.27 1.27)) (hide yes))
 		)
@@ -715,11 +715,11 @@
 			(at 154.94 54.61 0)
 			(effects (font (size 1.27 1.27)) (hide yes))
 		)
-		(property "Manufacturer" "Molex"
+		(property "Manufacturer" "AMASS"
 			(at 154.94 54.61 0)
 			(effects (font (size 1.27 1.27)) (hide yes))
 		)
-		(property "MPN" "0436500215"
+		(property "MPN" "XT30UPB-F"
 			(at 154.94 54.61 0)
 			(effects (font (size 1.27 1.27)) (hide yes))
 		)
@@ -739,7 +739,7 @@
 		(stroke (width 0) (type default))
 		(uuid "c25fdf4b-9480-4897-a994-5d9fd13c98e7")
 	)
-	(label "COTS_SW"
+	(label "COTS_BAT-"
 		(at 144.78 54.61 180)
 		(fields_autoplaced yes)
 		(effects (font (size 1.27 1.27)) (justify right))
@@ -750,7 +750,7 @@
 		(stroke (width 0) (type default))
 		(uuid "ee0223a6-2f36-4a2e-815a-3a0c80bcb6df")
 	)
-	(label "COTS_BAT-"
+	(label "COTS_SW"
 		(at 144.78 57.15 180)
 		(fields_autoplaced yes)
 		(effects (font (size 1.27 1.27)) (justify right))
@@ -908,7 +908,7 @@
 			(at 158.75 111.76 0)
 			(effects (font (size 1.27 1.27)) (justify left))
 		)
-		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+		(property "Footprint" "battery_pcb:AMASS_XT30UPB-F_1x02_P5.0mm_Vertical"
 			(at 154.94 110.49 0)
 			(effects (font (size 1.27 1.27)) (hide yes))
 		)
@@ -916,11 +916,11 @@
 			(at 154.94 110.49 0)
 			(effects (font (size 1.27 1.27)) (hide yes))
 		)
-		(property "Manufacturer" "JST"
+		(property "Manufacturer" "AMASS"
 			(at 154.94 110.49 0)
 			(effects (font (size 1.27 1.27)) (hide yes))
 		)
-		(property "MPN" "B2B-XH-A(LF)(SN)"
+		(property "MPN" "XT30UPB-F"
 			(at 154.94 110.49 0)
 			(effects (font (size 1.27 1.27)) (hide yes))
 		)
@@ -940,7 +940,7 @@
 		(stroke (width 0) (type default))
 		(uuid "29c69ec6-81d3-4f4a-a42e-dda38ca15ed5")
 	)
-	(label "SRAD_SW"
+	(label "SRAD_BAT-"
 		(at 144.78 110.49 180)
 		(fields_autoplaced yes)
 		(effects (font (size 1.27 1.27)) (justify right))
@@ -951,7 +951,7 @@
 		(stroke (width 0) (type default))
 		(uuid "bef76657-ab76-4427-875b-6ad0b006e2d8")
 	)
-	(label "SRAD_BAT-"
+	(label "SRAD_SW"
 		(at 144.78 113.03 180)
 		(fields_autoplaced yes)
 		(effects (font (size 1.27 1.27)) (justify right))

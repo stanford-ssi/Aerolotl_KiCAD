@@ -16,8 +16,8 @@ R = kc.R_BOARD
 arcs = [d for d in b.GetDrawings() if d.GetLayer() == pcbnew.Edge_Cuts and d.GetShape() == pcbnew.SHAPE_T_ARC]
 segs = [d for d in b.GetDrawings() if d.GetLayer() == pcbnew.Edge_Cuts and d.GetShape() == pcbnew.SHAPE_T_SEGMENT]
 radii = [kc.to_mm(a.GetRadius()) for a in arcs]
-check("outline %.2f in (%.2f mm) circle" % (kc.DISC_IN, 2 * R), len(arcs) == 5 and all(abs(r - R) < 0.01 for r in radii), "(%d arcs, r=%s)" % (len(arcs), [round(r, 3) for r in radii]))
-check("five edge cut-outs", len(segs) == 15, "(%d notch segments)" % len(segs))
+check("outline %.2f in (%.2f mm) circle" % (kc.DISC_IN, 2 * R), len(arcs) == 7 and all(abs(r - R) < 0.01 for r in radii), "(%d arcs, r=%s)" % (len(arcs), [round(r, 3) for r in radii]))
+check("seven edge cut-outs (two new spares at the upper left)", len(segs) == 21, "(%d notch segments)" % len(segs))
 h = {r: (kc.rel(fps[r].GetPosition()), kc.to_mm(list(fps[r].Pads())[0].GetDrillSize().x)) for r in ("H1", "H2", "H3", "H4")}
 check("rod holes 13/32 in, 120 mm apart through the centre", abs(h["H1"][1] - 10.32) < 0.01 and abs(h["H2"][1] - 10.32) < 0.01
       and abs(h["H2"][0][0] - h["H1"][0][0] - 120) < 0.01 and h["H1"][0][1] == h["H2"][0][1] == 0, str(h["H1"]) + str(h["H2"]))
@@ -67,14 +67,15 @@ check("BT2- is GND", pad("BT2", "2")[1] == "GND")
 pyro = [n for n in {p.GetNetname() for f in fps.values() for p in f.Pads()} if "COTS" in n or "SRAD" in n]
 check("6 pyro nets (BAT+, switched, BAT- for COTS and SRAD), none named GND", len(pyro) == 6 and all("GND" not in n for n in pyro))
 for cell, sw, j in (("BT3", "SW2", "J5"), ("BT4", "SW3", "J6")):
-    check("%s+ -> %s (pin switch) -> %s-1, %s- -> %s-2" % (cell, sw, j, cell, j),
-          pad(cell, "1")[1] == pad(sw, "1")[1] and pad(sw, "2")[1] == pad(j, "1")[1] and pad(cell, "2")[1] == pad(j, "2")[1]
+    check("%s+ -> %s (pin switch) -> %s-2 (XT30 +), %s- -> %s-1 (XT30 -)" % (cell, sw, j, cell, j),
+          pad(cell, "1")[1] == pad(sw, "1")[1] and pad(sw, "2")[1] == pad(j, "2")[1] and pad(cell, "2")[1] == pad(j, "1")[1]
           and len({pad(cell, "1")[1], pad(sw, "2")[1], pad(cell, "2")[1]}) == 3)
     check("%s+ at the top, %s beside the pin-switch stack (< 25 mm from H5)" % (cell, sw),
           pad(cell, "1")[0][1] < 0 and math.hypot(pad(sw, "1")[0][0] - 18.5, pad(sw, "1")[0][1] + 41.88) < 25)
 lat = {r: fps[r].GetFPIDAsString() for r in ("SW1", "SW2", "SW3", "J5", "J6", "J3")}
-check("harness connectors: Micro-Fit 3.0 (SW1-3, J5), JST XH to the Aerolotl (J6), JST GH camera (J3)",
-      all("Micro-Fit_3.0" in lat[r] for r in ("SW1", "SW2", "SW3", "J5")) and "JST_XH" in lat["J6"] and "JST_GH" in lat["J3"], str(lat))
+check("harness connectors: Micro-Fit 3.0 (SW1-3), XT30 battery outputs (J5, J6), JST GH camera (J3)",
+      all("Micro-Fit_3.0" in lat[r] for r in ("SW1", "SW2", "SW3")) and all("XT30" in lat[r] for r in ("J5", "J6"))
+      and "JST_GH" in lat["J3"], str(lat))
 cams = [kc.rel(fps["H%d" % k].GetPosition()) for k in range(7, 11)]
 xs, ys = sorted({c[0] for c in cams}), sorted({c[1] for c in cams})
 check("camera: 4 M2 standoffs on the back on a 25.5 mm square, J3 on the back",
@@ -87,13 +88,40 @@ for t in b.GetTracks():
 check("pyro traces >= 1.0 mm", all(w >= 1.0 for n, w in mins.items() if "COTS" in n or "SRAD" in n))
 check("2S power traces >= 1.5 mm (VF, VSW, series)", all(mins[n] >= 1.5 for n in ("VF", "VSW", "Net-(BT1--)")))
 names = sorted(z.GetZoneName() for z in b.Zones())
-check("zones + keepouts present", {"GND_front", "GND_back", "VIN", "+5V", "ESP32 antenna: no pour", "rod washer keepout", "COTS screw keepout"} <= set(names))
+check("zones + keepouts present", {"GND_front", "GND_back", "VIN", "+5V", "ESP32 antenna keepout", "ESP32 antenna: no pour",
+                                   "rod washer keepout", "COTS screw keepout"} <= set(names))
+# ---- ESP32 antenna clearance (review 2): Espressif wants >= 15 mm around the module antenna. The DevKitC hangs under the
+# board with its antenna ~13.4 mm below the back copper (8.5 mm socket + 2.5 mm header + 1.6 mm devkit + module PCB).
+A0, A1, A2, A3 = kc.ANT; AC = kc.ANT_CLEAR; ZA = 13.4
+def plan(x0, y0, x1, y1):     # horizontal gap between a box and the antenna
+    dx = max(A0 - x1, x0 - A2, 0.0); dy = max(A1 - y1, y0 - A3, 0.0); return math.hypot(dx, dy)
+def box(item):
+    r = item.GetBoundingBox(); return (kc.to_mm(r.GetLeft()) - kc.CX, kc.to_mm(r.GetTop()) - kc.CY, kc.to_mm(r.GetRight()) - kc.CX, kc.to_mm(r.GetBottom()) - kc.CY)
+near = [t.GetNetname().split("/")[-1] for t in b.GetTracks() if t.IsOnLayer(pcbnew.B_Cu) and plan(*box(t)) < AC
+        and not box(t)[1] > A3]          # the keep-out runs beside and past the antenna, not back over the devkit body
+gB = [z for z in b.Zones() if z.GetZoneName() == "GND_back"][0]
+fill = sum(1 for i in range(41) for j in range(41)
+           if gB.HitTestFilledArea(pcbnew.B_Cu, kc.P(A0 - AC + 0.3 + i * (A2 - A0 + 2 * AC - 0.6) / 40,
+                                                     A1 - AC + 0.3 + j * (A3 - A1 + AC - 0.6) / 40), 0))   # 0.3 mm inside the edges
+check("ESP32 antenna: no back-copper track, via or pour within 15 mm beside / past it", not near and fill == 0, "(%s, %d fill hits)" % (near, fill))
+worst = (99.0, "")
+for f in b.GetFootprints():
+    if f.GetReference() in ("J1", "J2"): continue          # the devkit's own header sockets
+    for pd in f.Pads():
+        if pd.GetAttribute() == pcbnew.PAD_ATTRIB_NPTH: continue
+        z = 1.6 if not pd.IsOnLayer(pcbnew.B_Cu) else (-1.5 if pd.GetAttribute() == pcbnew.PAD_ATTRIB_PTH else 0.0)   # TH pins stick out ~1.5 mm
+        d = math.hypot(plan(*box(pd)), ZA + z)
+        worst = min(worst, (d, f.GetReference()))
+check("ESP32 antenna: every pad >= 15 mm away in 3D (devkit sockets excepted)", worst[0] >= AC, "(closest %s at %.1f mm)" % (worst[1], worst[0]))
+silk = [d for d in b.GetDrawings() if d.GetLayer() == pcbnew.F_SilkS and d.GetClass() == "PCB_SHAPE"]
+check("pin-switch stack outlined on the front silk", sum(1 for d in silk if abs(kc.rel(d.GetStart())[1] + 68.6) < 0.01) >= 1
+      and any(abs(abs(kc.rel(d.GetStart())[0]) - 22.5) < 0.01 for d in silk), "(%d front silk lines)" % len(silk))
 check("GND pours filled", all(z.IsFilled() for z in b.Zones() if z.GetZoneName().startswith("GND")))
 check("all parts linked to schematic", all(f.GetPath().AsString() for r, f in fps.items() if not r.startswith("H") and not r.startswith("CAM")))
 labels = {d.GetText().strip() for d in b.GetDrawings() if d.GetClass() == "PCB_TEXT" and d.GetLayer() in (pcbnew.F_SilkS, pcbnew.B_SilkS)}
 tpn = {r: {p.GetNetname().split("/")[-1] for p in fps[r].Pads()} for r in ("TP1", "TP2", "TP3", "TP4") if r in fps}
 check("test points: TP1 +5V, TP2 VBAT+, TP3/TP4 GND (through-hole)", tpn == {"TP1": {"+5V"}, "TP2": {"VBAT+"}, "TP3": {"GND"}, "TP4": {"GND"}}
       and all(p.GetAttribute() == pcbnew.PAD_ATTRIB_PTH for r in tpn for p in fps[r].Pads()), str(tpn))
-need = {"CAM PWR SW", "CAMERA", "COTS OUT", "SRAD OUT", "COTS ARM", "SRAD ARM", "CAM 2S PACK", "ANTENNA END", "USB END", "3V3", "5V", "CLK"}
+need = {"CAM PWR SW", "CAMERA", "COTS OUT", "SRAD OUT", "COTS ARM", "SRAD ARM", "CAM 2S PACK", "ANTENNA END", "USB END", "3V3", "5V", "CLK", "PIN-SWITCH STACK"}
 check("connector labels on silk", need <= labels, str(need - labels) if need - labels else "(%d texts)" % len(labels))
 print("\nALL PASS" if ok else "\nSOME CHECKS FAILED")

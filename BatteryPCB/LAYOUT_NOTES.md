@@ -185,3 +185,16 @@ Pin numbers didn't change, so the schematic is unchanged. The J5/J6 latches now 
 - Strict design rules (README, "Design rules"). Fixes they needed: the GND trace under U1 between its pin rows is 0.3 mm (was 0.5), a GND via moved 0.1 mm off R4, VBAT_SENSE now drops onto C8 from above, D3 moved 0.2 mm (silk off D1), TP4's label sits above it (away from a notch).
 - R5 47k -> 39k: VBAT_SENSE now tops out at 2.36 V, inside the ESP32 ADC's 11 dB range (2.45 V). Firmware scale: VIN = VBAT_SENSE x 139/39.
 - Review: every schematic pin matches its board pad's net (115/115); the LMR51430 symbol is KiCad's library part (GND 1, SW 2, VIN 3, FB 4, EN 5, CB 6; Vref 0.6 V -> 4.98 V out); the ESP32 sockets match Espressif's DevKitC V4 header tables.
+
+## v18 — second review: antenna clearance, stack outline, cut-outs, XT30 (7 Oct 2026)
+- **ESP32 antenna.** Espressif asks for at least 15 mm clear around the module's PCB antenna. The DevKitC hangs about 13.4 mm under the board (8.5 mm socket + 2.5 mm header + 1.6 mm devkit + module), antenna toward the top (`kc.ANT`).
+  - Back copper: rule area "ESP32 antenna keepout" bans pour, tracks and vias 15 mm to each side of the antenna and 15 mm past its end (it stops at the devkit edge, where the sockets start). It is outlined on the back silk with "ANTENNA KEEP-OUT 15 mm".
+  - The old no-pour box only covered part of the antenna; it now covers the whole antenna on the front ("ESP32 antenna: no pour").
+  - COTS_SW used to run down the back right beside the antenna. It now leaves SW2 on the front and drops to the back (two 0.8 / 0.4 vias) below the keep-out.
+  - Front parts are 15 mm away through the board: the closest is BT3's + tab at 15.0 mm (`verify_A.py` checks every pad in 3D).
+  - H5 (pin-switch stack bolt) is right over the antenna: nylon M3 bolt and nut (back silk note).
+- **Pin-switch stack outline** on the front silk (45 mm wide, from the holder ends out to the pin faces), labelled "PIN-SWITCH STACK".
+- **Two more spare wire pass-throughs** at the upper left, 12 × 7 mm at KiCad 210° and 240° (CAD 150° and 120°). Seven cut-outs in all.
+- **J5 / J6 are AMASS XT30UPB-F** (vertical, female on the board = the battery side), 15 mm apart. XT30 pin 1 is minus and pin 2 plus (the housing and KiCad's footprint say so), so the schematic labels on J5/J6 swapped: pin 1 = COTS_BAT− / SRAD_BAT−, pin 2 = COTS_SW / SRAD_SW. KiCad has no XT30 3D model, so `tools/step_boxes.py` makes a box one (`3dmodels/`); the footprint is a project copy pointing at it.
+- **Checks:** ERC 0 errors, DRC 0 (strict, with schematic parity), `verify_A.py` all pass (new checks for the antenna, XT30 polarity, cut-outs and the stack outline).
+- **Onshape:** the outline changed (two new cut-outs), so the AVBay1 import needs `cad/avbay1_board_and_pin_switch_stack.step` re-uploaded.

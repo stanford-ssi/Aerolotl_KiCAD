@@ -27,7 +27,7 @@ DESC = {
     "PPTC191LFBN-RC": "Female header 1x19, 2.54 mm (socket for the ESP32-DevKitC)",
     "BM05B-GHS-TBT": "JST GH 5-pin vertical header (camera)",
     "0436500215": "Molex Micro-Fit 3.0 2-pin vertical header",
-    "B2B-XH-A(LF)(SN)": "JST XH 2-pin vertical header (to the Aerolotl)",
+    "XT30UPB-F": "AMASS XT30 female, vertical PCB mount (battery outputs)",
     "SRN6045TA-4R7M": "Power inductor 4.7 uH 4.5 A, 6 x 6 mm",
     "RC0603FR-07100KL": "Resistor 100 k 1%, 0603",
     "RC0603FR-0713K7L": "Resistor 13.7 k 1%, 0603",
@@ -38,8 +38,8 @@ DESC = {
 }
 NOTES = {
     "1812L200/12DR": "Alt: Polytronics SMD1812P200TF/16",
-    "0436500215": "SW1 camera power, SW2/SW3 pin-switch leads, J5 to the TeleMetrum",
-    "B2B-XH-A(LF)(SN)": "Friction fit, not latching",
+    "0436500215": "SW1 camera power, SW2/SW3 pin-switch leads",
+    "XT30UPB-F": "J5 to the TeleMetrum, J6 to the Aerolotl. Pin 1 = minus, pin 2 = plus, as marked on the housing",
 }
 
 # not on the schematic: board-only parts, things that plug in, and the cable side of each connector
@@ -54,11 +54,11 @@ EXTRA = [
     ("Plugs in / mounts on", 4, "", "Screw M2 x 4 mm, pan head", "", "", "Camera to standoffs"),
     ("Plugs in / mounts on", 4, "", "18650 Li-ion cell, flat top, high drain", "Molicel", "INR-18650-P28A",
      "Or any high-drain flat-top 18650; never mix cells in the series pair"),
-    ("Cable side", 4, "SW1, SW2, SW3, J5", "Micro-Fit 3.0 receptacle housing, 2-pin", "Molex", "0436450200", ""),
-    ("Cable side", 8, "SW1, SW2, SW3, J5", "Micro-Fit 3.0 female crimp terminal, 20-24 AWG", "Molex", "0430300007",
+    ("Cable side", 3, "SW1, SW2, SW3", "Micro-Fit 3.0 receptacle housing, 2-pin", "Molex", "0436450200", ""),
+    ("Cable side", 6, "SW1, SW2, SW3", "Micro-Fit 3.0 female crimp terminal, 20-24 AWG", "Molex", "0430300007",
      "Needs a Micro-Fit crimper, or buy pre-crimped leads"),
-    ("Cable side", 1, "J6", "JST XH housing, 2-pin", "JST", "XHP-2", ""),
-    ("Cable side", 2, "J6", "JST XH crimp terminal, 22-28 AWG", "JST", "SXH-001T-P0.6", ""),
+    ("Cable side", 2, "J5, J6", "XT30 male plug, solder cup (cable to each flight computer)", "AMASS", "XT30U-M",
+     "Solder 18-20 AWG; check polarity against the +/- on the board"),
     ("Cable side", 1, "J3", "JST GH housing, 5-pin", "JST", "GHR-05V-S", "Or a pre-crimped GH 5-pin cable"),
     ("Cable side", 5, "J3", "JST GH crimp terminal, 26-30 AWG", "JST", "SSHL-002T-P0.2", ""),
     ("Cable side", 1, "SW1", "Toggle switch, SPST, 3 A or more, panel mount", "", "",

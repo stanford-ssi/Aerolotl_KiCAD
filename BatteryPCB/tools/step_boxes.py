@@ -88,3 +88,11 @@ if __name__ == "__main__":
                 [(-3.325, -1.9, 0.0, 6.325, 2.47, 10.15),        # housing
                  (0.8, -3.3, 4.0, 2.2, -1.9, 10.15)])           # latch ramp
     print("wrote", os.path.normpath(out))
+    # AMASS XT30UPB-F (vertical PCB female, J5/J6): KiCad has the footprint but no 3D model. Outline from its F.Fab
+    # (10.2 x 5.2 mm, chamfered at pin 1 = minus), about 11 mm tall.
+    out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "3dmodels",
+                       "AMASS_XT30UPB-F_1x02_P5.0mm_Vertical.step")
+    write_boxes(out, "AMASS_XT30UPB-F",
+                [(-0.9, -2.6, 0.0, 7.6, 2.6, 11.0),             # housing
+                 (-2.6, -1.3, 0.0, -0.9, 1.3, 11.0)])           # chamfered (minus) end
+    print("wrote", os.path.normpath(out))

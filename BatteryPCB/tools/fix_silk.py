@@ -63,8 +63,8 @@ for f in order:
         cands = [(mx, cy0 - h), (mx, cy1 + h), (cx0 - 1.2, my), (cx1 + 1.2, my),
                  (mx, cy0 - h - 0.9), (mx, cy1 + h + 0.9), (cx0 - 2.2, my), (cx1 + 2.2, my),
                  (cx0 - 1.2, cy0 - h), (cx1 + 1.2, cy0 - h), (cx0 - 1.2, cy1 + h), (cx1 + 1.2, cy1 + h)]
-    if ref in ("J5", "J6"):                 # the two JST bodies nearly touch; label them on the side
-        cands = [(cx0 - 1.6, my)] + cands
+    if ref in ("J5", "J6"):                 # XT30s: their +/- marks sit at the sides and the OUT label above, so go below
+        cands = [(mx, cy1 + h)] + cands
     ok = None
     for (x, y) in cands:
         field.SetPosition(kc.P(x, y))

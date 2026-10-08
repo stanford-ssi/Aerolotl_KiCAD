@@ -7,7 +7,7 @@ RunCam Split 4 camera on the back. Formerly called CamControl.
 Open `battery_pcb.kicad_pro` in KiCad 10. The board is a 5.72 in (145.3 mm) round, 2-layer disc
 for the AV bay, placed and fully routed.
 
-**Status (v17, 6 Oct 2026):** ERC 0 errors · DRC 0 violations (warnings included) under the strict rules below, with full schematic parity ·
+**Status (v18, 7 Oct 2026):** ERC 0 errors · DRC 0 violations (warnings included) under the strict rules below, with full schematic parity ·
 `tools/layoutA/verify_A.py` ALL PASS. Ready to order: see [Ordering](#ordering).
 [`LAYOUT_NOTES.md`](LAYOUT_NOTES.md) has the history of every layout decision.
 
@@ -26,12 +26,13 @@ for the AV bay, placed and fully routed.
 | Status LED | R6 + D2 on GPIO2 |
 | Pack voltage telemetry | R4 100k / R5 39k divider + C8 → GPIO34 (`VBAT_SENSE = VIN × 39/139`, ≤ 2.36 V) |
 | Test points | TP1 +5V (buck output), TP2 VBAT+ (2S pack, before the fuse), TP3/TP4 GND: 2 mm through-hole pads, open on both sides |
-| COTS supply | BT3 → SW2 (COTS pin switch plug) → J5 Micro-Fit to the TeleMetrum |
-| SRAD supply | BT4 → SW3 (SRAD pin switch plug) → J6 JST XH to the Aerolotl |
+| COTS supply | BT3 → SW2 (COTS pin switch plug) → J5 XT30 to the TeleMetrum |
+| SRAD supply | BT4 → SW3 (SRAD pin switch plug) → J6 XT30 to the Aerolotl |
 
-Harness connectors are latching Molex Micro-Fit 3.0 (SW1–SW3, J5) and JST GH (J3), per the
-design review. J6 is a JST XH at the team's request to match the Aerolotl harness; it is
-friction-fit, so secure the plug in flight.
+Harness connectors are latching Molex Micro-Fit 3.0 for the switch leads (SW1–SW3) and JST GH for the
+camera (J3). The two battery outputs, J5 and J6, are **AMASS XT30** (female on the board, the battery side):
+**pin 1 is minus, pin 2 is plus**, as moulded on the housing and printed beside each one. The cables take an
+XT30U-M plug. XT30 holds by friction, so tape or tie the plugs for flight.
 
 ---
 
@@ -88,6 +89,12 @@ Espressif's V4 header table pin for pin.
   currently shows a 2 × 15 DevKit; it should be the 38-pin DevKitC.
 - It plugs in from the **back**, components facing away from this board, antenna end toward the top
   (the "ANTENNA END" silkscreen).
+- **Antenna clearance.** Espressif recommends at least 15 mm of clearance in every direction around the module's PCB
+  antenna. The DevKitC hangs about 13.4 mm under this board, so the back copper has a keep-out (no pour, tracks or vias)
+  15 mm to each side of the antenna and past its end, outlined on the back silk. Everything on the front, cells and
+  pin-switch stack included, is at least 15 mm away through the board. **Use a nylon M3 bolt and nut in H5**: it is
+  the pin-switch stack bolt right over the antenna. In the av-bay CAD, keep 15 mm free below and around the antenna too.
+  [Espressif: positioning a module on a base board](https://docs.espressif.com/projects/esp-hardware-design-guidelines/en/latest/esp32/pcb-layout-design.html#general-principles-of-pcb-layout-for-modules-positioning-a-module-on-a-base-board)
 
 ## ESP32 pin map
 
@@ -164,7 +171,7 @@ Everything to order is in `fab/`:
 | `fab/battery_pcb_BOM.csv` | Ordering BOM: every soldered part with manufacturer + MPN (paste the MPNs into the DigiKey or Mouser BOM tool), plus the camera standoffs, plug-in modules, cells, cable-side connectors and the PCB. "Order qty" covers 2 boards plus spares. |
 | `fab/battery_pcb_gerbers.zip` | Gerbers + drill file. Upload as-is to JLCPCB (or any fab): 2 layers, 1.6 mm FR-4, 1 oz copper. |
 | `fab/battery_pcb_schematic.pdf` | The schematic, for review and for soldering. |
-| `fab/battery_pcb_kicad_project.zip` | The whole KiCad project in one file, to share: unzip it and open `battery_pcb.kicad_pro` (KiCad 9 or newer). Downloading only `battery_pcb.kicad_sch` gives a blank schematic, because its six pages live in `sheets/`. |
+| `fab/battery_pcb_kicad_project.zip` | The whole KiCad project in one file, to share: unzip it and open `battery_pcb.kicad_pro` (KiCad 10). Downloading only `battery_pcb.kicad_sch` gives a blank schematic, because its six pages live in `sheets/`. |
 
 `cad/battery_pcb.step` is the board with all parts for CAD.
 `cad/avbay1_board_and_pin_switch_stack.step` is the board plus the exact pin-switch stack,
