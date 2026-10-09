@@ -34,7 +34,7 @@
 		)
 		(uuid "a7480500-bfb4-47c7-b816-f91d198ca453")
 	)
-	(text "Block 6 is electrically isolated from the rest of this board on purpose."
+	(text "Block 4 is electrically isolated from the rest of this board on purpose."
 		(exclude_from_sim no)
 		(at 25.4 215.9 0)
 		(effects
@@ -46,197 +46,66 @@
 		)
 		(uuid "acf4d5b3-24c3-477f-a4e5-e9739f41130c")
 	)
-	(junction
-		(at 208.28 64.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0af20a88-fafe-4c1f-9a55-2b70a9cb4732")
+	(wire
+		(pts
+			(xy 86.36 54.61)
+			(xy 104.14 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02654d14-b392-4d8c-9fef-730d8b45fb78")
+	)
+	(wire
+		(pts
+			(xy 104.14 54.61)
+			(xy 121.92 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "277ea3bf-1888-483b-9834-bfe711a633b3")
 	)
 	(junction
 		(at 104.14 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "932be0aa-8146-477d-9f47-4ac993a20bbe")
+		(uuid "4d343c2e-05a1-4cea-a809-272ef40bc53f")
 	)
 	(wire
 		(pts
-			(xy 345.44 175.26) (xy 313.69 175.26)
+			(xy 104.14 54.61)
+			(xy 104.14 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "00062107-01d9-4caf-96a2-237f622b0da8")
+		(uuid "47eb7c1a-d9dd-4cc0-98d4-a2f30cbf9a46")
 	)
 	(wire
 		(pts
-			(xy 345.44 85.09) (xy 345.44 175.26)
+			(xy 104.14 100.33)
+			(xy 232.41 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "01dbbd8e-7c0f-4897-84c0-54dd5198843f")
+		(uuid "25e9955a-5000-4d4d-ba6b-b138aed74637")
 	)
 	(wire
 		(pts
-			(xy 104.14 114.3) (xy 121.92 114.3)
+			(xy 182.88 64.77)
+			(xy 232.41 64.77)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "225a763e-c496-4b73-8ede-cc577a07fb11")
-	)
-	(wire
-		(pts
-			(xy 182.88 64.77) (xy 208.28 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2c944c80-e3fe-471c-8fb5-170b67d5ad57")
-	)
-	(wire
-		(pts
-			(xy 313.69 74.93) (xy 361.95 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2e3ae8d5-a3eb-485e-97c0-bd5c0665f15c")
-	)
-	(wire
-		(pts
-			(xy 208.28 64.77) (xy 208.28 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "65b62339-bba0-4286-92a6-42a489114e07")
-	)
-	(wire
-		(pts
-			(xy 86.36 54.61) (xy 104.14 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "66fc9628-8633-4dd9-a74b-02d448e7e9f2")
-	)
-	(wire
-		(pts
-			(xy 361.95 74.93) (xy 361.95 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7a1fed81-b8d6-4f79-bc3f-68544f17ad13")
-	)
-	(wire
-		(pts
-			(xy 182.88 124.46) (xy 218.44 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8188ce6f-b718-48ae-8c86-2c45940d5645")
-	)
-	(wire
-		(pts
-			(xy 208.28 154.94) (xy 232.41 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "93a9d2ec-eca6-4dd8-aaef-4fe171240637")
-	)
-	(wire
-		(pts
-			(xy 208.28 54.61) (xy 232.41 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d85f8fe-7fbc-42c2-bedc-5310b9b2807b")
-	)
-	(wire
-		(pts
-			(xy 104.14 54.61) (xy 121.92 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9fb7fb1e-e37a-4322-9415-201b0b7937be")
-	)
-	(wire
-		(pts
-			(xy 218.44 64.77) (xy 232.41 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d5837610-ca82-41e2-baa3-5913d5cea3f7")
-	)
-	(wire
-		(pts
-			(xy 218.44 124.46) (xy 218.44 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d6511b69-134a-4200-8de1-e80cf639ca95")
-	)
-	(wire
-		(pts
-			(xy 208.28 64.77) (xy 208.28 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d9998366-8586-4a1e-a8ff-a28d2d016d57")
-	)
-	(wire
-		(pts
-			(xy 313.69 85.09) (xy 345.44 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da1ce43f-e411-47b5-930f-f6afbc00e028")
-	)
-	(wire
-		(pts
-			(xy 361.95 165.1) (xy 313.69 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e64cbd11-e643-47c6-8dd7-97745c37d6a4")
-	)
-	(wire
-		(pts
-			(xy 104.14 54.61) (xy 104.14 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e895a79c-4ac2-43f5-9d28-c250ebf6c59d")
+		(uuid "ebe2d0aa-3c72-49fc-8fb6-d4f8bd01f72e")
 	)
 	(sheet
 		(at 121.92 41.91)
@@ -321,7 +190,7 @@
 			(color 0 0 0 0)
 		)
 		(uuid "51707861-a38d-47a0-88b0-b003633f2c22")
-		(property "Sheetname" "4. ESP32 socket"
+		(property "Sheetname" "3. ESP32 + camera"
 			(at 232.41 39.37 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -333,7 +202,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "sheets/esp32.kicad_sch"
+		(property "Sheetfile" "sheets/esp32_camera.kicad_sch"
 			(at 232.41 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -345,18 +214,8 @@
 			)
 		)
 		(pin "+5V" passive
-			(at 232.41 54.61 180)
-			(uuid "88862bdc-5350-4253-9e2a-92021e7b0c78")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "VBAT_SENSE" passive
 			(at 232.41 64.77 180)
-			(uuid "3f8fedfd-2a57-4b04-a95c-18c659623821")
+			(uuid "1b8c58c0-0c69-4fd7-9dde-8cdef8e0228a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -364,30 +223,20 @@
 				(justify left)
 			)
 		)
-		(pin "ESP_TX2" passive
-			(at 313.69 74.93 0)
-			(uuid "3b55ee1d-afff-44f5-9778-c508dedf68d6")
+		(pin "VIN" passive
+			(at 232.41 100.33 180)
+			(uuid "ff3f2408-8300-489a-99c5-734d945694b3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
-			)
-		)
-		(pin "ESP_RX2" passive
-			(at 313.69 85.09 0)
-			(uuid "47f8fc26-3a2c-4d1c-983f-bc056e1fa16a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(instances
 			(project "battery_pcb"
 				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94"
-					(page "5")
+					(page "4")
 				)
 			)
 		)
@@ -450,150 +299,6 @@
 		)
 	)
 	(sheet
-		(at 121.92 101.6)
-		(size 60.96 30.48)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.2)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "bb33270d-1f7a-4186-ad49-327b6f32c122")
-		(property "Sheetname" "3. Pack voltage sense"
-			(at 121.92 99.06 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.6 1.6)
-					(bold yes)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "sheets/sense.kicad_sch"
-			(at 121.92 134.62 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.1 1.1)
-				)
-				(justify left top)
-			)
-		)
-		(pin "VIN" passive
-			(at 121.92 114.3 180)
-			(uuid "b252d7ac-5abf-4016-bcc6-d4bdf7e06d02")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "VBAT_SENSE" passive
-			(at 182.88 124.46 0)
-			(uuid "88328dd9-2d7b-4e27-b0f1-8accdef3456a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "battery_pcb"
-				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94"
-					(page "4")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 232.41 142.24)
-		(size 81.28 49.53)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.2)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "c15ff8c2-214f-4e4d-afd4-b6b1a701e94b")
-		(property "Sheetname" "5. RunCam Split 4"
-			(at 232.41 139.7 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.6 1.6)
-					(bold yes)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "sheets/camera.kicad_sch"
-			(at 232.41 194.31 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.1 1.1)
-				)
-				(justify left top)
-			)
-		)
-		(pin "+5V" passive
-			(at 232.41 154.94 180)
-			(uuid "bd806419-b00f-4a20-82fe-dfd6588d75ca")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "ESP_TX2" passive
-			(at 313.69 165.1 0)
-			(uuid "4d562b16-549f-484d-b831-14df61a925b6")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "ESP_RX2" passive
-			(at 313.69 175.26 0)
-			(uuid "391df3ad-6d81-4bbc-b68c-beb1f8089dec")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "battery_pcb"
-				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94"
-					(page "6")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 25.4 152.4)
 		(size 96.52 49.53)
 		(exclude_from_sim no)
@@ -609,7 +314,7 @@
 			(color 0 0 0 0)
 		)
 		(uuid "d30d38cc-20d9-4e05-9f85-c70abea8b778")
-		(property "Sheetname" "6. COTS / SRAD supplies"
+		(property "Sheetname" "4. COTS / SRAD supplies"
 			(at 25.4 149.86 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -635,7 +340,7 @@
 		(instances
 			(project "battery_pcb"
 				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94"
-					(page "7")
+					(page "5")
 				)
 			)
 		)

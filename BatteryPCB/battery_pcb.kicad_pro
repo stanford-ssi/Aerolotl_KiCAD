@@ -820,20 +820,12 @@
       "2. Buck to 5 V"
     ],
     [
-      "bb33270d-1f7a-4186-ad49-327b6f32c122",
-      "3. Pack voltage sense"
-    ],
-    [
       "51707861-a38d-47a0-88b0-b003633f2c22",
-      "4. ESP32 socket"
-    ],
-    [
-      "c15ff8c2-214f-4e4d-afd4-b6b1a701e94b",
-      "5. RunCam Split 4"
+      "3. ESP32 + camera"
     ],
     [
       "d30d38cc-20d9-4e05-9f85-c70abea8b778",
-      "6. COTS / SRAD supplies"
+      "4. COTS / SRAD supplies"
     ]
   ],
   "text_variables": {},

@@ -170,7 +170,7 @@
 			)
 		)
 		(path "/d30d38cc-20d9-4e05-9f85-c70abea8b778/a844e9cc-025d-40dc-87a9-64cbca4311c2")
-		(sheetname "6. COTS / SRAD supplies")
+		(sheetname "4. COTS / SRAD supplies")
 		(sheetfile "sheets/supplies.kicad_sch")
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
@@ -476,7 +476,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(roundrect_rratio 0.166667)
-			(net "/6. COTS {slash} SRAD supplies/COTS_BAT+")
+			(net "/4. COTS / SRAD supplies/COTS_BAT+")
 			(uuid "30f2f258-6fb8-4c2a-8478-53244f015faf")
 		)
 		(pad "2" thru_hole oval
@@ -485,7 +485,7 @@
 			(drill 1.02)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/6. COTS {slash} SRAD supplies/COTS_SW")
+			(net "/4. COTS / SRAD supplies/COTS_SW")
 			(uuid "2eede3f0-4c93-462b-8ecc-6f1e65614368")
 		)
 		(embedded_fonts no)
@@ -588,7 +588,7 @@
 			)
 		)
 		(path "/d30d38cc-20d9-4e05-9f85-c70abea8b778/206230bd-1d7b-42c6-a165-3118f980452c")
-		(sheetname "6. COTS / SRAD supplies")
+		(sheetname "4. COTS / SRAD supplies")
 		(sheetfile "sheets/supplies.kicad_sch")
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
@@ -894,7 +894,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(roundrect_rratio 0.166667)
-			(net "/6. COTS {slash} SRAD supplies/SRAD_BAT+")
+			(net "/4. COTS / SRAD supplies/SRAD_BAT+")
 			(uuid "9aaf7c3e-84f2-4c0c-94ed-aae4add18dcc")
 		)
 		(pad "2" thru_hole oval
@@ -903,7 +903,7 @@
 			(drill 1.02)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/6. COTS {slash} SRAD supplies/SRAD_SW")
+			(net "/4. COTS / SRAD supplies/SRAD_SW")
 			(uuid "e372ec2f-5d08-436c-9a1e-150376293030")
 		)
 		(embedded_fonts no)
@@ -1581,7 +1581,7 @@
 			)
 		)
 		(path "/d30d38cc-20d9-4e05-9f85-c70abea8b778/99125746-ad02-4527-87ed-10b2d7e7b4c6")
-		(sheetname "6. COTS / SRAD supplies")
+		(sheetname "4. COTS / SRAD supplies")
 		(sheetfile "sheets/supplies.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
@@ -1835,7 +1835,7 @@
 			(size 7.5 6.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.038462)
-			(net "/6. COTS {slash} SRAD supplies/COTS_BAT+")
+			(net "/4. COTS / SRAD supplies/COTS_BAT+")
 			(uuid "d09baa14-4243-4854-ae81-fdb14ab29034")
 		)
 		(pad "2" smd roundrect
@@ -1843,7 +1843,7 @@
 			(size 7.5 6.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.038462)
-			(net "/6. COTS {slash} SRAD supplies/COTS_BAT-")
+			(net "/4. COTS / SRAD supplies/COTS_BAT-")
 			(uuid "38217e3c-be55-407c-919c-5999a9e2affd")
 		)
 		(embedded_fonts no)
@@ -2151,7 +2151,7 @@
 			)
 		)
 		(path "/d30d38cc-20d9-4e05-9f85-c70abea8b778/03901de4-b206-4c7d-aaab-cd5a7a15f23e")
-		(sheetname "6. COTS / SRAD supplies")
+		(sheetname "4. COTS / SRAD supplies")
 		(sheetfile "sheets/supplies.kicad_sch")
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
@@ -2375,7 +2375,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(roundrect_rratio 0.25)
-			(net "/6. COTS {slash} SRAD supplies/COTS_BAT-")
+			(net "/4. COTS / SRAD supplies/COTS_BAT-")
 			(uuid "503924f0-aeb1-4642-8875-343539c3c69d")
 		)
 		(pad "2" thru_hole circle
@@ -2384,7 +2384,7 @@
 			(drill 1.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/6. COTS {slash} SRAD supplies/COTS_SW")
+			(net "/4. COTS / SRAD supplies/COTS_SW")
 			(uuid "3c9c6c2c-c7a2-4fc8-b8a3-098b49f35e14")
 		)
 		(embedded_fonts no)
@@ -3589,7 +3589,7 @@
 			)
 		)
 		(path "/d30d38cc-20d9-4e05-9f85-c70abea8b778/070386a4-d2df-4ec3-926d-c13e29d3de2e")
-		(sheetname "6. COTS / SRAD supplies")
+		(sheetname "4. COTS / SRAD supplies")
 		(sheetfile "sheets/supplies.kicad_sch")
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
@@ -3813,7 +3813,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(roundrect_rratio 0.25)
-			(net "/6. COTS {slash} SRAD supplies/SRAD_BAT-")
+			(net "/4. COTS / SRAD supplies/SRAD_BAT-")
 			(uuid "87473963-a7a7-4047-bb11-bd09a6b21775")
 		)
 		(pad "2" thru_hole circle
@@ -3822,7 +3822,7 @@
 			(drill 1.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/6. COTS {slash} SRAD supplies/SRAD_SW")
+			(net "/4. COTS / SRAD supplies/SRAD_SW")
 			(uuid "a0099b26-e48b-469f-a059-ca1004f9c2a3")
 		)
 		(embedded_fonts no)
@@ -4032,7 +4032,7 @@
 			)
 		)
 		(path "/d30d38cc-20d9-4e05-9f85-c70abea8b778/70406afb-3c88-4619-be49-97bfe4ff1157")
-		(sheetname "6. COTS / SRAD supplies")
+		(sheetname "4. COTS / SRAD supplies")
 		(sheetfile "sheets/supplies.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
@@ -4286,7 +4286,7 @@
 			(size 7.5 6.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.038462)
-			(net "/6. COTS {slash} SRAD supplies/SRAD_BAT+")
+			(net "/4. COTS / SRAD supplies/SRAD_BAT+")
 			(uuid "1a5c86fd-acad-4f06-937a-09963b201465")
 		)
 		(pad "2" smd roundrect
@@ -4294,7 +4294,7 @@
 			(size 7.5 6.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.038462)
-			(net "/6. COTS {slash} SRAD supplies/SRAD_BAT-")
+			(net "/4. COTS / SRAD supplies/SRAD_BAT-")
 			(uuid "b5c3ddb7-1d8f-4274-a9be-a6ebc2536708")
 		)
 		(embedded_fonts no)
@@ -5284,9 +5284,9 @@
 				)
 			)
 		)
-		(path "/51707861-a38d-47a0-88b0-b003633f2c22/9d4a0ade-8706-42ab-a5a7-5d1f822d543b")
-		(sheetname "4. ESP32 socket")
-		(sheetfile "sheets/esp32.kicad_sch")
+		(path "/1914f4ed-278a-4026-a86a-769e5e361ab6/9d4a0ade-8706-42ab-a5a7-5d1f822d543b")
+		(sheetname "2. Buck to 5 V")
+		(sheetfile "sheets/buck_5v.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5463,9 +5463,9 @@
 				)
 			)
 		)
-		(path "/c15ff8c2-214f-4e4d-afd4-b6b1a701e94b/6c79f32f-3dee-4052-8101-d03a4775e4e9")
-		(sheetname "5. RunCam Split 4")
-		(sheetfile "sheets/camera.kicad_sch")
+		(path "/51707861-a38d-47a0-88b0-b003633f2c22/6c79f32f-3dee-4052-8101-d03a4775e4e9")
+		(sheetname "3. ESP32 + camera")
+		(sheetfile "sheets/esp32_camera.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5836,7 +5836,7 @@
 			(size 0.6 1.7)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net "/5. RunCam Split 4/CAM_RX")
+			(net "/3. ESP32 + camera/CAM_RX")
 			(uuid "a6e8375f-6326-491c-ad18-a67550fb22ea")
 		)
 		(pad "4" smd roundrect
@@ -5844,7 +5844,7 @@
 			(size 0.6 1.7)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net "/5. RunCam Split 4/CAM_TX")
+			(net "/3. ESP32 + camera/CAM_TX")
 			(uuid "ad346dbb-d59a-402e-9eaf-93ae6b83474c")
 		)
 		(pad "5" smd roundrect
@@ -5852,7 +5852,7 @@
 			(size 0.6 1.7)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net "/5. RunCam Split 4/CAM_VIDEO")
+			(net "/3. ESP32 + camera/CAM_VIDEO")
 			(uuid "318e1120-022f-4661-8fab-562f8e93902c")
 		)
 		(pad "MP" smd roundrect
@@ -5974,8 +5974,8 @@
 			)
 		)
 		(path "/51707861-a38d-47a0-88b0-b003633f2c22/3d0e86d9-37e0-4815-9bcf-b362e0d2c51d")
-		(sheetname "4. ESP32 socket")
-		(sheetfile "sheets/esp32.kicad_sch")
+		(sheetname "3. ESP32 + camera")
+		(sheetfile "sheets/esp32_camera.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6094,7 +6094,7 @@
 			(size 0.975 1.4)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net "/4. ESP32 socket/LED_A")
+			(net "/3. ESP32 + camera/LED_A")
 			(uuid "8416c5fe-d215-46c2-88a1-a074b8e432ba")
 		)
 		(embedded_fonts no)
@@ -6918,9 +6918,9 @@
 				)
 			)
 		)
-		(path "/bb33270d-1f7a-4186-ad49-327b6f32c122/2eefda51-fad7-43f3-ac57-4b8e2ae2dee5")
-		(sheetname "3. Pack voltage sense")
-		(sheetfile "sheets/sense.kicad_sch")
+		(path "/51707861-a38d-47a0-88b0-b003633f2c22/2eefda51-fad7-43f3-ac57-4b8e2ae2dee5")
+		(sheetname "3. ESP32 + camera")
+		(sheetfile "sheets/esp32_camera.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6982,7 +6982,7 @@
 			(size 0.8 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net "/3. Pack voltage sense/VBAT_SENSE")
+			(net "/3. ESP32 + camera/VBAT_SENSE")
 			(uuid "eebc8c0c-ef71-4e1c-b713-02d8b2f79837")
 		)
 		(pad "2" smd roundrect
@@ -7635,8 +7635,8 @@
 			)
 		)
 		(path "/51707861-a38d-47a0-88b0-b003633f2c22/abda6344-7699-44ce-ab82-bec15cad0b35")
-		(sheetname "4. ESP32 socket")
-		(sheetfile "sheets/esp32.kicad_sch")
+		(sheetname "3. ESP32 + camera")
+		(sheetfile "sheets/esp32_camera.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7698,7 +7698,7 @@
 			(size 0.8 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net "/4. ESP32 socket/LED_GPIO")
+			(net "/3. ESP32 + camera/LED_GPIO")
 			(uuid "50ba1842-3bc0-46a5-8997-0aa551840aca")
 		)
 		(pad "2" smd roundrect
@@ -7706,7 +7706,7 @@
 			(size 0.8 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net "/4. ESP32 socket/LED_A")
+			(net "/3. ESP32 + camera/LED_A")
 			(uuid "df2b8204-22e4-4402-b25a-32b791c77e53")
 		)
 		(embedded_fonts no)
@@ -7813,9 +7813,9 @@
 				)
 			)
 		)
-		(path "/c15ff8c2-214f-4e4d-afd4-b6b1a701e94b/338d357a-7290-49d4-890f-e61ecebbd246")
-		(sheetname "5. RunCam Split 4")
-		(sheetfile "sheets/camera.kicad_sch")
+		(path "/51707861-a38d-47a0-88b0-b003633f2c22/338d357a-7290-49d4-890f-e61ecebbd246")
+		(sheetname "3. ESP32 + camera")
+		(sheetfile "sheets/esp32_camera.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7877,7 +7877,7 @@
 			(size 0.8 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net "/4. ESP32 socket/ESP_TX2")
+			(net "/3. ESP32 + camera/ESP_TX2")
 			(uuid "db4f96be-eaf8-402e-bc24-d741286748c1")
 		)
 		(pad "2" smd roundrect
@@ -7885,7 +7885,7 @@
 			(size 0.8 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net "/5. RunCam Split 4/CAM_RX")
+			(net "/3. ESP32 + camera/CAM_RX")
 			(uuid "01a393ee-8d2f-469f-8aa1-766a1be59907")
 		)
 		(embedded_fonts no)
@@ -8171,9 +8171,9 @@
 				)
 			)
 		)
-		(path "/51707861-a38d-47a0-88b0-b003633f2c22/ec3c00be-222f-411c-ac8c-8cdb2c4281b2")
-		(sheetname "4. ESP32 socket")
-		(sheetfile "sheets/esp32.kicad_sch")
+		(path "/1914f4ed-278a-4026-a86a-769e5e361ab6/ec3c00be-222f-411c-ac8c-8cdb2c4281b2")
+		(sheetname "2. Buck to 5 V")
+		(sheetfile "sheets/buck_5v.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9011,8 +9011,8 @@
 			)
 		)
 		(path "/51707861-a38d-47a0-88b0-b003633f2c22/ba8aca1a-b8c9-4e20-8c48-c352a37fb0b3")
-		(sheetname "4. ESP32 socket")
-		(sheetfile "sheets/esp32.kicad_sch")
+		(sheetname "3. ESP32 + camera")
+		(sheetfile "sheets/esp32_camera.kicad_sch")
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9183,7 +9183,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. ESP32 socket/L01_3V3")
+			(net "/3. ESP32 + camera/L01_3V3")
 			(uuid "e4ef0393-3dc3-40df-b969-7084dff1e7f2")
 		)
 		(pad "2" thru_hole circle
@@ -9192,7 +9192,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. ESP32 socket/L02_EN")
+			(net "/3. ESP32 + camera/L02_EN")
 			(uuid "654eec84-6e5d-467e-944c-86bc23cc74af")
 		)
 		(pad "3" thru_hole circle
@@ -9201,7 +9201,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. ESP32 socket/L03_IO36")
+			(net "/3. ESP32 + camera/L03_IO36")
 			(uuid "abd75aae-c94c-44a0-9d50-8d19f0b99c7b")
 		)
 		(pad "4" thru_hole circle
@@ -9210,7 +9210,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. ESP32 socket/L04_IO39")
+			(net "/3. ESP32 + camera/L04_IO39")
 			(uuid "d77633a7-949a-4a26-a550-eea790bc0608")
 		)
 		(pad "5" thru_hole circle
@@ -9219,7 +9219,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/3. Pack voltage sense/VBAT_SENSE")
+			(net "/3. ESP32 + camera/VBAT_SENSE")
 			(uuid "f7e3f7aa-1c9b-450b-9d37-11f3c6126f76")
 		)
 		(pad "6" thru_hole circle
@@ -9228,7 +9228,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. ESP32 socket/L06_IO35")
+			(net "/3. ESP32 + camera/L06_IO35")
 			(uuid "05ede37e-71a9-4ded-9f1c-e53bba7ac30b")
 		)
 		(pad "7" thru_hole circle
@@ -9237,7 +9237,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. ESP32 socket/L07_IO32")
+			(net "/3. ESP32 + camera/L07_IO32")
 			(uuid "6e8fc069-c97b-4585-8a40-71946699047c")
 		)
 		(pad "8" thru_hole circle
@@ -9246,7 +9246,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. ESP32 socket/L08_IO33")
+			(net "/3. ESP32 + camera/L08_IO33")
 			(uuid "f1015498-a7ce-4683-aac0-275efd4cb2cb")
 		)
 		(pad "9" thru_hole circle
@@ -9255,7 +9255,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. ESP32 socket/L09_IO25")
+			(net "/3. ESP32 + camera/L09_IO25")
 			(uuid "04a63c75-af90-40f5-98bf-8fd94fc0732e")
 		)
 		(pad "10" thru_hole circle
@@ -9264,7 +9264,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. ESP32 socket/L10_IO26")
+			(net "/3. ESP32 + camera/L10_IO26")
 			(uuid "23bc606a-c41c-4a48-836d-997d0d6dca53")
 		)
 		(pad "11" thru_hole circle
@@ -9273,7 +9273,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. ESP32 socket/L11_IO27")
+			(net "/3. ESP32 + camera/L11_IO27")
 			(uuid "49a8c2c7-c082-45a7-9304-a47ecbec2d7e")
 		)
 		(pad "12" thru_hole circle
@@ -9282,7 +9282,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. ESP32 socket/L12_IO14")
+			(net "/3. ESP32 + camera/L12_IO14")
 			(uuid "a05ca3f2-9555-4a28-93f3-edb39e6fee13")
 		)
 		(pad "13" thru_hole circle
@@ -9291,7 +9291,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. ESP32 socket/L13_IO12")
+			(net "/3. ESP32 + camera/L13_IO12")
 			(uuid "b9b5aec6-6d7b-44a5-b2e6-c768d0b21447")
 		)
 		(pad "14" thru_hole circle
@@ -9309,7 +9309,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. ESP32 socket/L15_IO13")
+			(net "/3. ESP32 + camera/L15_IO13")
 			(uuid "b453608f-7945-46bf-b26f-462160e0e7a4")
 		)
 		(pad "16" thru_hole circle
@@ -9318,7 +9318,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. ESP32 socket/L16_IO9")
+			(net "/3. ESP32 + camera/L16_IO9")
 			(uuid "5b879317-730b-43c6-b3c4-95e992ef70e9")
 		)
 		(pad "17" thru_hole circle
@@ -9327,7 +9327,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. ESP32 socket/L17_IO10")
+			(net "/3. ESP32 + camera/L17_IO10")
 			(uuid "37e7b852-2b78-4887-98a6-bbc681e541a2")
 		)
 		(pad "18" thru_hole circle
@@ -9336,7 +9336,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. ESP32 socket/L18_IO11")
+			(net "/3. ESP32 + camera/L18_IO11")
 			(uuid "ee0a5109-bf72-461b-9916-c8dce4c6ab4d")
 		)
 		(pad "19" thru_hole circle
@@ -9632,8 +9632,8 @@
 			)
 		)
 		(path "/51707861-a38d-47a0-88b0-b003633f2c22/fe51d4ce-c478-42c8-bcb1-d1fc01b84921")
-		(sheetname "4. ESP32 socket")
-		(sheetfile "sheets/esp32.kicad_sch")
+		(sheetname "3. ESP32 + camera")
+		(sheetfile "sheets/esp32_camera.kicad_sch")
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9813,7 +9813,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. ESP32 socket/R02_IO23")
+			(net "/3. ESP32 + camera/R02_IO23")
 			(uuid "a45460f1-0fd1-4edf-864b-eb8ef95d565d")
 		)
 		(pad "3" thru_hole circle
@@ -9822,7 +9822,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. ESP32 socket/R03_IO22")
+			(net "/3. ESP32 + camera/R03_IO22")
 			(uuid "f8753c9f-0977-4af3-b589-39b9f2bc2a6f")
 		)
 		(pad "4" thru_hole circle
@@ -9831,7 +9831,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. ESP32 socket/R04_TX0")
+			(net "/3. ESP32 + camera/R04_TX0")
 			(uuid "956e1402-a105-48b0-8399-4a8a81b45005")
 		)
 		(pad "5" thru_hole circle
@@ -9840,7 +9840,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. ESP32 socket/R05_RX0")
+			(net "/3. ESP32 + camera/R05_RX0")
 			(uuid "9c14b503-c69b-4455-943d-4499dede5603")
 		)
 		(pad "6" thru_hole circle
@@ -9849,7 +9849,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. ESP32 socket/R06_IO21")
+			(net "/3. ESP32 + camera/R06_IO21")
 			(uuid "2cfdb336-f988-4142-b440-626a63197d57")
 		)
 		(pad "7" thru_hole circle
@@ -9867,7 +9867,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. ESP32 socket/R08_IO19")
+			(net "/3. ESP32 + camera/R08_IO19")
 			(uuid "caf53b96-d140-4c08-b828-e7ccc7f76cc0")
 		)
 		(pad "9" thru_hole circle
@@ -9876,7 +9876,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. ESP32 socket/R09_IO18")
+			(net "/3. ESP32 + camera/R09_IO18")
 			(uuid "64679a6f-3441-4a9b-b0f2-3b0da73afbd2")
 		)
 		(pad "10" thru_hole circle
@@ -9885,7 +9885,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. ESP32 socket/R10_IO5")
+			(net "/3. ESP32 + camera/R10_IO5")
 			(uuid "82306d9d-8e64-451e-83fd-5bc95030e020")
 		)
 		(pad "11" thru_hole circle
@@ -9894,7 +9894,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. ESP32 socket/ESP_TX2")
+			(net "/3. ESP32 + camera/ESP_TX2")
 			(uuid "158118a5-4723-482f-bab1-f16a114901e4")
 		)
 		(pad "12" thru_hole circle
@@ -9903,7 +9903,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. ESP32 socket/ESP_RX2")
+			(net "/3. ESP32 + camera/ESP_RX2")
 			(uuid "9aee70ff-a782-4013-b90b-09e2f208a491")
 		)
 		(pad "13" thru_hole circle
@@ -9912,7 +9912,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. ESP32 socket/R13_IO4")
+			(net "/3. ESP32 + camera/R13_IO4")
 			(uuid "59af9eae-4598-4a36-ada4-c54a67941747")
 		)
 		(pad "14" thru_hole circle
@@ -9921,7 +9921,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. ESP32 socket/R14_IO0")
+			(net "/3. ESP32 + camera/R14_IO0")
 			(uuid "5a05fb6a-4be1-4472-a6f2-8fd476193245")
 		)
 		(pad "15" thru_hole circle
@@ -9930,7 +9930,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. ESP32 socket/LED_GPIO")
+			(net "/3. ESP32 + camera/LED_GPIO")
 			(uuid "6e68fd82-359b-4460-ba64-4117142e99ac")
 		)
 		(pad "16" thru_hole circle
@@ -9939,7 +9939,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. ESP32 socket/R16_IO15")
+			(net "/3. ESP32 + camera/R16_IO15")
 			(uuid "b7c443c2-1aac-44ab-aa65-6e1da6adce4d")
 		)
 		(pad "17" thru_hole circle
@@ -9948,7 +9948,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. ESP32 socket/R17_IO8")
+			(net "/3. ESP32 + camera/R17_IO8")
 			(uuid "88a5a087-480e-4f37-b470-338b5b4af088")
 		)
 		(pad "18" thru_hole circle
@@ -9957,7 +9957,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. ESP32 socket/R18_IO7")
+			(net "/3. ESP32 + camera/R18_IO7")
 			(uuid "28d897c2-c73e-4add-8341-e8de234556a4")
 		)
 		(pad "19" thru_hole circle
@@ -9966,7 +9966,7 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. ESP32 socket/R19_IO6")
+			(net "/3. ESP32 + camera/R19_IO6")
 			(uuid "00dcfeec-6d5c-4e59-95ef-4a72b6bf61a2")
 		)
 		(embedded_fonts no)
@@ -10073,9 +10073,9 @@
 				)
 			)
 		)
-		(path "/c15ff8c2-214f-4e4d-afd4-b6b1a701e94b/8e0d7c3c-4f56-44b3-b716-c6e28818c41c")
-		(sheetname "5. RunCam Split 4")
-		(sheetfile "sheets/camera.kicad_sch")
+		(path "/51707861-a38d-47a0-88b0-b003633f2c22/8e0d7c3c-4f56-44b3-b716-c6e28818c41c")
+		(sheetname "3. ESP32 + camera")
+		(sheetfile "sheets/esp32_camera.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10137,7 +10137,7 @@
 			(size 0.8 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net "/4. ESP32 socket/ESP_RX2")
+			(net "/3. ESP32 + camera/ESP_RX2")
 			(uuid "7e65dbe6-8257-487c-94b5-39739cc226a9")
 		)
 		(pad "2" smd roundrect
@@ -10145,7 +10145,7 @@
 			(size 0.8 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net "/5. RunCam Split 4/CAM_TX")
+			(net "/3. ESP32 + camera/CAM_TX")
 			(uuid "eaa02f35-5edb-4c26-b528-7ed41fdd2812")
 		)
 		(embedded_fonts no)
@@ -12622,9 +12622,9 @@
 				)
 			)
 		)
-		(path "/bb33270d-1f7a-4186-ad49-327b6f32c122/8011e1d9-1815-43c3-ba58-7d413a333d59")
-		(sheetname "3. Pack voltage sense")
-		(sheetfile "sheets/sense.kicad_sch")
+		(path "/51707861-a38d-47a0-88b0-b003633f2c22/8011e1d9-1815-43c3-ba58-7d413a333d59")
+		(sheetname "3. ESP32 + camera")
+		(sheetfile "sheets/esp32_camera.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12686,7 +12686,7 @@
 			(size 0.9 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net "/3. Pack voltage sense/VBAT_SENSE")
+			(net "/3. ESP32 + camera/VBAT_SENSE")
 			(uuid "53b06e78-73de-485f-a604-8c89c9caa1e3")
 		)
 		(pad "2" smd roundrect
@@ -12801,9 +12801,9 @@
 				)
 			)
 		)
-		(path "/bb33270d-1f7a-4186-ad49-327b6f32c122/f4cbfbf7-dc03-4df1-9b05-7a792136ed64")
-		(sheetname "3. Pack voltage sense")
-		(sheetfile "sheets/sense.kicad_sch")
+		(path "/51707861-a38d-47a0-88b0-b003633f2c22/f4cbfbf7-dc03-4df1-9b05-7a792136ed64")
+		(sheetname "3. ESP32 + camera")
+		(sheetfile "sheets/esp32_camera.kicad_sch")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12873,7 +12873,7 @@
 			(size 0.8 0.95)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
-			(net "/3. Pack voltage sense/VBAT_SENSE")
+			(net "/3. ESP32 + camera/VBAT_SENSE")
 			(uuid "d3867444-59f6-4fc9-a655-c1419faea711")
 		)
 		(embedded_fonts no)
@@ -13878,7 +13878,7 @@
 		(end 173.6 104.3)
 		(width 1)
 		(layer "F.Cu")
-		(net "/6. COTS {slash} SRAD supplies/COTS_BAT+")
+		(net "/4. COTS / SRAD supplies/COTS_BAT+")
 		(uuid "4b568c9e-dcf6-4f87-8408-f8e45851d7f8")
 	)
 	(segment
@@ -13886,7 +13886,7 @@
 		(end 178.3 99.6)
 		(width 1)
 		(layer "F.Cu")
-		(net "/6. COTS {slash} SRAD supplies/COTS_BAT+")
+		(net "/4. COTS / SRAD supplies/COTS_BAT+")
 		(uuid "6df27311-903b-4330-9275-1b0f31cef4a9")
 	)
 	(segment
@@ -13894,7 +13894,7 @@
 		(end 166.8 104.3)
 		(width 1)
 		(layer "F.Cu")
-		(net "/6. COTS {slash} SRAD supplies/COTS_BAT+")
+		(net "/4. COTS / SRAD supplies/COTS_BAT+")
 		(uuid "75f58878-e004-4352-bdc4-7038bcfe925f")
 	)
 	(segment
@@ -13902,7 +13902,7 @@
 		(end 161.1 110)
 		(width 1)
 		(layer "F.Cu")
-		(net "/6. COTS {slash} SRAD supplies/COTS_BAT+")
+		(net "/4. COTS / SRAD supplies/COTS_BAT+")
 		(uuid "e50c3501-b7bc-4ca8-b2f7-d75e42166964")
 	)
 	(segment
@@ -13910,7 +13910,7 @@
 		(end 178.3 99.585)
 		(width 1)
 		(layer "F.Cu")
-		(net "/6. COTS {slash} SRAD supplies/COTS_BAT+")
+		(net "/4. COTS / SRAD supplies/COTS_BAT+")
 		(uuid "edb99f27-3497-4e52-954f-267dd1ee99ad")
 	)
 	(segment
@@ -13918,7 +13918,7 @@
 		(end 181.3 116.8)
 		(width 1)
 		(layer "F.Cu")
-		(net "/6. COTS {slash} SRAD supplies/COTS_SW")
+		(net "/4. COTS / SRAD supplies/COTS_SW")
 		(uuid "d7a9e989-5153-4577-b598-bdde5762b44f")
 	)
 	(via
@@ -13926,7 +13926,7 @@
 		(size 0.8)
 		(drill 0.4)
 		(layers "F.Cu" "B.Cu")
-		(net "/6. COTS {slash} SRAD supplies/COTS_SW")
+		(net "/4. COTS / SRAD supplies/COTS_SW")
 		(uuid "1caba355-855e-4fab-8b58-5850fa22e2a6")
 	)
 	(via
@@ -13934,7 +13934,7 @@
 		(size 0.8)
 		(drill 0.4)
 		(layers "F.Cu" "B.Cu")
-		(net "/6. COTS {slash} SRAD supplies/COTS_SW")
+		(net "/4. COTS / SRAD supplies/COTS_SW")
 		(uuid "a171e195-6ab2-4e86-b59d-c412d34c158d")
 	)
 	(segment
@@ -13942,7 +13942,7 @@
 		(end 181.5 117)
 		(width 1)
 		(layer "B.Cu")
-		(net "/6. COTS {slash} SRAD supplies/COTS_SW")
+		(net "/4. COTS / SRAD supplies/COTS_SW")
 		(uuid "061ec1e1-c2c0-4088-b0f0-0582f7fcfe00")
 	)
 	(segment
@@ -13950,7 +13950,7 @@
 		(end 177.5 201.5)
 		(width 1)
 		(layer "B.Cu")
-		(net "/6. COTS {slash} SRAD supplies/COTS_SW")
+		(net "/4. COTS / SRAD supplies/COTS_SW")
 		(uuid "5802dce0-906f-44d1-90a2-e70c0677b262")
 	)
 	(segment
@@ -13958,7 +13958,7 @@
 		(end 181.5 196.5)
 		(width 1)
 		(layer "B.Cu")
-		(net "/6. COTS {slash} SRAD supplies/COTS_SW")
+		(net "/4. COTS / SRAD supplies/COTS_SW")
 		(uuid "aa0424b1-82e3-4c3c-879a-669d1bb9db4d")
 	)
 	(segment
@@ -13966,7 +13966,7 @@
 		(end 177.5 200.5)
 		(width 1)
 		(layer "B.Cu")
-		(net "/6. COTS {slash} SRAD supplies/COTS_SW")
+		(net "/4. COTS / SRAD supplies/COTS_SW")
 		(uuid "de635ea3-8c14-459b-9cf0-390cfca3ac93")
 	)
 	(segment
@@ -13974,7 +13974,7 @@
 		(end 181.3 116.8)
 		(width 1)
 		(layer "B.Cu")
-		(net "/6. COTS {slash} SRAD supplies/COTS_SW")
+		(net "/4. COTS / SRAD supplies/COTS_SW")
 		(uuid "e541884f-d57a-49b4-95d7-208a95246036")
 	)
 	(segment
@@ -13982,7 +13982,7 @@
 		(end 186.5 105.4)
 		(width 1)
 		(layer "F.Cu")
-		(net "/6. COTS {slash} SRAD supplies/SRAD_BAT+")
+		(net "/4. COTS / SRAD supplies/SRAD_BAT+")
 		(uuid "1a90d229-0d1a-43c5-bca4-55006f0f531d")
 	)
 	(segment
@@ -13990,7 +13990,7 @@
 		(end 189.6 99.585)
 		(width 1)
 		(layer "F.Cu")
-		(net "/6. COTS {slash} SRAD supplies/SRAD_BAT+")
+		(net "/4. COTS / SRAD supplies/SRAD_BAT+")
 		(uuid "2643a7c7-da4d-4d6a-a5ce-88aa612f8253")
 	)
 	(segment
@@ -13998,7 +13998,7 @@
 		(end 189.6 102.3)
 		(width 1)
 		(layer "F.Cu")
-		(net "/6. COTS {slash} SRAD supplies/SRAD_BAT+")
+		(net "/4. COTS / SRAD supplies/SRAD_BAT+")
 		(uuid "651c7d71-8dc0-4b41-82c7-bb682fb173e9")
 	)
 	(segment
@@ -14006,7 +14006,7 @@
 		(end 192.6 105)
 		(width 1)
 		(layer "B.Cu")
-		(net "/6. COTS {slash} SRAD supplies/SRAD_SW")
+		(net "/4. COTS / SRAD supplies/SRAD_SW")
 		(uuid "478e1479-e488-4e7b-bb84-3dc1cbca0144")
 	)
 	(segment
@@ -14014,7 +14014,7 @@
 		(end 188 196)
 		(width 1)
 		(layer "B.Cu")
-		(net "/6. COTS {slash} SRAD supplies/SRAD_SW")
+		(net "/4. COTS / SRAD supplies/SRAD_SW")
 		(uuid "a68071cd-b340-446b-af2f-6044fa7c790a")
 	)
 	(segment
@@ -14022,7 +14022,7 @@
 		(end 192.5 200.5)
 		(width 1)
 		(layer "B.Cu")
-		(net "/6. COTS {slash} SRAD supplies/SRAD_SW")
+		(net "/4. COTS / SRAD supplies/SRAD_SW")
 		(uuid "a84bb294-95d6-48fe-b7e0-3833fac32a3e")
 	)
 	(segment
@@ -14030,7 +14030,7 @@
 		(end 192.5 201.5)
 		(width 1)
 		(layer "B.Cu")
-		(net "/6. COTS {slash} SRAD supplies/SRAD_SW")
+		(net "/4. COTS / SRAD supplies/SRAD_SW")
 		(uuid "c8bed230-a1dd-4815-a871-6ab25d1f20f6")
 	)
 	(segment
@@ -14038,7 +14038,7 @@
 		(end 188 109.6)
 		(width 1)
 		(layer "B.Cu")
-		(net "/6. COTS {slash} SRAD supplies/SRAD_SW")
+		(net "/4. COTS / SRAD supplies/SRAD_SW")
 		(uuid "ecb35bc1-43b9-4c49-b396-4194fbbbf940")
 	)
 	(segment
@@ -14230,7 +14230,7 @@
 		(end 172.5 201.5)
 		(width 1)
 		(layer "F.Cu")
-		(net "/6. COTS {slash} SRAD supplies/COTS_BAT-")
+		(net "/4. COTS / SRAD supplies/COTS_BAT-")
 		(uuid "08e2f5a3-f651-4601-a33b-d8e311df4517")
 	)
 	(segment
@@ -14238,7 +14238,7 @@
 		(end 161.1 195.5)
 		(width 1)
 		(layer "F.Cu")
-		(net "/6. COTS {slash} SRAD supplies/COTS_BAT-")
+		(net "/4. COTS / SRAD supplies/COTS_BAT-")
 		(uuid "66122a83-e7c4-410b-abb0-1cba5342b58b")
 	)
 	(segment
@@ -14246,7 +14246,7 @@
 		(end 166 200.4)
 		(width 1)
 		(layer "F.Cu")
-		(net "/6. COTS {slash} SRAD supplies/COTS_BAT-")
+		(net "/4. COTS / SRAD supplies/COTS_BAT-")
 		(uuid "6ba9d5ed-6b46-4bc7-8e86-3f05b701cac5")
 	)
 	(segment
@@ -14254,7 +14254,7 @@
 		(end 167.1 201.5)
 		(width 1)
 		(layer "F.Cu")
-		(net "/6. COTS {slash} SRAD supplies/COTS_BAT-")
+		(net "/4. COTS / SRAD supplies/COTS_BAT-")
 		(uuid "ca561c3b-b7a1-43c4-871d-5a674a5ae980")
 	)
 	(via
@@ -15286,7 +15286,7 @@
 		(end 186.5 196.5)
 		(width 1)
 		(layer "F.Cu")
-		(net "/6. COTS {slash} SRAD supplies/SRAD_BAT-")
+		(net "/4. COTS / SRAD supplies/SRAD_BAT-")
 		(uuid "a693073f-d5d3-4a50-b004-f97deae416b3")
 	)
 	(segment
@@ -15294,7 +15294,7 @@
 		(end 187.5 201.5)
 		(width 1)
 		(layer "F.Cu")
-		(net "/6. COTS {slash} SRAD supplies/SRAD_BAT-")
+		(net "/4. COTS / SRAD supplies/SRAD_BAT-")
 		(uuid "a9d4bac4-d356-4773-a423-2c56d5463a0a")
 	)
 	(segment
@@ -15302,7 +15302,7 @@
 		(end 187.5 197.5)
 		(width 1)
 		(layer "F.Cu")
-		(net "/6. COTS {slash} SRAD supplies/SRAD_BAT-")
+		(net "/4. COTS / SRAD supplies/SRAD_BAT-")
 		(uuid "b42e321a-874d-468a-8ff2-675868128dd7")
 	)
 	(segment
@@ -15310,7 +15310,7 @@
 		(end 142 171.7)
 		(width 0.3)
 		(layer "F.Cu")
-		(net "/5. RunCam Split 4/CAM_RX")
+		(net "/3. ESP32 + camera/CAM_RX")
 		(uuid "5c5bd7ae-cbeb-44b2-98b1-cbe9a7f89f85")
 	)
 	(segment
@@ -15318,7 +15318,7 @@
 		(end 146 172.7)
 		(width 0.3)
 		(layer "F.Cu")
-		(net "/5. RunCam Split 4/CAM_RX")
+		(net "/3. ESP32 + camera/CAM_RX")
 		(uuid "939c4a9c-1f62-42b0-8b05-b9fc9aaee26f")
 	)
 	(segment
@@ -15326,7 +15326,7 @@
 		(end 143 172.7)
 		(width 0.3)
 		(layer "F.Cu")
-		(net "/5. RunCam Split 4/CAM_RX")
+		(net "/3. ESP32 + camera/CAM_RX")
 		(uuid "ce57b44b-f9cb-4979-ac71-9692d6ee77b5")
 	)
 	(via
@@ -15334,7 +15334,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "/5. RunCam Split 4/CAM_RX")
+		(net "/3. ESP32 + camera/CAM_RX")
 		(uuid "035738df-c73f-4664-b225-f7390a05cbc8")
 	)
 	(via
@@ -15342,7 +15342,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "/5. RunCam Split 4/CAM_RX")
+		(net "/3. ESP32 + camera/CAM_RX")
 		(uuid "5350663f-68b2-4e32-ba54-c48114e8c2b8")
 	)
 	(segment
@@ -15350,7 +15350,7 @@
 		(end 142 140.28)
 		(width 0.3)
 		(layer "B.Cu")
-		(net "/5. RunCam Split 4/CAM_RX")
+		(net "/3. ESP32 + camera/CAM_RX")
 		(uuid "09e70787-1f11-4837-8d3d-7ccdee73da28")
 	)
 	(segment
@@ -15358,7 +15358,7 @@
 		(end 146 170.45)
 		(width 0.3)
 		(layer "B.Cu")
-		(net "/5. RunCam Split 4/CAM_RX")
+		(net "/3. ESP32 + camera/CAM_RX")
 		(uuid "195e33ad-2093-4428-9ae2-852611ce5664")
 	)
 	(segment
@@ -15366,7 +15366,7 @@
 		(end 141.2 172.9)
 		(width 0.3)
 		(layer "F.Cu")
-		(net "/5. RunCam Split 4/CAM_TX")
+		(net "/3. ESP32 + camera/CAM_TX")
 		(uuid "8681227b-fa1e-4f64-b1de-2cd4000afca6")
 	)
 	(segment
@@ -15374,7 +15374,7 @@
 		(end 142.01 173.71)
 		(width 0.3)
 		(layer "F.Cu")
-		(net "/5. RunCam Split 4/CAM_TX")
+		(net "/3. ESP32 + camera/CAM_TX")
 		(uuid "d5cf215a-1461-430c-96b9-6ea83d38ac04")
 	)
 	(segment
@@ -15382,7 +15382,7 @@
 		(end 144.75 173.71)
 		(width 0.3)
 		(layer "F.Cu")
-		(net "/5. RunCam Split 4/CAM_TX")
+		(net "/3. ESP32 + camera/CAM_TX")
 		(uuid "e492d883-4f18-4ebc-81e2-2800f0efccc0")
 	)
 	(via
@@ -15390,7 +15390,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "/5. RunCam Split 4/CAM_TX")
+		(net "/3. ESP32 + camera/CAM_TX")
 		(uuid "ea1608db-c253-49dc-80b2-80624e619498")
 	)
 	(via
@@ -15398,7 +15398,7 @@
 		(size 0.6)
 		(drill 0.3)
 		(layers "F.Cu" "B.Cu")
-		(net "/5. RunCam Split 4/CAM_TX")
+		(net "/3. ESP32 + camera/CAM_TX")
 		(uuid "f44eb324-1b22-4a6c-b037-32b45eef75ce")
 	)
 	(segment
@@ -15406,7 +15406,7 @@
 		(end 141.2 142.82)
 		(width 0.3)
 		(layer "B.Cu")
-		(net "/5. RunCam Split 4/CAM_TX")
+		(net "/3. ESP32 + camera/CAM_TX")
 		(uuid "ef5000a2-c997-43cc-9292-2cf579ad4a6e")
 	)
 	(segment
@@ -15414,7 +15414,7 @@
 		(end 144.75 170.45)
 		(width 0.3)
 		(layer "B.Cu")
-		(net "/5. RunCam Split 4/CAM_TX")
+		(net "/3. ESP32 + camera/CAM_TX")
 		(uuid "fcb94a6d-aad8-4538-a24a-ffe6fb6e0092")
 	)
 	(segment
@@ -15422,7 +15422,7 @@
 		(end 142.2 147.4)
 		(width 0.3)
 		(layer "B.Cu")
-		(net "/4. ESP32 socket/LED_A")
+		(net "/3. ESP32 + camera/LED_A")
 		(uuid "ace6f000-3586-42d7-96e5-bc426e75d805")
 	)
 	(segment
@@ -15582,7 +15582,7 @@
 		(end 152.9 130.579999)
 		(width 0.3)
 		(layer "B.Cu")
-		(net "/3. Pack voltage sense/VBAT_SENSE")
+		(net "/3. ESP32 + camera/VBAT_SENSE")
 		(uuid "0470ead8-e1dd-4c2e-8494-9c84544e8a48")
 	)
 	(segment
@@ -15590,7 +15590,7 @@
 		(end 170.93 130.579999)
 		(width 0.3)
 		(layer "B.Cu")
-		(net "/3. Pack voltage sense/VBAT_SENSE")
+		(net "/3. ESP32 + camera/VBAT_SENSE")
 		(uuid "7787261a-838e-47bd-a0cb-cf50f256f019")
 	)
 	(segment
@@ -15598,7 +15598,7 @@
 		(end 170.93 127.02)
 		(width 0.3)
 		(layer "B.Cu")
-		(net "/3. Pack voltage sense/VBAT_SENSE")
+		(net "/3. ESP32 + camera/VBAT_SENSE")
 		(uuid "907e2d79-5307-4c24-94aa-7e778f0f9746")
 	)
 	(segment
@@ -15606,7 +15606,7 @@
 		(end 170.98 125.039999)
 		(width 0.3)
 		(layer "B.Cu")
-		(net "/3. Pack voltage sense/VBAT_SENSE")
+		(net "/3. ESP32 + camera/VBAT_SENSE")
 		(uuid "9c5a07de-40a4-40e8-8b3f-7bbe897c1879")
 	)
 	(segment
@@ -15614,7 +15614,7 @@
 		(end 173.8 125.039999)
 		(width 0.3)
 		(layer "B.Cu")
-		(net "/3. Pack voltage sense/VBAT_SENSE")
+		(net "/3. ESP32 + camera/VBAT_SENSE")
 		(uuid "e0ec6378-7031-4066-80d7-6ff7097eb25d")
 	)
 	(segment
@@ -15622,7 +15622,7 @@
 		(end 146.4 147.4)
 		(width 0.3)
 		(layer "B.Cu")
-		(net "/4. ESP32 socket/LED_GPIO")
+		(net "/3. ESP32 + camera/LED_GPIO")
 		(uuid "1671efcd-8608-44e7-bf86-f3f80ed74384")
 	)
 	(segment
@@ -15630,7 +15630,7 @@
 		(end 145.68 147.4)
 		(width 0.3)
 		(layer "B.Cu")
-		(net "/4. ESP32 socket/LED_GPIO")
+		(net "/3. ESP32 + camera/LED_GPIO")
 		(uuid "54ae9b61-8544-47e7-8294-c400ab5ae81f")
 	)
 	(segment
@@ -15638,7 +15638,7 @@
 		(end 147 150.44)
 		(width 0.3)
 		(layer "B.Cu")
-		(net "/4. ESP32 socket/LED_GPIO")
+		(net "/3. ESP32 + camera/LED_GPIO")
 		(uuid "b3464c83-d458-42df-a49e-842017796cca")
 	)
 	(segment
@@ -15646,7 +15646,7 @@
 		(end 146.4 149.84)
 		(width 0.3)
 		(layer "B.Cu")
-		(net "/4. ESP32 socket/LED_GPIO")
+		(net "/3. ESP32 + camera/LED_GPIO")
 		(uuid "f7e40dc9-0f67-48ba-afd6-6b8256cdbb90")
 	)
 	(segment
@@ -15654,7 +15654,7 @@
 		(end 144.625 140.28)
 		(width 0.3)
 		(layer "B.Cu")
-		(net "/4. ESP32 socket/ESP_TX2")
+		(net "/3. ESP32 + camera/ESP_TX2")
 		(uuid "7c9ebaed-fb95-452b-a674-2ce107a61b9e")
 	)
 	(segment
@@ -15726,7 +15726,7 @@
 		(end 144.625 142.82)
 		(width 0.3)
 		(layer "B.Cu")
-		(net "/4. ESP32 socket/ESP_RX2")
+		(net "/3. ESP32 + camera/ESP_RX2")
 		(uuid "29cf7257-3800-47a2-a2c5-e16adc617515")
 	)
 	(zone
