@@ -146,6 +146,35 @@ Layout-specific items are in [`LAYOUT_NOTES.md`](LAYOUT_NOTES.md).
 
 ---
 
+## Mechanical dimensions
+
+Front view (battery side), origin at the board centre, **x right, y up toward the pin-switch stack** (the Onshape frame).
+All in mm unless noted.
+
+| Feature | Size | Position |
+|---|---|---|
+| Board | Ø 145.29 (5.720 in), 1.6 thick FR-4 | centred |
+| Rod holes H1/H2 (3/8 in threaded rod) | Ø 10.32 (13/32 in) | (−60, 0), (60, 0): 120 apart |
+| Rod washer keep-out (no copper, both faces) | Ø 21.2 | around H1/H2 |
+| TeleMetrum sled screw holes H3/H4 (M4) | Ø 4.5 | (−8.7, −50), (8.7, −50): 17.4 apart |
+| Sled screw keep-out (no copper) | Ø 9.6 | around H3/H4 |
+| Pin-switch stack bolt holes H5/H6 (M3) | Ø 3.2 | (18.5, 41.88), (−18.5, 48.88) |
+| Pin-switch stack footprint (silk outline) | 45 wide, from y 36.88 out to the pin faces at 68.88 | x −22.5 … 22.5 |
+| Camera standoffs H7–H10 (back, Würth M2 × 5 mm SMT) | 25.5 square | centre (−24, −14.75) |
+| Battery holders BT1–BT4 (Keystone 1042) | 14.9 tall | centres x −36.5, −14.3, 11.1, 36.5; y −2.25 |
+| ESP32 sockets J1/J2 (back, 1×19, 8.5 tall) | columns 25.4 apart | x 23.8 and −1.6; pin 1 at y 35.12, pin 19 at y −10.6 |
+| ESP32 antenna (devkit hangs ~14 mm below) | 18 × 6 | x 2.1 … 20.1, y 36.4 … 42.5; back-copper keep-out 15 mm around |
+| Edge cut-outs (W × D, centre angle CCW from +x) | 40 × 14 at 270° (COTS mount); 10 × 6 at 230° and 327°; 12 × 7 at 30°, 120°, 150°, 200° | on the rim |
+
+Connectors (pad centres): J5 XT30 COTS OUT (22.5/27.5, −51.5), J6 XT30 SRAD OUT (37.5/42.5, −51.5), SW1 CAM PWR
+(−30.5/−27.5, −55.1), SW2 COTS ARM (28.3/31.3, 50.4), SW3 SRAD ARM (39.6/42.6, 50.4), J3 camera on the back
+(pins −1.5 … −6.5, −20.45). Test points: TP1 +5V (23.8, −16), TP3 GND (23.8, −20.5), TP2 VBAT+ (−36.5, −49.5),
+TP4 GND (−40.5, −49.5).
+
+Heights above the board: front: holder 14.9 (the cell sits a little higher), pin-switch stack ~20.4 (two 10 mm
+carriers + 0.4 shim), Micro-Fit 10.2, XT30 about 11. Back: ESP32 socket 8.5, the DevKitC about 14–16 including its module,
+camera standoffs 5 + the camera, JST GH 4.2.
+
 ## Design rules
 
 Stricter than the fab's minimums, to leave margin (all in `battery_pcb.kicad_pro`):
@@ -180,6 +209,22 @@ Everything to order is in `fab/`:
 raised 18 mm into the Onshape stack frame; it is what the SSI AVBay1 Onshape document imports.
 
 ---
+
+## Hand assembly
+
+Everything is hand-solderable (0603 passives, SOT-23-6, one 1.25 mm-pitch JST GH). Use flux, a fine conical tip for the
+small parts and a big chisel tip at ~400 °C for the holder tabs and connector pins. **The order matters**: the ESP32
+socket pins come up on the front in narrow channels between the battery holders, so solder them before the holders.
+
+1. Back, small SMD: U1, the buck caps/resistors, R4/R5/C8, R6/D2, R7/R8, R9/R10, C9/C10/C11, D1, D3, F1, then L1
+   (hot air helps; its pads run under the body).
+2. Back: J3 (JST GH, fine pitch: tack one mounting tab, then the pins), then the four camera standoffs H7–H10 (steel:
+   solder paste + hot air, or flux and the big tip; keep them square).
+3. J1/J2 sockets: insert from the back, solder on the front. **Before the holders.** Plug the DevKitC in while
+   soldering so the two rows stay parallel.
+4. Front through-hole connectors (soldered on the back): SW1–SW3 Micro-Fit, J5/J6 XT30 (XT30 pins need a lot of heat).
+5. Battery holders BT1–BT4 last (big tip, plenty of solder; check the + marks).
+6. Bench test before cells or modules: 7–8 V, ~0.3 A limit into TP2 (+) / TP4 (GND); TP1 should read ~5.0 V.
 
 ## Rebuilding
 

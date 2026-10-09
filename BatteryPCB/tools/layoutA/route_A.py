@@ -42,7 +42,9 @@ def zone(net, layers, pts, prio=0, name="", clearance=0.3, keepout=False, no_cop
         z.SetDoNotAllowPads(False); z.SetDoNotAllowFootprints(False)
     else:
         z.SetNet(NET(net)); z.SetAssignedPriority(prio)
-        z.SetPadConnection(pcbnew.ZONE_CONNECTION_THT_THERMAL)
+        # hand assembly (review 4): the GND pours meet every pad through thermal spokes, so 0603 parts and the holder
+        # tab don't sink the iron's heat into the whole plane; the small power pours keep solid SMD joints
+        z.SetPadConnection(pcbnew.ZONE_CONNECTION_THERMAL if net == "GND" else pcbnew.ZONE_CONNECTION_THT_THERMAL)
         z.SetLocalClearance(mm(clearance)); z.SetMinThickness(mm(0.25))
         z.SetThermalReliefGap(mm(0.4)); z.SetThermalReliefSpokeWidth(mm(0.5))
     if name:

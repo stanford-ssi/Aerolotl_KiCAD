@@ -209,3 +209,7 @@ Pin numbers didn't change, so the schematic is unchanged. The J5/J6 latches now 
 - Layout: two front no-pour areas remove thin GND slivers (between the socket pins, and by the lower-left notch). C11's silk reference is hidden (no room; it stays on the fab layer).
 - **Checks:** ERC 0 errors, DRC 0 (strict, schematic parity), `verify_A.py` all pass (new: UVLO divider and input-cap nets).
 - **BOM sourcing (8 Oct 2026)**: every soldered part has a checked LCSC number in `fab/battery_pcb_BOM.csv` (LCSC # column), except the Keystone 1042 holders (DigiKey 36-1042-ND) and the Wurth 9774050243R standoffs (DigiKey 732-7097-1-ND). LCSC has no Sullins PPTC191LFBN-RC stock, so J1/J2 list HCTL PM254-1-19-Z-8.5 (C2897382), same 8.5 mm height. `fab/battery_pcb_JLCPCB_BOM.csv` + `_CPL.csv` are for JLCPCB assembly if wanted.
+
+## v20 — hand-assembly pass (8 Oct 2026)
+- The GND pours now meet every pad through thermal spokes (0.5 mm, 0.4 gap), SMD pads included, so the 0603 parts, U1's GND pin and BT2's minus tab can be hand-soldered without the plane sinking the iron's heat. The small VIN / +5V / VBAT+ pours keep solid SMD joints.
+- Layout review beyond DRC: buck loop (C1 100 nF ~2.4 mm from U1 VIN; GND return via the 0.3–0.8 mm trace under U1), bootstrap path, FB away from SW, power widths, vias per power net, holder/socket clearances, silk polarity marks, keep-outs under the rod washers and sled screws: no changes needed. Assembly order matters (README, "Hand assembly").
