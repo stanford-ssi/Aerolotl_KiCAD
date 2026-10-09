@@ -207,6 +207,7 @@ for ref, ox in (("R6", 62.6 - 59.06), ("D2", 66.2 - 59.06)):
 # camera UART series resistors on the back, right next to the ESP32 pins (J2-11 TX2, J2-12 RX2)
 for ref, y in (("R7", -14.8 + kc.ESP_DY), ("R8", -12.26 + kc.ESP_DY)):
     fps[ref].SetPosition(kc.P(-6.2, y)); fps[ref].SetOrientationDegrees(180)
+fps["R8"].SetValue("1k")   # review 4: camera TX -> ESP32 RX; protects GPIO16 if the camera's UART is 5 V
 # your assembly notes on Cmts.User: COTS board note moves next to the new mount
 for d in b.GetDrawings():
     if d.GetClass() == "PCB_TEXT" and d.GetLayer() == pcbnew.Cmts_User and d.GetText().startswith("COTS altimeter"):

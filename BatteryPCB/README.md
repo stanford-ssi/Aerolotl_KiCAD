@@ -45,8 +45,10 @@ Its harness is **VCC / GND / Video**. Recording start/stop is done over **UART**
 using the RunCam Device Protocol on the TX/RX pads, not a single logic pin.
 
 So the schematic wires **UART2** (GPIO17 TX, GPIO16 RX) to the camera through
-100 Ω series resistors. UART0 is left free so you can still program and debug
-over USB.
+series resistors: R7 100 Ω on the ESP32's TX, R8 1 kΩ on the camera's TX (so a 5 V camera
+output can't push more than about 1 mA into GPIO16). UART0 is left free so you can still
+program and debug over USB. USB and this board's 5 V can be connected at the same time:
+the DevKitC feeds its 5V pin from USB through a Schottky (BAT760), so the two never fight.
 
 The camera connects to this board through the 5-pin J3 harness only (no
 button-pad wiring).
@@ -138,9 +140,10 @@ Source: [RunCam Split 4 manual](https://www.runcam.com/download/split4k/RC_Split
    it off until the pad. Declare this radio in your progress reports.
 2. **No SD card module** is on this schematic — you mentioned one for the plate
    but didn't list it in the brief. Easy to add on SPI (GPIO5/18/19/23).
-3. **Confirm the camera's logic level.** Most RunCam UART pads are 3.3 V, which
-   matches the ESP32 directly. If yours is 5 V, add a level shifter — the 100 Ω
-   series resistors are protection, not translation.
+3. **Confirm the camera's logic level** before connecting RX/TX: power the camera and
+   measure its TX pad to GND. About 3.3 V: wire it straight on. About 5 V: R8 (1 kΩ)
+   protects the ESP32's input, but the camera may not read the ESP32's 3.3 V TX; add a
+   level shifter then.
 
 Layout-specific items are in [`LAYOUT_NOTES.md`](LAYOUT_NOTES.md).
 
@@ -200,7 +203,7 @@ Everything to order is in `fab/`:
 |---|---|
 | `fab/battery_pcb_BOM.csv` | Ordering BOM: every soldered part with manufacturer + MPN (paste the MPNs into the DigiKey or Mouser BOM tool), plus the camera standoffs, plug-in modules, cells, cable-side connectors and the PCB. "Order qty" covers 2 boards plus spares. The "LCSC #" column has a checked LCSC part for everything LCSC sells; "Other supplier" covers the rest (battery holders, camera standoffs, ESP32). |
 | `fab/battery_pcb_JLCPCB_BOM.csv`, `fab/battery_pcb_JLCPCB_CPL.csv` | Only if JLCPCB assembles it: their BOM (LCSC part numbers) and placement files. Parts on both sides; check rotations in JLC's preview. The battery holders and camera standoffs are not at LCSC, so solder those yourself. |
-| `fab/battery_pcb_gerbers.zip` | Gerbers + drill file. Upload as-is to JLCPCB (or any fab): 2 layers, 1.6 mm FR-4, 1 oz copper. |
+| `fab/battery_pcb_gerbers.zip` | Gerbers + drill files (plated and non-plated separately). Upload as-is to JLCPCB (or any fab): 2 layers, 1.6 mm FR-4, 1 oz copper. |
 | `fab/battery_pcb_schematic.pdf` | The schematic, for review and for soldering. |
 | `fab/battery_pcb_kicad_project.zip` | The whole KiCad project in one file, to share: unzip it and open `battery_pcb.kicad_pro` (KiCad 10). Downloading only `battery_pcb.kicad_sch` gives a blank schematic, because its six pages live in `sheets/`. |
 

@@ -213,3 +213,8 @@ Pin numbers didn't change, so the schematic is unchanged. The J5/J6 latches now 
 ## v20 — hand-assembly pass (8 Oct 2026)
 - The GND pours now meet every pad through thermal spokes (0.5 mm, 0.4 gap), SMD pads included, so the 0603 parts, U1's GND pin and BT2's minus tab can be hand-soldered without the plane sinking the iron's heat. The small VIN / +5V / VBAT+ pours keep solid SMD joints.
 - Layout review beyond DRC: buck loop (C1 100 nF ~2.4 mm from U1 VIN; GND return via the 0.3–0.8 mm trace under U1), bootstrap path, FB away from SW, power widths, vias per power net, holder/socket clearances, silk polarity marks, keep-outs under the rod washers and sled screws: no changes needed. Assembly order matters (README, "Hand assembly").
+
+## v21 — failure-mode pass (8 Oct 2026)
+- R8 (camera TX -> ESP32 GPIO16) 100 R -> 1 k: RunCam publishes no UART level; if it is 5 V this keeps the injected current near 1 mA. No effect at 115200 baud.
+- USB + board power together is safe: the DevKitC V4 schematic feeds its 5V pin from USB through a BAT760 Schottky, and our 4.98 V is above USB minus that diode.
+- Drill files now separate (PTH / NPTH), `tools/make_fab.sh` regenerates all of fab/.

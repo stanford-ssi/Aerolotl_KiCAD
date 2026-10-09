@@ -33,7 +33,8 @@ PARTS = {
     "R5": (YAGEO, "RC0603FR-0739KL"),             # 39 k: VBAT_SENSE <= 2.36 V, inside the ESP32 ADC 11 dB range (<= 2.45 V)
     "R6": (YAGEO, "RC0603FR-071KL"),
     "R9": (YAGEO, "RC0603FR-07402KL"), "R10": (YAGEO, "RC0603FR-07100KL"),   # U1 EN divider (UVLO)
-    "R7": (YAGEO, "RC0603FR-07100RL"), "R8": (YAGEO, "RC0603FR-07100RL"),
+    "R7": (YAGEO, "RC0603FR-07100RL"),
+    "R8": (YAGEO, "RC0603FR-071KL"),   # camera TX -> ESP32 RX: 1k limits the current if the camera's UART turns out to be 5 V
     "U1": ("Texas Instruments", "LMR51430XFDDCR"),
 }
 
