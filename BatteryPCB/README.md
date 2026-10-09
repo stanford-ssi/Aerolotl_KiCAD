@@ -53,6 +53,21 @@ the DevKitC feeds its 5V pin from USB through a Schottky (BAT760), so the two ne
 The camera connects to this board through the 5-pin J3 harness only (no
 button-pad wiring).
 
+**Wire the camera harness by label, not straight across.** The Split 4 has five solder
+pads, in this order with Side B facing you: RX, TX, Video, GND, VCC. J3's order is
+different, so solder each wire to the pad named here:
+
+| J3 pin | Net | Camera pad |
+|---|---|---|
+| 1 | +5V | VCC |
+| 2 | GND | GND |
+| 3 | CAM_RX (ESP32 TX through R7) | RX |
+| 4 | CAM_TX (to ESP32 RX through R8) | TX |
+| 5 | VIDEO | Video, or leave unconnected |
+
+A straight cable would put the ESP32's TX on the camera's video pad and leave the
+camera's RX unconnected. Power and GND would still be correct.
+
 ### 2. Everything runs off one 5 V buck
 
 The camera accepts 5–20 V, so 2S could feed it directly — but RunCam explicitly
