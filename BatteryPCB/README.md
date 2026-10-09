@@ -20,7 +20,7 @@ for the AV bay, placed and fully routed.
 | 2S pack for camera + ESP32 | BT1, BT2 in series → 7.4 V nom / 8.4 V max |
 | Input protection | F1 2 A polyfuse → SW1 (camera power switch plug) → D3 Schottky reverse-polarity diode → D1 SMBJ12A TVS |
 | Buck 8.4 V → 5.0 V | U1 LMR51430 (500 kHz) + L1 6.8 µH + FB divider; input caps C1 100 nF (at U1's pins) + C2, C11 10 µF |
-| Low-battery cut-off | R9 412k / R10 100k on U1's EN: on above 6.3 V, off below 5.5 V at VIN (about 2.9 V per cell), so the 2S pack is never run flat |
+| Low-battery cut-off | R9 402k / R10 100k on U1's EN: on above 6.2 V, off below 5.4 V at VIN (about 2.85 V per cell), so the 2S pack is never run flat |
 | ESP32-DevKitC V4 socket | J1, J2 — 2 × 1×19 female headers |
 | Camera harness | J3 — JST GH 5-pin (+5V, GND, RX, TX, VIDEO), on the back |
 | Camera mount | H7–H10 — four M2 × 5 mm SMT standoffs on a 25.5 mm square, on the back |
@@ -169,7 +169,8 @@ Everything to order is in `fab/`:
 
 | File | What it is |
 |---|---|
-| `fab/battery_pcb_BOM.csv` | Ordering BOM: every soldered part with manufacturer + MPN (paste the MPNs into the DigiKey or Mouser BOM tool), plus the camera standoffs, plug-in modules, cells, cable-side connectors and the PCB. "Order qty" covers 2 boards plus spares. |
+| `fab/battery_pcb_BOM.csv` | Ordering BOM: every soldered part with manufacturer + MPN (paste the MPNs into the DigiKey or Mouser BOM tool), plus the camera standoffs, plug-in modules, cells, cable-side connectors and the PCB. "Order qty" covers 2 boards plus spares. The "LCSC #" column has a checked LCSC part for everything LCSC sells; "Other supplier" covers the rest (battery holders, camera standoffs, ESP32). |
+| `fab/battery_pcb_JLCPCB_BOM.csv`, `fab/battery_pcb_JLCPCB_CPL.csv` | Only if JLCPCB assembles it: their BOM (LCSC part numbers) and placement files. Parts on both sides; check rotations in JLC's preview. The battery holders and camera standoffs are not at LCSC, so solder those yourself. |
 | `fab/battery_pcb_gerbers.zip` | Gerbers + drill file. Upload as-is to JLCPCB (or any fab): 2 layers, 1.6 mm FR-4, 1 oz copper. |
 | `fab/battery_pcb_schematic.pdf` | The schematic, for review and for soldering. |
 | `fab/battery_pcb_kicad_project.zip` | The whole KiCad project in one file, to share: unzip it and open `battery_pcb.kicad_pro` (KiCad 10). Downloading only `battery_pcb.kicad_sch` gives a blank schematic, because its six pages live in `sheets/`. |

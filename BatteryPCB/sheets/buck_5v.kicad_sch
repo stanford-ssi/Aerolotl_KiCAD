@@ -944,13 +944,13 @@
 		(effects (font (size 1.27 1.27) (thickness 0.254) (bold yes) (color 0 0 194 1)) (justify left bottom))
 		(uuid "043f3402-dc49-4957-90b5-687315b9776b")
 	)
-	(text "UVLO (R9/R10 on EN): on above 1.23 V x (1 + 412k/100k) = 6.3 V, off below 1.08 V x 5.12 = 5.5 V at VIN,"
+	(text "UVLO (R9/R10 on EN): on above 1.23 V x (1 + 402k/100k) = 6.2 V, off below 1.08 V x 5.02 = 5.4 V at VIN,"
 		(exclude_from_sim no)
 		(at 25.40 40.64 0)
 		(effects (font (size 1.27 1.27) (thickness 0.254) (bold yes) (color 0 0 194 1)) (justify left bottom))
 		(uuid "81725958-f79a-4597-9432-707e49c76245")
 	)
-	(text "so the camera pack stops at about 2.9 V per cell instead of being run flat (U1's own UVLO is 3.6 V)."
+	(text "so the camera pack stops at about 2.85 V per cell instead of being run flat (U1's own UVLO is 3.6 V)."
 		(exclude_from_sim no)
 		(at 25.40 44.45 0)
 		(effects (font (size 1.27 1.27) (thickness 0.254) (bold yes) (color 0 0 194 1)) (justify left bottom))
@@ -1230,7 +1230,7 @@
 			(at 104.14 82.55 0)
 			(effects (font (size 1.27 1.27)) (justify left) )
 		)
-		(property "Value" "412k 1%"
+		(property "Value" "402k 1%"
 			(at 104.14 85.09 0)
 			(effects (font (size 1.27 1.27)) (justify left) )
 		)
@@ -1246,7 +1246,7 @@
 			(at 101.60 83.82 0)
 			(effects (font (size 1.27 1.27)) (hide yes))
 		)
-		(property "MPN" "RC0603FR-07412KL"
+		(property "MPN" "RC0603FR-07402KL"
 			(at 101.60 83.82 0)
 			(effects (font (size 1.27 1.27)) (hide yes))
 		)
