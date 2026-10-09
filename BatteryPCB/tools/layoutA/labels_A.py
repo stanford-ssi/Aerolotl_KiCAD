@@ -28,7 +28,7 @@ BACK = [   # seen from the back, so mirrored
     ("GND",          -1.60, -43.60 + kc.ESP_DY, PIN, C), ("CLK", -1.60, 8.20 + kc.ESP_DY, PIN, C),
     ("CAMERA",       -1.00,  25.60, MID, C),     # J3, JST GH 5-pin
     ("1 +5V  2 GND\n3 RX  4 TX  5 VID",  1.50, 27.70, PIN, C),   # right of BT2's peg
-    ("RUNCAM SPLIT 4\nWIRE PADS TOWARD J3", -24.00, 14.75, PIN, C),   # under the camera board
+    ("RUNCAM SPLIT 4\nWIRE PADS TOWARD J3", -35.50, -30.00, PIN, C),   # under the camera board
 ]
 def add(items, layer, mirror):
     for text, x, y, (h, th), just in items:
@@ -44,7 +44,7 @@ s.SetStart(kc.P(11.1 - 13.95, -17.34 + kc.ESP_DY - 27.2)); s.SetEnd(kc.P(11.1 + 
 s.SetLayer(pcbnew.Dwgs_User); s.SetWidth(mm(0.15)); b.Add(s)
 # RunCam Split 4 outline (29 x 29 on the four M2 standoffs) for assembly (drawing layer, not printed)
 s = pcbnew.PCB_SHAPE(b); s.SetShape(pcbnew.SHAPE_T_RECT)
-s.SetStart(kc.P(-24.0 - 14.5, 14.75 - 14.5)); s.SetEnd(kc.P(-24.0 + 14.5, 14.75 + 14.5))
+s.SetStart(kc.P(-35.5 - 14.5, -30.0 - 14.5)); s.SetEnd(kc.P(-35.5 + 14.5, -30.0 + 14.5))
 s.SetLayer(pcbnew.Dwgs_User); s.SetWidth(mm(0.15)); b.Add(s)
 # outlines on silk, broken wherever they would cross a pad, hole, via or label (review 2, 7 Oct 2026)
 def obstacles(layer):

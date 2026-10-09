@@ -157,7 +157,7 @@ oy = (kc.to_mm(bb.GetTop()) + kc.to_mm(bb.GetBottom())) / 2 - kc.CY - J3C[1]
 f.SetPosition(kc.P(J3C[0] - ox, J3C[1] - oy))
 # RunCam Split 4 (29 x 29 mm, M2 holes on a 25.5 mm square) on four 5 mm SMT standoffs, under BT1/BT2,
 # clear of the DevKitC, the holder pegs and the fuse; its wire pads face J3 (right, toward the ESP32)
-CAM_C = (-24.0, 14.75)
+CAM_C = (-35.5, -30.0)          # review 5 (8 Oct 2026): out toward the upper-left rim, clear of the ESP32/buck/J3 area
 for k, (sx, sy) in enumerate(((-1, -1), (1, -1), (-1, 1), (1, 1))):
     x, y = CAM_C[0] + sx * 12.75, CAM_C[1] + sy * 12.75
     f = cam[k]; f.SetFPID(pcbnew.LIB_ID(*SMSI)); b.Add(f)

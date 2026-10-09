@@ -7,7 +7,7 @@ RunCam Split 4 camera on the back. Formerly called CamControl.
 Open `battery_pcb.kicad_pro` in KiCad 10. The board is a 5.72 in (145.3 mm) round, 2-layer disc
 for the AV bay, placed and fully routed.
 
-**Status (v19, 8 Oct 2026):** ERC 0 errors · DRC 0 violations (warnings included) under the strict rules below, with full schematic parity ·
+**Status (v22, 8 Oct 2026):** ERC 0 errors · DRC 0 violations (warnings included) under the strict rules below, with full schematic parity ·
 `tools/layoutA/verify_A.py` ALL PASS. Ready to order: see [Ordering](#ordering).
 [`LAYOUT_NOTES.md`](LAYOUT_NOTES.md) has the history of every layout decision.
 
@@ -163,7 +163,7 @@ All in mm unless noted.
 | Sled screw keep-out (no copper) | Ø 9.6 | around H3/H4 |
 | Pin-switch stack bolt holes H5/H6 (M3) | Ø 3.2 | (18.5, 41.88), (−18.5, 48.88) |
 | Pin-switch stack footprint (silk outline) | 45 wide, from y 36.88 out to the pin faces at 68.88 | x −22.5 … 22.5 |
-| Camera standoffs H7–H10 (back, Würth M2 × 5 mm SMT) | 25.5 square | centre (−24, −14.75) |
+| Camera standoffs H7–H10 (back, Würth M2 × 5 mm SMT) | 25.5 square | centre (−35.5, 30): upper left, near the rim |
 | Battery holders BT1–BT4 (Keystone 1042) | 14.9 tall | centres x −36.5, −14.3, 11.1, 36.5; y −2.25 |
 | ESP32 sockets J1/J2 (back, 1×19, 8.5 tall) | columns 25.4 apart | x 23.8 and −1.6; pin 1 at y 35.12, pin 19 at y −10.6 |
 | ESP32 antenna (devkit hangs ~14 mm below) | 18 × 6 | x 2.1 … 20.1, y 36.4 … 42.5; back-copper keep-out 15 mm around |

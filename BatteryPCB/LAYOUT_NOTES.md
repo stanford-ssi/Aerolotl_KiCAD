@@ -222,3 +222,7 @@ Pin numbers didn't change, so the schematic is unchanged. The J5/J6 latches now 
 ## AVBay1 update to v21 (8 Oct 2026)
 - STEP exports from v18 to v21 had left out `--user-origin 150x150mm`, so the board sat 150 mm off the stack. `tools/make_step.sh` now exports it centred (board bottom at z = 0) and merges the pin-switch stack 18 mm up, as before.
 - AVBay1 (SSI Onshape): the STEP tab "CamControl v13 board + exact pin-switch stack.step" now holds v21 (file avbay1_board_and_pin_switch_stack.step). In AV Bay - MAIN ASSEMBLY the orphaned JST-XH J6 and two Micro-Fit duplicates (from the old 4th Micro-Fit) were deleted, and the new XT30 bodies (x4), R9, R10 and C11 inserted at their Part Studio positions (config TM_plate 1): 260 instances, none broken or duplicated.
+
+## v22 — camera moved to the upper-left rim (8 Oct 2026)
+- The RunCam's four SMT standoffs (and its outline) moved from (−24, 14.75) to (−35.5, −30) (KiCad), about 46 mm from the centre instead of 28: the furthest-out spot on the back that clears the ESP32, buck, J3, rod nut, cut-outs and the antenna keep-out. J3 stays put; the harness runs up the left of the DevKitC.
+- The standoffs are surface-mount with no hole, so nothing reaches the battery side; the camera screws in from its own side. Gaps between the holders for through-hole mounts aren't possible: the four holders already use every mm between the rod washers.
