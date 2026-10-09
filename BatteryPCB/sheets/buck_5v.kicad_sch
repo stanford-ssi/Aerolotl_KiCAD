@@ -225,8 +225,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 0.762)
-						(xy 2.032 0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -238,8 +237,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 -0.762)
-						(xy 2.032 -0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -920,12 +918,7 @@
 			(symbol "PWR_FLAG_0_1"
 				(polyline
 					(pts
-						(xy 0 0)
-						(xy 0 1.27)
-						(xy -1.016 1.905)
-						(xy 0 2.54)
-						(xy 1.016 1.905)
-						(xy 0 1.27)
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
 					)
 					(stroke
 						(width 0)
@@ -938,34 +931,6 @@
 			)
 			(embedded_fonts no)
 		)
-	)
-	(text "LMR51430 buck, 500 kHz:  VOUT = 0.6 x (1 + 100k / 13k7) = 4.98 V"
-		(exclude_from_sim no)
-		(at 25.4 30.48 0)
-		(effects
-			(font
-				(size 1.5 1.5)
-				(thickness 0.254)
-				(bold yes)
-				(color 0 0 194 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "9af141d1-dd85-48ef-bbdb-80f6ade99a74")
-	)
-	(text "Input caps: C1 (100 nF) sits right at U1's VIN/GND pins; C2, C11 (10 uF) are the bulk."
-		(exclude_from_sim no)
-		(at 25.4 36.83 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-				(color 0 0 194 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "c5661b00-72cd-4a27-9bef-d5101e84235a")
 	)
 	(text "UVLO (R9/R10 on EN): on above 1.23 V x (1 + 402k/100k) = 6.2 V, off below 1.08 V x 5.02 = 5.4 V at VIN,"
 		(exclude_from_sim no)
@@ -981,19 +946,19 @@
 		)
 		(uuid "3bba96c0-6caf-44d9-a102-c172bedea0ee")
 	)
-	(text "so the camera pack stops at about 2.85 V per cell instead of being run flat (U1's own UVLO is 3.6 V)."
+	(text "LMR51430 buck, 500 kHz:  VOUT = 0.6 x (1 + 100k / 13k7) = 4.98 V"
 		(exclude_from_sim no)
-		(at 25.4 44.45 0)
+		(at 25.4 30.48 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1.5 1.5)
 				(thickness 0.254)
 				(bold yes)
 				(color 0 0 194 1)
 			)
 			(justify left bottom)
 		)
-		(uuid "ba3c26dc-9ae7-4837-ba1f-eb90f8415d5f")
+		(uuid "9af141d1-dd85-48ef-bbdb-80f6ade99a74")
 	)
 	(text "Output caps: C4, C5 (22 uF) and C6 (100 nF) sit at L1 / U1.  C9 (10 uF) and C10 (100 nF) sit at the DevKitC's 5V pin (J1 pin 19) on the board."
 		(exclude_from_sim no)
@@ -1008,6 +973,1429 @@
 			(justify left bottom)
 		)
 		(uuid "b1808edb-fa25-49bf-a147-03d0f3b56826")
+	)
+	(text "so the camera pack stops at about 2.85 V per cell instead of being run flat (U1's own UVLO is 3.6 V)."
+		(exclude_from_sim no)
+		(at 25.4 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 0 0 194 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "ba3c26dc-9ae7-4837-ba1f-eb90f8415d5f")
+	)
+	(text "Input caps: C1 (100 nF) sits right at U1's VIN/GND pins; C2, C11 (10 uF) are the bulk."
+		(exclude_from_sim no)
+		(at 25.4 36.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+				(color 0 0 194 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "c5661b00-72cd-4a27-9bef-d5101e84235a")
+	)
+	(junction
+		(at 43.18 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "004f9658-096b-451d-af6f-370742272a43")
+	)
+	(junction
+		(at 215.9 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "13792500-e849-4fcb-a105-26845f043055")
+	)
+	(junction
+		(at 96.52 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "53464a61-b83b-49a3-b0b8-1f6d40471c38")
+	)
+	(junction
+		(at 266.7 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "57bbfe3c-2540-4ba4-aeba-5bc8214a5045")
+	)
+	(junction
+		(at 251.46 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "63b73e68-bb5f-4541-a2a3-d0c54c415b04")
+	)
+	(junction
+		(at 78.74 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6747ddaf-14e5-4867-979c-f08f363ca95a")
+	)
+	(junction
+		(at 228.6 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "71c5babe-85e2-4cd1-80f6-4d8e9beac452")
+	)
+	(junction
+		(at 60.96 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "826a6834-c04c-43e4-9e52-764d97fee366")
+	)
+	(junction
+		(at 198.12 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "83267678-2eb0-430b-9580-c83b0ca21eeb")
+	)
+	(junction
+		(at 180.34 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b63d54df-210d-4a45-a230-6731fa0c9841")
+	)
+	(junction
+		(at 96.52 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c1199d0a-30fe-4407-94ca-9ddecf0e8f37")
+	)
+	(junction
+		(at 241.3 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c7596da4-5329-4cf0-81dd-d21fa0fc6b7d")
+	)
+	(junction
+		(at 173.99 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d11fcf2b-0409-41d8-9a19-9cb8e8e39093")
+	)
+	(junction
+		(at 251.46 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d1818632-2581-417e-be62-7d313907575c")
+	)
+	(junction
+		(at 151.13 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fe7e6c3e-5095-4fe8-8add-96c171bff149")
+	)
+	(wire
+		(pts
+			(xy 78.74 87.63) (xy 78.74 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1afbe594-ad98-4b13-8f42-7cb07c91b041")
+	)
+	(wire
+		(pts
+			(xy 144.78 91.44) (xy 139.7 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f5cb05f-a6ae-4e00-b3b0-64394216c45d")
+	)
+	(wire
+		(pts
+			(xy 144.78 116.84) (xy 144.78 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "200d872b-56ec-4653-ad26-a987a6946893")
+	)
+	(wire
+		(pts
+			(xy 180.34 88.9) (xy 198.12 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "211f4e19-632a-4cbf-bad0-ec5832ea7a82")
+	)
+	(wire
+		(pts
+			(xy 96.52 91.44) (xy 119.38 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2125c43c-8a80-4f5b-8a0e-3f499aba3708")
+	)
+	(wire
+		(pts
+			(xy 228.6 100.33) (xy 228.6 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21cd3e7a-959a-4843-89b9-107958aae724")
+	)
+	(wire
+		(pts
+			(xy 215.9 88.9) (xy 215.9 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25e6908a-a0f6-4fd4-ae07-4bc747b778a3")
+	)
+	(wire
+		(pts
+			(xy 246.38 116.84) (xy 144.78 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "281fc051-e5a7-4dc5-a448-ff9e028056c0")
+	)
+	(wire
+		(pts
+			(xy 251.46 100.33) (xy 251.46 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28e43321-4670-4f38-8fb6-4ddc17e6fd36")
+	)
+	(wire
+		(pts
+			(xy 96.52 76.2) (xy 114.3 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "310b2d5c-64ed-4c45-aa3b-9a2757cfb74b")
+	)
+	(wire
+		(pts
+			(xy 139.7 88.9) (xy 151.13 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38479a19-d4f2-49a8-9306-73b69e12f353")
+	)
+	(wire
+		(pts
+			(xy 114.3 76.2) (xy 114.3 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3983e24f-0706-43c3-94a1-cdf48129fdf8")
+	)
+	(wire
+		(pts
+			(xy 96.52 76.2) (xy 96.52 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44a04ab2-bd26-4f65-87fe-efb2c88a1030")
+	)
+	(wire
+		(pts
+			(xy 139.7 86.36) (xy 143.51 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4826de1e-b841-48e8-bdc9-f698aa2d3df1")
+	)
+	(wire
+		(pts
+			(xy 60.96 76.2) (xy 60.96 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49e662b0-bb3b-4e6b-b8ab-f417e81bee3e")
+	)
+	(wire
+		(pts
+			(xy 180.34 88.9) (xy 180.34 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d1699ee-bf79-4cca-bf3a-bec3a1e109af")
+	)
+	(wire
+		(pts
+			(xy 96.52 91.44) (xy 96.52 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e693f6f-709c-4226-bf35-ba6f31abacb9")
+	)
+	(wire
+		(pts
+			(xy 114.3 86.36) (xy 119.38 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "502194e6-b53d-43b2-b2d3-9953232b3ce9")
+	)
+	(wire
+		(pts
+			(xy 180.34 100.33) (xy 180.34 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52f01501-7dd3-4abe-a16f-72b4aa52ca64")
+	)
+	(wire
+		(pts
+			(xy 43.18 87.63) (xy 43.18 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5379a2d0-d9aa-4424-b65f-3e4eeec2da40")
+	)
+	(wire
+		(pts
+			(xy 30.48 101.6) (xy 30.48 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65e3e810-fe1c-4483-ae0c-ae5aff532e75")
+	)
+	(wire
+		(pts
+			(xy 96.52 102.87) (xy 96.52 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70f5433b-6e01-4099-8211-7c33c610479b")
+	)
+	(wire
+		(pts
+			(xy 43.18 76.2) (xy 60.96 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73d7f0bc-ef8c-43f8-89f8-878053578ead")
+	)
+	(wire
+		(pts
+			(xy 251.46 88.9) (xy 251.46 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "743df28e-6fba-4dba-a9ef-062a601f2b98")
+	)
+	(wire
+		(pts
+			(xy 60.96 87.63) (xy 60.96 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "770666ec-379d-40b1-b499-0a8a151862cd")
+	)
+	(wire
+		(pts
+			(xy 198.12 100.33) (xy 198.12 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d308dff-59b5-47aa-9542-21cf62c43f1a")
+	)
+	(wire
+		(pts
+			(xy 167.64 88.9) (xy 173.99 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81f5a9f3-b9d1-4c1f-8b40-17e3bbe8acad")
+	)
+	(wire
+		(pts
+			(xy 251.46 113.03) (xy 251.46 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82bbc1b0-6709-4930-b91f-20b922ebb1de")
+	)
+	(wire
+		(pts
+			(xy 251.46 102.87) (xy 251.46 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "844e2f9d-2dfd-4f93-a255-bffb9514157f")
+	)
+	(wire
+		(pts
+			(xy 266.7 102.87) (xy 251.46 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "876f8dc4-69d8-4145-ab93-ba090604cd41")
+	)
+	(wire
+		(pts
+			(xy 266.7 88.9) (xy 276.86 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88884855-b198-475a-8431-65c3b2778344")
+	)
+	(wire
+		(pts
+			(xy 266.7 88.9) (xy 266.7 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "894f8f99-acea-4bf8-ad02-db6a6386a419")
+	)
+	(wire
+		(pts
+			(xy 198.12 88.9) (xy 215.9 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "929a9f7c-5a49-4663-9b00-a0cba2572ed0")
+	)
+	(wire
+		(pts
+			(xy 60.96 76.2) (xy 78.74 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95e466f6-7359-451b-9adb-7136acec575f")
+	)
+	(wire
+		(pts
+			(xy 228.6 88.9) (xy 228.6 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99e3158d-c9a1-45f9-bd4d-05ecb3f9b766")
+	)
+	(wire
+		(pts
+			(xy 129.54 96.52) (xy 129.54 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0910185-7a83-40b2-a85a-c2ff4b168039")
+	)
+	(wire
+		(pts
+			(xy 78.74 76.2) (xy 78.74 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4f06937-b2dc-4cf2-933f-19f72ca3126f")
+	)
+	(wire
+		(pts
+			(xy 241.3 88.9) (xy 241.3 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6d17438-860c-4f41-b3fa-6904e4b08d59")
+	)
+	(wire
+		(pts
+			(xy 151.13 73.66) (xy 151.13 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9b014f4-5189-4a2e-a32c-a3b3b51e0a25")
+	)
+	(wire
+		(pts
+			(xy 198.12 88.9) (xy 198.12 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b13c2b10-7992-45c5-ae56-f24f65b54a38")
+	)
+	(wire
+		(pts
+			(xy 266.7 100.33) (xy 266.7 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b849139f-c1d4-4f9e-925f-3e2519c0a686")
+	)
+	(wire
+		(pts
+			(xy 241.3 100.33) (xy 241.3 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9abc855-4374-4516-a0f9-79e2665f257f")
+	)
+	(wire
+		(pts
+			(xy 96.52 87.63) (xy 96.52 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb9a91c9-1386-4db9-ad67-9c69561d3926")
+	)
+	(wire
+		(pts
+			(xy 251.46 88.9) (xy 266.7 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdbab63e-b661-4122-88f2-f6f46cab8960")
+	)
+	(wire
+		(pts
+			(xy 30.48 76.2) (xy 43.18 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0e1a4e3-e8ca-49fe-aadc-208eb76be719")
+	)
+	(wire
+		(pts
+			(xy 173.99 88.9) (xy 180.34 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbe0638f-da88-473d-98da-2e6fac9a6817")
+	)
+	(wire
+		(pts
+			(xy 215.9 88.9) (xy 228.6 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd55896f-e4e5-4b05-b6d7-22dd3e395bbd")
+	)
+	(wire
+		(pts
+			(xy 143.51 86.36) (xy 143.51 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2c56335-89a9-4ac1-ae71-f84d1115dcf7")
+	)
+	(wire
+		(pts
+			(xy 215.9 100.33) (xy 215.9 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d781380b-da7c-4200-94cf-8536baedcf71")
+	)
+	(wire
+		(pts
+			(xy 78.74 76.2) (xy 96.52 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7862750-da9c-4bb8-b8a3-5e581530d7ed")
+	)
+	(wire
+		(pts
+			(xy 251.46 102.87) (xy 246.38 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d822186c-e36f-4acc-81c0-dbd9717a73fa")
+	)
+	(wire
+		(pts
+			(xy 241.3 88.9) (xy 251.46 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc310dd9-2151-45d1-9311-73b1a47f0dd2")
+	)
+	(wire
+		(pts
+			(xy 228.6 88.9) (xy 241.3 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e69821fc-db07-4bc1-aa2c-10b91478fb35")
+	)
+	(wire
+		(pts
+			(xy 151.13 88.9) (xy 160.02 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed0e6962-8d15-4259-bfdb-7ee6e9735860")
+	)
+	(wire
+		(pts
+			(xy 43.18 76.2) (xy 43.18 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed3145f2-59e3-477a-9bcc-b251952ec55c")
+	)
+	(wire
+		(pts
+			(xy 246.38 102.87) (xy 246.38 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9a3aa98-e4d2-4c5e-9987-561eb9d954c1")
+	)
+	(label "VIN"
+		(at 33.02 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "18f2718d-909f-4de8-bfac-21eb4653d8fd")
+	)
+	(label "EN"
+		(at 104.14 91.44 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "199e7f69-8646-4011-9672-aefcde8842c2")
+	)
+	(label "+5V"
+		(at 175.26 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "22e4b15c-441e-4aee-a278-39d2e93ea7c3")
+	)
+	(label "CBOOT"
+		(at 143.51 81.28 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3506cedc-e04f-4ada-a835-8e544438d498")
+	)
+	(label "FB"
+		(at 144.78 110.49 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c8295408-5d3d-4a39-a7e3-dbd417035bc1")
+	)
+	(label "SW"
+		(at 153.67 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ff8e3e99-1494-44ee-9e46-b899a2b1ea4d")
+	)
+	(global_label "GND"
+		(shape input)
+		(at 96.52 106.68 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2f595d84-351e-4863-b69c-6c365f193b9e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 96.52 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 60.96 92.71 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "316a0d0f-73e6-431b-8751-4344100e3476")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 60.96 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 43.18 92.71 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "34a95d09-0fda-4ea1-88bb-71d74d6132a0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 43.18 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 251.46 116.84 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "375234bc-ea0c-41ab-a1b7-3ccacb8b2e04")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 251.46 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 198.12 104.14 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4cb2f40e-8652-42c5-a917-465a306b0208")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 198.12 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 215.9 104.14 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "52768697-1a46-48a2-91d3-96be952491fb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 215.9 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 241.3 104.14 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "556ee479-7ebd-4cae-8293-67210915ab26")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 241.3 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 228.6 104.14 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "55909630-bf26-4628-b849-850474aa25d0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 228.6 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 30.48 106.68 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "81db6100-d242-4a91-9271-6cf13ba8dd7c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 30.48 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 180.34 104.14 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9231cc7f-dd06-4437-b5cf-973ef3653966")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 180.34 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 78.74 92.71 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "983d7c79-3fe7-4f25-9066-06ef982cd660")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 78.74 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 129.54 102.87 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ffa34477-7abc-4af8-bad5-dc9ce92d1fd1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 129.54 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(hierarchical_label "VIN"
+		(shape passive)
+		(at 30.48 76.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "992f2fed-ee9f-493a-a088-455a3689974a")
+	)
+	(hierarchical_label "+5V"
+		(shape passive)
+		(at 276.86 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b57fee59-b2af-4a1a-9339-3c555b421b1e")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 180.34 96.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "00c9b54e-47b1-4089-bc8d-0b6324214e73")
+		(property "Reference" "C4"
+			(at 182.88 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22u / 16V"
+			(at 182.88 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 180.34 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 180.34 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 180.34 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL21A226MOQNNNE"
+			(at 180.34 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "917f2558-fdd5-48aa-b515-b73b1c7324c5")
+		)
+		(pin "2"
+			(uuid "d70e473e-a6a9-429a-bcf5-beb8dbaa7ce7")
+		)
+		(instances
+			(project "battery_pcb"
+				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 60.96 83.82 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "07657415-e3fe-4d92-a348-ca4de53f3158")
+		(property "Reference" "C2"
+			(at 63.5 82.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u / 25V"
+			(at 63.5 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 60.96 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 60.96 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 60.96 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL21A106KAYNNNE"
+			(at 60.96 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d2bff9e3-34db-46f2-9773-53a5a5fcfe3c")
+		)
+		(pin "2"
+			(uuid "f73963db-f4fd-419c-88e0-8253035c9226")
+		)
+		(instances
+			(project "battery_pcb"
+				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 198.12 96.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "27c9d896-6350-498d-a120-7a1fc1a8d30a")
+		(property "Reference" "C5"
+			(at 200.66 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22u / 16V"
+			(at 200.66 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 198.12 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 198.12 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 198.12 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 198.12 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL21A226MOQNNNE"
+			(at 198.12 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ebc89210-85ca-4356-9737-cf2cc3855570")
+		)
+		(pin "2"
+			(uuid "28bc9c08-a535-4b61-8bfe-1a8c84a074e9")
+		)
+		(instances
+			(project "battery_pcb"
+				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 30.48 101.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2ad83899-8967-4869-a117-e6f16633dd9f")
+		(property "Reference" "#FLG2"
+			(at 30.48 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 30.48 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 30.48 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4d63cb39-a472-459d-91b7-fc0282aac133")
+		)
+		(instances
+			(project "battery_pcb"
+				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
+					(reference "#FLG2")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Regulator_Switching:LMR51430")
@@ -1123,30 +2511,9 @@
 			)
 		)
 	)
-	(hierarchical_label "VIN"
-		(shape passive)
-		(at 30.48 76.2 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "992f2fed-ee9f-493a-a088-455a3689974a")
-	)
-	(label "VIN"
-		(at 33.02 76.2 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "18f2718d-909f-4de8-bfac-21eb4653d8fd")
-	)
 	(symbol
-		(lib_id "Device:C")
-		(at 43.18 83.82 0)
+		(lib_id "Device:L")
+		(at 163.83 88.9 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1154,31 +2521,29 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "b2000000-0000-4000-8000-000000000011")
-		(property "Reference" "C11"
-			(at 45.72 82.55 0)
+		(uuid "75c73d34-7c9b-4441-8de2-be03b8125981")
+		(property "Reference" "L1"
+			(at 163.83 86.36 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "10u / 25V"
-			(at 45.72 85.09 0)
+		(property "Value" "6u8 / 3.6A"
+			(at 163.83 91.44 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 43.18 83.82 0)
+		(property "Footprint" "Inductor_SMD:L_Bourns_SRN6045TA"
+			(at 163.83 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1189,7 +2554,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 83.82 0)
+			(at 163.83 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1200,7 +2565,110 @@
 			)
 		)
 		(property "Description" ""
-			(at 43.18 83.82 0)
+			(at 163.83 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Bourns"
+			(at 163.83 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "SRN6045TA-6R8M"
+			(at 163.83 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f3721ddc-7333-4790-82f1-17721f1c996a")
+		)
+		(pin "2"
+			(uuid "347a4c0f-a5bd-4ed1-bd58-f5b788cf5d8c")
+		)
+		(instances
+			(project "battery_pcb"
+				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
+					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 266.7 96.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "856ad7b5-eed5-4405-9240-ce8abbbd60ef")
+		(property "Reference" "C7"
+			(at 269.24 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22p"
+			(at 269.24 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 266.7 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 266.7 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 266.7 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1211,7 +2679,188 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 43.18 83.82 0)
+			(at 266.7 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL10C220JB8NNNC"
+			(at 266.7 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "db09f05d-0f21-4961-8f3b-d9f5764b6191")
+		)
+		(pin "2"
+			(uuid "a6b148e7-5aab-47cf-98bf-3abc3c47f6e4")
+		)
+		(instances
+			(project "battery_pcb"
+				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
+					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 173.99 88.9 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9843a337-aadf-40b0-bec1-fb75b27c2867")
+		(property "Reference" "#FLG1"
+			(at 173.99 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 173.99 85.09 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 173.99 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 173.99 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0eb3119f-274e-4629-87c9-260fbeafb753")
+		)
+		(instances
+			(project "battery_pcb"
+				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
+					(reference "#FLG1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 228.6 96.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9d4a0ade-8706-42ab-a5a7-5d1f822d543b")
+		(property "Reference" "C9"
+			(at 231.14 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10u"
+			(at 231.14 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 228.6 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 228.6 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 228.6 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1222,7 +2871,7 @@
 			)
 		)
 		(property "MPN" "CL21A106KAYNNNE"
-			(at 43.18 83.82 0)
+			(at 228.6 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1233,76 +2882,33 @@
 			)
 		)
 		(pin "1"
-			(uuid "c14a8e0b-d04c-4019-a2b8-e9437bad6069")
+			(uuid "2f07cef2-b9bd-4d14-b71e-4b9cad42297b")
 		)
 		(pin "2"
-			(uuid "ac4676ed-1db2-48aa-897c-f980eaf959ad")
+			(uuid "24d64ea1-6b07-4d59-82e1-c46124740ee9")
 		)
 		(instances
 			(project "battery_pcb"
 				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
-					(reference "C11")
+					(reference "C9")
 					(unit 1)
 				)
 			)
 		)
 	)
-	(wire
-		(pts
-			(xy 43.18 76.2)
-			(xy 43.18 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ed3145f2-59e3-477a-9bcc-b251952ec55c")
-	)
-	(wire
-		(pts
-			(xy 43.18 87.63)
-			(xy 43.18 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5379a2d0-d9aa-4424-b65f-3e4eeec2da40")
-	)
-	(global_label "GND"
-		(shape input)
-		(at 43.18 92.71 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "34a95d09-0fda-4ea1-88bb-71d74d6132a0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 43.18 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
 	(symbol
-		(lib_id "Device:C")
-		(at 60.96 83.82 0)
+		(lib_id "Connector:TestPoint")
+		(at 241.3 88.9 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "07657415-e3fe-4d92-a348-ca4de53f3158")
-		(property "Reference" "C2"
-			(at 63.5 82.55 0)
+		(uuid "b1000000-0000-4000-8000-000000000001")
+		(property "Reference" "TP1"
+			(at 242.57 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1312,8 +2918,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u / 25V"
-			(at 63.5 85.09 0)
+		(property "Value" "TP_5V"
+			(at 242.57 85.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1323,8 +2929,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 60.96 83.82 0)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 241.3 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1335,7 +2941,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 83.82 0)
+			(at 241.3 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1345,30 +2951,8 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 60.96 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 60.96 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "CL21A106KAYNNNE"
-			(at 60.96 83.82 0)
+		(property "Description" "Bench test point"
+			(at 241.3 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1379,206 +2963,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "d2bff9e3-34db-46f2-9773-53a5a5fcfe3c")
-		)
-		(pin "2"
-			(uuid "f73963db-f4fd-419c-88e0-8253035c9226")
+			(uuid "c7b8b290-0511-45f8-b216-2455c6cd92a7")
 		)
 		(instances
 			(project "battery_pcb"
 				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
-					(reference "C2")
+					(reference "TP1")
 					(unit 1)
 				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 60.96 76.2)
-			(xy 60.96 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "49e662b0-bb3b-4e6b-b8ab-f417e81bee3e")
-	)
-	(wire
-		(pts
-			(xy 60.96 87.63)
-			(xy 60.96 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "770666ec-379d-40b1-b499-0a8a151862cd")
-	)
-	(global_label "GND"
-		(shape input)
-		(at 60.96 92.71 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "316a0d0f-73e6-431b-8751-4344100e3476")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 60.96 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 78.74 83.82 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d347e46a-7c21-4b22-9226-0e717379576c")
-		(property "Reference" "C1"
-			(at 81.28 82.55 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n / 50V"
-			(at 81.28 85.09 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 78.74 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 78.74 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 78.74 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 78.74 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "CL21B104KBCNNNC"
-			(at 78.74 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fe204213-48ac-4b76-9277-5e00cd0ac4bd")
-		)
-		(pin "2"
-			(uuid "0c8e9095-9560-44c3-b095-e25a86f7e2bc")
-		)
-		(instances
-			(project "battery_pcb"
-				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
-					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 78.74 76.2)
-			(xy 78.74 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a4f06937-b2dc-4cf2-933f-19f72ca3126f")
-	)
-	(wire
-		(pts
-			(xy 78.74 87.63)
-			(xy 78.74 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1afbe594-ad98-4b13-8f42-7cb07c91b041")
-	)
-	(global_label "GND"
-		(shape input)
-		(at 78.74 92.71 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "983d7c79-3fe7-4f25-9066-06ef982cd660")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 78.74 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
 			)
 		)
 	)
@@ -1788,234 +3180,9 @@
 			)
 		)
 	)
-	(wire
-		(pts
-			(xy 30.48 76.2)
-			(xy 43.18 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c0e1a4e3-e8ca-49fe-aadc-208eb76be719")
-	)
-	(wire
-		(pts
-			(xy 43.18 76.2)
-			(xy 60.96 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "73d7f0bc-ef8c-43f8-89f8-878053578ead")
-	)
-	(wire
-		(pts
-			(xy 60.96 76.2)
-			(xy 78.74 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "95e466f6-7359-451b-9adb-7136acec575f")
-	)
-	(wire
-		(pts
-			(xy 78.74 76.2)
-			(xy 96.52 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d7862750-da9c-4bb8-b8a3-5e581530d7ed")
-	)
-	(wire
-		(pts
-			(xy 96.52 76.2)
-			(xy 114.3 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "310b2d5c-64ed-4c45-aa3b-9a2757cfb74b")
-	)
-	(wire
-		(pts
-			(xy 114.3 76.2)
-			(xy 114.3 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3983e24f-0706-43c3-94a1-cdf48129fdf8")
-	)
-	(wire
-		(pts
-			(xy 114.3 86.36)
-			(xy 119.38 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "502194e6-b53d-43b2-b2d3-9953232b3ce9")
-	)
-	(junction
-		(at 43.18 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "004f9658-096b-451d-af6f-370742272a43")
-	)
-	(junction
-		(at 60.96 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "826a6834-c04c-43e4-9e52-764d97fee366")
-	)
-	(junction
-		(at 78.74 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6747ddaf-14e5-4867-979c-f08f363ca95a")
-	)
-	(junction
-		(at 96.52 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c1199d0a-30fe-4407-94ca-9ddecf0e8f37")
-	)
-	(wire
-		(pts
-			(xy 96.52 76.2)
-			(xy 96.52 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "44a04ab2-bd26-4f65-87fe-efb2c88a1030")
-	)
-	(wire
-		(pts
-			(xy 96.52 87.63)
-			(xy 96.52 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bb9a91c9-1386-4db9-ad67-9c69561d3926")
-	)
-	(wire
-		(pts
-			(xy 96.52 91.44)
-			(xy 96.52 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4e693f6f-709c-4226-bf35-ba6f31abacb9")
-	)
-	(junction
-		(at 96.52 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "53464a61-b83b-49a3-b0b8-1f6d40471c38")
-	)
-	(wire
-		(pts
-			(xy 96.52 91.44)
-			(xy 119.38 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2125c43c-8a80-4f5b-8a0e-3f499aba3708")
-	)
-	(label "EN"
-		(at 104.14 91.44 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "199e7f69-8646-4011-9672-aefcde8842c2")
-	)
-	(wire
-		(pts
-			(xy 96.52 102.87)
-			(xy 96.52 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "70f5433b-6e01-4099-8211-7c33c610479b")
-	)
-	(global_label "GND"
-		(shape input)
-		(at 96.52 106.68 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "2f595d84-351e-4863-b69c-6c365f193b9e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 96.52 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 129.54 96.52)
-			(xy 129.54 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a0910185-7a83-40b2-a85a-c2ff4b168039")
-	)
-	(global_label "GND"
-		(shape input)
-		(at 129.54 102.87 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ffa34477-7abc-4af8-bad5-dc9ce92d1fd1")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 129.54 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
 	(symbol
 		(lib_id "Device:C")
-		(at 147.32 73.66 90)
+		(at 43.18 83.82 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2023,292 +3190,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "df9c61c0-0a05-43b4-8b09-78e59d2b1662")
-		(property "Reference" "C3"
-			(at 147.32 71.12 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100n"
-			(at 147.32 76.2 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 147.32 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 147.32 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 147.32 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 147.32 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "CL10B104KB8NNNC"
-			(at 147.32 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7fd51786-3001-4d50-8312-1b22f2f5bff8")
-		)
-		(pin "2"
-			(uuid "1fa9e3be-b7be-4f2b-817a-41fc68b8cd48")
-		)
-		(instances
-			(project "battery_pcb"
-				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
-					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 139.7 86.36)
-			(xy 143.51 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4826de1e-b841-48e8-bdc9-f698aa2d3df1")
-	)
-	(wire
-		(pts
-			(xy 143.51 86.36)
-			(xy 143.51 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d2c56335-89a9-4ac1-ae71-f84d1115dcf7")
-	)
-	(label "CBOOT"
-		(at 143.51 81.28 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3506cedc-e04f-4ada-a835-8e544438d498")
-	)
-	(symbol
-		(lib_id "Device:L")
-		(at 163.83 88.9 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "75c73d34-7c9b-4441-8de2-be03b8125981")
-		(property "Reference" "L1"
-			(at 163.83 86.36 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "6u8 / 3.6A"
-			(at 163.83 91.44 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Inductor_SMD:L_Bourns_SRN6045TA"
-			(at 163.83 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 163.83 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 163.83 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Bourns"
-			(at 163.83 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "SRN6045TA-6R8M"
-			(at 163.83 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f3721ddc-7333-4790-82f1-17721f1c996a")
-		)
-		(pin "2"
-			(uuid "347a4c0f-a5bd-4ed1-bd58-f5b788cf5d8c")
-		)
-		(instances
-			(project "battery_pcb"
-				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
-					(reference "L1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 139.7 88.9)
-			(xy 151.13 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "38479a19-d4f2-49a8-9306-73b69e12f353")
-	)
-	(wire
-		(pts
-			(xy 151.13 88.9)
-			(xy 160.02 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ed0e6962-8d15-4259-bfdb-7ee6e9735860")
-	)
-	(junction
-		(at 151.13 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fe7e6c3e-5095-4fe8-8add-96c171bff149")
-	)
-	(wire
-		(pts
-			(xy 151.13 73.66)
-			(xy 151.13 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a9b014f4-5189-4a2e-a32c-a3b3b51e0a25")
-	)
-	(label "SW"
-		(at 153.67 88.9 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ff8e3e99-1494-44ee-9e46-b899a2b1ea4d")
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 180.34 96.52 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "00c9b54e-47b1-4089-bc8d-0b6324214e73")
-		(property "Reference" "C4"
-			(at 182.88 95.25 0)
+		(uuid "b2000000-0000-4000-8000-000000000011")
+		(property "Reference" "C11"
+			(at 45.72 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2318,8 +3202,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22u / 16V"
-			(at 182.88 97.79 0)
+		(property "Value" "10u / 25V"
+			(at 45.72 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2330,7 +3214,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 180.34 96.52 0)
+			(at 43.18 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2341,7 +3225,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 96.52 0)
+			(at 43.18 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2352,7 +3236,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 180.34 96.52 0)
+			(at 43.18 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2363,7 +3247,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 180.34 96.52 0)
+			(at 43.18 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2373,154 +3257,8 @@
 				)
 			)
 		)
-		(property "MPN" "CL21A226MOQNNNE"
-			(at 180.34 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "917f2558-fdd5-48aa-b515-b73b1c7324c5")
-		)
-		(pin "2"
-			(uuid "d70e473e-a6a9-429a-bcf5-beb8dbaa7ce7")
-		)
-		(instances
-			(project "battery_pcb"
-				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
-					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 180.34 88.9)
-			(xy 180.34 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4d1699ee-bf79-4cca-bf3a-bec3a1e109af")
-	)
-	(wire
-		(pts
-			(xy 180.34 100.33)
-			(xy 180.34 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "52f01501-7dd3-4abe-a16f-72b4aa52ca64")
-	)
-	(global_label "GND"
-		(shape input)
-		(at 180.34 104.14 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9231cc7f-dd06-4437-b5cf-973ef3653966")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 180.34 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 198.12 96.52 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "27c9d896-6350-498d-a120-7a1fc1a8d30a")
-		(property "Reference" "C5"
-			(at 200.66 95.25 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22u / 16V"
-			(at 200.66 97.79 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 198.12 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 198.12 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 198.12 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 198.12 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "CL21A226MOQNNNE"
-			(at 198.12 96.52 0)
+		(property "MPN" "CL21A106KAYNNNE"
+			(at 43.18 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2531,60 +3269,17 @@
 			)
 		)
 		(pin "1"
-			(uuid "ebc89210-85ca-4356-9737-cf2cc3855570")
+			(uuid "c14a8e0b-d04c-4019-a2b8-e9437bad6069")
 		)
 		(pin "2"
-			(uuid "28bc9c08-a535-4b61-8bfe-1a8c84a074e9")
+			(uuid "ac4676ed-1db2-48aa-897c-f980eaf959ad")
 		)
 		(instances
 			(project "battery_pcb"
 				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
-					(reference "C5")
+					(reference "C11")
 					(unit 1)
 				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 198.12 88.9)
-			(xy 198.12 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b13c2b10-7992-45c5-ae56-f24f65b54a38")
-	)
-	(wire
-		(pts
-			(xy 198.12 100.33)
-			(xy 198.12 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d308dff-59b5-47aa-9542-21cf62c43f1a")
-	)
-	(global_label "GND"
-		(shape input)
-		(at 198.12 104.14 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4cb2f40e-8652-42c5-a917-465a306b0208")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 198.12 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
 			)
 		)
 	)
@@ -2691,52 +3386,9 @@
 			)
 		)
 	)
-	(wire
-		(pts
-			(xy 215.9 88.9)
-			(xy 215.9 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "25e6908a-a0f6-4fd4-ae07-4bc747b778a3")
-	)
-	(wire
-		(pts
-			(xy 215.9 100.33)
-			(xy 215.9 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d781380b-da7c-4200-94cf-8536baedcf71")
-	)
-	(global_label "GND"
-		(shape input)
-		(at 215.9 104.14 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "52768697-1a46-48a2-91d3-96be952491fb")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 215.9 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
 	(symbol
 		(lib_id "Device:C")
-		(at 228.6 96.52 0)
+		(at 78.74 83.82 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2744,9 +3396,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "9d4a0ade-8706-42ab-a5a7-5d1f822d543b")
-		(property "Reference" "C9"
-			(at 231.14 95.25 0)
+		(uuid "d347e46a-7c21-4b22-9226-0e717379576c")
+		(property "Reference" "C1"
+			(at 81.28 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2756,8 +3408,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
-			(at 231.14 97.79 0)
+		(property "Value" "100n / 50V"
+			(at 81.28 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2768,7 +3420,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 228.6 96.52 0)
+			(at 78.74 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2779,7 +3431,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.6 96.52 0)
+			(at 78.74 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2790,7 +3442,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 228.6 96.52 0)
+			(at 78.74 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2801,7 +3453,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 228.6 96.52 0)
+			(at 78.74 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2811,8 +3463,8 @@
 				)
 			)
 		)
-		(property "MPN" "CL21A106KAYNNNE"
-			(at 228.6 96.52 0)
+		(property "MPN" "CL21B104KBCNNNC"
+			(at 78.74 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2823,282 +3475,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "2f07cef2-b9bd-4d14-b71e-4b9cad42297b")
+			(uuid "fe204213-48ac-4b76-9277-5e00cd0ac4bd")
 		)
 		(pin "2"
-			(uuid "24d64ea1-6b07-4d59-82e1-c46124740ee9")
+			(uuid "0c8e9095-9560-44c3-b095-e25a86f7e2bc")
 		)
 		(instances
 			(project "battery_pcb"
 				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
-					(reference "C9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 228.6 88.9)
-			(xy 228.6 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "99e3158d-c9a1-45f9-bd4d-05ecb3f9b766")
-	)
-	(wire
-		(pts
-			(xy 228.6 100.33)
-			(xy 228.6 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21cd3e7a-959a-4843-89b9-107958aae724")
-	)
-	(global_label "GND"
-		(shape input)
-		(at 228.6 104.14 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "55909630-bf26-4628-b849-850474aa25d0")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 228.6 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 241.3 96.52 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ec3c00be-222f-411c-ac8c-8cdb2c4281b2")
-		(property "Reference" "C10"
-			(at 243.84 95.25 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100n"
-			(at 243.84 97.79 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 241.3 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 241.3 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 241.3 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 241.3 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "CL10B104KB8NNNC"
-			(at 241.3 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "93c07bc9-c5e5-481b-a502-752a4f5ab7d9")
-		)
-		(pin "2"
-			(uuid "b70f1e4c-c7c9-4a71-a489-2d8f87f9d8f9")
-		)
-		(instances
-			(project "battery_pcb"
-				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
-					(reference "C10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 241.3 88.9)
-			(xy 241.3 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a6d17438-860c-4f41-b3fa-6904e4b08d59")
-	)
-	(wire
-		(pts
-			(xy 241.3 100.33)
-			(xy 241.3 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b9abc855-4374-4516-a0f9-79e2665f257f")
-	)
-	(global_label "GND"
-		(shape input)
-		(at 241.3 104.14 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "556ee479-7ebd-4cae-8293-67210915ab26")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 241.3 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 241.3 88.9 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b1000000-0000-4000-8000-000000000001")
-		(property "Reference" "TP1"
-			(at 242.57 83.82 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TP_5V"
-			(at 242.57 85.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
-			(at 241.3 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 241.3 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Bench test point"
-			(at 241.3 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c7b8b290-0511-45f8-b216-2455c6cd92a7")
-		)
-		(instances
-			(project "battery_pcb"
-				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
-					(reference "TP1")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -3202,6 +3587,107 @@
 			(project "battery_pcb"
 				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 147.32 73.66 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "df9c61c0-0a05-43b4-8b09-78e59d2b1662")
+		(property "Reference" "C3"
+			(at 147.32 71.12 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100n"
+			(at 147.32 76.2 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 147.32 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 147.32 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 147.32 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 147.32 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL10B104KB8NNNC"
+			(at 147.32 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7fd51786-3001-4d50-8312-1b22f2f5bff8")
+		)
+		(pin "2"
+			(uuid "1fa9e3be-b7be-4f2b-817a-41fc68b8cd48")
+		)
+		(instances
+			(project "battery_pcb"
+				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -3312,7 +3798,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 266.7 96.52 0)
+		(at 241.3 96.52 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3320,9 +3806,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "856ad7b5-eed5-4405-9240-ce8abbbd60ef")
-		(property "Reference" "C7"
-			(at 269.24 95.25 0)
+		(uuid "ec3c00be-222f-411c-ac8c-8cdb2c4281b2")
+		(property "Reference" "C10"
+			(at 243.84 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3332,8 +3818,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22p"
-			(at 269.24 97.79 0)
+		(property "Value" "100n"
+			(at 243.84 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3344,7 +3830,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 266.7 96.52 0)
+			(at 241.3 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3355,7 +3841,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 266.7 96.52 0)
+			(at 241.3 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3366,7 +3852,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 266.7 96.52 0)
+			(at 241.3 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3377,7 +3863,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 266.7 96.52 0)
+			(at 241.3 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3387,8 +3873,8 @@
 				)
 			)
 		)
-		(property "MPN" "CL10C220JB8NNNC"
-			(at 266.7 96.52 0)
+		(property "MPN" "CL10B104KB8NNNC"
+			(at 241.3 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3399,542 +3885,17 @@
 			)
 		)
 		(pin "1"
-			(uuid "db09f05d-0f21-4961-8f3b-d9f5764b6191")
+			(uuid "93c07bc9-c5e5-481b-a502-752a4f5ab7d9")
 		)
 		(pin "2"
-			(uuid "a6b148e7-5aab-47cf-98bf-3abc3c47f6e4")
+			(uuid "b70f1e4c-c7c9-4a71-a489-2d8f87f9d8f9")
 		)
 		(instances
 			(project "battery_pcb"
 				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
-					(reference "C7")
+					(reference "C10")
 					(unit 1)
 				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 167.64 88.9)
-			(xy 173.99 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "81f5a9f3-b9d1-4c1f-8b40-17e3bbe8acad")
-	)
-	(wire
-		(pts
-			(xy 173.99 88.9)
-			(xy 180.34 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cbe0638f-da88-473d-98da-2e6fac9a6817")
-	)
-	(wire
-		(pts
-			(xy 180.34 88.9)
-			(xy 198.12 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "211f4e19-632a-4cbf-bad0-ec5832ea7a82")
-	)
-	(wire
-		(pts
-			(xy 198.12 88.9)
-			(xy 215.9 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "929a9f7c-5a49-4663-9b00-a0cba2572ed0")
-	)
-	(wire
-		(pts
-			(xy 215.9 88.9)
-			(xy 228.6 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cd55896f-e4e5-4b05-b6d7-22dd3e395bbd")
-	)
-	(wire
-		(pts
-			(xy 228.6 88.9)
-			(xy 241.3 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e69821fc-db07-4bc1-aa2c-10b91478fb35")
-	)
-	(wire
-		(pts
-			(xy 241.3 88.9)
-			(xy 251.46 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dc310dd9-2151-45d1-9311-73b1a47f0dd2")
-	)
-	(wire
-		(pts
-			(xy 251.46 88.9)
-			(xy 266.7 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bdbab63e-b661-4122-88f2-f6f46cab8960")
-	)
-	(wire
-		(pts
-			(xy 266.7 88.9)
-			(xy 276.86 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88884855-b198-475a-8431-65c3b2778344")
-	)
-	(junction
-		(at 173.99 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d11fcf2b-0409-41d8-9a19-9cb8e8e39093")
-	)
-	(junction
-		(at 180.34 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b63d54df-210d-4a45-a230-6731fa0c9841")
-	)
-	(junction
-		(at 198.12 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "83267678-2eb0-430b-9580-c83b0ca21eeb")
-	)
-	(junction
-		(at 215.9 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "13792500-e849-4fcb-a105-26845f043055")
-	)
-	(junction
-		(at 228.6 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "71c5babe-85e2-4cd1-80f6-4d8e9beac452")
-	)
-	(junction
-		(at 241.3 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c7596da4-5329-4cf0-81dd-d21fa0fc6b7d")
-	)
-	(junction
-		(at 251.46 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d1818632-2581-417e-be62-7d313907575c")
-	)
-	(junction
-		(at 266.7 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "57bbfe3c-2540-4ba4-aeba-5bc8214a5045")
-	)
-	(label "+5V"
-		(at 175.26 88.9 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "22e4b15c-441e-4aee-a278-39d2e93ea7c3")
-	)
-	(hierarchical_label "+5V"
-		(shape passive)
-		(at 276.86 88.9 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b57fee59-b2af-4a1a-9339-3c555b421b1e")
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 173.99 88.9 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9843a337-aadf-40b0-bec1-fb75b27c2867")
-		(property "Reference" "#FLG1"
-			(at 173.99 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 173.99 85.09 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 173.99 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 173.99 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 173.99 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0eb3119f-274e-4629-87c9-260fbeafb753")
-		)
-		(instances
-			(project "battery_pcb"
-				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
-					(reference "#FLG1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 251.46 88.9)
-			(xy 251.46 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "743df28e-6fba-4dba-a9ef-062a601f2b98")
-	)
-	(wire
-		(pts
-			(xy 266.7 88.9)
-			(xy 266.7 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "894f8f99-acea-4bf8-ad02-db6a6386a419")
-	)
-	(wire
-		(pts
-			(xy 251.46 100.33)
-			(xy 251.46 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "28e43321-4670-4f38-8fb6-4ddc17e6fd36")
-	)
-	(wire
-		(pts
-			(xy 251.46 102.87)
-			(xy 251.46 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "844e2f9d-2dfd-4f93-a255-bffb9514157f")
-	)
-	(junction
-		(at 251.46 102.87)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "63b73e68-bb5f-4541-a2a3-d0c54c415b04")
-	)
-	(wire
-		(pts
-			(xy 266.7 100.33)
-			(xy 266.7 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b849139f-c1d4-4f9e-925f-3e2519c0a686")
-	)
-	(wire
-		(pts
-			(xy 266.7 102.87)
-			(xy 251.46 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "876f8dc4-69d8-4145-ab93-ba090604cd41")
-	)
-	(wire
-		(pts
-			(xy 251.46 102.87)
-			(xy 246.38 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d822186c-e36f-4acc-81c0-dbd9717a73fa")
-	)
-	(wire
-		(pts
-			(xy 246.38 102.87)
-			(xy 246.38 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f9a3aa98-e4d2-4c5e-9987-561eb9d954c1")
-	)
-	(wire
-		(pts
-			(xy 246.38 116.84)
-			(xy 144.78 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "281fc051-e5a7-4dc5-a448-ff9e028056c0")
-	)
-	(wire
-		(pts
-			(xy 144.78 116.84)
-			(xy 144.78 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "200d872b-56ec-4653-ad26-a987a6946893")
-	)
-	(wire
-		(pts
-			(xy 144.78 91.44)
-			(xy 139.7 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1f5cb05f-a6ae-4e00-b3b0-64394216c45d")
-	)
-	(label "FB"
-		(at 144.78 110.49 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c8295408-5d3d-4a39-a7e3-dbd417035bc1")
-	)
-	(wire
-		(pts
-			(xy 251.46 113.03)
-			(xy 251.46 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "82bbc1b0-6709-4930-b91f-20b922ebb1de")
-	)
-	(global_label "GND"
-		(shape input)
-		(at 251.46 116.84 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "375234bc-ea0c-41ab-a1b7-3ccacb8b2e04")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 251.46 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 30.48 101.6 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2ad83899-8967-4869-a117-e6f16633dd9f")
-		(property "Reference" "#FLG2"
-			(at 30.48 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 30.48 97.79 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 30.48 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 30.48 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 30.48 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4d63cb39-a472-459d-91b7-fc0282aac133")
-		)
-		(instances
-			(project "battery_pcb"
-				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
-					(reference "#FLG2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 30.48 101.6)
-			(xy 30.48 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "65e3e810-fe1c-4483-ae0c-ae5aff532e75")
-	)
-	(global_label "GND"
-		(shape input)
-		(at 30.48 106.68 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "81db6100-d242-4a91-9271-6cf13ba8dd7c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 30.48 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
 			)
 		)
 	)

@@ -133,18 +133,6 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "connector/Molex"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "ad5e3275-9cd2-4bb9-bdfb-4673136a1de1")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Manufacturer" "Molex"
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -170,8 +158,14 @@
 			)
 		)
 		(path "/d30d38cc-20d9-4e05-9f85-c70abea8b778/a844e9cc-025d-40dc-87a9-64cbca4311c2")
-		(sheetname "4. COTS / SRAD supplies")
+		(sheetname "/4. COTS / SRAD supplies/")
 		(sheetfile "sheets/supplies.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -476,7 +470,9 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(roundrect_rratio 0.166667)
-			(net "/4. COTS / SRAD supplies/COTS_BAT+")
+			(net "/4. COTS {slash} SRAD supplies/COTS_BAT+")
+			(pinfunction "A_1")
+			(pintype "passive")
 			(uuid "30f2f258-6fb8-4c2a-8478-53244f015faf")
 		)
 		(pad "2" thru_hole oval
@@ -485,7 +481,9 @@
 			(drill 1.02)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. COTS / SRAD supplies/COTS_SW")
+			(net "/4. COTS {slash} SRAD supplies/COTS_SW")
+			(pinfunction "B_2")
+			(pintype "passive")
 			(uuid "2eede3f0-4c93-462b-8ecc-6f1e65614368")
 		)
 		(embedded_fonts no)
@@ -551,18 +549,6 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "connector/Molex"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "5e80b64f-ab42-43f3-a627-b8a6e3862f96")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Manufacturer" "Molex"
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -588,8 +574,14 @@
 			)
 		)
 		(path "/d30d38cc-20d9-4e05-9f85-c70abea8b778/206230bd-1d7b-42c6-a165-3118f980452c")
-		(sheetname "4. COTS / SRAD supplies")
+		(sheetname "/4. COTS / SRAD supplies/")
 		(sheetfile "sheets/supplies.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -894,7 +886,9 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(roundrect_rratio 0.166667)
-			(net "/4. COTS / SRAD supplies/SRAD_BAT+")
+			(net "/4. COTS {slash} SRAD supplies/SRAD_BAT+")
+			(pinfunction "A_1")
+			(pintype "passive")
 			(uuid "9aaf7c3e-84f2-4c0c-94ed-aae4add18dcc")
 		)
 		(pad "2" thru_hole oval
@@ -903,7 +897,9 @@
 			(drill 1.02)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. COTS / SRAD supplies/SRAD_SW")
+			(net "/4. COTS {slash} SRAD supplies/SRAD_SW")
+			(pinfunction "B_2")
+			(pintype "passive")
 			(uuid "e372ec2f-5d08-436c-9a1e-150376293030")
 		)
 		(embedded_fonts no)
@@ -969,18 +965,6 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "battery"
-			(at 0 0 90)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "2a91dbff-a6f2-4d56-9228-0085e0a275cc")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Manufacturer" "Keystone Electronics"
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -1006,8 +990,14 @@
 			)
 		)
 		(path "/ae01c8e7-4191-4202-a535-afc32959794b/e8615a46-dea8-429a-88e0-1de30779718c")
-		(sheetname "1. Battery 2S + protection")
+		(sheetname "/1. Battery 2S + protection/")
 		(sheetfile "sheets/power_in.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1261,6 +1251,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.038462)
 			(net "/1. Battery 2S + protection/VBAT+")
+			(pinfunction "+_1")
+			(pintype "passive")
 			(uuid "f35f40ba-102d-429c-97f7-384f8e959d1f")
 		)
 		(pad "2" smd roundrect
@@ -1269,6 +1261,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.038462)
 			(net "Net-(BT1--)")
+			(pinfunction "-_2")
+			(pintype "passive")
 			(uuid "94373c01-f967-4477-b9ff-076e0d630078")
 		)
 		(embedded_fonts no)
@@ -1340,10 +1334,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/ae01c8e7-4191-4202-a535-afc32959794b/b1000000-0000-4000-8000-000000000002")
-		(sheetname "1. Battery 2S + protection")
+		(sheetname "/1. Battery 2S + protection/")
 		(sheetfile "sheets/power_in.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -1385,6 +1386,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/1. Battery 2S + protection/VBAT+")
+			(pinfunction "1_1")
+			(pintype "passive")
 			(uuid "a8383f0d-31fd-45ad-9530-1237b4fb18c1")
 		)
 		(embedded_fonts no)
@@ -1445,10 +1448,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/1914f4ed-278a-4026-a86a-769e5e361ab6/b1000000-0000-4000-8000-000000000001")
-		(sheetname "2. Buck to 5 V")
+		(sheetname "/2. Buck to 5 V/")
 		(sheetfile "sheets/buck_5v.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -1490,6 +1500,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/2. Buck to 5 V/+5V")
+			(pinfunction "1_1")
+			(pintype "passive")
 			(uuid "06b7ee62-7b7c-415c-9457-4ac7341f1925")
 		)
 		(embedded_fonts no)
@@ -1544,18 +1556,6 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "battery"
-			(at 0 0 270)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "307b5def-ac69-4cc1-be21-9270e82f9a5a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Manufacturer" "Keystone Electronics"
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -1581,8 +1581,14 @@
 			)
 		)
 		(path "/d30d38cc-20d9-4e05-9f85-c70abea8b778/99125746-ad02-4527-87ed-10b2d7e7b4c6")
-		(sheetname "4. COTS / SRAD supplies")
+		(sheetname "/4. COTS / SRAD supplies/")
 		(sheetfile "sheets/supplies.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1835,7 +1841,9 @@
 			(size 7.5 6.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.038462)
-			(net "/4. COTS / SRAD supplies/COTS_BAT+")
+			(net "/4. COTS {slash} SRAD supplies/COTS_BAT+")
+			(pinfunction "+_1")
+			(pintype "passive")
 			(uuid "d09baa14-4243-4854-ae81-fdb14ab29034")
 		)
 		(pad "2" smd roundrect
@@ -1843,7 +1851,9 @@
 			(size 7.5 6.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.038462)
-			(net "/4. COTS / SRAD supplies/COTS_BAT-")
+			(net "/4. COTS {slash} SRAD supplies/COTS_BAT-")
+			(pinfunction "-_2")
+			(pintype "passive")
 			(uuid "38217e3c-be55-407c-919c-5999a9e2affd")
 		)
 		(embedded_fonts no)
@@ -2150,9 +2160,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/d30d38cc-20d9-4e05-9f85-c70abea8b778/03901de4-b206-4c7d-aaab-cd5a7a15f23e")
-		(sheetname "4. COTS / SRAD supplies")
+		(sheetname "/4. COTS / SRAD supplies/")
 		(sheetfile "sheets/supplies.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2375,7 +2392,9 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(roundrect_rratio 0.25)
-			(net "/4. COTS / SRAD supplies/COTS_BAT-")
+			(net "/4. COTS {slash} SRAD supplies/COTS_BAT-")
+			(pinfunction "Pin_1_1")
+			(pintype "passive")
 			(uuid "503924f0-aeb1-4642-8875-343539c3c69d")
 		)
 		(pad "2" thru_hole circle
@@ -2384,7 +2403,9 @@
 			(drill 1.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. COTS / SRAD supplies/COTS_SW")
+			(net "/4. COTS {slash} SRAD supplies/COTS_SW")
+			(pinfunction "Pin_2_2")
+			(pintype "passive")
 			(uuid "3c9c6c2c-c7a2-4fc8-b8a3-098b49f35e14")
 		)
 		(embedded_fonts no)
@@ -2450,18 +2471,6 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "battery"
-			(at 0 0 270)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "e428449d-c1d2-41b6-aeab-151a31e0f8d8")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Manufacturer" "Keystone Electronics"
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -2487,8 +2496,14 @@
 			)
 		)
 		(path "/ae01c8e7-4191-4202-a535-afc32959794b/34833dd3-39f4-44ea-871e-bf143131b823")
-		(sheetname "1. Battery 2S + protection")
+		(sheetname "/1. Battery 2S + protection/")
 		(sheetfile "sheets/power_in.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -2742,6 +2757,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.038462)
 			(net "Net-(BT1--)")
+			(pinfunction "+_1")
+			(pintype "passive")
 			(uuid "f843a216-6c80-4a10-8683-0ac4ca98e31f")
 		)
 		(pad "2" smd roundrect
@@ -2750,6 +2767,8 @@
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.038462)
 			(net "GND")
+			(pinfunction "-_2")
+			(pintype "passive")
 			(uuid "1a4357d4-a359-4ff5-84fe-f18249deb82d")
 		)
 		(embedded_fonts no)
@@ -2938,10 +2957,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/ae01c8e7-4191-4202-a535-afc32959794b/b1000000-0000-4000-8000-000000000003")
-		(sheetname "1. Battery 2S + protection")
+		(sheetname "/1. Battery 2S + protection/")
 		(sheetfile "sheets/power_in.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -2983,6 +3009,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pinfunction "1_1")
+			(pintype "passive")
 			(uuid "0c08e619-91e1-4daa-aa16-e250335f88aa")
 		)
 		(embedded_fonts no)
@@ -3043,10 +3071,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/ae01c8e7-4191-4202-a535-afc32959794b/b1000000-0000-4000-8000-000000000004")
-		(sheetname "1. Battery 2S + protection")
+		(sheetname "/1. Battery 2S + protection/")
 		(sheetfile "sheets/power_in.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
+		(units
+			(unit
+				(name "A")
+				(pins "1")
+			)
+		)
+		(attr exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -3088,6 +3123,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pinfunction "1_1")
+			(pintype "passive")
 			(uuid "676a1195-a359-4bfa-ae1d-f51467426fa4")
 		)
 		(embedded_fonts no)
@@ -3142,18 +3179,6 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "connector/Molex"
-			(at 0 0 0)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "4002708e-3a3b-4b78-a9d6-382bb697ad7e")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Manufacturer" "Molex"
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -3179,8 +3204,14 @@
 			)
 		)
 		(path "/ae01c8e7-4191-4202-a535-afc32959794b/8238bbf2-b035-45db-8f95-5131fd1e15fb")
-		(sheetname "1. Battery 2S + protection")
+		(sheetname "/1. Battery 2S + protection/")
 		(sheetfile "sheets/power_in.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3486,6 +3517,8 @@
 			(remove_unused_layers no)
 			(roundrect_rratio 0.166667)
 			(net "/1. Battery 2S + protection/VF")
+			(pinfunction "A_1")
+			(pintype "passive")
 			(uuid "ef4c42c7-f081-4b3b-a56a-3ae308e794e7")
 		)
 		(pad "2" thru_hole oval
@@ -3495,6 +3528,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/1. Battery 2S + protection/VSW")
+			(pinfunction "B_2")
+			(pintype "passive")
 			(uuid "913348b2-db26-419e-89c4-8589cfa3c348")
 		)
 		(embedded_fonts no)
@@ -3588,9 +3623,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/d30d38cc-20d9-4e05-9f85-c70abea8b778/070386a4-d2df-4ec3-926d-c13e29d3de2e")
-		(sheetname "4. COTS / SRAD supplies")
+		(sheetname "/4. COTS / SRAD supplies/")
 		(sheetfile "sheets/supplies.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3813,7 +3855,9 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(roundrect_rratio 0.25)
-			(net "/4. COTS / SRAD supplies/SRAD_BAT-")
+			(net "/4. COTS {slash} SRAD supplies/SRAD_BAT-")
+			(pinfunction "Pin_1_1")
+			(pintype "passive")
 			(uuid "87473963-a7a7-4047-bb11-bd09a6b21775")
 		)
 		(pad "2" thru_hole circle
@@ -3822,7 +3866,9 @@
 			(drill 1.8)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/4. COTS / SRAD supplies/SRAD_SW")
+			(net "/4. COTS {slash} SRAD supplies/SRAD_SW")
+			(pinfunction "Pin_2_2")
+			(pintype "passive")
 			(uuid "a0099b26-e48b-469f-a059-ca1004f9c2a3")
 		)
 		(embedded_fonts no)
@@ -3995,18 +4041,6 @@
 				)
 			)
 		)
-		(property "KiLib_Generator" "battery"
-			(at 0 0 270)
-			(layer "F.SilkS")
-			(hide yes)
-			(uuid "ff2ef62c-0782-4f70-84f7-c7890b34cf9e")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Manufacturer" "Keystone Electronics"
 			(at 0 0 0)
 			(layer "F.Fab")
@@ -4032,8 +4066,14 @@
 			)
 		)
 		(path "/d30d38cc-20d9-4e05-9f85-c70abea8b778/70406afb-3c88-4619-be49-97bfe4ff1157")
-		(sheetname "4. COTS / SRAD supplies")
+		(sheetname "/4. COTS / SRAD supplies/")
 		(sheetfile "sheets/supplies.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4286,7 +4326,9 @@
 			(size 7.5 6.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.038462)
-			(net "/4. COTS / SRAD supplies/SRAD_BAT+")
+			(net "/4. COTS {slash} SRAD supplies/SRAD_BAT+")
+			(pinfunction "+_1")
+			(pintype "passive")
 			(uuid "1a5c86fd-acad-4f06-937a-09963b201465")
 		)
 		(pad "2" smd roundrect
@@ -4294,7 +4336,9 @@
 			(size 7.5 6.5)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.038462)
-			(net "/4. COTS / SRAD supplies/SRAD_BAT-")
+			(net "/4. COTS {slash} SRAD supplies/SRAD_BAT-")
+			(pinfunction "-_2")
+			(pintype "passive")
 			(uuid "b5c3ddb7-1d8f-4274-a9be-a6ebc2536708")
 		)
 		(embedded_fonts no)
@@ -4587,19 +4631,6 @@
 				(justify mirror)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 90)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "cbca738e-bf6a-493d-8c7b-050f8bfbc1fb")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(layer "B.Fab")
@@ -4624,9 +4655,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/1914f4ed-278a-4026-a86a-769e5e361ab6/00c9b54e-47b1-4089-bc8d-0b6324214e73")
-		(sheetname "2. Buck to 5 V")
+		(sheetname "/2. Buck to 5 V/")
 		(sheetfile "sheets/buck_5v.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4689,6 +4727,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/2. Buck to 5 V/+5V")
+			(pintype "passive")
 			(uuid "78a9994c-2a84-4571-a8b3-39af06ec1863")
 		)
 		(pad "2" smd roundrect
@@ -4697,6 +4736,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "25657a22-fe7f-4ba8-8323-61e952fb4cfe")
 		)
 		(embedded_fonts no)
@@ -5247,19 +5287,6 @@
 				(justify mirror)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "63657129-82a3-4332-8a39-8e2c707c6bf6")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(layer "B.Fab")
@@ -5284,9 +5311,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/1914f4ed-278a-4026-a86a-769e5e361ab6/9d4a0ade-8706-42ab-a5a7-5d1f822d543b")
-		(sheetname "2. Buck to 5 V")
+		(sheetname "/2. Buck to 5 V/")
 		(sheetfile "sheets/buck_5v.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5349,6 +5383,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/2. Buck to 5 V/+5V")
+			(pintype "passive")
 			(uuid "1582cfb3-52c3-4b39-bf66-a35f91c1cc26")
 		)
 		(pad "2" smd roundrect
@@ -5357,6 +5392,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "c3065494-e080-400e-9c68-c3d8369c1d04")
 		)
 		(embedded_fonts no)
@@ -5426,19 +5462,6 @@
 				(justify mirror)
 			)
 		)
-		(property "KiLib_Generator" "connector/SMD_single_row_plus_mounting_pad"
-			(at 0 0 0)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "0deaba1b-5ce3-4646-b439-6d9658dbf479")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Manufacturer" "JST"
 			(at 0 0 0)
 			(layer "B.Fab")
@@ -5463,9 +5486,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/51707861-a38d-47a0-88b0-b003633f2c22/6c79f32f-3dee-4052-8101-d03a4775e4e9")
-		(sheetname "3. ESP32 + camera")
+		(sheetname "/3. ESP32 + camera/")
 		(sheetfile "sheets/esp32_camera.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4" "5")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -5821,6 +5851,8 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/2. Buck to 5 V/+5V")
+			(pinfunction "Pin_1_1")
+			(pintype "passive")
 			(uuid "372fd5e0-e470-4935-9dc7-e480959a00f0")
 		)
 		(pad "2" smd roundrect
@@ -5829,6 +5861,8 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "Pin_2_2")
+			(pintype "passive")
 			(uuid "c2829122-005d-4485-8126-db0ec63dde68")
 		)
 		(pad "3" smd roundrect
@@ -5837,6 +5871,8 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/3. ESP32 + camera/CAM_RX")
+			(pinfunction "Pin_3_3")
+			(pintype "passive")
 			(uuid "a6e8375f-6326-491c-ad18-a67550fb22ea")
 		)
 		(pad "4" smd roundrect
@@ -5845,6 +5881,8 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/3. ESP32 + camera/CAM_TX")
+			(pinfunction "Pin_4_4")
+			(pintype "passive")
 			(uuid "ad346dbb-d59a-402e-9eaf-93ae6b83474c")
 		)
 		(pad "5" smd roundrect
@@ -5853,6 +5891,8 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/3. ESP32 + camera/CAM_VIDEO")
+			(pinfunction "Pin_5_5")
+			(pintype "passive")
 			(uuid "318e1120-022f-4661-8fab-562f8e93902c")
 		)
 		(pad "MP" smd roundrect
@@ -5936,19 +5976,6 @@
 				(justify mirror)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 180)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "eabd2eb9-9087-45db-a19b-ffc39e10036a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Manufacturer" "Lite-On"
 			(at 0 0 0)
 			(layer "B.Fab")
@@ -5973,9 +6000,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/51707861-a38d-47a0-88b0-b003633f2c22/3d0e86d9-37e0-4815-9bcf-b362e0d2c51d")
-		(sheetname "3. ESP32 + camera")
+		(sheetname "/3. ESP32 + camera/")
 		(sheetfile "sheets/esp32_camera.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6087,6 +6121,8 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "K_1")
+			(pintype "passive")
 			(uuid "dd0c4842-6ffe-4a6f-952e-3224cd324558")
 		)
 		(pad "2" smd roundrect
@@ -6095,6 +6131,8 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/3. ESP32 + camera/LED_A")
+			(pinfunction "A_2")
+			(pintype "passive")
 			(uuid "8416c5fe-d215-46c2-88a1-a074b8e432ba")
 		)
 		(embedded_fonts no)
@@ -6165,19 +6203,6 @@
 				(justify mirror)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "779e8527-4be0-4b5e-b8c4-6569083e085d")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(layer "B.Fab")
@@ -6202,9 +6227,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/1914f4ed-278a-4026-a86a-769e5e361ab6/b2000000-0000-4000-8000-000000000011")
-		(sheetname "2. Buck to 5 V")
+		(sheetname "/2. Buck to 5 V/")
 		(sheetfile "sheets/buck_5v.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6267,6 +6299,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/1. Battery 2S + protection/VIN")
+			(pintype "passive")
 			(uuid "81445d74-986e-40c5-9301-567d404e7da7")
 		)
 		(pad "2" smd roundrect
@@ -6275,6 +6308,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "c8e94432-be12-4a5f-9ba9-8f97f63c6ca9")
 		)
 		(embedded_fonts no)
@@ -6344,19 +6378,6 @@
 				(justify mirror)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 90)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "db99ae07-a152-49ea-bcc5-36db6a187d81")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(layer "B.Fab")
@@ -6381,9 +6402,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/1914f4ed-278a-4026-a86a-769e5e361ab6/856ad7b5-eed5-4405-9240-ce8abbbd60ef")
-		(sheetname "2. Buck to 5 V")
+		(sheetname "/2. Buck to 5 V/")
 		(sheetfile "sheets/buck_5v.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6446,6 +6474,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/2. Buck to 5 V/+5V")
+			(pintype "passive")
 			(uuid "cc7dbb89-3bbc-40f2-8409-761396ed055b")
 		)
 		(pad "2" smd roundrect
@@ -6454,6 +6483,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/2. Buck to 5 V/FB")
+			(pintype "passive")
 			(uuid "86e569d6-4ea9-4073-9882-c626a50ab50a")
 		)
 		(embedded_fonts no)
@@ -6523,19 +6553,6 @@
 				(justify mirror)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "8ace5423-c658-4730-8982-cd5ab6e90850")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Manufacturer" "Yageo"
 			(at 0 0 0)
 			(layer "B.Fab")
@@ -6560,9 +6577,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/1914f4ed-278a-4026-a86a-769e5e361ab6/b2000000-0000-4000-8000-000000000009")
-		(sheetname "2. Buck to 5 V")
+		(sheetname "/2. Buck to 5 V/")
 		(sheetfile "sheets/buck_5v.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6625,6 +6649,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/1. Battery 2S + protection/VIN")
+			(pintype "passive")
 			(uuid "0c3d841a-c1ee-4354-bb96-8c8d8abcae68")
 		)
 		(pad "2" smd roundrect
@@ -6633,6 +6658,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/2. Buck to 5 V/EN")
+			(pintype "passive")
 			(uuid "1a919e82-a7ec-492e-bfb8-b2ca4af30519")
 		)
 		(embedded_fonts no)
@@ -6702,19 +6728,6 @@
 				(justify mirror)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 90)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "a70fca86-1698-462f-8f9f-5511717f7809")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(layer "B.Fab")
@@ -6739,9 +6752,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/1914f4ed-278a-4026-a86a-769e5e361ab6/07657415-e3fe-4d92-a348-ca4de53f3158")
-		(sheetname "2. Buck to 5 V")
+		(sheetname "/2. Buck to 5 V/")
 		(sheetfile "sheets/buck_5v.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6804,6 +6824,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/1. Battery 2S + protection/VIN")
+			(pintype "passive")
 			(uuid "1e825f42-a57c-485c-8075-84243bb0ae80")
 		)
 		(pad "2" smd roundrect
@@ -6812,6 +6833,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "347ec87f-83e1-409c-9dcb-28d224db6ab1")
 		)
 		(embedded_fonts no)
@@ -6881,19 +6903,6 @@
 				(justify mirror)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 180)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "13a4a1fa-add5-401d-aa3c-1464d2b4766a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Manufacturer" "Yageo"
 			(at 0 0 0)
 			(layer "B.Fab")
@@ -6918,9 +6927,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/51707861-a38d-47a0-88b0-b003633f2c22/2eefda51-fad7-43f3-ac57-4b8e2ae2dee5")
-		(sheetname "3. ESP32 + camera")
+		(sheetname "/3. ESP32 + camera/")
 		(sheetfile "sheets/esp32_camera.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6983,6 +6999,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/3. ESP32 + camera/VBAT_SENSE")
+			(pintype "passive")
 			(uuid "eebc8c0c-ef71-4e1c-b713-02d8b2f79837")
 		)
 		(pad "2" smd roundrect
@@ -6991,6 +7008,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "c16c5cb1-979b-4d99-8bf1-72c4c6f9e7ee")
 		)
 		(embedded_fonts no)
@@ -7060,19 +7078,6 @@
 				(justify mirror)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "714a99d0-4106-4d8a-91ba-1b66d485ea0c")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Manufacturer" "Littelfuse"
 			(at 0 0 0)
 			(layer "B.Fab")
@@ -7097,9 +7102,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "*polyfuse* *PTC*")
 		(path "/ae01c8e7-4191-4202-a535-afc32959794b/86ad7872-ba94-4a1a-b1c8-653b4eadd8f9")
-		(sheetname "1. Battery 2S + protection")
+		(sheetname "/1. Battery 2S + protection/")
 		(sheetfile "sheets/power_in.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7162,6 +7174,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.222222)
 			(net "/1. Battery 2S + protection/VBAT+")
+			(pintype "passive")
 			(uuid "9c6c27ba-9f5e-407a-bba1-5e9e2be011ef")
 		)
 		(pad "2" smd roundrect
@@ -7170,6 +7183,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.222222)
 			(net "/1. Battery 2S + protection/VF")
+			(pintype "passive")
 			(uuid "391a69ce-08df-410a-9699-17c3f713a935")
 		)
 		(embedded_fonts no)
@@ -7239,19 +7253,6 @@
 				(justify mirror)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 90)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "9ee557d5-e191-4eb2-84cb-d8dcdfe7424e")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(layer "B.Fab")
@@ -7276,9 +7277,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/1914f4ed-278a-4026-a86a-769e5e361ab6/27c9d896-6350-498d-a120-7a1fc1a8d30a")
-		(sheetname "2. Buck to 5 V")
+		(sheetname "/2. Buck to 5 V/")
 		(sheetfile "sheets/buck_5v.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7341,6 +7349,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/2. Buck to 5 V/+5V")
+			(pintype "passive")
 			(uuid "58c9dc63-e6e5-4b44-afec-3fda34a6b688")
 		)
 		(pad "2" smd roundrect
@@ -7349,6 +7358,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "c658de4f-8a1e-4a57-b338-c2e15039f9ca")
 		)
 		(embedded_fonts no)
@@ -7418,19 +7428,6 @@
 				(justify mirror)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 90)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "02f6556f-3298-4c33-af83-8a0e35afb019")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Manufacturer" "Yageo"
 			(at 0 0 0)
 			(layer "B.Fab")
@@ -7455,9 +7452,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/1914f4ed-278a-4026-a86a-769e5e361ab6/dc6590e0-1d12-4aaa-9158-96dfe0bfaff3")
-		(sheetname "2. Buck to 5 V")
+		(sheetname "/2. Buck to 5 V/")
 		(sheetfile "sheets/buck_5v.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7520,6 +7524,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/2. Buck to 5 V/+5V")
+			(pintype "passive")
 			(uuid "71c8651c-e6ad-4e25-93ce-7e795db01c94")
 		)
 		(pad "2" smd roundrect
@@ -7528,6 +7533,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/2. Buck to 5 V/FB")
+			(pintype "passive")
 			(uuid "3563ac82-14ea-4d83-b92d-fb16c1cc3de3")
 		)
 		(embedded_fonts no)
@@ -7597,19 +7603,6 @@
 				(justify mirror)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 180)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "554a537d-a1e8-4a48-b2fb-2fdf80f5c8bd")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Manufacturer" "Yageo"
 			(at 0 0 0)
 			(layer "B.Fab")
@@ -7634,9 +7627,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/51707861-a38d-47a0-88b0-b003633f2c22/abda6344-7699-44ce-ab82-bec15cad0b35")
-		(sheetname "3. ESP32 + camera")
+		(sheetname "/3. ESP32 + camera/")
 		(sheetfile "sheets/esp32_camera.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7699,6 +7699,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/3. ESP32 + camera/LED_GPIO")
+			(pintype "passive")
 			(uuid "50ba1842-3bc0-46a5-8997-0aa551840aca")
 		)
 		(pad "2" smd roundrect
@@ -7707,6 +7708,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/3. ESP32 + camera/LED_A")
+			(pintype "passive")
 			(uuid "df2b8204-22e4-4402-b25a-32b791c77e53")
 		)
 		(embedded_fonts no)
@@ -7776,19 +7778,6 @@
 				(justify mirror)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "d9294dcf-1861-43d0-bd5f-1714ee28d8a2")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Manufacturer" "Yageo"
 			(at 0 0 0)
 			(layer "B.Fab")
@@ -7813,9 +7802,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/51707861-a38d-47a0-88b0-b003633f2c22/338d357a-7290-49d4-890f-e61ecebbd246")
-		(sheetname "3. ESP32 + camera")
+		(sheetname "/3. ESP32 + camera/")
 		(sheetfile "sheets/esp32_camera.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -7878,6 +7874,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/3. ESP32 + camera/ESP_TX2")
+			(pintype "passive")
 			(uuid "db4f96be-eaf8-402e-bc24-d741286748c1")
 		)
 		(pad "2" smd roundrect
@@ -7886,6 +7883,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/3. ESP32 + camera/CAM_RX")
+			(pintype "passive")
 			(uuid "01a393ee-8d2f-469f-8aa1-766a1be59907")
 		)
 		(embedded_fonts no)
@@ -7955,19 +7953,6 @@
 				(justify mirror)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "b2b77e43-eec8-4fd2-804c-eef1be2b477a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(layer "B.Fab")
@@ -7992,9 +7977,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/1914f4ed-278a-4026-a86a-769e5e361ab6/df9c61c0-0a05-43b4-8b09-78e59d2b1662")
-		(sheetname "2. Buck to 5 V")
+		(sheetname "/2. Buck to 5 V/")
 		(sheetfile "sheets/buck_5v.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8057,6 +8049,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/2. Buck to 5 V/CBOOT")
+			(pintype "passive")
 			(uuid "3be76115-0641-4d28-bf3f-35d9c5117798")
 		)
 		(pad "2" smd roundrect
@@ -8065,6 +8058,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/2. Buck to 5 V/SW")
+			(pintype "passive")
 			(uuid "76e0031e-4c04-4485-9fa2-4aa27ee7da1c")
 		)
 		(embedded_fonts no)
@@ -8134,19 +8128,6 @@
 				(justify mirror)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "1748cbdb-514b-4dfe-a1d5-da6f5a829a05")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(layer "B.Fab")
@@ -8171,9 +8152,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/1914f4ed-278a-4026-a86a-769e5e361ab6/ec3c00be-222f-411c-ac8c-8cdb2c4281b2")
-		(sheetname "2. Buck to 5 V")
+		(sheetname "/2. Buck to 5 V/")
 		(sheetfile "sheets/buck_5v.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8236,6 +8224,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/2. Buck to 5 V/+5V")
+			(pintype "passive")
 			(uuid "486472ec-0412-4c32-9ed6-9f95f175ffeb")
 		)
 		(pad "2" smd roundrect
@@ -8244,6 +8233,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "a34fd25f-d2fc-468a-8131-765a7545c48b")
 		)
 		(embedded_fonts no)
@@ -8313,19 +8303,6 @@
 				(justify mirror)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 90)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "e18d3a55-e74f-458b-bed3-2bc692a0f84e")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(layer "B.Fab")
@@ -8350,9 +8327,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/1914f4ed-278a-4026-a86a-769e5e361ab6/d347e46a-7c21-4b22-9226-0e717379576c")
-		(sheetname "2. Buck to 5 V")
+		(sheetname "/2. Buck to 5 V/")
 		(sheetfile "sheets/buck_5v.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8415,6 +8399,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/1. Battery 2S + protection/VIN")
+			(pintype "passive")
 			(uuid "b81fd09f-b46e-4c9d-87f5-29663c906c31")
 		)
 		(pad "2" smd roundrect
@@ -8423,6 +8408,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "8386ade3-d59b-400f-9786-2103e6258a9a")
 		)
 		(embedded_fonts no)
@@ -8973,19 +8959,6 @@
 				(justify mirror)
 			)
 		)
-		(property "KiLib_Generator" "connector/pin_header_socket"
-			(at 0 0 90)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "79c4055f-6ff2-4997-8319-c987ed36ef1f")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Manufacturer" "Sullins Connector Solutions"
 			(at 0 0 0)
 			(layer "B.Fab")
@@ -9010,9 +8983,18 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/51707861-a38d-47a0-88b0-b003633f2c22/ba8aca1a-b8c9-4e20-8c48-c352a37fb0b3")
-		(sheetname "3. ESP32 + camera")
+		(sheetname "/3. ESP32 + camera/")
 		(sheetfile "sheets/esp32_camera.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12" "13" "14" "15"
+					"16" "17" "18" "19"
+				)
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9184,6 +9166,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3. ESP32 + camera/L01_3V3")
+			(pinfunction "Pin_1_1")
+			(pintype "passive")
 			(uuid "e4ef0393-3dc3-40df-b969-7084dff1e7f2")
 		)
 		(pad "2" thru_hole circle
@@ -9193,6 +9177,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3. ESP32 + camera/L02_EN")
+			(pinfunction "Pin_2_2")
+			(pintype "passive")
 			(uuid "654eec84-6e5d-467e-944c-86bc23cc74af")
 		)
 		(pad "3" thru_hole circle
@@ -9202,6 +9188,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3. ESP32 + camera/L03_IO36")
+			(pinfunction "Pin_3_3")
+			(pintype "passive")
 			(uuid "abd75aae-c94c-44a0-9d50-8d19f0b99c7b")
 		)
 		(pad "4" thru_hole circle
@@ -9211,6 +9199,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3. ESP32 + camera/L04_IO39")
+			(pinfunction "Pin_4_4")
+			(pintype "passive")
 			(uuid "d77633a7-949a-4a26-a550-eea790bc0608")
 		)
 		(pad "5" thru_hole circle
@@ -9220,6 +9210,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3. ESP32 + camera/VBAT_SENSE")
+			(pinfunction "Pin_5_5")
+			(pintype "passive")
 			(uuid "f7e3f7aa-1c9b-450b-9d37-11f3c6126f76")
 		)
 		(pad "6" thru_hole circle
@@ -9229,6 +9221,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3. ESP32 + camera/L06_IO35")
+			(pinfunction "Pin_6_6")
+			(pintype "passive")
 			(uuid "05ede37e-71a9-4ded-9f1c-e53bba7ac30b")
 		)
 		(pad "7" thru_hole circle
@@ -9238,6 +9232,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3. ESP32 + camera/L07_IO32")
+			(pinfunction "Pin_7_7")
+			(pintype "passive")
 			(uuid "6e8fc069-c97b-4585-8a40-71946699047c")
 		)
 		(pad "8" thru_hole circle
@@ -9247,6 +9243,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3. ESP32 + camera/L08_IO33")
+			(pinfunction "Pin_8_8")
+			(pintype "passive")
 			(uuid "f1015498-a7ce-4683-aac0-275efd4cb2cb")
 		)
 		(pad "9" thru_hole circle
@@ -9256,6 +9254,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3. ESP32 + camera/L09_IO25")
+			(pinfunction "Pin_9_9")
+			(pintype "passive")
 			(uuid "04a63c75-af90-40f5-98bf-8fd94fc0732e")
 		)
 		(pad "10" thru_hole circle
@@ -9265,6 +9265,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3. ESP32 + camera/L10_IO26")
+			(pinfunction "Pin_10_10")
+			(pintype "passive")
 			(uuid "23bc606a-c41c-4a48-836d-997d0d6dca53")
 		)
 		(pad "11" thru_hole circle
@@ -9274,6 +9276,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3. ESP32 + camera/L11_IO27")
+			(pinfunction "Pin_11_11")
+			(pintype "passive")
 			(uuid "49a8c2c7-c082-45a7-9304-a47ecbec2d7e")
 		)
 		(pad "12" thru_hole circle
@@ -9283,6 +9287,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3. ESP32 + camera/L12_IO14")
+			(pinfunction "Pin_12_12")
+			(pintype "passive")
 			(uuid "a05ca3f2-9555-4a28-93f3-edb39e6fee13")
 		)
 		(pad "13" thru_hole circle
@@ -9292,6 +9298,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3. ESP32 + camera/L13_IO12")
+			(pinfunction "Pin_13_13")
+			(pintype "passive")
 			(uuid "b9b5aec6-6d7b-44a5-b2e6-c768d0b21447")
 		)
 		(pad "14" thru_hole circle
@@ -9301,6 +9309,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pinfunction "Pin_14_14")
+			(pintype "passive")
 			(uuid "c7f838d6-33ed-4741-b82c-9154c4e3c0e6")
 		)
 		(pad "15" thru_hole circle
@@ -9310,6 +9320,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3. ESP32 + camera/L15_IO13")
+			(pinfunction "Pin_15_15")
+			(pintype "passive")
 			(uuid "b453608f-7945-46bf-b26f-462160e0e7a4")
 		)
 		(pad "16" thru_hole circle
@@ -9319,6 +9331,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3. ESP32 + camera/L16_IO9")
+			(pinfunction "Pin_16_16")
+			(pintype "passive")
 			(uuid "5b879317-730b-43c6-b3c4-95e992ef70e9")
 		)
 		(pad "17" thru_hole circle
@@ -9328,6 +9342,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3. ESP32 + camera/L17_IO10")
+			(pinfunction "Pin_17_17")
+			(pintype "passive")
 			(uuid "37e7b852-2b78-4887-98a6-bbc681e541a2")
 		)
 		(pad "18" thru_hole circle
@@ -9337,6 +9353,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3. ESP32 + camera/L18_IO11")
+			(pinfunction "Pin_18_18")
+			(pintype "passive")
 			(uuid "ee0a5109-bf72-461b-9916-c8dce4c6ab4d")
 		)
 		(pad "19" thru_hole circle
@@ -9346,6 +9364,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/2. Buck to 5 V/+5V")
+			(pinfunction "Pin_19_19")
+			(pintype "passive")
 			(uuid "64381a9a-7d0a-4831-a38b-af5b06dced45")
 		)
 		(embedded_fonts no)
@@ -9415,19 +9435,6 @@
 				(justify mirror)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "7906e7e9-67cf-4fc6-ab0b-a130d6ab296d")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Manufacturer" "Yageo"
 			(at 0 0 0)
 			(layer "B.Fab")
@@ -9452,9 +9459,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/1914f4ed-278a-4026-a86a-769e5e361ab6/b2000000-0000-4000-8000-000000000010")
-		(sheetname "2. Buck to 5 V")
+		(sheetname "/2. Buck to 5 V/")
 		(sheetfile "sheets/buck_5v.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9517,6 +9531,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/2. Buck to 5 V/EN")
+			(pintype "passive")
 			(uuid "4b4ae2c0-6b4d-4c0e-8b1b-17b6d3ed173b")
 		)
 		(pad "2" smd roundrect
@@ -9525,6 +9540,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "3d125d5c-36ae-4ebf-a2bb-e054b2505c0f")
 		)
 		(embedded_fonts no)
@@ -9594,19 +9610,6 @@
 				(justify mirror)
 			)
 		)
-		(property "KiLib_Generator" "connector/pin_header_socket"
-			(at 0 0 90)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "fe174bf2-9d97-4e75-8582-36abb50c7fb1")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Manufacturer" "Sullins Connector Solutions"
 			(at 0 0 0)
 			(layer "B.Fab")
@@ -9631,9 +9634,18 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/51707861-a38d-47a0-88b0-b003633f2c22/fe51d4ce-c478-42c8-bcb1-d1fc01b84921")
-		(sheetname "3. ESP32 + camera")
+		(sheetname "/3. ESP32 + camera/")
 		(sheetfile "sheets/esp32_camera.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12" "13" "14" "15"
+					"16" "17" "18" "19"
+				)
+			)
+		)
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9805,6 +9817,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pinfunction "Pin_1_1")
+			(pintype "passive")
 			(uuid "cfaa4fb4-d53e-472e-bd15-c1c2dd6297eb")
 		)
 		(pad "2" thru_hole circle
@@ -9814,6 +9828,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3. ESP32 + camera/R02_IO23")
+			(pinfunction "Pin_2_2")
+			(pintype "passive")
 			(uuid "a45460f1-0fd1-4edf-864b-eb8ef95d565d")
 		)
 		(pad "3" thru_hole circle
@@ -9823,6 +9839,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3. ESP32 + camera/R03_IO22")
+			(pinfunction "Pin_3_3")
+			(pintype "passive")
 			(uuid "f8753c9f-0977-4af3-b589-39b9f2bc2a6f")
 		)
 		(pad "4" thru_hole circle
@@ -9832,6 +9850,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3. ESP32 + camera/R04_TX0")
+			(pinfunction "Pin_4_4")
+			(pintype "passive")
 			(uuid "956e1402-a105-48b0-8399-4a8a81b45005")
 		)
 		(pad "5" thru_hole circle
@@ -9841,6 +9861,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3. ESP32 + camera/R05_RX0")
+			(pinfunction "Pin_5_5")
+			(pintype "passive")
 			(uuid "9c14b503-c69b-4455-943d-4499dede5603")
 		)
 		(pad "6" thru_hole circle
@@ -9850,6 +9872,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3. ESP32 + camera/R06_IO21")
+			(pinfunction "Pin_6_6")
+			(pintype "passive")
 			(uuid "2cfdb336-f988-4142-b440-626a63197d57")
 		)
 		(pad "7" thru_hole circle
@@ -9859,6 +9883,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
+			(pinfunction "Pin_7_7")
+			(pintype "passive")
 			(uuid "f6236236-ffd5-43ed-95e3-f1cb4d181b47")
 		)
 		(pad "8" thru_hole circle
@@ -9868,6 +9894,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3. ESP32 + camera/R08_IO19")
+			(pinfunction "Pin_8_8")
+			(pintype "passive")
 			(uuid "caf53b96-d140-4c08-b828-e7ccc7f76cc0")
 		)
 		(pad "9" thru_hole circle
@@ -9877,6 +9905,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3. ESP32 + camera/R09_IO18")
+			(pinfunction "Pin_9_9")
+			(pintype "passive")
 			(uuid "64679a6f-3441-4a9b-b0f2-3b0da73afbd2")
 		)
 		(pad "10" thru_hole circle
@@ -9886,6 +9916,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3. ESP32 + camera/R10_IO5")
+			(pinfunction "Pin_10_10")
+			(pintype "passive")
 			(uuid "82306d9d-8e64-451e-83fd-5bc95030e020")
 		)
 		(pad "11" thru_hole circle
@@ -9895,6 +9927,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3. ESP32 + camera/ESP_TX2")
+			(pinfunction "Pin_11_11")
+			(pintype "passive")
 			(uuid "158118a5-4723-482f-bab1-f16a114901e4")
 		)
 		(pad "12" thru_hole circle
@@ -9904,6 +9938,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3. ESP32 + camera/ESP_RX2")
+			(pinfunction "Pin_12_12")
+			(pintype "passive")
 			(uuid "9aee70ff-a782-4013-b90b-09e2f208a491")
 		)
 		(pad "13" thru_hole circle
@@ -9913,6 +9949,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3. ESP32 + camera/R13_IO4")
+			(pinfunction "Pin_13_13")
+			(pintype "passive")
 			(uuid "59af9eae-4598-4a36-ada4-c54a67941747")
 		)
 		(pad "14" thru_hole circle
@@ -9922,6 +9960,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3. ESP32 + camera/R14_IO0")
+			(pinfunction "Pin_14_14")
+			(pintype "passive")
 			(uuid "5a05fb6a-4be1-4472-a6f2-8fd476193245")
 		)
 		(pad "15" thru_hole circle
@@ -9931,6 +9971,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3. ESP32 + camera/LED_GPIO")
+			(pinfunction "Pin_15_15")
+			(pintype "passive")
 			(uuid "6e68fd82-359b-4460-ba64-4117142e99ac")
 		)
 		(pad "16" thru_hole circle
@@ -9940,6 +9982,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3. ESP32 + camera/R16_IO15")
+			(pinfunction "Pin_16_16")
+			(pintype "passive")
 			(uuid "b7c443c2-1aac-44ab-aa65-6e1da6adce4d")
 		)
 		(pad "17" thru_hole circle
@@ -9949,6 +9993,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3. ESP32 + camera/R17_IO8")
+			(pinfunction "Pin_17_17")
+			(pintype "passive")
 			(uuid "88a5a087-480e-4f37-b470-338b5b4af088")
 		)
 		(pad "18" thru_hole circle
@@ -9958,6 +10004,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3. ESP32 + camera/R18_IO7")
+			(pinfunction "Pin_18_18")
+			(pintype "passive")
 			(uuid "28d897c2-c73e-4add-8341-e8de234556a4")
 		)
 		(pad "19" thru_hole circle
@@ -9967,6 +10015,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/3. ESP32 + camera/R19_IO6")
+			(pinfunction "Pin_19_19")
+			(pintype "passive")
 			(uuid "00dcfeec-6d5c-4e59-95ef-4a72b6bf61a2")
 		)
 		(embedded_fonts no)
@@ -10036,19 +10086,6 @@
 				(justify mirror)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "76be1cf0-19e8-4fae-8efb-6052d8ac3744")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Manufacturer" "Yageo"
 			(at 0 0 0)
 			(layer "B.Fab")
@@ -10073,9 +10110,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/51707861-a38d-47a0-88b0-b003633f2c22/8e0d7c3c-4f56-44b3-b716-c6e28818c41c")
-		(sheetname "3. ESP32 + camera")
+		(sheetname "/3. ESP32 + camera/")
 		(sheetfile "sheets/esp32_camera.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -10138,6 +10182,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/3. ESP32 + camera/ESP_RX2")
+			(pintype "passive")
 			(uuid "7e65dbe6-8257-487c-94b5-39739cc226a9")
 		)
 		(pad "2" smd roundrect
@@ -10146,6 +10191,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/3. ESP32 + camera/CAM_TX")
+			(pintype "passive")
 			(uuid "eaa02f35-5edb-4c26-b528-7ed41fdd2812")
 		)
 		(embedded_fonts no)
@@ -11286,9 +11332,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/ae01c8e7-4191-4202-a535-afc32959794b/939cfec9-d7fc-4421-a842-c181db8aea20")
-		(sheetname "1. Battery 2S + protection")
+		(sheetname "/1. Battery 2S + protection/")
 		(sheetfile "sheets/power_in.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11479,6 +11532,8 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.1086956522)
 			(net "/1. Battery 2S + protection/VIN")
+			(pinfunction "A1_1")
+			(pintype "passive")
 			(uuid "4968c105-d631-4819-b3e5-db7071e07037")
 		)
 		(pad "2" smd roundrect
@@ -11487,6 +11542,8 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.1086956522)
 			(net "GND")
+			(pinfunction "A2_2")
+			(pintype "passive")
 			(uuid "92b60cdf-d4bd-4fd8-8c42-32ea50593882")
 		)
 		(embedded_fonts no)
@@ -11556,19 +11613,6 @@
 				(justify mirror)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "2a140821-8722-4776-837e-7400136ad764")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Manufacturer" "Yageo"
 			(at 0 0 0)
 			(layer "B.Fab")
@@ -11593,9 +11637,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/1914f4ed-278a-4026-a86a-769e5e361ab6/e7a5e14e-5d15-4391-9f93-c33a82bc5ee8")
-		(sheetname "2. Buck to 5 V")
+		(sheetname "/2. Buck to 5 V/")
 		(sheetfile "sheets/buck_5v.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11658,6 +11709,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/2. Buck to 5 V/FB")
+			(pintype "passive")
 			(uuid "1b91a8c1-6961-4575-9c64-cb38a0dd61bc")
 		)
 		(pad "2" smd roundrect
@@ -11666,6 +11718,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "827293fb-115e-457a-8c57-63b730cb7f9d")
 		)
 		(embedded_fonts no)
@@ -11735,19 +11788,6 @@
 				(justify mirror)
 			)
 		)
-		(property "KiLib_Generator" "package/gullwing"
-			(at 0 0 90)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "fd3ed701-cd3a-4c34-9af3-fdf9b1da5a07")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Manufacturer" "Texas Instruments"
 			(at 0 0 0)
 			(layer "B.Fab")
@@ -11772,9 +11812,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "SOT?23*")
 		(path "/1914f4ed-278a-4026-a86a-769e5e361ab6/412fa74b-607d-42dd-9074-e6c2f908d2bb")
-		(sheetname "2. Buck to 5 V")
+		(sheetname "/2. Buck to 5 V/")
 		(sheetfile "sheets/buck_5v.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "3" "5" "1" "6" "2" "4")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11999,6 +12046,8 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pinfunction "GND_1")
+			(pintype "power_in")
 			(uuid "65a840ee-6967-425e-93fb-f3bd8411babf")
 		)
 		(pad "2" smd roundrect
@@ -12007,6 +12056,8 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/2. Buck to 5 V/SW")
+			(pinfunction "SW_2")
+			(pintype "power_out")
 			(uuid "097dfcb9-68e0-4937-b2d8-d5166bca2897")
 		)
 		(pad "3" smd roundrect
@@ -12015,6 +12066,8 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/1. Battery 2S + protection/VIN")
+			(pinfunction "VIN_3")
+			(pintype "power_in")
 			(uuid "08881d71-ee5c-41f6-a690-afd3b7c8a4a5")
 		)
 		(pad "4" smd roundrect
@@ -12023,6 +12076,8 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/2. Buck to 5 V/FB")
+			(pinfunction "FB_4")
+			(pintype "input")
 			(uuid "46c7b5ae-bcba-469d-87de-cfe1e2d1fd90")
 		)
 		(pad "5" smd roundrect
@@ -12031,6 +12086,8 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/2. Buck to 5 V/EN")
+			(pinfunction "EN_5")
+			(pintype "input")
 			(uuid "648ee494-b838-4083-861a-22f45a2aea59")
 		)
 		(pad "6" smd roundrect
@@ -12039,6 +12096,8 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/2. Buck to 5 V/CBOOT")
+			(pinfunction "CB_6")
+			(pintype "passive")
 			(uuid "53fa0fb8-597c-41ac-81b4-cd64759d3be5")
 		)
 		(embedded_fonts no)
@@ -12108,19 +12167,6 @@
 				(justify mirror)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 90)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "cfaf4245-6c15-4ef7-99dc-583f93147ccd")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(layer "B.Fab")
@@ -12145,9 +12191,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/1914f4ed-278a-4026-a86a-769e5e361ab6/d2c7988c-aed6-4889-b747-58dd66691869")
-		(sheetname "2. Buck to 5 V")
+		(sheetname "/2. Buck to 5 V/")
 		(sheetfile "sheets/buck_5v.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12210,6 +12263,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/2. Buck to 5 V/+5V")
+			(pintype "passive")
 			(uuid "dbe66738-db8c-4d57-981a-1b2d39ec1268")
 		)
 		(pad "2" smd roundrect
@@ -12218,6 +12272,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "b61664f9-df43-435d-9c17-54e0339b6340")
 		)
 		(embedded_fonts no)
@@ -12315,9 +12370,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/ae01c8e7-4191-4202-a535-afc32959794b/131b1e46-0e79-43d3-a001-de06e75e6985")
-		(sheetname "1. Battery 2S + protection")
+		(sheetname "/1. Battery 2S + protection/")
 		(sheetfile "sheets/power_in.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12508,6 +12570,8 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.1086956522)
 			(net "/1. Battery 2S + protection/VIN")
+			(pinfunction "K_1")
+			(pintype "passive")
 			(uuid "181d4712-9123-4ce2-8817-6f7de8df32ea")
 		)
 		(pad "2" smd roundrect
@@ -12516,6 +12580,8 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.1086956522)
 			(net "/1. Battery 2S + protection/VSW")
+			(pinfunction "A_2")
+			(pintype "passive")
 			(uuid "4f093dfe-abb1-428d-b276-48e39bb95ddb")
 		)
 		(embedded_fonts no)
@@ -12585,19 +12651,6 @@
 				(justify mirror)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 180)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "69b93867-562b-4bc5-836c-c967e98631ea")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 0 0 0)
 			(layer "B.Fab")
@@ -12622,9 +12675,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/51707861-a38d-47a0-88b0-b003633f2c22/8011e1d9-1815-43c3-ba58-7d413a333d59")
-		(sheetname "3. ESP32 + camera")
+		(sheetname "/3. ESP32 + camera/")
 		(sheetfile "sheets/esp32_camera.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12687,6 +12747,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/3. ESP32 + camera/VBAT_SENSE")
+			(pintype "passive")
 			(uuid "53b06e78-73de-485f-a604-8c89c9caa1e3")
 		)
 		(pad "2" smd roundrect
@@ -12695,6 +12756,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
+			(pintype "passive")
 			(uuid "95e45354-1a49-44ec-865a-a620a7b737a7")
 		)
 		(embedded_fonts no)
@@ -12764,19 +12826,6 @@
 				(justify mirror)
 			)
 		)
-		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 90)
-			(layer "B.SilkS")
-			(hide yes)
-			(uuid "bc35c745-763f-4279-9211-46c9c61bf131")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
 		(property "Manufacturer" "Yageo"
 			(at 0 0 0)
 			(layer "B.Fab")
@@ -12801,9 +12850,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/51707861-a38d-47a0-88b0-b003633f2c22/f4cbfbf7-dc03-4df1-9b05-7a792136ed64")
-		(sheetname "3. ESP32 + camera")
+		(sheetname "/3. ESP32 + camera/")
 		(sheetfile "sheets/esp32_camera.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -12866,6 +12922,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/1. Battery 2S + protection/VIN")
+			(pintype "passive")
 			(uuid "ceb2098d-e176-4bd1-9be2-c583da878f7e")
 		)
 		(pad "2" smd roundrect
@@ -12874,6 +12931,7 @@
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(roundrect_rratio 0.25)
 			(net "/3. ESP32 + camera/VBAT_SENSE")
+			(pintype "passive")
 			(uuid "d3867444-59f6-4fc9-a655-c1419faea711")
 		)
 		(embedded_fonts no)
@@ -12971,9 +13029,16 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
 		(path "/1914f4ed-278a-4026-a86a-769e5e361ab6/75c73d34-7c9b-4441-8de2-be03b8125981")
-		(sheetname "2. Buck to 5 V")
+		(sheetname "/2. Buck to 5 V/")
 		(sheetfile "sheets/buck_5v.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13133,6 +13198,8 @@
 			(size 2.35 5.1)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/2. Buck to 5 V/SW")
+			(pinfunction "1_1")
+			(pintype "passive")
 			(uuid "10cef0b9-4785-46b1-a7f1-560fb64a3c55")
 		)
 		(pad "2" smd rect
@@ -13140,6 +13207,8 @@
 			(size 2.35 5.1)
 			(layers "B.Cu" "B.Mask" "B.Paste")
 			(net "/2. Buck to 5 V/+5V")
+			(pinfunction "2_2")
+			(pintype "passive")
 			(uuid "96d0ce35-2299-4a2a-8b2c-0a0623767462")
 		)
 		(embedded_fonts no)
@@ -13874,174 +13943,6 @@
 		)
 	)
 	(segment
-		(start 166.8 104.3)
-		(end 173.6 104.3)
-		(width 1)
-		(layer "F.Cu")
-		(net "/4. COTS / SRAD supplies/COTS_BAT+")
-		(uuid "4b568c9e-dcf6-4f87-8408-f8e45851d7f8")
-	)
-	(segment
-		(start 173.6 104.3)
-		(end 178.3 99.6)
-		(width 1)
-		(layer "F.Cu")
-		(net "/4. COTS / SRAD supplies/COTS_BAT+")
-		(uuid "6df27311-903b-4330-9275-1b0f31cef4a9")
-	)
-	(segment
-		(start 161.1 110)
-		(end 166.8 104.3)
-		(width 1)
-		(layer "F.Cu")
-		(net "/4. COTS / SRAD supplies/COTS_BAT+")
-		(uuid "75f58878-e004-4352-bdc4-7038bcfe925f")
-	)
-	(segment
-		(start 161.1 112.56)
-		(end 161.1 110)
-		(width 1)
-		(layer "F.Cu")
-		(net "/4. COTS / SRAD supplies/COTS_BAT+")
-		(uuid "e50c3501-b7bc-4ca8-b2f7-d75e42166964")
-	)
-	(segment
-		(start 178.3 99.6)
-		(end 178.3 99.585)
-		(width 1)
-		(layer "F.Cu")
-		(net "/4. COTS / SRAD supplies/COTS_BAT+")
-		(uuid "edb99f27-3497-4e52-954f-267dd1ee99ad")
-	)
-	(segment
-		(start 181.3 99.585)
-		(end 181.3 116.8)
-		(width 1)
-		(layer "F.Cu")
-		(net "/4. COTS / SRAD supplies/COTS_SW")
-		(uuid "d7a9e989-5153-4577-b598-bdde5762b44f")
-	)
-	(via
-		(at 181.3 116.8)
-		(size 0.8)
-		(drill 0.4)
-		(layers "F.Cu" "B.Cu")
-		(net "/4. COTS / SRAD supplies/COTS_SW")
-		(uuid "1caba355-855e-4fab-8b58-5850fa22e2a6")
-	)
-	(via
-		(at 181.3 115.4)
-		(size 0.8)
-		(drill 0.4)
-		(layers "F.Cu" "B.Cu")
-		(net "/4. COTS / SRAD supplies/COTS_SW")
-		(uuid "a171e195-6ab2-4e86-b59d-c412d34c158d")
-	)
-	(segment
-		(start 181.3 116.8)
-		(end 181.5 117)
-		(width 1)
-		(layer "B.Cu")
-		(net "/4. COTS / SRAD supplies/COTS_SW")
-		(uuid "061ec1e1-c2c0-4088-b0f0-0582f7fcfe00")
-	)
-	(segment
-		(start 177.5 200.5)
-		(end 177.5 201.5)
-		(width 1)
-		(layer "B.Cu")
-		(net "/4. COTS / SRAD supplies/COTS_SW")
-		(uuid "5802dce0-906f-44d1-90a2-e70c0677b262")
-	)
-	(segment
-		(start 181.5 117)
-		(end 181.5 196.5)
-		(width 1)
-		(layer "B.Cu")
-		(net "/4. COTS / SRAD supplies/COTS_SW")
-		(uuid "aa0424b1-82e3-4c3c-879a-669d1bb9db4d")
-	)
-	(segment
-		(start 181.5 196.5)
-		(end 177.5 200.5)
-		(width 1)
-		(layer "B.Cu")
-		(net "/4. COTS / SRAD supplies/COTS_SW")
-		(uuid "de635ea3-8c14-459b-9cf0-390cfca3ac93")
-	)
-	(segment
-		(start 181.3 115.4)
-		(end 181.3 116.8)
-		(width 1)
-		(layer "B.Cu")
-		(net "/4. COTS / SRAD supplies/COTS_SW")
-		(uuid "e541884f-d57a-49b4-95d7-208a95246036")
-	)
-	(segment
-		(start 186.5 112.56)
-		(end 186.5 105.4)
-		(width 1)
-		(layer "F.Cu")
-		(net "/4. COTS / SRAD supplies/SRAD_BAT+")
-		(uuid "1a90d229-0d1a-43c5-bca4-55006f0f531d")
-	)
-	(segment
-		(start 189.6 102.3)
-		(end 189.6 99.585)
-		(width 1)
-		(layer "F.Cu")
-		(net "/4. COTS / SRAD supplies/SRAD_BAT+")
-		(uuid "2643a7c7-da4d-4d6a-a5ce-88aa612f8253")
-	)
-	(segment
-		(start 186.5 105.4)
-		(end 189.6 102.3)
-		(width 1)
-		(layer "F.Cu")
-		(net "/4. COTS / SRAD supplies/SRAD_BAT+")
-		(uuid "651c7d71-8dc0-4b41-82c7-bb682fb173e9")
-	)
-	(segment
-		(start 192.6 99.585)
-		(end 192.6 105)
-		(width 1)
-		(layer "B.Cu")
-		(net "/4. COTS / SRAD supplies/SRAD_SW")
-		(uuid "478e1479-e488-4e7b-bb84-3dc1cbca0144")
-	)
-	(segment
-		(start 188 109.6)
-		(end 188 196)
-		(width 1)
-		(layer "B.Cu")
-		(net "/4. COTS / SRAD supplies/SRAD_SW")
-		(uuid "a68071cd-b340-446b-af2f-6044fa7c790a")
-	)
-	(segment
-		(start 188 196)
-		(end 192.5 200.5)
-		(width 1)
-		(layer "B.Cu")
-		(net "/4. COTS / SRAD supplies/SRAD_SW")
-		(uuid "a84bb294-95d6-48fe-b7e0-3833fac32a3e")
-	)
-	(segment
-		(start 192.5 200.5)
-		(end 192.5 201.5)
-		(width 1)
-		(layer "B.Cu")
-		(net "/4. COTS / SRAD supplies/SRAD_SW")
-		(uuid "c8bed230-a1dd-4815-a871-6ab25d1f20f6")
-	)
-	(segment
-		(start 192.6 105)
-		(end 188 109.6)
-		(width 1)
-		(layer "B.Cu")
-		(net "/4. COTS / SRAD supplies/SRAD_SW")
-		(uuid "ecb35bc1-43b9-4c49-b396-4194fbbbf940")
-	)
-	(segment
 		(start 113.5 194.44)
 		(end 113.5 199.5)
 		(width 1)
@@ -14224,38 +14125,6 @@
 		(layer "B.Cu")
 		(net "/2. Buck to 5 V/+5V")
 		(uuid "dfb91885-0bdb-45a9-8cce-29a4ed2d161b")
-	)
-	(segment
-		(start 167.1 201.5)
-		(end 172.5 201.5)
-		(width 1)
-		(layer "F.Cu")
-		(net "/4. COTS / SRAD supplies/COTS_BAT-")
-		(uuid "08e2f5a3-f651-4601-a33b-d8e311df4517")
-	)
-	(segment
-		(start 161.1 191.94)
-		(end 161.1 195.5)
-		(width 1)
-		(layer "F.Cu")
-		(net "/4. COTS / SRAD supplies/COTS_BAT-")
-		(uuid "66122a83-e7c4-410b-abb0-1cba5342b58b")
-	)
-	(segment
-		(start 161.1 195.5)
-		(end 166 200.4)
-		(width 1)
-		(layer "F.Cu")
-		(net "/4. COTS / SRAD supplies/COTS_BAT-")
-		(uuid "6ba9d5ed-6b46-4bc7-8e86-3f05b701cac5")
-	)
-	(segment
-		(start 166 200.4)
-		(end 167.1 201.5)
-		(width 1)
-		(layer "F.Cu")
-		(net "/4. COTS / SRAD supplies/COTS_BAT-")
-		(uuid "ca561c3b-b7a1-43c4-871d-5a674a5ae980")
 	)
 	(via
 		(at 135 160)
@@ -15282,30 +15151,6 @@
 		(uuid "f5bbe937-4758-4c98-a604-f6851e0aecdd")
 	)
 	(segment
-		(start 186.5 191.94)
-		(end 186.5 196.5)
-		(width 1)
-		(layer "F.Cu")
-		(net "/4. COTS / SRAD supplies/SRAD_BAT-")
-		(uuid "a693073f-d5d3-4a50-b004-f97deae416b3")
-	)
-	(segment
-		(start 187.5 197.5)
-		(end 187.5 201.5)
-		(width 1)
-		(layer "F.Cu")
-		(net "/4. COTS / SRAD supplies/SRAD_BAT-")
-		(uuid "a9d4bac4-d356-4773-a423-2c56d5463a0a")
-	)
-	(segment
-		(start 186.5 196.5)
-		(end 187.5 197.5)
-		(width 1)
-		(layer "F.Cu")
-		(net "/4. COTS / SRAD supplies/SRAD_BAT-")
-		(uuid "b42e321a-874d-468a-8ff2-675868128dd7")
-	)
-	(segment
 		(start 142 140.28)
 		(end 142 171.7)
 		(width 0.3)
@@ -15728,6 +15573,230 @@
 		(layer "B.Cu")
 		(net "/3. ESP32 + camera/ESP_RX2")
 		(uuid "29cf7257-3800-47a2-a2c5-e16adc617515")
+	)
+	(segment
+		(start 167.1 201.5)
+		(end 172.5 201.5)
+		(width 1)
+		(layer "F.Cu")
+		(net "/4. COTS {slash} SRAD supplies/COTS_BAT-")
+		(uuid "08e2f5a3-f651-4601-a33b-d8e311df4517")
+	)
+	(segment
+		(start 161.1 191.94)
+		(end 161.1 195.5)
+		(width 1)
+		(layer "F.Cu")
+		(net "/4. COTS {slash} SRAD supplies/COTS_BAT-")
+		(uuid "66122a83-e7c4-410b-abb0-1cba5342b58b")
+	)
+	(segment
+		(start 161.1 195.5)
+		(end 166 200.4)
+		(width 1)
+		(layer "F.Cu")
+		(net "/4. COTS {slash} SRAD supplies/COTS_BAT-")
+		(uuid "6ba9d5ed-6b46-4bc7-8e86-3f05b701cac5")
+	)
+	(segment
+		(start 166 200.4)
+		(end 167.1 201.5)
+		(width 1)
+		(layer "F.Cu")
+		(net "/4. COTS {slash} SRAD supplies/COTS_BAT-")
+		(uuid "ca561c3b-b7a1-43c4-871d-5a674a5ae980")
+	)
+	(segment
+		(start 166.8 104.3)
+		(end 173.6 104.3)
+		(width 1)
+		(layer "F.Cu")
+		(net "/4. COTS {slash} SRAD supplies/COTS_BAT+")
+		(uuid "4b568c9e-dcf6-4f87-8408-f8e45851d7f8")
+	)
+	(segment
+		(start 173.6 104.3)
+		(end 178.3 99.6)
+		(width 1)
+		(layer "F.Cu")
+		(net "/4. COTS {slash} SRAD supplies/COTS_BAT+")
+		(uuid "6df27311-903b-4330-9275-1b0f31cef4a9")
+	)
+	(segment
+		(start 161.1 110)
+		(end 166.8 104.3)
+		(width 1)
+		(layer "F.Cu")
+		(net "/4. COTS {slash} SRAD supplies/COTS_BAT+")
+		(uuid "75f58878-e004-4352-bdc4-7038bcfe925f")
+	)
+	(segment
+		(start 161.1 112.56)
+		(end 161.1 110)
+		(width 1)
+		(layer "F.Cu")
+		(net "/4. COTS {slash} SRAD supplies/COTS_BAT+")
+		(uuid "e50c3501-b7bc-4ca8-b2f7-d75e42166964")
+	)
+	(segment
+		(start 178.3 99.6)
+		(end 178.3 99.585)
+		(width 1)
+		(layer "F.Cu")
+		(net "/4. COTS {slash} SRAD supplies/COTS_BAT+")
+		(uuid "edb99f27-3497-4e52-954f-267dd1ee99ad")
+	)
+	(segment
+		(start 186.5 112.56)
+		(end 186.5 105.4)
+		(width 1)
+		(layer "F.Cu")
+		(net "/4. COTS {slash} SRAD supplies/SRAD_BAT+")
+		(uuid "1a90d229-0d1a-43c5-bca4-55006f0f531d")
+	)
+	(segment
+		(start 189.6 102.3)
+		(end 189.6 99.585)
+		(width 1)
+		(layer "F.Cu")
+		(net "/4. COTS {slash} SRAD supplies/SRAD_BAT+")
+		(uuid "2643a7c7-da4d-4d6a-a5ce-88aa612f8253")
+	)
+	(segment
+		(start 186.5 105.4)
+		(end 189.6 102.3)
+		(width 1)
+		(layer "F.Cu")
+		(net "/4. COTS {slash} SRAD supplies/SRAD_BAT+")
+		(uuid "651c7d71-8dc0-4b41-82c7-bb682fb173e9")
+	)
+	(segment
+		(start 186.5 191.94)
+		(end 186.5 196.5)
+		(width 1)
+		(layer "F.Cu")
+		(net "/4. COTS {slash} SRAD supplies/SRAD_BAT-")
+		(uuid "a693073f-d5d3-4a50-b004-f97deae416b3")
+	)
+	(segment
+		(start 187.5 197.5)
+		(end 187.5 201.5)
+		(width 1)
+		(layer "F.Cu")
+		(net "/4. COTS {slash} SRAD supplies/SRAD_BAT-")
+		(uuid "a9d4bac4-d356-4773-a423-2c56d5463a0a")
+	)
+	(segment
+		(start 186.5 196.5)
+		(end 187.5 197.5)
+		(width 1)
+		(layer "F.Cu")
+		(net "/4. COTS {slash} SRAD supplies/SRAD_BAT-")
+		(uuid "b42e321a-874d-468a-8ff2-675868128dd7")
+	)
+	(segment
+		(start 181.3 99.585)
+		(end 181.3 116.8)
+		(width 1)
+		(layer "F.Cu")
+		(net "/4. COTS {slash} SRAD supplies/COTS_SW")
+		(uuid "d7a9e989-5153-4577-b598-bdde5762b44f")
+	)
+	(via
+		(at 181.3 116.8)
+		(size 0.8)
+		(drill 0.4)
+		(layers "F.Cu" "B.Cu")
+		(net "/4. COTS {slash} SRAD supplies/COTS_SW")
+		(uuid "1caba355-855e-4fab-8b58-5850fa22e2a6")
+	)
+	(via
+		(at 181.3 115.4)
+		(size 0.8)
+		(drill 0.4)
+		(layers "F.Cu" "B.Cu")
+		(net "/4. COTS {slash} SRAD supplies/COTS_SW")
+		(uuid "a171e195-6ab2-4e86-b59d-c412d34c158d")
+	)
+	(segment
+		(start 181.3 116.8)
+		(end 181.5 117)
+		(width 1)
+		(layer "B.Cu")
+		(net "/4. COTS {slash} SRAD supplies/COTS_SW")
+		(uuid "061ec1e1-c2c0-4088-b0f0-0582f7fcfe00")
+	)
+	(segment
+		(start 177.5 200.5)
+		(end 177.5 201.5)
+		(width 1)
+		(layer "B.Cu")
+		(net "/4. COTS {slash} SRAD supplies/COTS_SW")
+		(uuid "5802dce0-906f-44d1-90a2-e70c0677b262")
+	)
+	(segment
+		(start 181.5 117)
+		(end 181.5 196.5)
+		(width 1)
+		(layer "B.Cu")
+		(net "/4. COTS {slash} SRAD supplies/COTS_SW")
+		(uuid "aa0424b1-82e3-4c3c-879a-669d1bb9db4d")
+	)
+	(segment
+		(start 181.5 196.5)
+		(end 177.5 200.5)
+		(width 1)
+		(layer "B.Cu")
+		(net "/4. COTS {slash} SRAD supplies/COTS_SW")
+		(uuid "de635ea3-8c14-459b-9cf0-390cfca3ac93")
+	)
+	(segment
+		(start 181.3 115.4)
+		(end 181.3 116.8)
+		(width 1)
+		(layer "B.Cu")
+		(net "/4. COTS {slash} SRAD supplies/COTS_SW")
+		(uuid "e541884f-d57a-49b4-95d7-208a95246036")
+	)
+	(segment
+		(start 192.6 99.585)
+		(end 192.6 105)
+		(width 1)
+		(layer "B.Cu")
+		(net "/4. COTS {slash} SRAD supplies/SRAD_SW")
+		(uuid "478e1479-e488-4e7b-bb84-3dc1cbca0144")
+	)
+	(segment
+		(start 188 109.6)
+		(end 188 196)
+		(width 1)
+		(layer "B.Cu")
+		(net "/4. COTS {slash} SRAD supplies/SRAD_SW")
+		(uuid "a68071cd-b340-446b-af2f-6044fa7c790a")
+	)
+	(segment
+		(start 188 196)
+		(end 192.5 200.5)
+		(width 1)
+		(layer "B.Cu")
+		(net "/4. COTS {slash} SRAD supplies/SRAD_SW")
+		(uuid "a84bb294-95d6-48fe-b7e0-3833fac32a3e")
+	)
+	(segment
+		(start 192.5 200.5)
+		(end 192.5 201.5)
+		(width 1)
+		(layer "B.Cu")
+		(net "/4. COTS {slash} SRAD supplies/SRAD_SW")
+		(uuid "c8bed230-a1dd-4815-a871-6ab25d1f20f6")
+	)
+	(segment
+		(start 192.6 105)
+		(end 188 109.6)
+		(width 1)
+		(layer "B.Cu")
+		(net "/4. COTS {slash} SRAD supplies/SRAD_SW")
+		(uuid "ecb35bc1-43b9-4c49-b396-4194fbbbf940")
 	)
 	(zone
 		(net "/1. Battery 2S + protection/VBAT+")

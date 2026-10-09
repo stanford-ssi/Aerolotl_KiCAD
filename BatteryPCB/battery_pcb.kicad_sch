@@ -12,7 +12,7 @@
 	(lib_symbols)
 	(text "CAMERA CONTROLLER - signal flow"
 		(exclude_from_sim no)
-		(at 25.4 24.13 0)
+		(at 60.96 36.195 0)
 		(effects
 			(font
 				(size 3 3)
@@ -24,7 +24,7 @@
 	)
 	(text "GND is a global net on every sheet. Double-click a block to open it."
 		(exclude_from_sim no)
-		(at 25.4 31.75 0)
+		(at 60.96 43.815 0)
 		(effects
 			(font
 				(size 1.6 1.6)
@@ -36,7 +36,7 @@
 	)
 	(text "Block 4 is electrically isolated from the rest of this board on purpose."
 		(exclude_from_sim no)
-		(at 25.4 215.9 0)
+		(at 151.13 212.09 0)
 		(effects
 			(font
 				(size 1.6 1.6)
@@ -46,10 +46,15 @@
 		)
 		(uuid "acf4d5b3-24c3-477f-a4e5-e9739f41130c")
 	)
+	(junction
+		(at 139.7 66.675)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4d343c2e-05a1-4cea-a809-272ef40bc53f")
+	)
 	(wire
 		(pts
-			(xy 86.36 54.61)
-			(xy 104.14 54.61)
+			(xy 121.92 66.675) (xy 139.7 66.675)
 		)
 		(stroke
 			(width 0)
@@ -59,36 +64,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 54.61)
-			(xy 121.92 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "277ea3bf-1888-483b-9834-bfe711a633b3")
-	)
-	(junction
-		(at 104.14 54.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4d343c2e-05a1-4cea-a809-272ef40bc53f")
-	)
-	(wire
-		(pts
-			(xy 104.14 54.61)
-			(xy 104.14 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "47eb7c1a-d9dd-4cc0-98d4-a2f30cbf9a46")
-	)
-	(wire
-		(pts
-			(xy 104.14 100.33)
-			(xy 232.41 100.33)
+			(xy 139.7 112.395) (xy 267.97 112.395)
 		)
 		(stroke
 			(width 0)
@@ -98,8 +74,27 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 64.77)
-			(xy 232.41 64.77)
+			(xy 139.7 66.675) (xy 157.48 66.675)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "277ea3bf-1888-483b-9834-bfe711a633b3")
+	)
+	(wire
+		(pts
+			(xy 139.7 66.675) (xy 139.7 112.395)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47eb7c1a-d9dd-4cc0-98d4-a2f30cbf9a46")
+	)
+	(wire
+		(pts
+			(xy 218.44 76.835) (xy 267.97 76.835)
 		)
 		(stroke
 			(width 0)
@@ -108,7 +103,7 @@
 		(uuid "ebe2d0aa-3c72-49fc-8fb6-d4f8bd01f72e")
 	)
 	(sheet
-		(at 121.92 41.91)
+		(at 157.48 53.975)
 		(size 60.96 35.56)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -124,7 +119,7 @@
 		)
 		(uuid "1914f4ed-278a-4026-a86a-769e5e361ab6")
 		(property "Sheetname" "2. Buck to 5 V"
-			(at 121.92 39.37 0)
+			(at 157.48 51.435 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -136,7 +131,7 @@
 			)
 		)
 		(property "Sheetfile" "sheets/buck_5v.kicad_sch"
-			(at 121.92 80.01 0)
+			(at 157.48 92.075 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -147,7 +142,7 @@
 			)
 		)
 		(pin "VIN" passive
-			(at 121.92 54.61 180)
+			(at 157.48 66.675 180)
 			(uuid "e10aece7-62fe-4108-abf3-b164a124ec53")
 			(effects
 				(font
@@ -157,7 +152,7 @@
 			)
 		)
 		(pin "+5V" passive
-			(at 182.88 64.77 0)
+			(at 218.44 76.835 0)
 			(uuid "93725ae9-d938-4909-b59f-5141351db1e2")
 			(effects
 				(font
@@ -175,7 +170,7 @@
 		)
 	)
 	(sheet
-		(at 232.41 41.91)
+		(at 267.97 53.975)
 		(size 81.28 71.12)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -191,7 +186,7 @@
 		)
 		(uuid "51707861-a38d-47a0-88b0-b003633f2c22")
 		(property "Sheetname" "3. ESP32 + camera"
-			(at 232.41 39.37 0)
+			(at 267.97 51.435 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -203,7 +198,7 @@
 			)
 		)
 		(property "Sheetfile" "sheets/esp32_camera.kicad_sch"
-			(at 232.41 115.57 0)
+			(at 267.97 127.635 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -214,7 +209,7 @@
 			)
 		)
 		(pin "+5V" passive
-			(at 232.41 64.77 180)
+			(at 267.97 76.835 180)
 			(uuid "1b8c58c0-0c69-4fd7-9dde-8cdef8e0228a")
 			(effects
 				(font
@@ -224,7 +219,7 @@
 			)
 		)
 		(pin "VIN" passive
-			(at 232.41 100.33 180)
+			(at 267.97 112.395 180)
 			(uuid "ff3f2408-8300-489a-99c5-734d945694b3")
 			(effects
 				(font
@@ -242,7 +237,7 @@
 		)
 	)
 	(sheet
-		(at 25.4 41.91)
+		(at 60.96 53.975)
 		(size 60.96 35.56)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -258,7 +253,7 @@
 		)
 		(uuid "ae01c8e7-4191-4202-a535-afc32959794b")
 		(property "Sheetname" "1. Battery 2S + protection"
-			(at 25.4 39.37 0)
+			(at 60.96 51.435 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -270,7 +265,7 @@
 			)
 		)
 		(property "Sheetfile" "sheets/power_in.kicad_sch"
-			(at 25.4 80.01 0)
+			(at 60.96 92.075 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -281,7 +276,7 @@
 			)
 		)
 		(pin "VIN" passive
-			(at 86.36 54.61 0)
+			(at 121.92 66.675 0)
 			(uuid "306ddea3-add7-4053-8f8a-dd39e735107e")
 			(effects
 				(font
@@ -299,7 +294,7 @@
 		)
 	)
 	(sheet
-		(at 25.4 152.4)
+		(at 151.13 148.59)
 		(size 96.52 49.53)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -315,7 +310,7 @@
 		)
 		(uuid "d30d38cc-20d9-4e05-9f85-c70abea8b778")
 		(property "Sheetname" "4. COTS / SRAD supplies"
-			(at 25.4 149.86 0)
+			(at 151.13 146.05 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -327,7 +322,7 @@
 			)
 		)
 		(property "Sheetfile" "sheets/supplies.kicad_sch"
-			(at 25.4 204.47 0)
+			(at 151.13 200.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
