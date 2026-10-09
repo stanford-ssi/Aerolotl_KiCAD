@@ -74,6 +74,10 @@ for x in (-8.7, 8.7):             # COTS-mount M4 screws: head / washer / nut
 A0, A1, A2, A3 = kc.ANT; AC = kc.ANT_CLEAR
 zone(None, [B], rect(A0 - AC, A1 - AC, A2 + AC, A3), name="ESP32 antenna keepout", keepout=True, no_copper=True)
 zone(None, [F], rect(A0 - 3.0, A1 - 3.0, A2 + 3.0, A3), name="ESP32 antenna: no pour", keepout=True)
+# front GND sliver between TP2 and the lower-left cut-out's corner: it hangs on by a neck at the 0.25 mm minimum (review 3)
+zone(None, [F], rect(-39.8, 52.6, -33.2, 55.0), name="no pour: sliver by the lower-left notch", keepout=True)
+for x in (-1.6, 23.8):            # front pour between the ESP32 socket pins only makes thin slivers (review 3)
+    zone(None, [F], rect(x - 1.2, kc.ESP_PIN1_Y - 1.2, x + 1.2, kc.ESP_PIN1_Y + 18 * 2.54 + 1.2), name="no pour: socket column", keepout=True)
 zone("VIN", [B], T([(35.9, 5.45), (37.35, 5.45), (37.35, 6.3), (43.15, 6.3), (43.15, 8.25), (41.45, 8.25),
                     (41.45, 20.4), (36.9, 20.4), (36.9, 13.9), (39.75, 13.9), (39.75, 9.6), (35.9, 9.6)]), 2, "VIN", clearance=0.25)
 zone("+5V", [B], T([(41.75, 12.45), (47.35, 12.45), (47.35, 13.35), (54.1, 13.35), (54.1, 16.6), (41.75, 16.6)]), 2, "+5V", clearance=0.25)
@@ -103,9 +107,19 @@ track("CBOOT", B, 0.4, T([(45.45, 4.863), (45.45, 4.4), (46.925, 3.0)]))
 track("SW", B, 0.4, T([(48.475, 3.0), (49.4, 3.0)]))
 via("SW", *T([(49.4, 3.0)])[0]); via("SW", *T([(44.5, 8.15)])[0])
 track("SW", F, 0.4, T([(44.5, 8.15), (49.4, 3.0)]))
-track("VIN", B, 0.3, T([(44.5, 4.863), (44.5, 3.45)]))
-via("VIN", *T([(44.5, 3.45)])[0]); via("VIN", *T([(42.2, 7.9)])[0])
-track("VIN", F, 0.3, T([(44.5, 3.45), (42.2, 7.9)]))
+# U1 EN (review 3): up to a via, over the front (above the SW run) to the R9/R10 divider above C3
+track("EN", B, 0.3, T([(44.5, 4.863), (44.5, 3.45)])); via("EN", *T([(44.5, 3.45)])[0])
+track("EN", F, 0.3, [T([(44.5, 3.45)])[0], (13.0, -13.47), (15.6, -15.6)]); via("EN", 15.6, -15.6)
+via("GND", 12.55, -15.3)              # R10's GND pad sits in a pocket of back pour (C7 / +5V / C3 around it): stitch it
+fq = kc.fp_by_ref(b)
+pd = lambda ref, num: kc.rel([p for p in fq[ref].Pads() if p.GetNumber() == num][0].GetPosition())
+track("EN", B, 0.3, [pd("R10", "1"), pd("R9", "2")])
+# R9's VIN: from the VIN pour via below U1, along the front under the SW run's start, up past its end
+via("VIN", *T([(42.2, 7.9)])[0])
+track("VIN", F, 0.3, [T([(42.2, 7.9)])[0], (8.6, -5.8), (20.6, -5.8), (20.6, -13.8), (19.4, -14.4)]); via("VIN", 19.4, -14.4)
+track("VIN", B, 0.3, [(19.4, -14.4), pd("R9", "1")])     # (below the buck's GND vias, so the front pour keeps a wide neck)
+# C11 (bulk input cap) in the VIN pour below C1/C2: its GND pad drops to the front pour
+track("GND", B, 0.5, [pd("C11", "2"), (3.2, pd("C11", "2")[1])]); via("GND", 3.2, pd("C11", "2")[1])
 track("FB", B, 0.25, T([(43.55, 4.863), (43.55, 3.3), (43.3, 2.425)]))
 track("FB", B, 0.25, T([(41.775, 2.8), (43.3, 2.8)]))
 track("FB", B, 0.25, T([(45.1, 2.375), (43.3, 2.425)]))

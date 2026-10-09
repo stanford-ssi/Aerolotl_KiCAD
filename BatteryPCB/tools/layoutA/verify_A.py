@@ -59,8 +59,11 @@ check("pin-switch carriers clear the holder ends (>= 0.4 mm)", stack >= 0.4, "(%
 u = [pad("U1", str(i))[0] for i in range(1, 7)]
 area = sum(-(u[i][0]) * u[(i + 1) % 6][1] - (-(u[(i + 1) % 6][0])) * u[i][1] for i in range(6)) / 2
 check("U1 on back, pin order not mirrored", fps["U1"].IsFlipped() and area < 0)
-check("U1 nets 1..6", [pad("U1", str(i))[1] for i in range(1, 7)] == ["GND", "SW", "VIN", "FB", "VIN", "CBOOT"])
-check("31 parts on back (23 SMD + 2 ESP32 sockets + camera J3 + 4 camera standoffs + camera model)", sum(1 for f in fps.values() if f.IsFlipped()) == 31)
+check("U1 nets 1..6 (EN on the R9/R10 UVLO divider)", [pad("U1", str(i))[1] for i in range(1, 7)] == ["GND", "SW", "VIN", "FB", "EN", "CBOOT"])
+check("UVLO divider: R9 VIN-EN, R10 EN-GND; input caps C1 (100 nF), C2, C11 on VIN",
+      {pad("R9", "1")[1], pad("R9", "2")[1]} == {"VIN", "EN"} and {pad("R10", "1")[1], pad("R10", "2")[1]} == {"EN", "GND"}
+      and all({pad(c, "1")[1], pad(c, "2")[1]} == {"VIN", "GND"} for c in ("C1", "C2", "C11")))
+check("34 parts on back (26 SMD + 2 ESP32 sockets + camera J3 + 4 camera standoffs + camera model)", sum(1 for f in fps.values() if f.IsFlipped()) == 34)
 (p1, n1), (p2, n2) = pad("BT1", "2"), pad("BT2", "1")
 check("series link BT1-/BT2+ both at top", p1[1] < 0 and p2[1] < 0 and n1 == n2 == "Net-(BT1--)")
 check("BT2- is GND", pad("BT2", "2")[1] == "GND")

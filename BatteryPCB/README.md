@@ -7,7 +7,7 @@ RunCam Split 4 camera on the back. Formerly called CamControl.
 Open `battery_pcb.kicad_pro` in KiCad 10. The board is a 5.72 in (145.3 mm) round, 2-layer disc
 for the AV bay, placed and fully routed.
 
-**Status (v18, 7 Oct 2026):** ERC 0 errors · DRC 0 violations (warnings included) under the strict rules below, with full schematic parity ·
+**Status (v19, 8 Oct 2026):** ERC 0 errors · DRC 0 violations (warnings included) under the strict rules below, with full schematic parity ·
 `tools/layoutA/verify_A.py` ALL PASS. Ready to order: see [Ordering](#ordering).
 [`LAYOUT_NOTES.md`](LAYOUT_NOTES.md) has the history of every layout decision.
 
@@ -19,7 +19,8 @@ for the AV bay, placed and fully routed.
 |---|---|
 | 2S pack for camera + ESP32 | BT1, BT2 in series → 7.4 V nom / 8.4 V max |
 | Input protection | F1 2 A polyfuse → SW1 (camera power switch plug) → D3 Schottky reverse-polarity diode → D1 SMBJ12A TVS |
-| Buck 8.4 V → 5.0 V | U1 LMR51430 + L1 + FB divider |
+| Buck 8.4 V → 5.0 V | U1 LMR51430 (500 kHz) + L1 6.8 µH + FB divider; input caps C1 100 nF (at U1's pins) + C2, C11 10 µF |
+| Low-battery cut-off | R9 412k / R10 100k on U1's EN: on above 6.3 V, off below 5.5 V at VIN (about 2.9 V per cell), so the 2S pack is never run flat |
 | ESP32-DevKitC V4 socket | J1, J2 — 2 × 1×19 female headers |
 | Camera harness | J3 — JST GH 5-pin (+5V, GND, RX, TX, VIDEO), on the back |
 | Camera mount | H7–H10 — four M2 × 5 mm SMT standoffs on a 25.5 mm square, on the back |

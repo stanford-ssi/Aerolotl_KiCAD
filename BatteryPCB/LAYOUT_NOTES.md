@@ -198,3 +198,13 @@ Pin numbers didn't change, so the schematic is unchanged. The J5/J6 latches now 
 - **J5 / J6 are AMASS XT30UPB-F** (vertical, female on the board = the battery side), 15 mm apart. XT30 pin 1 is minus and pin 2 plus (the housing and KiCad's footprint say so), so the schematic labels on J5/J6 swapped: pin 1 = COTS_BAT− / SRAD_BAT−, pin 2 = COTS_SW / SRAD_SW. KiCad has no XT30 3D model, so `tools/step_boxes.py` makes a box one (`3dmodels/`); the footprint is a project copy pointing at it.
 - **Checks:** ERC 0 errors, DRC 0 (strict, with schematic parity), `verify_A.py` all pass (new checks for the antenna, XT30 polarity, cut-outs and the stack outline).
 - **Onshape:** the outline changed (two new cut-outs), so the AVBay1 import needs `cad/avbay1_board_and_pin_switch_stack.step` re-uploaded.
+
+## v19 — third review: buck input caps, UVLO, inductor, schematic redraw (8 Oct 2026)
+- **Schematic sheets 1–3 redrawn with wires** (`tools/redraw_power_sheets.py`) instead of scattered net labels; every existing symbol keeps its UUID. C1/C2 moved to the buck sheet next to U1.
+- **Input caps** (TI LMR51430 datasheet 9.2.2.6: >= 4.7 µF plus 0.1 µF at the pins): C1 is now the 100 nF X7R right at U1's VIN/GND; C2 and the new C11 (10 µF, in the VIN pour below C1/C2) are the bulk.
+- **UVLO**: U1 EN was tied to VIN, so the buck ran the 2S pack down to its own 3.58 V UVLO (1.8 V per cell). R9 412k / R10 100k on EN: on above 1.227 × 5.12 = 6.3 V, off below 1.08 × 5.12 = 5.5 V at VIN (pack about 5.9 V, 2.9 V per cell under load). EN routes up through a via, over the front, to R9/R10 above C3; R9's VIN comes along the front from the VIN pour via.
+- **L1 4.7 → 6.8 µH** (SRN6045TA-6R8M, same footprint): TI's table value for 500 kHz / 5 V out, better for our 0.6–0.83 duty cycle. Isat 5.7 A > the 4.76 A typical current limit.
+- **Text fixes**: sheet 3's divider note used the old 47k (now 39k: 2.26 V at a full pack after D3); D3's value said SS34, the part is B340B.
+- **Reviewed, no change**: D1 SMBJ12A (a TVS standoff must sit above the 8.4 V full pack; it clamps below 20 V and everything on VIN is rated >= 25 V); D3 drop (~0.35 V / 0.2 W at the ~0.6 A load); F1 2 A (real load is under 0.7 A); output caps 2 × 22 µF + 100 nF (TI table: 2 × 22 µF).
+- Layout: two front no-pour areas remove thin GND slivers (between the socket pins, and by the lower-left notch). C11's silk reference is hidden (no room; it stays on the fab layer).
+- **Checks:** ERC 0 errors, DRC 0 (strict, schematic parity), `verify_A.py` all pass (new: UVLO divider and input-cap nets).

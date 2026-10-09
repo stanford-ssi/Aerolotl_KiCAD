@@ -37,6 +37,10 @@ camboard = pcbnew.FootprintLoad(PRETTY, "RunCam_Split4_OnStandoffs")
 # bench test points (6 Oct 2026): plain 2 mm through-hole pads, probe-able from either side
 TPFP = ("TestPoint", "TestPoint_THTPad_D2.0mm_Drill1.0mm")
 tpfp = [pcbnew.FootprintLoad(kc.FPLIB + "/%s.pretty" % TPFP[0], TPFP[1]) for _ in range(4)]
+# review 3 (8 Oct 2026): U1 EN divider (UVLO) and a third input cap
+uvlo = {"R9": pcbnew.FootprintLoad(kc.FPLIB + "/Resistor_SMD.pretty", "R_0603_1608Metric"),
+        "R10": pcbnew.FootprintLoad(kc.FPLIB + "/Resistor_SMD.pretty", "R_0603_1608Metric"),
+        "C11": pcbnew.FootprintLoad(kc.FPLIB + "/Capacitor_SMD.pretty", "C_0805_2012Metric")}
 
 # ---------------------------------------------------------------- clear copper, zones, outline, old holes, labels
 for t in list(b.GetTracks()):
@@ -232,6 +236,29 @@ for f, (ref, val, sheet, suid, sname, sfile, (x, y), net) in zip(tpfp, (
     f.SetField("Description", "Bench test point")
     for p in f.Pads():
         p.SetNet(net)
+
+# ---------------------------------------------------------------- review 3: buck input caps and EN (UVLO) divider
+# C1/C2 now sit on the buck sheet (next to U1 in the schematic); C1 is the 100 nF high-frequency cap closest to U1.
+# U1 EN no longer ties to VIN: R9 (VIN -> EN) / R10 (EN -> GND) set the turn-on / turn-off points.
+for ref in ("C1", "C2"):
+    f = fps[ref]; f.SetPath(pcbnew.KIID_PATH(BUCK_SHEET + "/" + f.GetPath().AsString().split("/")[-1]))
+    f.SetSheetname("2. Buck to 5 V"); f.SetSheetfile("sheets/buck_5v.kicad_sch")
+fps["C1"].SetValue("100n / 50V"); fps["L1"].SetValue("6u8 / 3.6A"); fps["D3"].SetValue("B340B")
+VIN, GND = padnet("U1", "3"), padnet("U1", "1")
+EN = pcbnew.NETINFO_ITEM(b, "/2. Buck to 5 V/EN"); b.Add(EN)
+[p for p in fps["U1"].Pads() if p.GetNumber() == "5"][0].SetNet(EN)
+for ref, val, suid, (x, y), nets in (
+        ("R9", "412k 1%", "b2000000-0000-4000-8000-000000000009", (17.2, -15.6), {"1": VIN, "2": EN}),
+        ("R10", "100k 1%", "b2000000-0000-4000-8000-000000000010", (14.0, -15.6), {"1": EN, "2": GND}),
+        ("C11", "10u / 25V", "b2000000-0000-4000-8000-000000000011", (5.0, -8.15), {"1": VIN, "2": GND})):
+    f = uvlo[ref]; b.Add(f)
+    f.SetFPID(pcbnew.LIB_ID("Capacitor_SMD", "C_0805_2012Metric") if ref == "C11" else pcbnew.LIB_ID("Resistor_SMD", "R_0603_1608Metric"))
+    f.SetReference(ref); f.SetValue(val)
+    f.SetPath(pcbnew.KIID_PATH(BUCK_SHEET + "/" + suid)); f.SetSheetname("2. Buck to 5 V"); f.SetSheetfile("sheets/buck_5v.kicad_sch")
+    f.SetPosition(kc.P(x, y)); f.Flip(kc.P(x, y), pcbnew.FLIP_DIRECTION_LEFT_RIGHT)     # back side, with the buck
+    for p in f.Pads():
+        p.SetNet(nets[p.GetNumber()])
+    fps[ref] = f
 
 pcbnew.SaveBoard(OUT, b, True)
 print("placed")
