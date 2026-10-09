@@ -240,6 +240,8 @@ tools/layoutA/build_A.sh /tmp/new.kicad_pcb   # place, route, labels, fields, re
 cp /tmp/new.kicad_pcb battery_pcb.kicad_pcb
 python3 tools/annotate_mpn.py                 # after changing a part: edit PARTS in it first
 python3 tools/make_bom.py                     # rewrites fab/battery_pcb_BOM.csv
+tools/make_fab.sh                             # BOM, schematic PDF, Gerbers + drills, project zip
+tools/make_step.sh                            # cad/ STEPs (board centred) for Onshape AVBay1
 ```
 
 `tools/layoutA/` starts from `seed_user_1224.kicad_pcb`, the hand-placed version, so hand edits

@@ -218,3 +218,7 @@ Pin numbers didn't change, so the schematic is unchanged. The J5/J6 latches now 
 - R8 (camera TX -> ESP32 GPIO16) 100 R -> 1 k: RunCam publishes no UART level; if it is 5 V this keeps the injected current near 1 mA. No effect at 115200 baud.
 - USB + board power together is safe: the DevKitC V4 schematic feeds its 5V pin from USB through a BAT760 Schottky, and our 4.98 V is above USB minus that diode.
 - Drill files now separate (PTH / NPTH), `tools/make_fab.sh` regenerates all of fab/.
+
+## AVBay1 update to v21 (8 Oct 2026)
+- STEP exports from v18 to v21 had left out `--user-origin 150x150mm`, so the board sat 150 mm off the stack. `tools/make_step.sh` now exports it centred (board bottom at z = 0) and merges the pin-switch stack 18 mm up, as before.
+- AVBay1 (SSI Onshape): the STEP tab "CamControl v13 board + exact pin-switch stack.step" now holds v21 (file avbay1_board_and_pin_switch_stack.step). In AV Bay - MAIN ASSEMBLY the orphaned JST-XH J6 and two Micro-Fit duplicates (from the old 4th Micro-Fit) were deleted, and the new XT30 bodies (x4), R9, R10 and C11 inserted at their Part Studio positions (config TM_plate 1): 260 instances, none broken or duplicated.
