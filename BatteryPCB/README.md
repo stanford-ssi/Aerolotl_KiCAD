@@ -80,7 +80,7 @@ run very hot.
 One LMR51430 at 5 V solves both. The ESP32's regulator then only drops 5 → 3.3 V,
 and the camera gets a clean supply.
 
-Feedback divider: `Vout = 0.6 × (1 + 100k / 13k7) = 4.98 V`
+Feedback divider: `Vout = 0.6 × (1 + 100k / 13k) = 5.22 V` (5.05–5.39 V worst case over resistor and reference tolerance, so the camera always sees ≥ 5.0 V)
 
 ### 3. COTS and SRAD grounds are deliberately isolated
 

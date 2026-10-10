@@ -29,7 +29,7 @@ PARTS = {
     "J5": ("AMASS", "XT30UPB-F"), "J6": ("AMASS", "XT30UPB-F"),   # battery outputs: XT30, female on the source side
     "L1": ("Bourns", "SRN6045TA-6R8M"),                    # TI table: 6.8 uH at 500 kHz, 5 V out; Isat 5.7 A
     "R2": (YAGEO, "RC0603FR-07100KL"), "R4": (YAGEO, "RC0603FR-07100KL"),
-    "R3": (YAGEO, "RC0603FR-0713K7L"),
+    "R3": (YAGEO, "RC0603FR-0713KL"),
     "R5": (YAGEO, "RC0603FR-0739KL"),             # 39 k: VBAT_SENSE <= 2.36 V, inside the ESP32 ADC 11 dB range (<= 2.45 V)
     "R6": (YAGEO, "RC0603FR-071KL"),
     "R9": (YAGEO, "RC0603FR-07402KL"), "R10": (YAGEO, "RC0603FR-07100KL"),   # U1 EN divider (UVLO)

@@ -946,7 +946,7 @@
 		)
 		(uuid "3bba96c0-6caf-44d9-a102-c172bedea0ee")
 	)
-	(text "LMR51430 buck, 500 kHz:  VOUT = 0.6 x (1 + 100k / 13k7) = 4.98 V"
+	(text "LMR51430 buck, 500 kHz:  VOUT = 0.6 x (1 + 100k / 13k) = 5.22 V"
 		(exclude_from_sim no)
 		(at 25.4 30.48 0)
 		(effects
@@ -3715,7 +3715,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "13k7 1%"
+		(property "Value" "13k 1%"
 			(at 254 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3770,7 +3770,7 @@
 				)
 			)
 		)
-		(property "MPN" "RC0603FR-0713K7L"
+		(property "MPN" "RC0603FR-0713KL"
 			(at 251.46 109.22 0)
 			(hide yes)
 			(show_name no)

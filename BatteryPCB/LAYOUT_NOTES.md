@@ -226,3 +226,13 @@ Pin numbers didn't change, so the schematic is unchanged. The J5/J6 latches now 
 ## v22 — camera moved to the upper-left rim (8 Oct 2026)
 - The RunCam's four SMT standoffs (and its outline) moved from (−24, 14.75) to (−35.5, −30) (KiCad), about 46 mm from the centre instead of 28: the furthest-out spot on the back that clears the ESP32, buck, J3, rod nut, cut-outs and the antenna keep-out. J3 stays put; the harness runs up the left of the DevKitC.
 - The standoffs are surface-mount with no hole, so nothing reaches the battery side; the camera screws in from its own side. Gaps between the holders for through-hole mounts aren't possible: the four holders already use every mm between the rod washers.
+
+## v23 — review 3 fixes (9 Oct 2026)
+- **5 V setpoint raised:** R3 13k7 → 13k 1% (Yageo RC0603FR-0713KL, LCSC C137796). VOUT = 0.6 × (1 + 100k / 13k) = 5.22 V nominal, 5.05–5.39 V worst case, so the RunCam (5–20 V) always sees ≥ 5.0 V.
+- **Bootstrap cap C3** moved next to U1 (14.3, −10.3), vertical. CBOOT runs ~2.6 mm on B.Cu from pin 6; the SW side lands straight on L1's pad (1.7 mm). The old SW path (two vias plus a 7 mm F.Cu trace) is gone.
+- **GND via at U1 pin 1:** new via at (12.9, −9.7), about 1 mm from the pin; it replaces the via at (14.1, −9.02), which was 2.4 mm away.
+- **Antenna keep-out:** the front no-pour area now matches the back keep-out (48 × 21 mm; it was 24 × 9 mm).
+- **Stitching:** 5 GND vias added where both layers have open GND pour and no GND via within 8 mm. The rest of the board was already covered by the existing 102.
+- R10 pad 2 has a solid pour connection plus a trace to its GND via, so the pour isn't left a thin neck there.
+- These are hand edits on top of v22: don't re-run `tools/layoutA/build_A.sh` over them.
+- **Checks:** ERC 0 errors; DRC 0 (strict, schematic parity, also with zones refilled); `verify_A.py` ALL PASS; fab/ regenerated.
