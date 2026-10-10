@@ -31,9 +31,12 @@ for the AV bay, placed and fully routed.
 | SRAD supply | BT4 → SW3 (SRAD pin switch plug) → J6 XT30 to the Aerolotl |
 
 Harness connectors are latching Molex Micro-Fit 3.0 for the switch leads (SW1–SW3) and JST GH for the
-camera (J3). The two battery outputs, J5 and J6, are **AMASS XT30** (female on the board, the battery side):
+camera (J3). The two battery outputs, J5 and J6, are **AMASS XT30 male** (XT30UPB-M, vertical PCB mount):
 **pin 1 is minus, pin 2 is plus**, as moulded on the housing and printed beside each one. The cables take an
-XT30U-M plug. XT30 holds by friction, so tape or tie the plugs for flight.
+XT30U-F (female) plug. XT30 holds by friction, so tape or tie the plugs for flight.
+The male XT30UPB-M uses the same footprint as the female XT30UPB-F (identical pads, holes and courtyard), so the
+schematic and board still name the -F part; `tools/make_bom.py` orders the male one. The male pins are exposed,
+and plus is live once that output's arming switch is closed, so keep the plugs in (or the pins covered) when armed.
 
 ---
 
