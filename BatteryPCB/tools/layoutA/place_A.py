@@ -22,10 +22,11 @@ m3 = [pcbnew.FootprintLoad(PRETTY, "MountingHole_3.2mm_M3_RoundStandoff_D5") for
 # JST GH for the camera harness; M2 SMT standoffs (Wurth WA-SMSI, 5 mm) for the RunCam Split 4 on the back
 MF = ("battery_pcb", "Molex_Micro-Fit_3.0_43650-0215_1x02_P3.00mm_Vertical")   # KiCad footprint + our 3D model (tools/step_boxes.py)
 GH = ("Connector_JST", "JST_GH_BM05B-GHS-TBT_1x05-1MP_P1.25mm_Vertical")
-XH = ("Connector_JST", "JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical")   # J6 to the Aerolotl (user choice, 6 Oct 2026: matches its harness)
+XT30 = ("battery_pcb", "AMASS_XT30UPB-F_1x02_P5.0mm_Vertical")   # J5/J6 battery outputs (7 Oct 2026): XT30, female on the
+                                                                  # source side; pin 1 = minus, pin 2 = plus (housing marking)
 SMSI = ("battery_pcb", "Mounting_Wuerth_WA-SMSI-M2_H5mm_9774050243_NoHole")   # Wurth land pattern minus the centre hole
-newfp = {r: pcbnew.FootprintLoad(PRETTY, MF[1]) for r in ("SW1", "SW2", "SW3", "J5")}
-newfp["J6"] = pcbnew.FootprintLoad(kc.FPLIB + "/%s.pretty" % XH[0], XH[1])
+newfp = {r: pcbnew.FootprintLoad(PRETTY, MF[1]) for r in ("SW1", "SW2", "SW3")}
+newfp.update({r: pcbnew.FootprintLoad(PRETTY, XT30[1]) for r in ("J5", "J6")})
 newfp["J3"] = pcbnew.FootprintLoad(kc.FPLIB + "/%s.pretty" % GH[0], GH[1])
 # battery holders: project copy of the Keystone 1042 footprint, courtyard 0.25 mm past the tab pads (sled clearance)
 BH = ("battery_pcb", "BatteryHolder_Keystone_1042_1x18650")
@@ -36,6 +37,10 @@ camboard = pcbnew.FootprintLoad(PRETTY, "RunCam_Split4_OnStandoffs")
 # bench test points (6 Oct 2026): plain 2 mm through-hole pads, probe-able from either side
 TPFP = ("TestPoint", "TestPoint_THTPad_D2.0mm_Drill1.0mm")
 tpfp = [pcbnew.FootprintLoad(kc.FPLIB + "/%s.pretty" % TPFP[0], TPFP[1]) for _ in range(4)]
+# review 3 (8 Oct 2026): U1 EN divider (UVLO) and a third input cap
+uvlo = {"R9": pcbnew.FootprintLoad(kc.FPLIB + "/Resistor_SMD.pretty", "R_0603_1608Metric"),
+        "R10": pcbnew.FootprintLoad(kc.FPLIB + "/Resistor_SMD.pretty", "R_0603_1608Metric"),
+        "C11": pcbnew.FootprintLoad(kc.FPLIB + "/Capacitor_SMD.pretty", "C_0805_2012Metric")}
 
 # ---------------------------------------------------------------- clear copper, zones, outline, old holes, labels
 for t in list(b.GetTracks()):
@@ -52,6 +57,7 @@ for r in ("H45", "H135", "H225", "H315"):
 # notch = (centre angle in KiCad coords [y down], width, depth at centre)
 NOTCHES = [(33.0, 10.0, 6.0), (90.0, 40.0, 14.0), (130.0, 10.0, 6.0),
            (160.0, 12.0, 7.0),             # wire pass-through near the camera harness (reviewer)
+           (210.0, 12.0, 7.0), (240.0, 12.0, 7.0),   # spare wire pass-throughs, upper left (review 2, 7 Oct 2026)
            (330.0, 12.0, 7.0)]             # spare wire pass-through, upper right
 def pt(a_deg, r):
     a = math.radians(a_deg); return (r * math.cos(a), r * math.sin(a))
@@ -119,17 +125,24 @@ def swap(ref, lib, name):
         if p.GetNumber() in nets:
             p.SetNet(nets[p.GetNumber()])
     b.Add(new); graveyard.append(old); b.Remove(old); fps[ref] = new
-for ref in ("SW1", "SW2", "SW3", "J5"):
+for ref in ("SW1", "SW2", "SW3"):
     swap(ref, *MF)
-swap("J6", *XH)
+for ref in ("J5", "J6"):
+    swap(ref, *XT30)
+# XT30: pin 1 = battery minus, pin 2 = switched plus (the seed board had them the other way round)
+padnet0 = lambda ref, num: [p.GetNet() for p in fps[ref].Pads() if p.GetNumber() == num][0]
+for j, cell, sw in (("J5", "BT3", "SW2"), ("J6", "BT4", "SW3")):
+    nets = {"1": padnet0(cell, "2"), "2": padnet0(sw, "2")}
+    for p in fps[j].Pads():
+        p.SetNet(nets[p.GetNumber()])
 swap("J3", *GH)
 for ref in ("BT1", "BT2", "BT3", "BT4"):
     swap(ref, *BH)
 for ref, x, rot in (("BT1", -36.5, 90), ("BT2", -14.3, 270), ("BT3", 11.1, 270), ("BT4", 36.5, 270)):
     fps[ref].SetOrientationDegrees(rot); fps[ref].SetPosition(kc.P(x, kc.BAT_DY))
 place_cc("SW1", -29.0, 55.5, 0)        # CAM PWR switch landing, beside BT1 + / the fuse
-place_cc("J5", 25.0, 50.0 + kc.COTS_DY, 180) # COTS OUT, next to the COTS mount (turned: pin 1 faces the switched line)
-place_cc("J6", 38.75, 50.0 + kc.COTS_DY, 180) # SRAD OUT (JST XH), beside it; pin 1 stays at x = 40
+place_cc("J5", 25.0, 50.0 + kc.COTS_DY, 0)   # COTS OUT (XT30): minus toward BT3-, plus toward the switched line
+place_cc("J6", 40.0, 50.0 + kc.COTS_DY, 0)   # SRAD OUT (XT30), 15 mm over so the two housings' +/- marks don't touch
 place_cc("SW2", 29.8, -50.0, 0)        # COTS ARM: pin-switch leads, right beside the pin-switch stack (clear of its footprint)
 place_cc("SW3", 41.1, -50.0, 0)        # SRAD ARM
 # camera harness on the back, just past the bottom end of the J2 column and beside the camera's wire-pad edge,
@@ -144,7 +157,7 @@ oy = (kc.to_mm(bb.GetTop()) + kc.to_mm(bb.GetBottom())) / 2 - kc.CY - J3C[1]
 f.SetPosition(kc.P(J3C[0] - ox, J3C[1] - oy))
 # RunCam Split 4 (29 x 29 mm, M2 holes on a 25.5 mm square) on four 5 mm SMT standoffs, under BT1/BT2,
 # clear of the DevKitC, the holder pegs and the fuse; its wire pads face J3 (right, toward the ESP32)
-CAM_C = (-24.0, 14.75)
+CAM_C = (-35.5, -30.0)          # review 5 (8 Oct 2026): out toward the upper-left rim, clear of the ESP32/buck/J3 area
 for k, (sx, sy) in enumerate(((-1, -1), (1, -1), (-1, 1), (1, 1))):
     x, y = CAM_C[0] + sx * 12.75, CAM_C[1] + sy * 12.75
     f = cam[k]; f.SetFPID(pcbnew.LIB_ID(*SMSI)); b.Add(f)
@@ -194,6 +207,7 @@ for ref, ox in (("R6", 62.6 - 59.06), ("D2", 66.2 - 59.06)):
 # camera UART series resistors on the back, right next to the ESP32 pins (J2-11 TX2, J2-12 RX2)
 for ref, y in (("R7", -14.8 + kc.ESP_DY), ("R8", -12.26 + kc.ESP_DY)):
     fps[ref].SetPosition(kc.P(-6.2, y)); fps[ref].SetOrientationDegrees(180)
+fps["R8"].SetValue("1k")   # review 4: camera TX -> ESP32 RX; protects GPIO16 if the camera's UART is 5 V
 # your assembly notes on Cmts.User: COTS board note moves next to the new mount
 for d in b.GetDrawings():
     if d.GetClass() == "PCB_TEXT" and d.GetLayer() == pcbnew.Cmts_User and d.GetText().startswith("COTS altimeter"):
@@ -223,6 +237,29 @@ for f, (ref, val, sheet, suid, sname, sfile, (x, y), net) in zip(tpfp, (
     f.SetField("Description", "Bench test point")
     for p in f.Pads():
         p.SetNet(net)
+
+# ---------------------------------------------------------------- review 3: buck input caps and EN (UVLO) divider
+# C1/C2 now sit on the buck sheet (next to U1 in the schematic); C1 is the 100 nF high-frequency cap closest to U1.
+# U1 EN no longer ties to VIN: R9 (VIN -> EN) / R10 (EN -> GND) set the turn-on / turn-off points.
+for ref in ("C1", "C2"):
+    f = fps[ref]; f.SetPath(pcbnew.KIID_PATH(BUCK_SHEET + "/" + f.GetPath().AsString().split("/")[-1]))
+    f.SetSheetname("2. Buck to 5 V"); f.SetSheetfile("sheets/buck_5v.kicad_sch")
+fps["C1"].SetValue("100n / 50V"); fps["L1"].SetValue("6u8 / 3.6A"); fps["D3"].SetValue("B340B")
+VIN, GND = padnet("U1", "3"), padnet("U1", "1")
+EN = pcbnew.NETINFO_ITEM(b, "/2. Buck to 5 V/EN"); b.Add(EN)
+[p for p in fps["U1"].Pads() if p.GetNumber() == "5"][0].SetNet(EN)
+for ref, val, suid, (x, y), nets in (
+        ("R9", "402k 1%", "b2000000-0000-4000-8000-000000000009", (17.2, -15.6), {"1": VIN, "2": EN}),
+        ("R10", "100k 1%", "b2000000-0000-4000-8000-000000000010", (14.0, -15.6), {"1": EN, "2": GND}),
+        ("C11", "10u / 25V", "b2000000-0000-4000-8000-000000000011", (5.0, -8.15), {"1": VIN, "2": GND})):
+    f = uvlo[ref]; b.Add(f)
+    f.SetFPID(pcbnew.LIB_ID("Capacitor_SMD", "C_0805_2012Metric") if ref == "C11" else pcbnew.LIB_ID("Resistor_SMD", "R_0603_1608Metric"))
+    f.SetReference(ref); f.SetValue(val)
+    f.SetPath(pcbnew.KIID_PATH(BUCK_SHEET + "/" + suid)); f.SetSheetname("2. Buck to 5 V"); f.SetSheetfile("sheets/buck_5v.kicad_sch")
+    f.SetPosition(kc.P(x, y)); f.Flip(kc.P(x, y), pcbnew.FLIP_DIRECTION_LEFT_RIGHT)     # back side, with the buck
+    for p in f.Pads():
+        p.SetNet(nets[p.GetNumber()])
+    fps[ref] = f
 
 pcbnew.SaveBoard(OUT, b, True)
 print("placed")

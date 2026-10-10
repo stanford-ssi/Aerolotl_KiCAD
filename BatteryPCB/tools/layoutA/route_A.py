@@ -42,7 +42,9 @@ def zone(net, layers, pts, prio=0, name="", clearance=0.3, keepout=False, no_cop
         z.SetDoNotAllowPads(False); z.SetDoNotAllowFootprints(False)
     else:
         z.SetNet(NET(net)); z.SetAssignedPriority(prio)
-        z.SetPadConnection(pcbnew.ZONE_CONNECTION_THT_THERMAL)
+        # hand assembly (review 4): the GND pours meet every pad through thermal spokes, so 0603 parts and the holder
+        # tab don't sink the iron's heat into the whole plane; the small power pours keep solid SMD joints
+        z.SetPadConnection(pcbnew.ZONE_CONNECTION_THERMAL if net == "GND" else pcbnew.ZONE_CONNECTION_THT_THERMAL)
         z.SetLocalClearance(mm(clearance)); z.SetMinThickness(mm(0.25))
         z.SetThermalReliefGap(mm(0.4)); z.SetThermalReliefSpokeWidth(mm(0.5))
     if name:
@@ -67,8 +69,17 @@ for x in (-60.0, 60.0):           # 3/8 rods: SAE washer + nut on both faces, no
     zone(None, [F, B], circle(10.6, x, 0.0, 72), name="rod washer keepout", keepout=True, no_copper=True)
 for x in (-8.7, 8.7):             # COTS-mount M4 screws: head / washer / nut
     zone(None, [F, B], circle(4.8, x, kc.COTS_HOLE_Y, 48), name="COTS screw keepout", keepout=True, no_copper=True)
-# ESP32 antenna end (the DevKitC hangs under the board, antenna toward the top)
-zone(None, [F, B], rect(-2.9, -45.0 + ED, 25.1, -37.5 + ED), name="ESP32 antenna: no pour", keepout=True)
+# ESP32 antenna (review 2, 7 Oct 2026). The DevKitC hangs ~13.4 mm under the board, parts down, antenna toward the top.
+# Espressif asks for >= 15 mm clear around the module antenna. Back copper is the layer nearest it: no pour, tracks or
+# vias within 15 mm of the antenna sideways and past its end (the devkit's own socket pads excepted). Front copper is
+# 15 mm away through the board already; the front pour stays off the antenna too, for margin.
+A0, A1, A2, A3 = kc.ANT; AC = kc.ANT_CLEAR
+zone(None, [B], rect(A0 - AC, A1 - AC, A2 + AC, A3), name="ESP32 antenna keepout", keepout=True, no_copper=True)
+zone(None, [F], rect(A0 - 3.0, A1 - 3.0, A2 + 3.0, A3), name="ESP32 antenna: no pour", keepout=True)
+# front GND sliver between TP2 and the lower-left cut-out's corner: it hangs on by a neck at the 0.25 mm minimum (review 3)
+zone(None, [F], rect(-39.8, 52.6, -33.2, 55.0), name="no pour: sliver by the lower-left notch", keepout=True)
+for x in (-1.6, 23.8):            # front pour between the ESP32 socket pins only makes thin slivers (review 3)
+    zone(None, [F], rect(x - 1.2, kc.ESP_PIN1_Y - 1.2, x + 1.2, kc.ESP_PIN1_Y + 18 * 2.54 + 1.2), name="no pour: socket column", keepout=True)
 zone("VIN", [B], T([(35.9, 5.45), (37.35, 5.45), (37.35, 6.3), (43.15, 6.3), (43.15, 8.25), (41.45, 8.25),
                     (41.45, 20.4), (36.9, 20.4), (36.9, 13.9), (39.75, 13.9), (39.75, 9.6), (35.9, 9.6)]), 2, "VIN", clearance=0.25)
 zone("+5V", [B], T([(41.75, 12.45), (47.35, 12.45), (47.35, 13.35), (54.1, 13.35), (54.1, 16.6), (41.75, 16.6)]), 2, "+5V", clearance=0.25)
@@ -98,9 +109,19 @@ track("CBOOT", B, 0.4, T([(45.45, 4.863), (45.45, 4.4), (46.925, 3.0)]))
 track("SW", B, 0.4, T([(48.475, 3.0), (49.4, 3.0)]))
 via("SW", *T([(49.4, 3.0)])[0]); via("SW", *T([(44.5, 8.15)])[0])
 track("SW", F, 0.4, T([(44.5, 8.15), (49.4, 3.0)]))
-track("VIN", B, 0.3, T([(44.5, 4.863), (44.5, 3.45)]))
-via("VIN", *T([(44.5, 3.45)])[0]); via("VIN", *T([(42.2, 7.9)])[0])
-track("VIN", F, 0.3, T([(44.5, 3.45), (42.2, 7.9)]))
+# U1 EN (review 3): up to a via, over the front (above the SW run) to the R9/R10 divider above C3
+track("EN", B, 0.3, T([(44.5, 4.863), (44.5, 3.45)])); via("EN", *T([(44.5, 3.45)])[0])
+track("EN", F, 0.3, [T([(44.5, 3.45)])[0], (13.0, -13.47), (15.6, -15.6)]); via("EN", 15.6, -15.6)
+via("GND", 12.55, -15.3)              # R10's GND pad sits in a pocket of back pour (C7 / +5V / C3 around it): stitch it
+fq = kc.fp_by_ref(b)
+pd = lambda ref, num: kc.rel([p for p in fq[ref].Pads() if p.GetNumber() == num][0].GetPosition())
+track("EN", B, 0.3, [pd("R10", "1"), pd("R9", "2")])
+# R9's VIN: from the VIN pour via below U1, along the front under the SW run's start, up past its end
+via("VIN", *T([(42.2, 7.9)])[0])
+track("VIN", F, 0.3, [T([(42.2, 7.9)])[0], (8.6, -5.8), (20.6, -5.8), (20.6, -13.8), (19.4, -14.4)]); via("VIN", 19.4, -14.4)
+track("VIN", B, 0.3, [(19.4, -14.4), pd("R9", "1")])     # (below the buck's GND vias, so the front pour keeps a wide neck)
+# C11 (bulk input cap) in the VIN pour below C1/C2: its GND pad drops to the front pour
+track("GND", B, 0.5, [pd("C11", "2"), (3.2, pd("C11", "2")[1])]); via("GND", 3.2, pd("C11", "2")[1])
 track("FB", B, 0.25, T([(43.55, 4.863), (43.55, 3.3), (43.3, 2.425)]))
 track("FB", B, 0.25, T([(41.775, 2.8), (43.3, 2.8)]))
 track("FB", B, 0.25, T([(45.1, 2.375), (43.3, 2.425)]))
@@ -144,15 +165,17 @@ track("GND", B, 0.4, [(-1.6, -40.2 + ED), (-4.0, -40.2 + ED)])                  
 # ---------------------------------------------------------------- COTS / SRAD supplies (isolated, pyro clearance)
 # BT3/BT4 + is at the top: + -> SW2/SW3 (pin-switch leads, beside the stack) -> switched line down the back -> J5/J6-1
 track("COTS_BAT+", F, 1.0, [(11.1, -39.69 + BD), (11.1, -40.0), (16.8, -45.7), (23.6, -45.7), (28.3, -50.4), (28.3, -50.415)])   # BT3+ -> SW2-1 (below H5)
-CD = kc.COTS_DY                            # J5 / J6 moved out with the COTS mount
-JY = 50.415 + CD                           # J5 / J6 pin row (turned 180: pin 1 = switched +, on the side the switched line comes from)
-track("COTS_SW", B, 1.0, [(31.3, -50.415), (31.3, -45.0), (31.5, -44.8), (31.5, JY - 5.0), (26.5, JY)])  # SW2-2 -> J5-1
-track("COTS_BAT-", F, 1.0, [(11.1, 39.69 + BD), (11.1, 45.5), (16.0, 50.4), (23.5, 50.4), (23.5, JY)])  # BT3- -> J5-2
+j5 = {p.GetNumber(): kc.rel(p.GetPosition()) for p in kc.fp_by_ref(b)["J5"].Pads()}   # XT30: 1 = minus, 2 = plus
+j6 = {p.GetNumber(): kc.rel(p.GetPosition()) for p in kc.fp_by_ref(b)["J6"].Pads()}
+# SW2-2 -> J5-2: on the front until it is past the antenna keep-out (beside BT4's + tab), then down the back as before
+track("COTS_SW", F, 1.0, [(31.3, -50.415), (31.3, -33.2)])
+for y in (-34.6, -33.2):
+    via("COTS_SW", 31.3, y, 0.8, 0.4)
+track("COTS_SW", B, 1.0, [(31.3, -34.6), (31.3, -33.2), (31.5, -33.0), (31.5, j5["2"][1] - 5.0), (j5["2"][0], j5["2"][1] - 1.0), j5["2"]])
+track("COTS_BAT-", F, 1.0, [(11.1, 39.69 + BD), (11.1, 45.5), (16.0, 50.4), (17.1, j5["1"][1]), j5["1"]])   # BT3- -> J5-1
 track("SRAD_BAT+", F, 1.0, [(36.5, -39.69 + BD), (36.5, -44.6), (39.6, -47.7), (39.6, -50.415)])           # BT4+ -> SW3-1
-j6 = {p.GetNumber(): kc.rel(p.GetPosition()) for p in kc.fp_by_ref(b)["J6"].Pads()}   # J6 is a JST XH (2.5 mm pitch)
-(J6X1, J6Y), J6X2 = j6["1"], j6["2"][0]
-track("SRAD_SW", B, 1.0, [(42.6, -50.415), (42.6, -45.0), (38.0, -40.4), (38.0, J6Y - 4.0), (J6X1, J6Y - 2.0), (J6X1, J6Y)])  # SW3-2 -> J6-1
-track("SRAD_BAT-", F, 1.0, [(36.5, 39.69 + BD), (36.5, 46.5), (J6X2, 46.5 + J6X2 - 36.5), (J6X2, J6Y)])               # BT4- -> J6-2
+track("SRAD_SW", B, 1.0, [(42.6, -50.415), (42.6, -45.0), (38.0, -40.4), (38.0, j6["2"][1] - 5.5), (j6["2"][0], j6["2"][1] - 1.0), j6["2"]])  # SW3-2 -> J6-2
+track("SRAD_BAT-", F, 1.0, [(36.5, 39.69 + BD), (36.5, 46.5), (j6["1"][0], 46.5 + j6["1"][0] - 36.5), j6["1"]])                  # BT4- -> J6-1
 
 # bench test points: TP1 (+5V) fed from J1-19, TP2 (VBAT+) from BT1's + pad; TP3 / TP4 (GND) join the pours
 fpos = {f.GetReference(): f for f in b.GetFootprints()}

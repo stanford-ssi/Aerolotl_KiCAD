@@ -19,6 +19,7 @@ def hit(a, c):
     return a[0] < c[2] and c[0] < a[2] and a[1] < c[3] and c[1] < a[3]
 
 pads = [grow(bb(p), 0.25) for f in b.GetFootprints() for p in f.Pads()]
+pads += [grow(bb(v), 0.2) for v in b.GetTracks() if v.GetClass() == "PCB_VIA"]     # vias are bare copper too
 silk = {"F": [], "B": []}           # (owner, bbox) of footprint silk graphics
 for f in b.GetFootprints():
     for g in f.GraphicalItems():
@@ -62,9 +63,11 @@ for f in order:
         h = size / 2 + 0.35
         cands = [(mx, cy0 - h), (mx, cy1 + h), (cx0 - 1.2, my), (cx1 + 1.2, my),
                  (mx, cy0 - h - 0.9), (mx, cy1 + h + 0.9), (cx0 - 2.2, my), (cx1 + 2.2, my),
-                 (cx0 - 1.2, cy0 - h), (cx1 + 1.2, cy0 - h), (cx0 - 1.2, cy1 + h), (cx1 + 1.2, cy1 + h)]
-    if ref in ("J5", "J6"):                 # the two JST bodies nearly touch; label them on the side
-        cands = [(cx0 - 1.6, my)] + cands
+                 (cx0 - 1.2, cy0 - h), (cx1 + 1.2, cy0 - h), (cx0 - 1.2, cy1 + h), (cx1 + 1.2, cy1 + h),
+                 (mx, cy0 - h - 1.8), (mx, cy1 + h + 1.8), (cx0 - 3.2, my), (cx1 + 3.2, my),
+                 (cx0 - 2.2, cy0 - h - 0.9), (cx1 + 2.2, cy0 - h - 0.9), (cx0 - 2.2, cy1 + h + 0.9), (cx1 + 2.2, cy1 + h + 0.9)]
+    if ref in ("J5", "J6"):                 # XT30s: their +/- marks sit at the sides and the OUT label above, so go below
+        cands = [(mx, cy1 + h)] + cands
     ok = None
     for (x, y) in cands:
         field.SetPosition(kc.P(x, y))
@@ -78,9 +81,9 @@ for f in order:
         if any(o != ref and hit(r, s) for o, s in silk[side]):
             continue
         ok = (x, y); break
-    if ok is None:
-        field.SetPosition(kc.P(*cands[0]))
-        moved.append(ref + "(no clean spot)")
+    if ok is None:                          # nowhere clean on the silk: leave it on the fab layer only
+        field.SetPosition(kc.P(*cands[0])); field.SetVisible(False)
+        moved.append(ref + "(hidden: no clean spot)")
     placed[side].append(grow(bb(field), 0.1))
 pcbnew.SaveBoard(OUT, b, True)
 print("silk refs placed; unresolved:", moved or "none")

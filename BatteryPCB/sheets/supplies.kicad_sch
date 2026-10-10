@@ -1,730 +1,935 @@
 (kicad_sch
-	(version 20250114)
-	(generator "battery_pcb-gen")
+	(version 20260306)
+	(generator "eeschema")
 	(generator_version "10.0")
 	(uuid "d30d38cc-20d9-4e05-9f85-c70abea8b778")
 	(paper "A4")
 	(title_block
-		(title "6. Independent 1S supplies")
-		(company "Stanford SSI")
+		(title "4. Independent 1S supplies")
 		(rev "A")
+		(company "Stanford SSI")
 	)
 	(lib_symbols
-(symbol "Connector_Generic:Conn_01x02"
-		(pin_names
-			(offset 1.016)
-			(hide yes)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "J"
-			(at 0 2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
+		(symbol "Connector_Generic:Conn_01x02"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
 			)
-		)
-		(property "Value" "Conn_01x02"
-			(at 0 -5.08 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "ki_keywords" "connector"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "ki_fp_filters" "Connector*:*_1x??_*"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(symbol "Conn_01x02_1_1"
-			(rectangle
-				(start -1.27 1.27)
-				(end 1.27 -3.81)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-			(rectangle
-				(start -1.27 0.127)
-				(end 0 -0.127)
-				(stroke
-					(width 0.1524)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(rectangle
-				(start -1.27 -2.413)
-				(end 0 -2.667)
-				(stroke
-					(width 0.1524)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(pin passive line
-				(at -5.08 0 0)
-				(length 3.81)
-				(name "Pin_1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
 				)
 			)
-			(pin passive line
-				(at -5.08 -2.54 0)
-				(length 3.81)
-				(name "Pin_2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
 				)
 			)
-		)
-		(embedded_fonts no)
-	)
-(symbol "Device:Battery_Cell"
-		(pin_numbers
-			(hide yes)
-		)
-		(pin_names
-			(offset 0)
-			(hide yes)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "BT"
-			(at 2.54 2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Battery_Cell"
-			(at 2.54 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 1.524 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
 				)
 			)
-		)
-		(property "Datasheet" ""
-			(at 0 1.524 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
 				)
 			)
-		)
-		(property "Description" "Single-cell battery"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
 				)
 			)
-		)
-		(property "Sim.Device" "V"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
 				)
 			)
-		)
-		(property "Sim.Type" "DC"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
 				)
 			)
-		)
-		(property "Sim.Pins" "1=+ 2=-"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
+			(symbol "Conn_01x02_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
 				)
-			)
-		)
-		(property "ki_keywords" "battery cell"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
 				)
-			)
-		)
-		(symbol "Battery_Cell_0_1"
-			(rectangle
-				(start -2.286 1.778)
-				(end 2.286 1.524)
-				(stroke
-					(width 0)
-					(type default)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
 				)
-				(fill
-					(type outline)
-				)
-			)
-			(rectangle
-				(start -1.524 1.016)
-				(end 1.524 0.508)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type outline)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 1.778) (xy 0 2.54)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0 0.762) (xy 0 0)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 0.762 3.048) (xy 1.778 3.048)
-				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 1.27 3.556) (xy 1.27 2.54)
-				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-		)
-		(symbol "Battery_Cell_1_1"
-			(pin passive line
-				(at 0 5.08 270)
-				(length 2.54)
-				(name "+"
-					(effects
-						(font
-							(size 1.27 1.27)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
 						)
 					)
 				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
 						)
 					)
 				)
 			)
-			(pin passive line
-				(at 0 -2.54 90)
-				(length 2.54)
-				(name "-"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
+			(embedded_fonts no)
+		)
+		(symbol "Device:Battery_Cell"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "BT"
+				(at 2.54 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
+					(justify left)
 				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
+			)
+			(property "Value" "Battery_Cell"
+				(at 2.54 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-		)
-		(embedded_fonts no)
-	)
-(symbol "Switch:SW_SPST"
-		(pin_names
-			(offset 0)
-			(hide yes)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "SW"
-			(at 0 3.175 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_SPST"
-			(at 0 -2.54 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Single Pole Single Throw (SPST) switch"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "ki_keywords" "switch lever"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(symbol "SW_SPST_0_0"
-			(circle
-				(center -2.032 0)
-				(radius 0.508)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy -1.524 0.254) (xy 1.524 1.778)
-				)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(circle
-				(center 2.032 0)
-				(radius 0.508)
-				(stroke
-					(width 0)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-		)
-		(symbol "SW_SPST_1_1"
-			(pin passive line
-				(at -5.08 0 0)
-				(length 2.54)
-				(name "A"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
+			(property "Footprint" ""
+				(at 0 1.524 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
 				)
 			)
-			(pin passive line
-				(at 5.08 0 180)
-				(length 2.54)
-				(name "B"
-					(effects
-						(font
-							(size 1.27 1.27)
+			(property "Datasheet" ""
+				(at 0 1.524 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Single-cell battery"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Device" "V"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Type" "DC"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=+ 2=-"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "battery cell"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Battery_Cell_0_1"
+				(rectangle
+					(start -2.286 1.778)
+					(end 2.286 1.524)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -1.524 1.016)
+					(end 1.524 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.778) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 3.048) (xy 1.778 3.048)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 3.556) (xy 1.27 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Battery_Cell_1_1"
+				(pin passive line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
 						)
 					)
 				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
 						)
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
-		(embedded_fonts no)
-	)
+		(symbol "Switch:SW_SPST"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_SPST"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Single Pole Single Throw (SPST) switch"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "switch lever"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_SPST_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.254) (xy 1.524 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_SPST_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(text "Own cell, own switch, per DTEG 6.9.1. SW2 / SW3 take the pin-switch leads; they sit next to the pin-switch stack. All connectors latch (Micro-Fit 3.0)."
 		(exclude_from_sim no)
 		(at 20.32 17.78 0)
-		(effects (font (size 1.8 1.8) (bold yes)) (justify left bottom))
+		(effects
+			(font
+				(size 1.8 1.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
 		(uuid "03e925a5-736b-4f52-897b-b581cbc56c51")
 	)
 	(text "These returns are deliberately NOT tied to GND - that independence is the point."
 		(exclude_from_sim no)
 		(at 20.32 25.4 0)
-		(effects (font (size 1.8 1.8) (bold yes)) (justify left bottom))
+		(effects
+			(font
+				(size 1.8 1.8)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
 		(uuid "f5ae65c2-5302-47a3-8270-5f763a14a3a0")
 	)
-	(symbol
-		(lib_id "Device:Battery_Cell")
-		(at 44.45 59.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "99125746-ad02-4527-87ed-10b2d7e7b4c6")
-		(property "Reference" "BT3"
-			(at 48.26 57.15 0)
-			(effects (font (size 1.27 1.27)) (justify left))
+	(wire
+		(pts
+			(xy 113.03 79.375) (xy 87.63 79.375)
 		)
-		(property "Value" "18650 - COTS"
-			(at 48.26 60.96 0)
-			(effects (font (size 1.27 1.27)) (justify left))
+		(stroke
+			(width 0)
+			(type default)
 		)
-		(property "Footprint" "battery_pcb:BatteryHolder_Keystone_1042_1x18650"
-			(at 44.45 59.69 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
-		)
-		(property "Datasheet" ""
-			(at 44.45 59.69 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
-		)
-		(property "Manufacturer" "Keystone Electronics"
-			(at 44.45 59.69 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
-		)
-		(property "MPN" "1042"
-			(at 44.45 59.69 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
-		)
-		(pin "1" (uuid "de3ffed6-2b46-4f1e-95b0-3bb4d39a667b"))
-		(pin "2" (uuid "94650554-800c-4985-b6ac-46faee9baebc"))
-		(instances
-			(project "battery_pcb"
-				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/d30d38cc-20d9-4e05-9f85-c70abea8b778"
-					(reference "BT3")
-					(unit 1)
-				)
-			)
-		)
+		(uuid "01d7366a-0c9a-4b4d-9cb6-8a477c453079")
 	)
 	(wire
-		(pts (xy 44.45 54.61) (xy 44.45 49.53))
-		(stroke (width 0) (type default))
+		(pts
+			(xy 87.63 128.27) (xy 85.09 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bb8a06c-5fc3-4b0e-b0f7-be6aeaed21e2")
+	)
+	(wire
+		(pts
+			(xy 85.09 59.69) (xy 85.09 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
 		(uuid "1e075394-3c0e-4f2a-9121-b6df1529c3cf")
 	)
-	(label "COTS_BAT+"
-		(at 44.45 49.53 90)
-		(fields_autoplaced yes)
-		(effects (font (size 1.27 1.27)) (justify left))
-		(uuid "0c77ec13-a630-42dc-9c9b-ead337c6e32d")
+	(wire
+		(pts
+			(xy 85.09 123.19) (xy 85.09 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "202e9df1-e534-41eb-bf10-aa48b7ae7dbb")
 	)
 	(wire
-		(pts (xy 44.45 62.23) (xy 44.45 67.31))
-		(stroke (width 0) (type default))
-		(uuid "fe5840aa-1958-432f-8d59-71291797ff33")
-	)
-	(label "COTS_BAT-"
-		(at 44.45 67.31 270)
-		(fields_autoplaced yes)
-		(effects (font (size 1.27 1.27)) (justify right))
-		(uuid "662005b1-8945-4aff-9403-a6100a3beb74")
-	)
-	(symbol
-		(lib_id "Switch:SW_SPST")
-		(at 95.25 54.61 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a844e9cc-025d-40dc-87a9-64cbca4311c2")
-		(property "Reference" "SW2"
-			(at 99.06 52.07 0)
-			(effects (font (size 1.27 1.27)) (justify left))
+		(pts
+			(xy 108.585 122.555) (xy 112.395 122.555)
 		)
-		(property "Value" "COTS ARM"
-			(at 99.06 55.88 0)
-			(effects (font (size 1.27 1.27)) (justify left))
+		(stroke
+			(width 0)
+			(type default)
 		)
-		(property "Footprint" "battery_pcb:Molex_Micro-Fit_3.0_43650-0215_1x02_P3.00mm_Vertical"
-			(at 95.25 54.61 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
-		)
-		(property "Datasheet" ""
-			(at 95.25 54.61 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
-		)
-		(property "Manufacturer" "Molex"
-			(at 95.25 54.61 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
-		)
-		(property "MPN" "0436500215"
-			(at 95.25 54.61 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
-		)
-		(pin "1" (uuid "93e23b19-5e0b-491c-985e-afe10d80f822"))
-		(pin "2" (uuid "fd5e8d37-a11f-401b-9192-50598e591da2"))
-		(instances
-			(project "battery_pcb"
-				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/d30d38cc-20d9-4e05-9f85-c70abea8b778"
-					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
+		(uuid "24761e87-a6ca-4c9f-b6a0-fabb1a2ca0f9")
 	)
 	(wire
-		(pts (xy 90.17 54.61) (xy 85.09 54.61))
-		(stroke (width 0) (type default))
+		(pts
+			(xy 108.585 127.635) (xy 108.585 122.555)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29c69ec6-81d3-4f4a-a42e-dda38ca15ed5")
+	)
+	(wire
+		(pts
+			(xy 87.63 136.525) (xy 87.63 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ad5666e-9c2f-4a10-a3ea-032ff6785242")
+	)
+	(wire
+		(pts
+			(xy 105.41 54.61) (xy 105.41 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3059e371-37e1-4858-abd0-1ff7dd3b7156")
+	)
+	(wire
+		(pts
+			(xy 107.95 67.31) (xy 113.03 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38e1e558-dc58-4f8d-9d96-5a03853ae8d5")
+	)
+	(wire
+		(pts
+			(xy 100.33 54.61) (xy 105.41 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4226cf0b-cfea-4cd8-bc93-744d3af2243a")
+	)
+	(wire
+		(pts
+			(xy 87.63 72.39) (xy 85.09 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79478f95-9313-435b-a0a5-b762b5c43d62")
+	)
+	(wire
+		(pts
+			(xy 112.395 122.555) (xy 112.395 136.525)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79c70363-d315-437a-8f55-dcb9a91c6d6e")
+	)
+	(wire
+		(pts
+			(xy 85.09 115.57) (xy 85.09 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b086c46-b12c-4bec-9af9-2ccb30d4f024")
+	)
+	(wire
+		(pts
+			(xy 112.395 136.525) (xy 87.63 136.525)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c63bd7e-8d57-4f2c-800d-a586c9b388c1")
+	)
+	(wire
+		(pts
+			(xy 87.63 79.375) (xy 87.63 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1f7c4e4-dc1c-4c28-b1fc-840b4ca491a2")
+	)
+	(wire
+		(pts
+			(xy 106.045 110.49) (xy 106.045 127.635)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bef76657-ab76-4427-875b-6ad0b006e2d8")
+	)
+	(wire
+		(pts
+			(xy 90.17 54.61) (xy 85.09 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
 		(uuid "c2693779-a0e2-4718-a2c1-297cada91d07")
+	)
+	(wire
+		(pts
+			(xy 113.03 67.31) (xy 113.03 79.375)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c37fc248-e97f-4537-b93e-6a4b46a3c1b2")
+	)
+	(wire
+		(pts
+			(xy 100.33 110.49) (xy 106.045 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0d4030c-a989-4c71-97a8-cd9ffb5faea8")
+	)
+	(wire
+		(pts
+			(xy 90.17 110.49) (xy 85.09 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f116fe1d-da15-4546-aa34-c062ebb77b63")
+	)
+	(wire
+		(pts
+			(xy 85.09 67.31) (xy 85.09 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe5840aa-1958-432f-8d59-71291797ff33")
 	)
 	(label "COTS_BAT+"
 		(at 85.09 54.61 180)
-		(fields_autoplaced yes)
-		(effects (font (size 1.27 1.27)) (justify right))
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
 		(uuid "0552d5c0-a38f-4e99-ac65-85b0c82fe5de")
 	)
-	(wire
-		(pts (xy 100.33 54.61) (xy 105.41 54.61))
-		(stroke (width 0) (type default))
-		(uuid "4226cf0b-cfea-4cd8-bc93-744d3af2243a")
+	(label "SRAD_BAT-"
+		(at 85.09 128.27 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3c0fc2d8-f187-4ed9-96a6-9dd9e774bfb8")
+	)
+	(label "SRAD_SW"
+		(at 105.41 110.49 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5602c67e-7d5b-48c8-9cb0-605c1c256fb4")
+	)
+	(label "COTS_BAT-"
+		(at 85.09 72.39 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "662005b1-8945-4aff-9403-a6100a3beb74")
+	)
+	(label "SRAD_BAT+"
+		(at 85.09 110.49 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8a8bb552-48be-4d56-bbb5-e950a8aca5f4")
 	)
 	(label "COTS_SW"
 		(at 105.41 54.61 0)
-		(fields_autoplaced yes)
-		(effects (font (size 1.27 1.27)) (justify left))
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
 		(uuid "a362b28c-3f9d-4874-9392-2bb2a1c85363")
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 154.94 54.61 0)
+		(at 107.95 72.39 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "03901de4-b206-4c7d-aaab-cd5a7a15f23e")
 		(property "Reference" "J5"
-			(at 158.75 52.07 0)
-			(effects (font (size 1.27 1.27)) (justify left))
+			(at 100.33 72.39 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
 		(property "Value" "to COTS altimeter"
-			(at 158.75 55.88 0)
-			(effects (font (size 1.27 1.27)) (justify left))
+			(at 97.79 74.93 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
-		(property "Footprint" "battery_pcb:Molex_Micro-Fit_3.0_43650-0215_1x02_P3.00mm_Vertical"
-			(at 154.94 54.61 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
+		(property "Footprint" "battery_pcb:AMASS_XT30UPB-F_1x02_P5.0mm_Vertical"
+			(at 107.95 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(property "Datasheet" ""
-			(at 154.94 54.61 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
+			(at 107.95 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
-		(property "Manufacturer" "Molex"
-			(at 154.94 54.61 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
+		(property "Description" ""
+			(at 107.95 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
-		(property "MPN" "0436500215"
-			(at 154.94 54.61 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
+		(property "Manufacturer" "AMASS"
+			(at 107.95 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
-		(pin "1" (uuid "b322f0c9-9215-4f01-915e-0620132ad759"))
-		(pin "2" (uuid "bc6e6add-6119-4c85-986c-c3dc3170654e"))
+		(property "MPN" "XT30UPB-F"
+			(at 107.95 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b322f0c9-9215-4f01-915e-0620132ad759")
+		)
+		(pin "2"
+			(uuid "bc6e6add-6119-4c85-986c-c3dc3170654e")
+		)
 		(instances
 			(project "battery_pcb"
 				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/d30d38cc-20d9-4e05-9f85-c70abea8b778"
@@ -734,198 +939,99 @@
 			)
 		)
 	)
-	(wire
-		(pts (xy 149.86 54.61) (xy 144.78 54.61))
-		(stroke (width 0) (type default))
-		(uuid "c25fdf4b-9480-4897-a994-5d9fd13c98e7")
-	)
-	(label "COTS_SW"
-		(at 144.78 54.61 180)
-		(fields_autoplaced yes)
-		(effects (font (size 1.27 1.27)) (justify right))
-		(uuid "d6e9a32c-2e62-41fb-b8d1-9557860b3d12")
-	)
-	(wire
-		(pts (xy 149.86 57.15) (xy 144.78 57.15))
-		(stroke (width 0) (type default))
-		(uuid "ee0223a6-2f36-4a2e-815a-3a0c80bcb6df")
-	)
-	(label "COTS_BAT-"
-		(at 144.78 57.15 180)
-		(fields_autoplaced yes)
-		(effects (font (size 1.27 1.27)) (justify right))
-		(uuid "8c9198a2-ddbc-44e3-99f0-bde4c5bdde66")
-	)
-	(symbol
-		(lib_id "Device:Battery_Cell")
-		(at 44.45 115.57 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "70406afb-3c88-4619-be49-97bfe4ff1157")
-		(property "Reference" "BT4"
-			(at 48.26 113.03 0)
-			(effects (font (size 1.27 1.27)) (justify left))
-		)
-		(property "Value" "18650 - SRAD"
-			(at 48.26 116.84 0)
-			(effects (font (size 1.27 1.27)) (justify left))
-		)
-		(property "Footprint" "battery_pcb:BatteryHolder_Keystone_1042_1x18650"
-			(at 44.45 115.57 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
-		)
-		(property "Datasheet" ""
-			(at 44.45 115.57 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
-		)
-		(property "Manufacturer" "Keystone Electronics"
-			(at 44.45 115.57 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
-		)
-		(property "MPN" "1042"
-			(at 44.45 115.57 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
-		)
-		(pin "1" (uuid "3d19812b-0565-433d-83c3-d985524c4198"))
-		(pin "2" (uuid "b085395c-3e8c-411d-9de5-6beeff6484a1"))
-		(instances
-			(project "battery_pcb"
-				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/d30d38cc-20d9-4e05-9f85-c70abea8b778"
-					(reference "BT4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts (xy 44.45 110.49) (xy 44.45 105.41))
-		(stroke (width 0) (type default))
-		(uuid "9b086c46-b12c-4bec-9af9-2ccb30d4f024")
-	)
-	(label "SRAD_BAT+"
-		(at 44.45 105.41 90)
-		(fields_autoplaced yes)
-		(effects (font (size 1.27 1.27)) (justify left))
-		(uuid "77785272-8310-430c-9518-6d58cf37688c")
-	)
-	(wire
-		(pts (xy 44.45 118.11) (xy 44.45 123.19))
-		(stroke (width 0) (type default))
-		(uuid "202e9df1-e534-41eb-bf10-aa48b7ae7dbb")
-	)
-	(label "SRAD_BAT-"
-		(at 44.45 123.19 270)
-		(fields_autoplaced yes)
-		(effects (font (size 1.27 1.27)) (justify right))
-		(uuid "3c0fc2d8-f187-4ed9-96a6-9dd9e774bfb8")
-	)
-	(symbol
-		(lib_id "Switch:SW_SPST")
-		(at 95.25 110.49 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "206230bd-1d7b-42c6-a165-3118f980452c")
-		(property "Reference" "SW3"
-			(at 99.06 107.95 0)
-			(effects (font (size 1.27 1.27)) (justify left))
-		)
-		(property "Value" "SRAD ARM"
-			(at 99.06 111.76 0)
-			(effects (font (size 1.27 1.27)) (justify left))
-		)
-		(property "Footprint" "battery_pcb:Molex_Micro-Fit_3.0_43650-0215_1x02_P3.00mm_Vertical"
-			(at 95.25 110.49 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
-		)
-		(property "Datasheet" ""
-			(at 95.25 110.49 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
-		)
-		(property "Manufacturer" "Molex"
-			(at 95.25 110.49 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
-		)
-		(property "MPN" "0436500215"
-			(at 95.25 110.49 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
-		)
-		(pin "1" (uuid "35e38dd2-8fd6-4d83-9411-fcf3ce175cc4"))
-		(pin "2" (uuid "fa7cb044-9aff-4d62-9b37-d384c6bd11e0"))
-		(instances
-			(project "battery_pcb"
-				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/d30d38cc-20d9-4e05-9f85-c70abea8b778"
-					(reference "SW3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts (xy 90.17 110.49) (xy 85.09 110.49))
-		(stroke (width 0) (type default))
-		(uuid "f116fe1d-da15-4546-aa34-c062ebb77b63")
-	)
-	(label "SRAD_BAT+"
-		(at 85.09 110.49 180)
-		(fields_autoplaced yes)
-		(effects (font (size 1.27 1.27)) (justify right))
-		(uuid "8a8bb552-48be-4d56-bbb5-e950a8aca5f4")
-	)
-	(wire
-		(pts (xy 100.33 110.49) (xy 105.41 110.49))
-		(stroke (width 0) (type default))
-		(uuid "f0d4030c-a989-4c71-97a8-cd9ffb5faea8")
-	)
-	(label "SRAD_SW"
-		(at 105.41 110.49 0)
-		(fields_autoplaced yes)
-		(effects (font (size 1.27 1.27)) (justify left))
-		(uuid "5602c67e-7d5b-48c8-9cb0-605c1c256fb4")
-	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 154.94 110.49 0)
+		(at 108.585 132.715 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "070386a4-d2df-4ec3-926d-c13e29d3de2e")
 		(property "Reference" "J6"
-			(at 158.75 107.95 0)
-			(effects (font (size 1.27 1.27)) (justify left))
+			(at 100.965 131.445 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
 		(property "Value" "to SRAD flight computer"
-			(at 158.75 111.76 0)
-			(effects (font (size 1.27 1.27)) (justify left))
+			(at 95.25 135.255 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
-		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
-			(at 154.94 110.49 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
+		(property "Footprint" "battery_pcb:AMASS_XT30UPB-F_1x02_P5.0mm_Vertical"
+			(at 108.585 132.715 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(property "Datasheet" ""
-			(at 154.94 110.49 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
+			(at 108.585 132.715 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
-		(property "Manufacturer" "JST"
-			(at 154.94 110.49 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
+		(property "Description" ""
+			(at 108.585 132.715 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
-		(property "MPN" "B2B-XH-A(LF)(SN)"
-			(at 154.94 110.49 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
+		(property "Manufacturer" "AMASS"
+			(at 108.585 132.715 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
-		(pin "1" (uuid "cf7a1d7f-987f-4ae1-b082-379b1798ce34"))
-		(pin "2" (uuid "ad35faba-ef96-4911-96cc-507c62f97d3d"))
+		(property "MPN" "XT30UPB-F"
+			(at 108.585 132.715 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cf7a1d7f-987f-4ae1-b082-379b1798ce34")
+		)
+		(pin "2"
+			(uuid "ad35faba-ef96-4911-96cc-507c62f97d3d")
+		)
 		(instances
 			(project "battery_pcb"
 				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/d30d38cc-20d9-4e05-9f85-c70abea8b778"
@@ -935,26 +1041,414 @@
 			)
 		)
 	)
-	(wire
-		(pts (xy 149.86 110.49) (xy 144.78 110.49))
-		(stroke (width 0) (type default))
-		(uuid "29c69ec6-81d3-4f4a-a42e-dda38ca15ed5")
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 95.25 110.49 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "206230bd-1d7b-42c6-a165-3118f980452c")
+		(property "Reference" "SW3"
+			(at 99.06 107.95 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SRAD ARM"
+			(at 92.075 112.395 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "battery_pcb:Molex_Micro-Fit_3.0_43650-0215_1x02_P3.00mm_Vertical"
+			(at 95.25 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 95.25 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 95.25 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0436500215"
+			(at 95.25 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "35e38dd2-8fd6-4d83-9411-fcf3ce175cc4")
+		)
+		(pin "2"
+			(uuid "fa7cb044-9aff-4d62-9b37-d384c6bd11e0")
+		)
+		(instances
+			(project "battery_pcb"
+				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/d30d38cc-20d9-4e05-9f85-c70abea8b778"
+					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
 	)
-	(label "SRAD_SW"
-		(at 144.78 110.49 180)
+	(symbol
+		(lib_id "Device:Battery_Cell")
+		(at 85.09 120.65 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
 		(fields_autoplaced yes)
-		(effects (font (size 1.27 1.27)) (justify right))
-		(uuid "12f7bbf9-58cd-4442-8dac-c7613f79785f")
+		(uuid "70406afb-3c88-4619-be49-97bfe4ff1157")
+		(property "Reference" "BT4"
+			(at 88.9 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "18650 - SRAD"
+			(at 88.9 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "battery_pcb:BatteryHolder_Keystone_1042_1x18650"
+			(at 85.09 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 85.09 120.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Keystone Electronics"
+			(at 85.09 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "1042"
+			(at 85.09 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3d19812b-0565-433d-83c3-d985524c4198")
+		)
+		(pin "2"
+			(uuid "b085395c-3e8c-411d-9de5-6beeff6484a1")
+		)
+		(instances
+			(project "battery_pcb"
+				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/d30d38cc-20d9-4e05-9f85-c70abea8b778"
+					(reference "BT4")
+					(unit 1)
+				)
+			)
+		)
 	)
-	(wire
-		(pts (xy 149.86 113.03) (xy 144.78 113.03))
-		(stroke (width 0) (type default))
-		(uuid "bef76657-ab76-4427-875b-6ad0b006e2d8")
-	)
-	(label "SRAD_BAT-"
-		(at 144.78 113.03 180)
+	(symbol
+		(lib_id "Device:Battery_Cell")
+		(at 85.09 64.77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
 		(fields_autoplaced yes)
-		(effects (font (size 1.27 1.27)) (justify right))
-		(uuid "85e5fc29-baf2-41bc-b2b5-b6efa826d7d5")
+		(uuid "99125746-ad02-4527-87ed-10b2d7e7b4c6")
+		(property "Reference" "BT3"
+			(at 88.9 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "18650 - COTS"
+			(at 88.9 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "battery_pcb:BatteryHolder_Keystone_1042_1x18650"
+			(at 85.09 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 85.09 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Keystone Electronics"
+			(at 85.09 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "1042"
+			(at 85.09 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "de3ffed6-2b46-4f1e-95b0-3bb4d39a667b")
+		)
+		(pin "2"
+			(uuid "94650554-800c-4985-b6ac-46faee9baebc")
+		)
+		(instances
+			(project "battery_pcb"
+				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/d30d38cc-20d9-4e05-9f85-c70abea8b778"
+					(reference "BT3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 95.25 54.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a844e9cc-025d-40dc-87a9-64cbca4311c2")
+		(property "Reference" "SW2"
+			(at 99.06 52.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "COTS ARM"
+			(at 92.71 57.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "battery_pcb:Molex_Micro-Fit_3.0_43650-0215_1x02_P3.00mm_Vertical"
+			(at 95.25 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 95.25 54.61 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 95.25 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0436500215"
+			(at 95.25 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "93e23b19-5e0b-491c-985e-afe10d80f822")
+		)
+		(pin "2"
+			(uuid "fd5e8d37-a11f-401b-9192-50598e591da2")
+		)
+		(instances
+			(project "battery_pcb"
+				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/d30d38cc-20d9-4e05-9f85-c70abea8b778"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
 	)
 )

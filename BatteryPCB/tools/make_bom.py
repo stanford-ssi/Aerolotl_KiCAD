@@ -27,10 +27,12 @@ DESC = {
     "PPTC191LFBN-RC": "Female header 1x19, 2.54 mm (socket for the ESP32-DevKitC)",
     "BM05B-GHS-TBT": "JST GH 5-pin vertical header (camera)",
     "0436500215": "Molex Micro-Fit 3.0 2-pin vertical header",
-    "B2B-XH-A(LF)(SN)": "JST XH 2-pin vertical header (to the Aerolotl)",
-    "SRN6045TA-4R7M": "Power inductor 4.7 uH 4.5 A, 6 x 6 mm",
+    "XT30UPB-M": "AMASS XT30 male, vertical PCB mount (battery outputs)",
+    "SRN6045TA-6R8M": "Power inductor 6.8 uH, 3.6 A rms / 5.7 A sat, 6 x 6 mm",
+    "CL21B104KBCNNNC": "Capacitor 100 nF 50 V X7R, 0805",
+    "RC0603FR-07402KL": "Resistor 402 k 1%, 0603",
     "RC0603FR-07100KL": "Resistor 100 k 1%, 0603",
-    "RC0603FR-0713K7L": "Resistor 13.7 k 1%, 0603",
+    "RC0603FR-0713KL": "Resistor 13 k 1%, 0603",
     "RC0603FR-0739KL": "Resistor 39 k 1%, 0603",
     "RC0603FR-071KL": "Resistor 1 k 1%, 0603",
     "RC0603FR-07100RL": "Resistor 100 ohm 1%, 0603",
@@ -38,15 +40,41 @@ DESC = {
 }
 NOTES = {
     "1812L200/12DR": "Alt: Polytronics SMD1812P200TF/16",
-    "0436500215": "SW1 camera power, SW2/SW3 pin-switch leads, J5 to the TeleMetrum",
-    "B2B-XH-A(LF)(SN)": "Friction fit, not latching",
+    "0436500215": "SW1 camera power, SW2/SW3 pin-switch leads",
+    "XT30UPB-M": "Male on the board (9 Oct 2026). Same footprint as the female XT30UPB-F, which the schematic/board still name. J5 to the TeleMetrum, J6 to the Aerolotl. Pin 1 = minus, pin 2 = plus, as marked on the housing",
+    "CL21A106KAYNNNE": "Low LCSC stock on 9 Oct 2026 (20 pcs). Alt: Murata GRM21BR61E106KA73L (LCSC C84416) or FH 0805X106K250NT (C40894), same 10 uF 25 V X5R 0805",
+    "CL10B104KB8NNNC": "Low LCSC stock on 9 Oct 2026 (100 pcs, MOQ 100). Alt: FH 0603B104K500NT (LCSC C30926), same 100 nF 50 V X7R 0603",
+    "SMBJ12A": "LCSC's spec rows for C151251 show 13 V / 21.5 V clamp (SMBJ13A values); the part is SMBJ12A (12 V standoff, 19.9 V clamp). Either is safe here",
 }
+
+# where to buy each MPN (checked on lcsc.com / digikey.com 8 Oct 2026; every LCSC number re-checked 9 Oct 2026): LCSC number, or another distributor when LCSC has none
+LCSC = {
+    "CL21A106KAYNNNE": "C15850", "CL10B104KB8NNNC": "C1591", "CL21A226MOQNNNE": "C98190", "CL10C220JB8NNNC": "C1653",
+    "CL21B104KBCNNNC": "C1711", "SMBJ12A": "C151251", "LTST-C171KRKT": "C284871", "B340B-13-F": "C85099",
+    "1812L200/12DR": "C315901", "BM05B-GHS-TBT": "C189891", "0436500215": "C293740", "XT30UPB-M": "C428721", "XT30U-F": "C99102",
+    "SRN6045TA-6R8M": "C2041457", "RC0603FR-07100KL": "C14675", "RC0603FR-0713KL": "C137796",
+    "RC0603FR-0739KL": "C163424", "RC0603FR-071KL": "C22548", "RC0603FR-07100RL": "C105588",
+    "RC0603FR-07402KL": "C874662", "LMR51430XFDDCR": "C5219260",
+    "PPTC191LFBN-RC": "C2897382",     # LCSC has no Sullins stock: HCTL PM254-1-19-Z-8.5, same 1x19, 2.54 mm, 8.5 mm tall
+    "0436450200": "C114089", "0430300007": "C293530", "XT30U-M": "C99101", "GHR-05V-S": "C160419",
+    "SSHL-002T-P0.2": "C189897",
+}
+OTHER = {
+    "1042": "DigiKey 36-1042-ND (not sold by LCSC)",
+    "9774050243R": "DigiKey 732-7097-1-ND / Mouser 710-9774050243R (not sold by LCSC)",
+    "ESP32-DevKitC-32E": "Mouser 356-ESP32-DEVKITC32E (or DigiKey 1965-ESP32-DEVKITC-32E-ND)",
+    "PPTC191LFBN-RC": "DigiKey S7017-ND if you want the Sullins part itself",
+}
+
+# BOM-only part swaps: the schematic and board keep the original MPN field, the BOM orders this instead.
+# J5/J6 (9 Oct 2026): male XT30 on the board. XT30UPB-M uses the identical footprint (same pads, holes, courtyard).
+BOM_MPN = {"XT30UPB-F": "XT30UPB-M"}
 
 # not on the schematic: board-only parts, things that plug in, and the cable side of each connector
 EXTRA = [
     # section, qty per board, refs, description, manufacturer, MPN, notes
     ("Board hardware", 4, "H7-H10", "SMT steel standoff, M2 thread, 5 mm (camera mounts, back side)",
-     "Wurth Elektronik", "9774050243", "Soldered like a part"),
+     "Wurth Elektronik", "9774050243R", "Soldered like a part"),
     ("Plugs in / mounts on", 1, "", "ESP32 dev board, DevKitC V4", "Espressif", "ESP32-DevKitC-32E",
      "Plugs into J1/J2 from the back"),
     ("Plugs in / mounts on", 1, "", "Camera, RunCam Split 4", "RunCam", "Split 4",
@@ -54,11 +82,11 @@ EXTRA = [
     ("Plugs in / mounts on", 4, "", "Screw M2 x 4 mm, pan head", "", "", "Camera to standoffs"),
     ("Plugs in / mounts on", 4, "", "18650 Li-ion cell, flat top, high drain", "Molicel", "INR-18650-P28A",
      "Or any high-drain flat-top 18650; never mix cells in the series pair"),
-    ("Cable side", 4, "SW1, SW2, SW3, J5", "Micro-Fit 3.0 receptacle housing, 2-pin", "Molex", "0436450200", ""),
-    ("Cable side", 8, "SW1, SW2, SW3, J5", "Micro-Fit 3.0 female crimp terminal, 20-24 AWG", "Molex", "0430300007",
+    ("Cable side", 3, "SW1, SW2, SW3", "Micro-Fit 3.0 receptacle housing, 2-pin", "Molex", "0436450200", ""),
+    ("Cable side", 6, "SW1, SW2, SW3", "Micro-Fit 3.0 female crimp terminal, 20-24 AWG", "Molex", "0430300007",
      "Needs a Micro-Fit crimper, or buy pre-crimped leads"),
-    ("Cable side", 1, "J6", "JST XH housing, 2-pin", "JST", "XHP-2", ""),
-    ("Cable side", 2, "J6", "JST XH crimp terminal, 22-28 AWG", "JST", "SXH-001T-P0.6", ""),
+    ("Cable side", 2, "J5, J6", "XT30 female plug, solder cup (cable to each flight computer)", "AMASS", "XT30U-F",
+     "Solder 18-20 AWG; check polarity against the +/- on the board"),
     ("Cable side", 1, "J3", "JST GH housing, 5-pin", "JST", "GHR-05V-S", "Or a pre-crimped GH 5-pin cable"),
     ("Cable side", 5, "J3", "JST GH crimp terminal, 26-30 AWG", "JST", "SSHL-002T-P0.2", ""),
     ("Cable side", 1, "SW1", "Toggle switch, SPST, 3 A or more, panel mount", "", "",
@@ -80,7 +108,7 @@ def main():
                    check=True, capture_output=True)
     groups = collections.OrderedDict()
     for row in csv.DictReader(open(tmp)):
-        key = (row["Manufacturer"], row["MPN"])
+        key = (row["Manufacturer"], BOM_MPN.get(row["MPN"], row["MPN"]))
         g = groups.setdefault(key, {"refs": [], "fp": row["Footprint"].split(":")[-1]})
         g["refs"] += [r.strip() for r in row["Reference"].split(",") if r.strip()]
     os.remove(tmp)
@@ -96,18 +124,43 @@ def main():
             raise SystemExit("no MPN for %s: run tools/annotate_mpn.py" % ", ".join(refs))
         desc = DESC.get(mpn, "")
         rows.append(["Board (solder on)", len(refs), spare(desc, len(refs)), ", ".join(refs), desc, mfr, mpn,
-                     g["fp"], NOTES.get(mpn, "")])
+                     LCSC.get(mpn, ""), OTHER.get(mpn, ""), g["fp"], NOTES.get(mpn, "")])
+        if not (LCSC.get(mpn) or OTHER.get(mpn)):
+            raise SystemExit("no supplier for %s (%s)" % (mpn, ", ".join(refs)))
     for sec, qty, refs, desc, mfr, mpn, note in EXTRA:
         order = 5 if sec == "PCB" else BOARDS * qty
-        rows.append([sec, qty, order, refs, desc, mfr, mpn, "", note])
+        rows.append([sec, qty, order, refs, desc, mfr, mpn, LCSC.get(mpn, ""), OTHER.get(mpn, ""), "", note])
 
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(["Section", "Qty per board", "Order qty (%d boards + spares)" % BOARDS, "References",
-                    "Description", "Manufacturer", "MPN", "Footprint", "Notes"])
+                    "Description", "Manufacturer", "MPN", "LCSC #", "Other supplier", "Footprint", "Notes"])
         w.writerows(rows)
     print("wrote %s: %d lines (%d soldered part numbers)" % (os.path.relpath(OUT, ROOT), len(rows), len(groups)))
+
+    # JLCPCB assembly files (optional): BOM (Comment, Designator, Footprint, LCSC Part #) + CPL from the board.
+    # The battery holders and camera standoffs are not at LCSC: hand-solder them (or use JLC global sourcing).
+    jlc = [r for r in rows if r[0] == "Board (solder on)" and r[7]]
+    with open(os.path.join(ROOT, "fab", "battery_pcb_JLCPCB_BOM.csv"), "w", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["Comment", "Designator", "Footprint", "LCSC Part #"])
+        for r in jlc:
+            w.writerow([r[6], r[3], r[9], r[7]])
+    refs = {x.strip() for r in jlc for x in r[3].split(",")}
+    pos = tempfile.mktemp(suffix=".csv")
+    subprocess.run([KICAD_CLI, "pcb", "export", "pos", "--format", "csv", "--units", "mm", "--side", "both",
+                    "-o", pos, os.path.join(ROOT, "battery_pcb.kicad_pcb")], check=True, capture_output=True)
+    with open(os.path.join(ROOT, "fab", "battery_pcb_JLCPCB_CPL.csv"), "w", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["Designator", "Mid X", "Mid Y", "Layer", "Rotation"])
+        n = 0
+        for row in csv.DictReader(open(pos)):
+            if row["Ref"] in refs:
+                w.writerow([row["Ref"], row["PosX"] + "mm", row["PosY"] + "mm", "Top" if row["Side"] == "top" else "Bottom", row["Rot"]])
+                n += 1
+    os.remove(pos)
+    print("wrote fab/battery_pcb_JLCPCB_BOM.csv (%d lines) and fab/battery_pcb_JLCPCB_CPL.csv (%d parts)" % (len(jlc), n))
 
 
 if __name__ == "__main__":
