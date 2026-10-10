@@ -42,9 +42,12 @@ NOTES = {
     "1812L200/12DR": "Alt: Polytronics SMD1812P200TF/16",
     "0436500215": "SW1 camera power, SW2/SW3 pin-switch leads",
     "XT30UPB-F": "J5 to the TeleMetrum, J6 to the Aerolotl. Pin 1 = minus, pin 2 = plus, as marked on the housing",
+    "CL21A106KAYNNNE": "Low LCSC stock on 9 Oct 2026 (20 pcs). Alt: Murata GRM21BR61E106KA73L (LCSC C84416) or FH 0805X106K250NT (C40894), same 10 uF 25 V X5R 0805",
+    "CL10B104KB8NNNC": "Low LCSC stock on 9 Oct 2026 (100 pcs, MOQ 100). Alt: FH 0603B104K500NT (LCSC C30926), same 100 nF 50 V X7R 0603",
+    "SMBJ12A": "LCSC's spec rows for C151251 show 13 V / 21.5 V clamp (SMBJ13A values); the part is SMBJ12A (12 V standoff, 19.9 V clamp). Either is safe here",
 }
 
-# where to buy each MPN (checked on lcsc.com / digikey.com 8 Oct 2026): LCSC number, or another distributor when LCSC has none
+# where to buy each MPN (checked on lcsc.com / digikey.com 8 Oct 2026; every LCSC number re-checked 9 Oct 2026): LCSC number, or another distributor when LCSC has none
 LCSC = {
     "CL21A106KAYNNNE": "C15850", "CL10B104KB8NNNC": "C1591", "CL21A226MOQNNNE": "C98190", "CL10C220JB8NNNC": "C1653",
     "CL21B104KBCNNNC": "C1711", "SMBJ12A": "C151251", "LTST-C171KRKT": "C284871", "B340B-13-F": "C85099",
