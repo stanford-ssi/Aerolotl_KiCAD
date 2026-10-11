@@ -33,4 +33,6 @@ _autosave-*
 
 # Battery PCB fab package: keep its Gerber zip under version control
 !BatteryPCB/fab/*.zip
+!BatteryPCB_30pin/fab/*.zip
+!BatteryPCB_30pin/fab/order-package/*.zip
 .history/
