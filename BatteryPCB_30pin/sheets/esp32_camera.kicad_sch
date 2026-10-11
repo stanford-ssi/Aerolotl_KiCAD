@@ -1437,7 +1437,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 104.14) (xy 236.22 104.14)
+			(xy 189.23 104.14) (xy 213.36 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1626,7 +1626,7 @@
 		(uuid "9f76a341-b4cc-43f1-8268-597dd298112d")
 	)
 	(label "CAM_VIDEO"
-		(at 231.14 109.22 180)
+		(at 231.14 104.14 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3407,5 +3407,25 @@
 			(justify left bottom)
 		)
 		(uuid "8cbda943-b98f-4ebf-a936-86315753c3f5")
+	)
+	(label "CAM_RX"
+		(at 231.14 109.22 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "03ed6b43-c36e-405b-a546-781461b7e196")
+	)
+	(wire
+		(pts
+			(xy 236.22 104.14) (xy 231.14 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ec5f3cc-b1c8-4d19-b45c-fdc6ae8d41ca")
 	)
 )

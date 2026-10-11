@@ -62,20 +62,19 @@ VIN should read about 4.6–4.8 V, one diode drop below USB), switch the camera 
 The camera connects to this board through the 5-pin J3 harness only (no
 button-pad wiring).
 
-**Wire the camera harness by label, not straight across.** The Split 4 has five solder
-pads, in this order with Side B facing you: RX, TX, Video, GND, VCC. J3's order is
-different, so solder each wire to the pad named here:
+**The camera harness is a straight cable.** The Split 4 has five solder pads, in this order with Side B
+facing you: RX, TX, Video, GND, VCC. J3 is in the same order (pin 5 … pin 1), so each wire goes straight across,
+no crossing (J3's pins 3 and 5 were swapped on 11 Oct 2026 to make this so):
 
 | J3 pin | Net | Camera pad |
 |---|---|---|
 | 1 | +5V | VCC |
 | 2 | GND | GND |
-| 3 | CAM_RX (ESP32 TX through R7) | RX |
+| 3 | VIDEO | Video, or leave unconnected (nothing on this board uses it) |
 | 4 | CAM_TX (to ESP32 RX through R8) | TX |
-| 5 | VIDEO | Video, or leave unconnected |
+| 5 | CAM_RX (ESP32 TX through R7) | RX |
 
-A straight cable would put the ESP32's TX on the camera's video pad and leave the
-camera's RX unconnected. Power and GND would still be correct.
+Note: the original `BatteryPCB` still has the old order (3 = RX, 5 = Video), so its harness is wired by label.
 
 ### 2. Everything runs off one 5 V buck
 

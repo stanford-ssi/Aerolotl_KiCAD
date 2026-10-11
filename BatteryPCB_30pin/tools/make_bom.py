@@ -78,7 +78,7 @@ EXTRA = [
     ("Plugs in / mounts on", 1, "", "ESP32 dev board, 30-pin DevKit V1 (DOIT layout, ESP-WROOM-32)", "DOIT (or clone)", "ESP32 DevKit V1 (30-pin)",
      "Plugs into J1/J2 from the back, EN / D23 at the ANTENNA END mark. Must be the 30-pin DOIT pinout (EN..VIN / D23..3V3) with 25.4 mm (1.0 in) row spacing and a WROOM module: not a WROVER (GPIO16/17 used), not the 38-pin DevKitC"),
     ("Plugs in / mounts on", 1, "", "Camera, RunCam Split 4 V3 (29 x 29 mm, M2 holes on 25.5 mm square, 5-20 V, 450 mA max)", "RunCam", "Split 4 V3",
-     "Sits on H7-H10. Build its harness: J3 (JST GH 5-pin) to the camera's 3-pin power/video plug (VCC, GND, video) + 2 wires soldered to its RX/TX pads"),
+     "Sits on H7-H10. Harness: a straight 5-wire JST GH cable from J3 to the camera's 5 pads (J3 pin 1..5 = VCC, GND, Video, TX, RX; video can be left off)"),
     ("Plugs in / mounts on", 4, "", "Screw M2 x 5 mm, pan head", "", "", "Camera to standoffs. 4-6 mm all fit (the M2 screws that come with the camera are fine)"),
     ("Plugs in / mounts on", 4, "", "18650 Li-ion cell, flat top, high drain", "Molicel", "INR-18650-P28A",
      "Or any high-drain flat-top 18650; never mix cells in the series pair"),

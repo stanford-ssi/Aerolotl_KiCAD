@@ -285,3 +285,7 @@ compared side by side. Project renamed `battery_pcb_30pin` (the footprint/symbol
   parity, zones refilled), the same 3 documented exclusions; `verify_A.py` every check passes (new: every J1/J2 pin's net
   against the DOIT pinout) except "seven edge cut-outs", which predates the zip-tie cut-outs and fails on `BatteryPCB` too.
 - Hand edits: the generator scripts (`tools/build_place.py`, `tools/layoutA/*`) still describe the DevKitC; don't re-run them.
+- **J3 pin order matches the camera (11 Oct 2026, later):** J3 pins 3 and 5 swapped (3 = CAM_VIDEO, 5 = CAM_RX) so
+  J3 pin 1..5 = VCC, GND, Video, TX, RX, the RunCam Split 4's own pad order: the harness is a straight cable. CAM_RX now
+  drops to the back at (143.5, 172.7) next to pin 5 (route 2.5 mm shorter); its old via at (146.0, 172.7) is gone.
+  Schematic sheet 3 and the back-silk pin legend follow. DRC/ERC/parity unchanged (0). `BatteryPCB` keeps the old order.
