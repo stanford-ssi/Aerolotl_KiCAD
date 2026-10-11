@@ -1,0 +1,28 @@
+Reference,Layer,JLC CPL rotation degrees,Correction degrees,Orientation check
+C1,Bottom,90.000,0,Nonpolar ceramic capacitor or resistor; model terminal axis matches footprint pads; 180-degree reversal electrically equivalent.
+C2,Bottom,90.000,0,Nonpolar ceramic capacitor or resistor; model terminal axis matches footprint pads; 180-degree reversal electrically equivalent.
+C3,Bottom,270.000,0,Nonpolar ceramic capacitor or resistor; model terminal axis matches footprint pads; 180-degree reversal electrically equivalent.
+C4,Bottom,90.000,0,Nonpolar ceramic capacitor or resistor; model terminal axis matches footprint pads; 180-degree reversal electrically equivalent.
+C5,Bottom,90.000,0,Nonpolar ceramic capacitor or resistor; model terminal axis matches footprint pads; 180-degree reversal electrically equivalent.
+C6,Bottom,90.000,0,Nonpolar ceramic capacitor or resistor; model terminal axis matches footprint pads; 180-degree reversal electrically equivalent.
+C7,Bottom,270.000,0,Nonpolar ceramic capacitor or resistor; model terminal axis matches footprint pads; 180-degree reversal electrically equivalent.
+C8,Bottom,180.000,0,Nonpolar ceramic capacitor or resistor; model terminal axis matches footprint pads; 180-degree reversal electrically equivalent.
+C9,Bottom,180.000,0,Nonpolar ceramic capacitor or resistor; model terminal axis matches footprint pads; 180-degree reversal electrically equivalent.
+C10,Bottom,180.000,0,Nonpolar ceramic capacitor or resistor; model terminal axis matches footprint pads; 180-degree reversal electrically equivalent.
+C11,Bottom,180.000,0,Nonpolar ceramic capacitor or resistor; model terminal axis matches footprint pads; 180-degree reversal electrically equivalent.
+D1,Bottom,90.000,0,"SMBJ12A cathode pad 1 -> VIN below; anode pad 2 -> GND above. JLC minus below, plus above."
+D2,Bottom,180.000,180,"Cathode pad 1 -> GND on right; anode pad 2 -> LED_A on left toward R6. JLC minus right, plus left."
+F1,Bottom,0.000,0,Two-terminal nonpolar resettable fuse; lead axis matches pads.
+J3,Bottom,180.000,0,"Five signal leads below body, mounting tabs above; pad 1 +5V is leftmost in bottom view. 1.25 mm signal pitch."
+L1,Bottom,270.000,0,Two-terminal nonpolar inductor; lead axis matches pads.
+Q1,Bottom,90.000,180,Pin 1 Gate -> GND (upper right in bottom view); pin 2 Source -> VIN (upper left); pin 3 Drain -> VSW (lower).
+R2,Bottom,270.000,0,Nonpolar ceramic capacitor or resistor; model terminal axis matches footprint pads; 180-degree reversal electrically equivalent.
+R3,Bottom,180.000,0,Nonpolar ceramic capacitor or resistor; model terminal axis matches footprint pads; 180-degree reversal electrically equivalent.
+R4,Bottom,90.000,0,Nonpolar ceramic capacitor or resistor; model terminal axis matches footprint pads; 180-degree reversal electrically equivalent.
+R5,Bottom,180.000,0,Nonpolar ceramic capacitor or resistor; model terminal axis matches footprint pads; 180-degree reversal electrically equivalent.
+R6,Bottom,180.000,0,Nonpolar ceramic capacitor or resistor; model terminal axis matches footprint pads; 180-degree reversal electrically equivalent.
+R7,Bottom,180.000,0,Nonpolar ceramic capacitor or resistor; model terminal axis matches footprint pads; 180-degree reversal electrically equivalent.
+R8,Bottom,180.000,0,Nonpolar ceramic capacitor or resistor; model terminal axis matches footprint pads; 180-degree reversal electrically equivalent.
+R9,Bottom,180.000,0,Nonpolar ceramic capacitor or resistor; model terminal axis matches footprint pads; 180-degree reversal electrically equivalent.
+R10,Bottom,180.000,0,Nonpolar ceramic capacitor or resistor; model terminal axis matches footprint pads; 180-degree reversal electrically equivalent.
+U1,Bottom,90.000,0,Pin 1 GND bottom left; 2 SW bottom middle; 3 VIN bottom right; 4 FB top right; 5 EN top middle; 6 CB top left.

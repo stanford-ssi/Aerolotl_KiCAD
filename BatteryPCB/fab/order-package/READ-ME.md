@@ -54,6 +54,7 @@ Partial assembly price: setup $8.24, stencil $1.55, components $9.82, Extended c
 
 The initial PCB-only page displayed a default US DHL Express DDP estimate of $31.23; this is not a confirmed assembly shipping quote. Final shipping, tax and discounts depend on checkout. Quoted build time: PCB 2 days plus assembly 1–2 days.
 
+The quote is automatically saved at https://cart.jlcpcb.com/smt-order/?pcbFileNo=5fafbdea15944cba8dc007c7fab06da0 (requires your JLC account). No order or payment has been submitted. The screenshots record the quote and back-side preview. Before purchasing, check pin-1/polarity placement and the U1 TI DDC land-pattern compatibility noted in the earlier design review; the full-size preview is not a detailed polarity certification. Resolve that footprint question before committing to assembly.
 
 At this quantity, partial assembly costs about $20.80 extra per populated board and avoids placing 54 small parts by hand. If your priority is the lowest cash cost and you can solder these packages, choose bare boards; remember to add your separately purchased SMT parts to that comparison. For assembly, use the optimized BOM, not the full project shopping BOM.
 
@@ -66,3 +67,7 @@ C1 now uses YAGEO CC0805KRX7R9BB104 (C49678); C4/C5 use Samsung CL21A226MAQNNNE 
 These changes reduced Extended part types from ten to seven. The revised live quote is $75.10 (previously $86.52), a $11.42 saving including component-price/minimum-quantity differences. Partial assembly adds $41.59 to the $33.51 PCB-only price. All 18 part types remain confirmed, with 27 back-side placements per assembled board and two boards assembled.
 
 The other Basic passive substitutions listed above remain quote-only. BOM-exact.csv follows the updated schematic part selections; BOM-quote.csv includes the additional quote-only substitutions.
+
+## Orientation corrections applied
+
+Use the corrected CPL-bottom.csv: Q1 90 degrees and D2 180 degrees, both a 180-degree correction to the original export. D1 stays 90 degrees, U1 stays 90 degrees, J3 stays 180 degrees. See orientation-audit.md and orientation-audit.csv for all 27 checks and the remaining U1 land-pattern concern. These offsets are specific to the selected JLC parts. The corrected CPL has been reuploaded and visually verified; the quote remains $75.10 before shipping/tax.
