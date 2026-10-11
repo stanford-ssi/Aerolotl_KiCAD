@@ -185,3 +185,68 @@ Pin numbers didn't change, so the schematic is unchanged. The J5/J6 latches now 
 - Strict design rules (README, "Design rules"). Fixes they needed: the GND trace under U1 between its pin rows is 0.3 mm (was 0.5), a GND via moved 0.1 mm off R4, VBAT_SENSE now drops onto C8 from above, D3 moved 0.2 mm (silk off D1), TP4's label sits above it (away from a notch).
 - R5 47k -> 39k: VBAT_SENSE now tops out at 2.36 V, inside the ESP32 ADC's 11 dB range (2.45 V). Firmware scale: VIN = VBAT_SENSE x 139/39.
 - Review: every schematic pin matches its board pad's net (115/115); the LMR51430 symbol is KiCad's library part (GND 1, SW 2, VIN 3, FB 4, EN 5, CB 6; Vref 0.6 V -> 4.98 V out); the ESP32 sockets match Espressif's DevKitC V4 header tables.
+
+## v18 — second review: antenna clearance, stack outline, cut-outs, XT30 (7 Oct 2026)
+- **ESP32 antenna.** Espressif asks for at least 15 mm clear around the module's PCB antenna. The DevKitC hangs about 13.4 mm under the board (8.5 mm socket + 2.5 mm header + 1.6 mm devkit + module), antenna toward the top (`kc.ANT`).
+  - Back copper: rule area "ESP32 antenna keepout" bans pour, tracks and vias 15 mm to each side of the antenna and 15 mm past its end (it stops at the devkit edge, where the sockets start). It is outlined on the back silk with "ANTENNA KEEP-OUT 15 mm".
+  - The old no-pour box only covered part of the antenna; it now covers the whole antenna on the front ("ESP32 antenna: no pour").
+  - COTS_SW used to run down the back right beside the antenna. It now leaves SW2 on the front and drops to the back (two 0.8 / 0.4 vias) below the keep-out.
+  - Front parts are 15 mm away through the board: the closest is BT3's + tab at 15.0 mm (`verify_A.py` checks every pad in 3D).
+  - H5 (pin-switch stack bolt) is right over the antenna: nylon M3 bolt and nut (back silk note).
+- **Pin-switch stack outline** on the front silk (45 mm wide, from the holder ends out to the pin faces), labelled "PIN-SWITCH STACK".
+- **Two more spare wire pass-throughs** at the upper left, 12 × 7 mm at KiCad 210° and 240° (CAD 150° and 120°). Seven cut-outs in all.
+- **J5 / J6 are AMASS XT30UPB-F** (vertical, female on the board = the battery side), 15 mm apart. XT30 pin 1 is minus and pin 2 plus (the housing and KiCad's footprint say so), so the schematic labels on J5/J6 swapped: pin 1 = COTS_BAT− / SRAD_BAT−, pin 2 = COTS_SW / SRAD_SW. KiCad has no XT30 3D model, so `tools/step_boxes.py` makes a box one (`3dmodels/`); the footprint is a project copy pointing at it.
+- **Checks:** ERC 0 errors, DRC 0 (strict, with schematic parity), `verify_A.py` all pass (new checks for the antenna, XT30 polarity, cut-outs and the stack outline).
+- **Onshape:** the outline changed (two new cut-outs), so the AVBay1 import needs `cad/avbay1_board_and_pin_switch_stack.step` re-uploaded.
+
+## v19 — third review: buck input caps, UVLO, inductor, schematic redraw (8 Oct 2026)
+- **Schematic sheets 1–3 redrawn with wires** (`tools/redraw_power_sheets.py`) instead of scattered net labels; every existing symbol keeps its UUID. C1/C2 moved to the buck sheet next to U1.
+- **Input caps** (TI LMR51430 datasheet 9.2.2.6: >= 4.7 µF plus 0.1 µF at the pins): C1 is now the 100 nF X7R right at U1's VIN/GND; C2 and the new C11 (10 µF, in the VIN pour below C1/C2) are the bulk.
+- **UVLO**: U1 EN was tied to VIN, so the buck ran the 2S pack down to its own 3.58 V UVLO (1.8 V per cell). R9 402k / R10 100k on EN: on above 1.227 × 5.02 = 6.2 V, off below 1.08 × 5.02 = 5.4 V at VIN (pack about 5.7 V, 2.85 V per cell under load). Worst-case EN tolerance: off between 4.8 and 6.1 V, on between 5.5 and 6.8 V at VIN. (412k was the first pick; LCSC has none in stock, so 402k.) EN routes up through a via, over the front, to R9/R10 above C3; R9's VIN comes along the front from the VIN pour via.
+- **L1 4.7 → 6.8 µH** (SRN6045TA-6R8M, same footprint): TI's table value for 500 kHz / 5 V out, better for our 0.6–0.83 duty cycle. Isat 5.7 A > the 4.76 A typical current limit.
+- **Text fixes**: sheet 3's divider note used the old 47k (now 39k: 2.26 V at a full pack after D3); D3's value said SS34, the part is B340B.
+- **Reviewed, no change**: D1 SMBJ12A (a TVS standoff must sit above the 8.4 V full pack; it clamps below 20 V and everything on VIN is rated >= 25 V); D3 drop (~0.35 V / 0.2 W at the ~0.6 A load); F1 2 A (real load is under 0.7 A); output caps 2 × 22 µF + 100 nF (TI table: 2 × 22 µF).
+- Layout: two front no-pour areas remove thin GND slivers (between the socket pins, and by the lower-left notch). C11's silk reference is hidden (no room; it stays on the fab layer).
+- **Checks:** ERC 0 errors, DRC 0 (strict, schematic parity), `verify_A.py` all pass (new: UVLO divider and input-cap nets).
+- **BOM sourcing (8 Oct 2026)**: every soldered part has a checked LCSC number in `fab/battery_pcb_BOM.csv` (LCSC # column), except the Keystone 1042 holders (DigiKey 36-1042-ND) and the Wurth 9774050243R standoffs (DigiKey 732-7097-1-ND). LCSC has no Sullins PPTC191LFBN-RC stock, so J1/J2 list HCTL PM254-1-19-Z-8.5 (C2897382), same 8.5 mm height. `fab/battery_pcb_JLCPCB_BOM.csv` + `_CPL.csv` are for JLCPCB assembly if wanted.
+
+## v20 — hand-assembly pass (8 Oct 2026)
+- The GND pours now meet every pad through thermal spokes (0.5 mm, 0.4 gap), SMD pads included, so the 0603 parts, U1's GND pin and BT2's minus tab can be hand-soldered without the plane sinking the iron's heat. The small VIN / +5V / VBAT+ pours keep solid SMD joints.
+- Layout review beyond DRC: buck loop (C1 100 nF ~2.4 mm from U1 VIN; GND return via the 0.3–0.8 mm trace under U1), bootstrap path, FB away from SW, power widths, vias per power net, holder/socket clearances, silk polarity marks, keep-outs under the rod washers and sled screws: no changes needed. Assembly order matters (README, "Hand assembly").
+
+## v21 — failure-mode pass (8 Oct 2026)
+- R8 (camera TX -> ESP32 GPIO16) 100 R -> 1 k: RunCam publishes no UART level; if it is 5 V this keeps the injected current near 1 mA. No effect at 115200 baud.
+- USB + board power together is safe: the DevKitC V4 schematic feeds its 5V pin from USB through a BAT760 Schottky, and our 4.98 V is above USB minus that diode.
+- Drill files now separate (PTH / NPTH), `tools/make_fab.sh` regenerates all of fab/.
+
+## AVBay1 update to v21 (8 Oct 2026)
+- STEP exports from v18 to v21 had left out `--user-origin 150x150mm`, so the board sat 150 mm off the stack. `tools/make_step.sh` now exports it centred (board bottom at z = 0) and merges the pin-switch stack 18 mm up, as before.
+- AVBay1 (SSI Onshape): the STEP tab "CamControl v13 board + exact pin-switch stack.step" now holds v21 (file avbay1_board_and_pin_switch_stack.step). In AV Bay - MAIN ASSEMBLY the orphaned JST-XH J6 and two Micro-Fit duplicates (from the old 4th Micro-Fit) were deleted, and the new XT30 bodies (x4), R9, R10 and C11 inserted at their Part Studio positions (config TM_plate 1): 260 instances, none broken or duplicated.
+
+## v22 — camera moved to the upper-left rim (8 Oct 2026)
+- The RunCam's four SMT standoffs (and its outline) moved from (−24, 14.75) to (−35.5, −30) (KiCad), about 46 mm from the centre instead of 28: the furthest-out spot on the back that clears the ESP32, buck, J3, rod nut, cut-outs and the antenna keep-out. J3 stays put; the harness runs up the left of the DevKitC.
+- The standoffs are surface-mount with no hole, so nothing reaches the battery side; the camera screws in from its own side. Gaps between the holders for through-hole mounts aren't possible: the four holders already use every mm between the rod washers.
+
+## v23 — review 3 fixes (9 Oct 2026)
+- **5 V setpoint raised:** R3 13k7 → 13k 1% (Yageo RC0603FR-0713KL, LCSC C137796). VOUT = 0.6 × (1 + 100k / 13k) = 5.22 V nominal, 5.05–5.39 V worst case, so the RunCam (5–20 V) always sees ≥ 5.0 V.
+- **Bootstrap cap C3** moved next to U1 (14.3, −10.3), vertical. CBOOT runs ~2.6 mm on B.Cu from pin 6; the SW side lands straight on L1's pad (1.7 mm). The old SW path (two vias plus a 7 mm F.Cu trace) is gone.
+- **GND via at U1 pin 1:** new via at (12.9, −9.7), about 1 mm from the pin; it replaces the via at (14.1, −9.02), which was 2.4 mm away.
+- **Antenna keep-out:** the front no-pour area now matches the back keep-out (48 × 21 mm; it was 24 × 9 mm).
+- **Stitching:** 5 GND vias added where both layers have open GND pour and no GND via within 8 mm. The rest of the board was already covered by the existing 102.
+- R10 pad 2 has a solid pour connection plus a trace to its GND via, so the pour isn't left a thin neck there.
+- These are hand edits on top of v22: don't re-run `tools/layoutA/build_A.sh` over them.
+- **Checks:** ERC 0 errors; DRC 0 (strict, schematic parity, also with zones refilled); `verify_A.py` ALL PASS; fab/ regenerated.
+
+## v24 — wider COTS / SRAD supply traces (10 Oct 2026)
+- Koichi's request: the flight-computer supply paths were 1.0 mm (about 52 mΩ each for the ~105 mm COTS_SW / SRAD_SW runs). The TeleMetrum fires e-matches straight from its cell and the Aerolotl's igniter current depends on the loop resistance, so they are now 2.0 mm wherever 0.45 mm clearance, the 0.55 mm edge margin, hole clearance and the rule areas allow: SRAD_SW 2.0 mm all the way, COTS_SW 2.0 mm except its long back-side run at 1.75 mm (it passes a battery-holder peg hole). COTS_BAT− keeps 1.0 mm on its two short segments beside the H4 screw keep-out.
+- Path copper resistance: SRAD_SW ≈ 26 mΩ (was ≈ 52), COTS_SW ≈ 29 mΩ (was ≈ 52); the BAT± legs are 2–7 mΩ.
+- Hand edit (only the `(width …)` of 24 segments changed). Refill zones (B) and run DRC; regenerate `fab/` (`tools/make_fab.sh`) and the STEP before ordering. Don't re-run `tools/layoutA/build_A.sh` over it.
+
+## v25 — PMOS reverse protection, R9 back to 402k (10 Oct 2026)
+- R9 stays 402k (the 453k change is reverted): U1 EN off below 5.4 V, on above 6.2 V at VIN.
+- D3 (B340B Schottky, SMB) is replaced by Q1 = AO3407A P-MOSFET (Alpha & Omega, SOT-23, LCSC C15155; -30 V, VGS ±20 V, < 78 mΩ at -4.5 V). Drain (pin 3) to VSW on the switch side, source (pin 2) to VIN, gate (pin 1) to GND through a via to GND_front. A reversed pack holds the gate above the source, so the FET stays off and its body diode blocks.
+- Drop at the ~0.6 A load goes from ~0.35 V to ~0.04 V, so VIN ≈ pack. The buck now has the headroom to hold 5 V down to about 5.9-6.0 V at the pack (≈ 3.0 V per cell) and EN turns it off at 5.4 V (2.7 V per cell). VGS is limited by D1's clamp (< 20 V).
+- Layout: Q1 sits on D3's spot (back, 154.7, 154.28, -90). VSW track ends on the drain pad; the VIN track was shortened 0.33 mm and a 1.0 mm link joins it to the source pad. GND via at the gate.
+- Schematic: new project symbol library `battery_pcb.kicad_sym` (AO3407A) + `sym-lib-table`. Q1 keeps D3's symbol UUID, so the board stays linked. Pack-sense note: 2.34 V at GPIO34 for a full pack (still inside 2.45 V).
+- The layout generator scripts (`tools/build_place.py`, `tools/layoutA/*`) still place D3; this change was hand-edited on the board.
+- Refill zones (B) and run DRC, then regenerate Gerbers/PDF with `tools/make_fab.sh`.
