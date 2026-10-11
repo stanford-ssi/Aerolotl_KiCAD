@@ -10,6 +10,260 @@
 		(company "Stanford SSI")
 	)
 	(lib_symbols
+		(symbol "battery_pcb:AO3407A"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Q"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "AO3407A"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
+				(at 0 -7.62 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.aosmd.com/res/datasheets/AO3407A.pdf"
+				(at 0 -10.16 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "P-channel MOSFET -30 V -4.3 A, SOT-23 (G=1, S=2, D=3)"
+				(at 0 -12.7 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "P-MOSFET reverse polarity"
+				(at 0 0 0)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "AO3407A_0_1"
+				(polyline
+					(pts
+						(xy -1.905 -2.54) (xy 1.905 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -1.778) (xy -1.016 -1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 -1.778) (xy 0.508 -1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 -1.778) (xy 2.032 -1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -1.524 0) (xy -1.524 -1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 1.524 0) (xy 1.524 -1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.778) (xy 0 0) (xy 1.524 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.254) (xy -0.381 -1.016) (xy 0.381 -1.016) (xy 0 -0.254)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0) (xy -1.524 1.27) (xy 1.524 1.27) (xy 1.524 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.381 1.778) (xy -0.381 0.762) (xy 0.381 1.27) (xy -0.381 1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.381 1.778) (xy 0.381 0.762)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "AO3407A_1_1"
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 0 0)
+					(length 1.27)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:TestPoint"
 			(pin_numbers
 				(hide yes)
@@ -1289,7 +1543,7 @@
 		)
 		(uuid "685ee35f-dba9-4158-8f66-33deb31fafbc")
 	)
-	(text "Low-battery cut-off: U1's EN divider on sheet 2 (about 2.9 V per cell)."
+	(text "Low-battery cut-off: U1's EN divider on sheet 2 (about 2.7 V per cell)."
 		(exclude_from_sim no)
 		(at 25.4 44.45 0)
 		(effects
@@ -1317,7 +1571,7 @@
 		)
 		(uuid "c3bd1c92-ded2-461d-9a6e-f4085c4a0397")
 	)
-	(text "F1: 2 A PTC right at the pack +.  D3: reverse-polarity Schottky (B340B, about 0.35 V at the 0.6 A load)."
+	(text "F1: 2 A PTC right at the pack +.  Q1: reverse-polarity PMOS (AO3407A, drain to the pack side, gate to GND; about 0.05 V at the 0.6 A load)."
 		(exclude_from_sim no)
 		(at 25.4 36.83 0)
 		(effects
@@ -1519,6 +1773,39 @@
 		)
 		(uuid "da59224f-dc65-4e06-975c-690f92703b42")
 	)
+	(wire
+		(pts
+			(xy 101.6 68.58) (xy 101.6 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "465dcb66-de9e-4a7a-b7e1-5b3d796baf96")
+	)
+	(global_label "GND"
+		(shape input)
+		(at 101.6 71.12 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fc4e413b-ded4-4766-b964-ce9a1c2d4ca6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 101.6 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(global_label "GND"
 		(shape input)
 		(at 76.2 88.9 270)
@@ -1623,9 +1910,8 @@
 		(uuid "8e343d99-5ced-47a0-af9f-9aa3cdd62de5")
 	)
 	(symbol
-		(lib_id "Device:D_Schottky")
+		(lib_id "battery_pcb:AO3407A")
 		(at 101.6 63.5 0)
-		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1633,9 +1919,18 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "131b1e46-0e79-43d3-a001-de06e75e6985")
-		(property "Reference" "D3"
+		(property "Reference" "Q1"
+			(at 101.6 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AO3407A"
 			(at 101.6 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1645,17 +1940,7 @@
 				)
 			)
 		)
-		(property "Value" "B340B"
-			(at 101.6 66.04 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SMB"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
 			(at 101.6 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -1666,7 +1951,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.aosmd.com/res/datasheets/AO3407A.pdf"
 			(at 101.6 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -1677,17 +1962,7 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 101.6 63.5 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Diodes Incorporated"
+		(property "Description" "Reverse-polarity PMOS: drain to the pack side (VSW), source to VIN, gate to GND"
 			(at 101.6 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -1698,7 +1973,18 @@
 				)
 			)
 		)
-		(property "MPN" "B340B-13-F"
+		(property "Manufacturer" "Alpha & Omega Semiconductor"
+			(at 101.6 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "AO3407A"
 			(at 101.6 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -1710,15 +1996,18 @@
 			)
 		)
 		(pin "1"
-			(uuid "b76e1748-d43b-4755-aa86-14caf4974177")
+			(uuid "d1b1142b-761b-4cbb-b699-361afb8a5898")
 		)
 		(pin "2"
-			(uuid "5171174b-1ce1-4ee0-ad36-adcec622dde8")
+			(uuid "22c5b912-af23-411c-a317-08be84f6b712")
+		)
+		(pin "3"
+			(uuid "c5972969-a46e-4e4e-ab90-7cbc5149782f")
 		)
 		(instances
 			(project "battery_pcb"
 				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/ae01c8e7-4191-4202-a535-afc32959794b"
-					(reference "D3")
+					(reference "Q1")
 					(unit 1)
 				)
 			)

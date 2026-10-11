@@ -50,21 +50,37 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "border_display_style": 2,
+          "border_hatch_pitch": 0.5,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
+          "fill_mode": 0,
+          "hatch_gap": 1.5,
+          "hatch_orientation": 0.0,
+          "hatch_smoothing_level": 0,
+          "hatch_smoothing_value": 0.1,
+          "hatch_thickness": 1.0,
+          "min_clearance": 0.5,
+          "min_island_area": 10.0,
+          "min_thickness": 0.25,
+          "pad_connection": 1,
+          "remove_islands": 0,
+          "thermal_relief_gap": 0.5,
+          "thermal_relief_spoke_width": 0.5
         }
       },
       "diff_pair_dimensions": [],
       "drc_exclusions": [
         [
-          "npth_inside_courtyard|101750000|132750000|3d1ca872-9271-4b85-bb45-3ab3fdfabe83|3c0d19fe-291d-425f-8018-edb7fc080848",
+          "npth_inside_courtyard|101750000|132750000|348fdca9-05e4-46cd-8a6e-9dfac2cbb278|3c0d19fe-291d-425f-8018-edb7fc080848",
           "H9 camera-standoff pin hole clips the edge of BT1's courtyard on the other side; the 1.4 mm pin stays inside the 1.6 mm board, nothing touches the holder"
         ],
         [
-          "npth_inside_courtyard|127250000|132750000|1d9b7b30-5606-438c-be82-5621a1542a72|9d27accf-f02c-47e6-a227-e85e86196667",
+          "npth_inside_courtyard|127250000|132750000|57eefef0-4395-49a5-a2c5-9e81c1eddc2d|9d27accf-f02c-47e6-a227-e85e86196667",
           "H10 camera-standoff pin hole sits under BT2's plastic base; the 1.4 mm pin stays inside the 1.6 mm board, 8 mm from the nearest holder peg"
         ],
         [
-          "silk_over_copper|102815000|132750000|dd42726b-b285-4ae2-af44-aa8cc216f86f|3d1ca872-9271-4b85-bb45-3ab3fdfabe83",
+          "silk_over_copper|102815000|132750000|dd42726b-b285-4ae2-af44-aa8cc216f86f|348fdca9-05e4-46cd-8a6e-9dfac2cbb278",
           "BT1 outline silk crosses H9's 3 mm pin hole; the fab clips silk at holes"
         ]
       ],
@@ -694,6 +710,7 @@
       "netlist": "",
       "plot": "",
       "specctra_dsn": "",
+      "step": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""

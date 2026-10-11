@@ -974,7 +974,7 @@
 		)
 		(uuid "b1808edb-fa25-49bf-a147-03d0f3b56826")
 	)
-	(text "so the camera pack stops at about 2.85 V per cell instead of being run flat (U1's own UVLO is 3.6 V)."
+	(text "so the camera pack stops at about 2.7 V per cell instead of being run flat (U1's own UVLO is 3.6 V)."
 		(exclude_from_sim no)
 		(at 25.4 44.45 0)
 		(effects
@@ -2032,7 +2032,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22u / 16V"
+		(property "Value" "22u / 25V"
 			(at 182.88 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2104,7 +2104,19 @@
 		(pin "2"
 			(uuid "d70e473e-a6a9-429a-bcf5-beb8dbaa7ce7")
 		)
-		(instances
+		    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+        (property "MPN" "CL21A226MAQNNNE"
+      (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+        (property "LCSC" "C45783"
+      (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (instances
 			(project "battery_pcb"
 				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
 					(reference "C4")
@@ -2238,7 +2250,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22u / 16V"
+		(property "Value" "22u / 25V"
 			(at 200.66 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2310,7 +2322,19 @@
 		(pin "2"
 			(uuid "28bc9c08-a535-4b61-8bfe-1a8c84a074e9")
 		)
-		(instances
+		    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+        (property "MPN" "CL21A226MAQNNNE"
+      (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+        (property "LCSC" "C45783"
+      (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (instances
 			(project "battery_pcb"
 				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
 					(reference "C5")
@@ -3480,7 +3504,19 @@
 		(pin "2"
 			(uuid "0c8e9095-9560-44c3-b095-e25a86f7e2bc")
 		)
-		(instances
+		    (property "Manufacturer" "YAGEO"
+      (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+        (property "MPN" "CC0805KRX7R9BB104"
+      (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+        (property "LCSC" "C49678"
+      (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (instances
 			(project "battery_pcb"
 				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/1914f4ed-278a-4026-a86a-769e5e361ab6"
 					(reference "C1")

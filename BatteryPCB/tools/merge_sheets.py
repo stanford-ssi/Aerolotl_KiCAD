@@ -243,7 +243,7 @@ BU = SH["buck_5v"]
 b.text("LMR51430 buck, 500 kHz:  VOUT = 0.6 x (1 + 100k / 13k7) = 4.98 V", 25.4, 30.48, 1.5)
 b.text("Input caps: C1 (100 nF) sits right at U1's VIN/GND pins; C2, C11 (10 uF) are the bulk.", 25.4, 36.83)
 b.text("UVLO (R9/R10 on EN): on above 1.23 V x (1 + 402k/100k) = 6.2 V, off below 1.08 V x 5.02 = 5.4 V at VIN,", 25.4, 40.64)
-b.text("so the camera pack stops at about 2.85 V per cell instead of being run flat (U1's own UVLO is 3.6 V).", 25.4, 44.45)
+b.text("so the camera pack stops at about 2.7 V per cell instead of being run flat (U1's own UVLO is 3.6 V).", 25.4, 44.45)
 b.text("Output caps: C4, C5 (22 uF) and C6 (100 nF) sit at L1 / U1.  C9 (10 uF) and C10 (100 nF) sit at the DevKitC's 5V pin"
        " (J1 pin 19) on the board.", 25.4, 48.26)
 YI, YO, UX = 76.20, 88.90, 129.54
@@ -301,7 +301,7 @@ save("sheets/buck_5v.kicad_sch", b.tree(used=used))
 e = Sheet(trees["esp32"], LIBS)
 ES = SH["esp32_camera"]
 e.text("2 x 1x19 female header for the ESP32-DevKitC V4.  GPIO6-11 go to the module SPI flash - do not use.", 25.4, 30.48, 1.5)
-e.text("Pack sense: VBAT_SENSE = VIN x 39k / (100k + 39k).  Full pack 8.4 V (VIN about 8.1 V after D3) -> 2.26 V at GPIO34,"
+e.text("Pack sense: VBAT_SENSE = VIN x 39k / (100k + 39k).  Full pack 8.4 V (VIN about 8.35 V after Q1) -> 2.34 V at GPIO34,"
        " inside the ESP32 ADC's 2.45 V range (11 dB).", 25.4, 36.83)
 e.text("Firmware: VIN = VBAT_SENSE x 139 / 39; pack = VIN + about 0.35 V.", 25.4, 40.64)
 e.text("RunCam Split 4: 5-20 V in.  Single 5-pin harness: power, ground and UART (R7 / R8 in series with the UART lines).",

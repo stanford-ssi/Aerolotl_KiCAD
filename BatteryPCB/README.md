@@ -18,9 +18,9 @@ for the AV bay, placed and fully routed.
 | Block | Parts |
 |---|---|
 | 2S pack for camera + ESP32 | BT1, BT2 in series → 7.4 V nom / 8.4 V max |
-| Input protection | F1 2 A polyfuse → SW1 (camera power switch plug) → D3 Schottky reverse-polarity diode → D1 SMBJ12A TVS |
+| Input protection | F1 2 A polyfuse → SW1 (camera power switch plug) → Q1 AO3407A reverse-polarity PMOS (gate to GND, ~0.05 V drop) → D1 SMBJ12A TVS |
 | Buck 8.4 V → 5.0 V | U1 LMR51430 (500 kHz) + L1 6.8 µH + FB divider; input caps C1 100 nF (at U1's pins) + C2, C11 10 µF |
-| Low-battery cut-off | R9 402k / R10 100k on U1's EN: on above 6.2 V, off below 5.4 V at VIN (about 2.85 V per cell), so the 2S pack is never run flat |
+| Low-battery cut-off | R9 402k / R10 100k on U1's EN: on above 6.2 V, off below 5.4 V at VIN (about 2.7 V per cell), so the 2S pack is never run flat |
 | ESP32-DevKitC V4 socket | J1, J2 — 2 × 1×19 female headers |
 | Camera harness | J3 — JST GH 5-pin (+5V, GND, RX, TX, VIDEO), on the back |
 | Camera mount | H7–H10 — four M2 × 5 mm SMT standoffs on a 25.5 mm square, on the back |
@@ -31,12 +31,9 @@ for the AV bay, placed and fully routed.
 | SRAD supply | BT4 → SW3 (SRAD pin switch plug) → J6 XT30 to the Aerolotl |
 
 Harness connectors are latching Molex Micro-Fit 3.0 for the switch leads (SW1–SW3) and JST GH for the
-camera (J3). The two battery outputs, J5 and J6, are **AMASS XT30 male** (XT30UPB-M, vertical PCB mount):
+camera (J3). The two battery outputs, J5 and J6, are **AMASS XT30** (male XT30UPB-M on the board):
 **pin 1 is minus, pin 2 is plus**, as moulded on the housing and printed beside each one. The cables take an
-XT30U-F (female) plug. XT30 holds by friction, so tape or tie the plugs for flight.
-The male XT30UPB-M uses the same footprint as the female XT30UPB-F (identical pads, holes and courtyard), so the
-schematic and board still name the -F part; `tools/make_bom.py` orders the male one. The male pins are exposed,
-and plus is live once that output's arming switch is closed, so keep the plugs in (or the pins covered) when armed.
+XT30U-F female plug. The footprint retains its legacy XT30UPB-F name; order XT30UPB-M (C428721). XT30 holds by friction, so tape or tie the plugs for flight. The male pins are exposed and plus is live when its arming switch closes; keep the mating plug connected or cover the pins when armed.
 
 ---
 
@@ -239,7 +236,7 @@ Everything is hand-solderable (0603 passives, SOT-23-6, one 1.25 mm-pitch JST GH
 small parts and a big chisel tip at ~400 °C for the holder tabs and connector pins. **The order matters**: the ESP32
 socket pins come up on the front in narrow channels between the battery holders, so solder them before the holders.
 
-1. Back, small SMD: U1, the buck caps/resistors, R4/R5/C8, R6/D2, R7/R8, R9/R10, C9/C10/C11, D1, D3, F1, then L1
+1. Back, small SMD: U1, the buck caps/resistors, R4/R5/C8, R6/D2, R7/R8, R9/R10, C9/C10/C11, D1, Q1, F1, then L1
    (hot air helps; its pads run under the body).
 2. Back: J3 (JST GH, fine pitch: tack one mounting tab, then the pins), then the four camera standoffs H7–H10 (steel:
    drop each pin into its 3 mm hole, then solder paste + hot air, or flux and the big tip around the base; keep them square).
@@ -268,3 +265,12 @@ tools/make_step.sh                            # cad/ STEPs (board centred) for O
 to `battery_pcb.kicad_pcb` are lost on the next rebuild: make changes in the scripts instead.
 `tools/kc.py` holds the shared dimensions (disc size, battery and connector offsets). The one-shot
 generators that made the very first versions are archived in `tools/obsolete/`; don't re-run them.
+
+
+## Final order comparison — 11 October 2026
+
+Use `fab/order-package/` for the partial back-side assembly quote: 5 fabricated boards, 2 assembled, 27 placements per assembled board. Upload its Gerber ZIP, `BOM-quote.csv` and `CPL-bottom.csv`. The legacy full `fab/battery_pcb_JLCPCB_BOM.csv` includes additional hand-fit connectors and is not the partial assembly BOM.
+
+C1 is now C49678, C4/C5 C45783 (22 uF / 25 V), and D2 C84256. The schematic and PCB part fields are synchronized. Q1 remains AO3407A. JLC matched all 18 part types: $33.51 bare boards or $75.10 with two partially assembled, before shipping/tax. See the package README for substitutions and remaining mechanical/placement review limitations, including U1's DDC land-pattern compatibility.
+
+The saved board includes the current square zip-tie cutouts. Previous CAD/renders/project-sharing archives may predate these latest edits; use the current KiCad project and current fabrication ZIP for ordering.

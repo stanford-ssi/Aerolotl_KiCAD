@@ -133,7 +133,7 @@ These address Koichi's review.
   - J5/J6 now carry the switched supply. No switch goes in the harness any more.
 - **Camera on the back.**
   - The RunCam Split 4 board (29 × 29 mm, M2 holes on a 25.5 mm square) mounts under BT1/BT2 on four Würth 9774050243 M2 × 5 mm SMT standoffs (H7–H10). It sits clear of the ESP32 and the status LED.
-  - (Superseded in v24: the standoffs now use Würth's land pattern with the 3.0 mm hole.) The standoff footprint was Würth's land pattern without the centre hole, because the holder sits on the other side. Use M2 × 5 screws (max 6 mm).
+  - (Superseded in v26: the standoffs now use Würth's land pattern with the 3.0 mm hole.) The standoff footprint was Würth's land pattern without the centre hole, because the holder sits on the other side. Use M2 × 5 screws (max 6 mm).
   - J3 is on the back next to the camera's wire pads. The UART series resistors R7/R8 moved next to the ESP32 pins.
   - `CAM1` is a placement-only footprint that carries a camera block model for the 3D view and Onshape.
 - **More cut-outs.** Two extra 12 × 7 mm wire pass-throughs: one at the lower left by the camera harness (KiCad 160°, CAD 200°), and a spare at the upper right (KiCad 330°, CAD 30°).
@@ -237,8 +237,22 @@ Pin numbers didn't change, so the schematic is unchanged. The J5/J6 latches now 
 - These are hand edits on top of v22: don't re-run `tools/layoutA/build_A.sh` over them.
 - **Checks:** ERC 0 errors; DRC 0 (strict, schematic parity, also with zones refilled); `verify_A.py` ALL PASS; fab/ regenerated.
 
-## v24 — camera standoff pin holes (11 Oct 2026)
-- The Würth 9774050243R standoff has a 1.4 mm, Ø2.8 mm locating pin on its base. The v8–v23 footprint had no hole for it, so the pin would have held each standoff 1.4 mm off its pad.
+## v24 — wider COTS / SRAD supply traces (10 Oct 2026)
+- Koichi's request: the flight-computer supply paths were 1.0 mm (about 52 mΩ each for the ~105 mm COTS_SW / SRAD_SW runs). The TeleMetrum fires e-matches straight from its cell and the Aerolotl's igniter current depends on the loop resistance, so they are now 2.0 mm wherever 0.45 mm clearance, the 0.55 mm edge margin, hole clearance and the rule areas allow: SRAD_SW 2.0 mm all the way, COTS_SW 2.0 mm except its long back-side run at 1.75 mm (it passes a battery-holder peg hole). COTS_BAT− keeps 1.0 mm on its two short segments beside the H4 screw keep-out.
+- Path copper resistance: SRAD_SW ≈ 26 mΩ (was ≈ 52), COTS_SW ≈ 29 mΩ (was ≈ 52); the BAT± legs are 2–7 mΩ.
+- Hand edit (only the `(width …)` of 24 segments changed). Refill zones (B) and run DRC; regenerate `fab/` (`tools/make_fab.sh`) and the STEP before ordering. Don't re-run `tools/layoutA/build_A.sh` over it.
+
+## v25 — PMOS reverse protection, R9 back to 402k (10 Oct 2026)
+- R9 stays 402k (the 453k change is reverted): U1 EN off below 5.4 V, on above 6.2 V at VIN.
+- D3 (B340B Schottky, SMB) is replaced by Q1 = AO3407A P-MOSFET (Alpha & Omega, SOT-23, LCSC C15155; -30 V, VGS ±20 V, < 78 mΩ at -4.5 V). Drain (pin 3) to VSW on the switch side, source (pin 2) to VIN, gate (pin 1) to GND through a via to GND_front. A reversed pack holds the gate above the source, so the FET stays off and its body diode blocks.
+- Drop at the ~0.6 A load goes from ~0.35 V to ~0.04 V, so VIN ≈ pack. The buck now has the headroom to hold 5 V down to about 5.9-6.0 V at the pack (≈ 3.0 V per cell) and EN turns it off at 5.4 V (2.7 V per cell). VGS is limited by D1's clamp (< 20 V).
+- Layout: Q1 sits on D3's spot (back, 154.7, 154.28, -90). VSW track ends on the drain pad; the VIN track was shortened 0.33 mm and a 1.0 mm link joins it to the source pad. GND via at the gate.
+- Schematic: new project symbol library `battery_pcb.kicad_sym` (AO3407A) + `sym-lib-table`. Q1 keeps D3's symbol UUID, so the board stays linked. Pack-sense note: 2.34 V at GPIO34 for a full pack (still inside 2.45 V).
+- The layout generator scripts (`tools/build_place.py`, `tools/layoutA/*`) still place D3; this change was hand-edited on the board.
+- Refill zones (B) and run DRC, then regenerate Gerbers/PDF with `tools/make_fab.sh`.
+
+## v26 — camera standoff pin holes (11 Oct 2026)
+- The Würth 9774050243R standoff has a 1.4 mm, Ø2.8 mm locating pin on its base. The v8–v25 footprint had no hole for it, so the pin would have held each standoff 1.4 mm off its pad.
 - H7–H10 now use `battery_pcb:Mounting_Wuerth_WA-SMSI-M2_H5mm_9774050243` (KiCad's stock Würth land pattern: copper ring plus a 3.0 mm non-plated hole). Same positions; the old `_NoHole` footprint is removed and `place_A.py` points at the new one.
 - The pin stays inside the 1.6 mm board. No front copper within 3.5 mm of any hole; H10 sits under BT2's plastic base (8 mm from its nearest peg), H9 at the edge of BT1's.
 - The front silk line at x = 127.5 (page) now has a gap at H8.
