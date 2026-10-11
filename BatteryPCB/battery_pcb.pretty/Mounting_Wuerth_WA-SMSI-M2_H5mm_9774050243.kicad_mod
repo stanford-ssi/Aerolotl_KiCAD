@@ -1,8 +1,8 @@
-(footprint "Mounting_Wuerth_WA-SMSI-M2_H5mm_9774050243_NoHole"
+(footprint "Mounting_Wuerth_WA-SMSI-M2_H5mm_9774050243"
 	(version 20260206)
 	(generator "kicad-footprint-generator")
 	(layer "F.Cu")
-	(descr "Wuerth WA-SMSI M2 x 5 mm SMT standoff 9774050243, land pattern WITHOUT the centre hole (it sits under a battery holder here; use M2 x 5 screws) (https://www.we-online.com/components/products/datasheet/9774050243R.pdf)")
+	(descr "Wuerth WA-SMSI M2 x 5 mm SMT standoff 9774050243R, Wuerth land pattern with the 3.0 mm non-plated hole for the standoff's 1.4 mm pin (https://www.we-online.com/components/products/datasheet/9774050243R.pdf)")
 	(tags "Mounting M2 9774050243")
 	(property "Reference" "REF**"
 		(at 0 -3.6 0)
@@ -228,6 +228,12 @@
 				(width 0.2)
 			)
 		)
+	)
+	(pad "" np_thru_hole circle
+		(at 0 0)
+		(size 3 3)
+		(drill 3)
+		(layers "*.Cu" "*.Mask")
 	)
 	(pad "" smd custom
 		(at 1.453104 -1.453104)

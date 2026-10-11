@@ -142,7 +142,9 @@ expected and harmless, they're spare breakouts by design.
 ## Camera mounting
 
 The RunCam Split 4 board (29 × 29 mm, M2 holes on a 25.5 mm square) sits on four Würth
-9774050243 M2 × 5 mm SMT standoffs (H7–H10) on the back of this board, next to its J3 harness.
+9774050243R M2 × 5 mm SMT standoffs (H7–H10) on the back of this board, next to its J3 harness.
+Each standoff has a 1.4 mm locating pin on its base that drops into a 3.0 mm hole in the board (Würth's land pattern);
+the pin stays inside the 1.6 mm board, so nothing reaches the battery side. Use M2 screws 4–6 mm long.
 `battery_pcb.pretty/RunCam_Split4_OnStandoffs.kicad_mod` places its 3D outline; it has no pads
 and is excluded from the BOM.
 
@@ -240,7 +242,7 @@ socket pins come up on the front in narrow channels between the battery holders,
 1. Back, small SMD: U1, the buck caps/resistors, R4/R5/C8, R6/D2, R7/R8, R9/R10, C9/C10/C11, D1, D3, F1, then L1
    (hot air helps; its pads run under the body).
 2. Back: J3 (JST GH, fine pitch: tack one mounting tab, then the pins), then the four camera standoffs H7–H10 (steel:
-   solder paste + hot air, or flux and the big tip; keep them square).
+   drop each pin into its 3 mm hole, then solder paste + hot air, or flux and the big tip around the base; keep them square).
 3. J1/J2 sockets: insert from the back, solder on the front. **Before the holders.** Plug the DevKitC in while
    soldering so the two rows stay parallel.
 4. Front through-hole connectors (soldered on the back): SW1–SW3 Micro-Fit, J5/J6 XT30 (XT30 pins need a lot of heat).

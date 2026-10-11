@@ -24,7 +24,7 @@ MF = ("battery_pcb", "Molex_Micro-Fit_3.0_43650-0215_1x02_P3.00mm_Vertical")   #
 GH = ("Connector_JST", "JST_GH_BM05B-GHS-TBT_1x05-1MP_P1.25mm_Vertical")
 XT30 = ("battery_pcb", "AMASS_XT30UPB-F_1x02_P5.0mm_Vertical")   # J5/J6 battery outputs (7 Oct 2026): XT30, female on the
                                                                   # source side; pin 1 = minus, pin 2 = plus (housing marking)
-SMSI = ("battery_pcb", "Mounting_Wuerth_WA-SMSI-M2_H5mm_9774050243_NoHole")   # Wurth land pattern minus the centre hole
+SMSI = ("battery_pcb", "Mounting_Wuerth_WA-SMSI-M2_H5mm_9774050243")   # Wurth land pattern with the 3.0 mm hole for the standoff pin (11 Oct 2026)
 newfp = {r: pcbnew.FootprintLoad(PRETTY, MF[1]) for r in ("SW1", "SW2", "SW3")}
 newfp.update({r: pcbnew.FootprintLoad(PRETTY, XT30[1]) for r in ("J5", "J6")})
 newfp["J3"] = pcbnew.FootprintLoad(kc.FPLIB + "/%s.pretty" % GH[0], GH[1])

@@ -54,7 +54,20 @@
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "npth_inside_courtyard|101750000|132750000|3d1ca872-9271-4b85-bb45-3ab3fdfabe83|3c0d19fe-291d-425f-8018-edb7fc080848",
+          "H9 camera-standoff pin hole clips the edge of BT1's courtyard on the other side; the 1.4 mm pin stays inside the 1.6 mm board, nothing touches the holder"
+        ],
+        [
+          "npth_inside_courtyard|127250000|132750000|1d9b7b30-5606-438c-be82-5621a1542a72|9d27accf-f02c-47e6-a227-e85e86196667",
+          "H10 camera-standoff pin hole sits under BT2's plastic base; the 1.4 mm pin stays inside the 1.6 mm board, 8 mm from the nearest holder peg"
+        ],
+        [
+          "silk_over_copper|102815000|132750000|dd42726b-b285-4ae2-af44-aa8cc216f86f|3d1ca872-9271-4b85-bb45-3ab3fdfabe83",
+          "BT1 outline silk crosses H9's 3 mm pin hole; the fab clips silk at holes"
+        ]
+      ],
       "meta": {
         "version": 2
       },

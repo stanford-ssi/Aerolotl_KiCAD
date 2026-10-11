@@ -133,7 +133,7 @@ These address Koichi's review.
   - J5/J6 now carry the switched supply. No switch goes in the harness any more.
 - **Camera on the back.**
   - The RunCam Split 4 board (29 × 29 mm, M2 holes on a 25.5 mm square) mounts under BT1/BT2 on four Würth 9774050243 M2 × 5 mm SMT standoffs (H7–H10). It sits clear of the ESP32 and the status LED.
-  - The standoff footprint is Würth's land pattern without the centre hole, because the holder sits on the other side. Use M2 × 5 screws (max 6 mm).
+  - (Superseded in v24: the standoffs now use Würth's land pattern with the 3.0 mm hole.) The standoff footprint was Würth's land pattern without the centre hole, because the holder sits on the other side. Use M2 × 5 screws (max 6 mm).
   - J3 is on the back next to the camera's wire pads. The UART series resistors R7/R8 moved next to the ESP32 pins.
   - `CAM1` is a placement-only footprint that carries a camera block model for the 3D view and Onshape.
 - **More cut-outs.** Two extra 12 × 7 mm wire pass-throughs: one at the lower left by the camera harness (KiCad 160°, CAD 200°), and a spare at the upper right (KiCad 330°, CAD 30°).
@@ -236,3 +236,11 @@ Pin numbers didn't change, so the schematic is unchanged. The J5/J6 latches now 
 - R10 pad 2 has a solid pour connection plus a trace to its GND via, so the pour isn't left a thin neck there.
 - These are hand edits on top of v22: don't re-run `tools/layoutA/build_A.sh` over them.
 - **Checks:** ERC 0 errors; DRC 0 (strict, schematic parity, also with zones refilled); `verify_A.py` ALL PASS; fab/ regenerated.
+
+## v24 — camera standoff pin holes (11 Oct 2026)
+- The Würth 9774050243R standoff has a 1.4 mm, Ø2.8 mm locating pin on its base. The v8–v23 footprint had no hole for it, so the pin would have held each standoff 1.4 mm off its pad.
+- H7–H10 now use `battery_pcb:Mounting_Wuerth_WA-SMSI-M2_H5mm_9774050243` (KiCad's stock Würth land pattern: copper ring plus a 3.0 mm non-plated hole). Same positions; the old `_NoHole` footprint is removed and `place_A.py` points at the new one.
+- The pin stays inside the 1.6 mm board. No front copper within 3.5 mm of any hole; H10 sits under BT2's plastic base (8 mm from its nearest peg), H9 at the edge of BT1's.
+- The front silk line at x = 127.5 (page) now has a gap at H8.
+- Three documented DRC exclusions in `battery_pcb.kicad_pro`: H9/H10 holes inside the BT1/BT2 courtyards, and BT1's outline silk crossing H9's hole (the fab clips silk at holes).
+- **Checks:** ERC 0 errors; DRC 0 active violations (strict, schematic parity, zones refilled), 3 excluded as above; `verify_A.py` ALL PASS; fab/ regenerated.
