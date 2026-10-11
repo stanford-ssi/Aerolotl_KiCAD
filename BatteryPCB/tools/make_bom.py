@@ -66,6 +66,10 @@ OTHER = {
     "PPTC191LFBN-RC": "DigiKey S7017-ND if you want the Sullins part itself",
 }
 
+# BOM-only part swaps: the schematic and board keep the original MPN field, the BOM orders this instead.
+# J5/J6 (9 Oct 2026): male XT30 on the board. XT30UPB-M uses the identical footprint (same pads, holes, courtyard).
+BOM_MPN = {"XT30UPB-F": "XT30UPB-M"}
+
 # not on the schematic: board-only parts, things that plug in, and the cable side of each connector
 EXTRA = [
     # section, qty per board, refs, description, manufacturer, MPN, notes
@@ -104,7 +108,7 @@ def main():
                    check=True, capture_output=True)
     groups = collections.OrderedDict()
     for row in csv.DictReader(open(tmp)):
-        key = (row["Manufacturer"], row["MPN"])
+        key = (row["Manufacturer"], BOM_MPN.get(row["MPN"], row["MPN"]))
         g = groups.setdefault(key, {"refs": [], "fp": row["Footprint"].split(":")[-1]})
         g["refs"] += [r.strip() for r in row["Reference"].split(",") if r.strip()]
     os.remove(tmp)

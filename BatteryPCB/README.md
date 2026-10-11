@@ -33,7 +33,7 @@ for the AV bay, placed and fully routed.
 Harness connectors are latching Molex Micro-Fit 3.0 for the switch leads (SW1–SW3) and JST GH for the
 camera (J3). The two battery outputs, J5 and J6, are **AMASS XT30** (male XT30UPB-M on the board):
 **pin 1 is minus, pin 2 is plus**, as moulded on the housing and printed beside each one. The cables take an
-XT30U-F female plug. The footprint retains its legacy XT30UPB-F name; order XT30UPB-M (C428721). XT30 holds by friction, so tape or tie the plugs for flight.
+XT30U-F female plug. The footprint retains its legacy XT30UPB-F name; order XT30UPB-M (C428721). XT30 holds by friction, so tape or tie the plugs for flight. The male pins are exposed and plus is live when its arming switch closes; keep the mating plug connected or cover the pins when armed.
 
 ---
 
