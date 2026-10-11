@@ -4,9 +4,9 @@ Board (solder on),2,5,"J1, J2","Female header 1x19, 2.54 mm (socket for the ESP3
 Board (solder on),2,5,"J5, J6","AMASS XT30 male, vertical PCB mount (battery outputs)",AMASS,XT30UPB-M,C428721,,AMASS_XT30UPB-F_1x02_P5.0mm_Vertical,"J5 to the TeleMetrum, J6 to the Aerolotl. Pin 1 = minus, pin 2 = plus, as marked on the housing"
 Board (solder on),3,7,"SW1, SW2, SW3",Molex Micro-Fit 3.0 2-pin vertical header,Molex,0436500215,C293740,,Molex_Micro-Fit_3.0_43650-0215_1x02_P3.00mm_Vertical,"SW1 camera power, SW2/SW3 pin-switch leads"
 Board hardware,4,8,H7-H10,"SMT steel standoff, M2 thread, 5 mm (camera mounts, back side)",Wurth Elektronik,9774050243R,,DigiKey 732-7097-1-ND / Mouser 710-9774050243R (not sold by LCSC),,Soldered like a part
-Plugs in / mounts on,1,2,,"ESP32 dev board, DevKitC V4",Espressif,ESP32-DevKitC-32E,,Mouser 356-ESP32-DEVKITC32E (or DigiKey 1965-ESP32-DEVKITC-32E-ND),,Plugs into J1/J2 from the back
-Plugs in / mounts on,1,2,,"Camera, RunCam Split 4",RunCam,Split 4,,,,"Sits on H7-H10. Build its harness: J3 (JST GH 5-pin) to the camera's 3-pin power/video plug (VCC, GND, video) + 2 wires soldered to its RX/TX pads"
-Plugs in / mounts on,4,8,,"Screw M2 x 4 mm, pan head",,,,,,Camera to standoffs
+Plugs in / mounts on,1,2,,"ESP32 dev board, DevKitC V4",Espressif,ESP32-DevKitC-32E,,Mouser 356-ESP32-DEVKITC32E (676 in stock 11 Oct 2026; DigiKey 1965-ESP32-DEVKITC-32E-ND has 0 until Jun 2027),,"Plugs into J1/J2 from the back. Must be the genuine 38-pin DevKitC-32E (WROOM-32E, 25.4 mm row spacing): not a WROVER board (GPIO16/17 used) or a 30-pin clone"
+Plugs in / mounts on,1,2,,"Camera, RunCam Split 4 V3 (29 x 29 mm, M2 holes on 25.5 mm square, 5-20 V, 450 mA max)",RunCam,Split 4 V3,,,,"Sits on H7-H10. Build its harness: J3 (JST GH 5-pin) to the camera's 3-pin power/video plug (VCC, GND, video) + 2 wires soldered to its RX/TX pads"
+Plugs in / mounts on,4,8,,"Screw M2 x 5 mm, pan head",,,,,,Camera to standoffs. 4-6 mm all fit (the M2 screws that come with the camera are fine)
 Plugs in / mounts on,4,8,,"18650 Li-ion cell, flat top, high drain",Molicel,INR-18650-P28A,,,,Or any high-drain flat-top 18650; never mix cells in the series pair
 Cable side,3,6,"SW1, SW2, SW3","Micro-Fit 3.0 receptacle housing, 2-pin",Molex,0436450200,C114089,,,
 Cable side,6,12,"SW1, SW2, SW3","Micro-Fit 3.0 female crimp terminal, 20-24 AWG",Molex,0430300007,C293530,,,"Needs a Micro-Fit crimper, or buy pre-crimped leads"
