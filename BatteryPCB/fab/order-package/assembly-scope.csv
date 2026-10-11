@@ -1,0 +1,43 @@
+Reference,Value,Side,Assembly decision
+C1,100n / 50V,bottom,Assemble
+C2,10u / 25V,bottom,Assemble
+C3,100n,bottom,Assemble
+C4,22u / 16V,bottom,Assemble
+C5,22u / 16V,bottom,Assemble
+C6,100n,bottom,Assemble
+C7,22p,bottom,Assemble
+C8,100n,bottom,Assemble
+C9,10u,bottom,Assemble
+C10,100n,bottom,Assemble
+C11,10u / 25V,bottom,Assemble
+D1,SMBJ12A,bottom,Assemble
+D2,STATUS,bottom,Assemble
+F1,2 A hold,bottom,Assemble
+J1,ESP32 left,bottom,Hand fit / excluded
+J2,ESP32 right,bottom,Hand fit / excluded
+J3,RunCam Split 4,bottom,Assemble
+L1,6u8 / 3.6A,bottom,Assemble
+Q1,AO3407A,bottom,Assemble
+R2,100k 1%,bottom,Assemble
+R3,13k 1%,bottom,Assemble
+R4,100k,bottom,Assemble
+R5,39k,bottom,Assemble
+R6,1k,bottom,Assemble
+R7,100R,bottom,Assemble
+R8,1k,bottom,Assemble
+R9,402k 1%,bottom,Assemble
+R10,100k 1%,bottom,Assemble
+U1,LMR51430XFDDCR,bottom,Assemble
+BT1,18650 Li-ion,top,Hand fit / excluded
+BT2,18650 Li-ion,top,Hand fit / excluded
+BT3,18650 - COTS,top,Hand fit / excluded
+BT4,18650 - SRAD,top,Hand fit / excluded
+J5,to COTS altimeter,top,Hand fit / excluded
+J6,to SRAD flight computer,top,Hand fit / excluded
+SW1,CAM POWER,top,Hand fit / excluded
+SW2,COTS ARM,top,Hand fit / excluded
+SW3,SRAD ARM,top,Hand fit / excluded
+TP1,TP_5V,top,Hand fit / excluded
+TP2,TP_VBAT,top,Hand fit / excluded
+TP3,TP_GND,top,Hand fit / excluded
+TP4,TP_GND,top,Hand fit / excluded

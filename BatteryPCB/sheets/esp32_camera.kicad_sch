@@ -1431,7 +1431,7 @@
 		)
 		(uuid "326652db-46c2-411d-baf5-ab2ae51d8130")
 	)
-	(text "Pack sense: VBAT_SENSE = VIN x 39k / (100k + 39k).  Full pack 8.4 V (VIN about 8.1 V after D3) -> 2.26 V at GPIO34, inside the ESP32 ADC's 2.45 V range (11 dB)."
+	(text "Pack sense: VBAT_SENSE = VIN x 39k / (100k + 39k).  Full pack 8.4 V (VIN about 8.35 V after Q1) -> 2.34 V at GPIO34, inside the ESP32 ADC's 2.45 V range (11 dB)."
 		(exclude_from_sim no)
 		(at 25.4 36.83 0)
 		(effects
@@ -2871,7 +2871,19 @@
 		(pin "2"
 			(uuid "c38b0fe7-3a4a-46f5-9cba-b8b876f8e5b9")
 		)
-		(instances
+		    (property "Manufacturer" "Foshan NationStar Optoelectronics"
+      (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+        (property "MPN" "NCD0805R1"
+      (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+        (property "LCSC" "C84256"
+      (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (hide yes))
+    )
+    (instances
 			(project "battery_pcb"
 				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/51707861-a38d-47a0-88b0-b003633f2c22"
 					(reference "D2")

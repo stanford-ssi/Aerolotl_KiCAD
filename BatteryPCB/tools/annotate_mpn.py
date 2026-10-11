@@ -12,21 +12,21 @@ PARTS = {
     # ref: (manufacturer, MPN)
     "BT1": ("Keystone Electronics", "1042"), "BT2": ("Keystone Electronics", "1042"),
     "BT3": ("Keystone Electronics", "1042"), "BT4": ("Keystone Electronics", "1042"),
-    "C1": (SAMSUNG, "CL21B104KBCNNNC"),                 # 100 nF HF input cap right at U1 (TI: 0.1 uF + >= 4.7 uF)
+    "C1": ("YAGEO", "CC0805KRX7R9BB104"),                 # 100 nF HF input cap right at U1 (TI: 0.1 uF + >= 4.7 uF)
     "C2": (SAMSUNG, "CL21A106KAYNNNE"), "C11": (SAMSUNG, "CL21A106KAYNNNE"), "C9": (SAMSUNG, "CL21A106KAYNNNE"),
     "C3": (SAMSUNG, "CL10B104KB8NNNC"), "C6": (SAMSUNG, "CL10B104KB8NNNC"),
     "C8": (SAMSUNG, "CL10B104KB8NNNC"), "C10": (SAMSUNG, "CL10B104KB8NNNC"),
-    "C4": (SAMSUNG, "CL21A226MOQNNNE"), "C5": (SAMSUNG, "CL21A226MOQNNNE"),
+    "C4": (SAMSUNG, "CL21A226MAQNNNE"), "C5": (SAMSUNG, "CL21A226MAQNNNE"),
     "C7": (SAMSUNG, "CL10C220JB8NNNC"),
     "D1": ("Littelfuse", "SMBJ12A"),
-    "D2": ("Lite-On", "LTST-C171KRKT"),
-    "D3": ("Diodes Incorporated", "B340B-13-F"),
+    "D2": ("Foshan NationStar Optoelectronics", "NCD0805R1"),
+    "Q1": ("Alpha & Omega Semiconductor", "AO3407A"),
     "F1": ("Littelfuse", "1812L200/12DR"),              # 2 A hold / 12 V (2S pack is 8.4 V max); alt: PTTC SMD1812P200TF/16
     "J1": ("Sullins Connector Solutions", "PPTC191LFBN-RC"), "J2": ("Sullins Connector Solutions", "PPTC191LFBN-RC"),
     "J3": ("JST", "BM05B-GHS-TBT"),
     "SW1": ("Molex", "0436500215"),
     "SW2": ("Molex", "0436500215"), "SW3": ("Molex", "0436500215"),
-    "J5": ("AMASS", "XT30UPB-F"), "J6": ("AMASS", "XT30UPB-F"),   # battery outputs: XT30, female on the source side
+    "J5": ("AMASS", "XT30UPB-M"), "J6": ("AMASS", "XT30UPB-M"),   # battery outputs: XT30UPB-M male on the board; XT30U-F female cable mate
     "L1": ("Bourns", "SRN6045TA-6R8M"),                    # TI table: 6.8 uH at 500 kHz, 5 V out; Isat 5.7 A
     "R2": (YAGEO, "RC0603FR-07100KL"), "R4": (YAGEO, "RC0603FR-07100KL"),
     "R3": (YAGEO, "RC0603FR-0713KL"),

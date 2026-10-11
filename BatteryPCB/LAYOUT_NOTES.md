@@ -236,3 +236,17 @@ Pin numbers didn't change, so the schematic is unchanged. The J5/J6 latches now 
 - R10 pad 2 has a solid pour connection plus a trace to its GND via, so the pour isn't left a thin neck there.
 - These are hand edits on top of v22: don't re-run `tools/layoutA/build_A.sh` over them.
 - **Checks:** ERC 0 errors; DRC 0 (strict, schematic parity, also with zones refilled); `verify_A.py` ALL PASS; fab/ regenerated.
+
+## v24 — wider COTS / SRAD supply traces (10 Oct 2026)
+- Koichi's request: the flight-computer supply paths were 1.0 mm (about 52 mΩ each for the ~105 mm COTS_SW / SRAD_SW runs). The TeleMetrum fires e-matches straight from its cell and the Aerolotl's igniter current depends on the loop resistance, so they are now 2.0 mm wherever 0.45 mm clearance, the 0.55 mm edge margin, hole clearance and the rule areas allow: SRAD_SW 2.0 mm all the way, COTS_SW 2.0 mm except its long back-side run at 1.75 mm (it passes a battery-holder peg hole). COTS_BAT− keeps 1.0 mm on its two short segments beside the H4 screw keep-out.
+- Path copper resistance: SRAD_SW ≈ 26 mΩ (was ≈ 52), COTS_SW ≈ 29 mΩ (was ≈ 52); the BAT± legs are 2–7 mΩ.
+- Hand edit (only the `(width …)` of 24 segments changed). Refill zones (B) and run DRC; regenerate `fab/` (`tools/make_fab.sh`) and the STEP before ordering. Don't re-run `tools/layoutA/build_A.sh` over it.
+
+## v25 — PMOS reverse protection, R9 back to 402k (10 Oct 2026)
+- R9 stays 402k (the 453k change is reverted): U1 EN off below 5.4 V, on above 6.2 V at VIN.
+- D3 (B340B Schottky, SMB) is replaced by Q1 = AO3407A P-MOSFET (Alpha & Omega, SOT-23, LCSC C15155; -30 V, VGS ±20 V, < 78 mΩ at -4.5 V). Drain (pin 3) to VSW on the switch side, source (pin 2) to VIN, gate (pin 1) to GND through a via to GND_front. A reversed pack holds the gate above the source, so the FET stays off and its body diode blocks.
+- Drop at the ~0.6 A load goes from ~0.35 V to ~0.04 V, so VIN ≈ pack. The buck now has the headroom to hold 5 V down to about 5.9-6.0 V at the pack (≈ 3.0 V per cell) and EN turns it off at 5.4 V (2.7 V per cell). VGS is limited by D1's clamp (< 20 V).
+- Layout: Q1 sits on D3's spot (back, 154.7, 154.28, -90). VSW track ends on the drain pad; the VIN track was shortened 0.33 mm and a 1.0 mm link joins it to the source pad. GND via at the gate.
+- Schematic: new project symbol library `battery_pcb.kicad_sym` (AO3407A) + `sym-lib-table`. Q1 keeps D3's symbol UUID, so the board stays linked. Pack-sense note: 2.34 V at GPIO34 for a full pack (still inside 2.45 V).
+- The layout generator scripts (`tools/build_place.py`, `tools/layoutA/*`) still place D3; this change was hand-edited on the board.
+- Refill zones (B) and run DRC, then regenerate Gerbers/PDF with `tools/make_fab.sh`.
