@@ -41,3 +41,7 @@ TP1,TP_5V,top,Hand fit / excluded
 TP2,TP_VBAT,top,Hand fit / excluded
 TP3,TP_GND,top,Hand fit / excluded
 TP4,TP_GND,top,Hand fit / excluded
+TP5,TP_COTS+,top,Hand fit / excluded
+TP6,TP_COTS-,top,Hand fit / excluded
+TP7,TP_SRAD+,top,Hand fit / excluded
+TP8,TP_SRAD-,top,Hand fit / excluded

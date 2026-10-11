@@ -1,5 +1,6 @@
 """Adds the bench test points to the schematic (once; re-running does nothing):
-TP1 = +5V (buck output), TP2 = VBAT+ (2S pack, before the fuse), TP3/TP4 = GND for the meter's black lead.
+TP1 = +5V (buck output), TP2 = VBAT+ (2S pack, before the fuse), TP3/TP4 = GND for the meter's black lead;
+TP5-TP8 = the COTS (BT3) and SRAD (BT4) cells' own + and - (they are isolated from GND, so each needs its own pair).
 The board side is in tools/layoutA (place_A, route_A, labels_A).  usage: python3 tools/add_testpoints.py"""
 import os
 import uuid
@@ -8,7 +9,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, ".."))
 LIB = "/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols/Connector.kicad_sym"
 ROOT_UUID = "19ef3a32-de7c-46ee-a850-2420f6d47f94"
-SHEET_UUID = {"power_in": "ae01c8e7-4191-4202-a535-afc32959794b", "buck_5v": "1914f4ed-278a-4026-a86a-769e5e361ab6"}
+SHEET_UUID = {"power_in": "ae01c8e7-4191-4202-a535-afc32959794b", "buck_5v": "1914f4ed-278a-4026-a86a-769e5e361ab6",
+              "supplies": "d30d38cc-20d9-4e05-9f85-c70abea8b778"}
 FOOTPRINT = "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
 G = 1.27
 # ref: (sheet, symbol uuid, value, net, x grid, y grid, global label?)
@@ -17,6 +19,11 @@ TPS = {
     "TP2": ("power_in", "b1000000-0000-4000-8000-000000000002", "TP_VBAT", "VBAT+", 184, 36, False),
     "TP3": ("power_in", "b1000000-0000-4000-8000-000000000003", "TP_GND", "GND", 198, 36, True),
     "TP4": ("power_in", "b1000000-0000-4000-8000-000000000004", "TP_GND", "GND", 208, 36, True),
+    # 30-pin board (11 Oct 2026): the COTS / SRAD cells' own + / - (left of BT3 / BT4 on sheet 4)
+    "TP5": ("supplies", "b1000000-0000-4000-8000-000000000005", "TP_COTS+", "COTS_BAT+", 40, 36, False),
+    "TP6": ("supplies", "b1000000-0000-4000-8000-000000000006", "TP_COTS-", "COTS_BAT-", 52, 36, False),
+    "TP7": ("supplies", "b1000000-0000-4000-8000-000000000007", "TP_SRAD+", "SRAD_BAT+", 40, 80, False),
+    "TP8": ("supplies", "b1000000-0000-4000-8000-000000000008", "TP_SRAD-", "SRAD_BAT-", 52, 80, False),
 }
 
 
@@ -47,7 +54,7 @@ def placed(ref, sheet, suid, value, x, y):
     s += prop("Reference", ref, x + 2.54, y - 5.08, justify="left")
     s += prop("Value", value, x + 2.54, y - 2.54, justify="left")
     s += prop("Footprint", FOOTPRINT, x, y, hide=True)
-    s += prop("Datasheet", "~", x, y, hide=True)
+    s += prop("Datasheet", "", x, y, hide=True)
     s += prop("Description", "Bench test point", x, y, hide=True)
     s += '\t\t(pin "1" (uuid "%s"))\n' % U()
     s += ('\t\t(instances\n\t\t\t(project "battery_pcb_30pin"\n\t\t\t\t(path "/%s/%s"\n\t\t\t\t\t(reference "%s")\n'

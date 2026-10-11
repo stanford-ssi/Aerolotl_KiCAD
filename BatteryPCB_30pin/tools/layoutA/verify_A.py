@@ -134,8 +134,9 @@ check("pin-switch stack outlined on the front silk", sum(1 for d in silk if abs(
 check("GND pours filled", all(z.IsFilled() for z in b.Zones() if z.GetZoneName().startswith("GND")))
 check("all parts linked to schematic", all(f.GetPath().AsString() for r, f in fps.items() if not r.startswith("H") and not r.startswith("CAM")))
 labels = {d.GetText().strip() for d in b.GetDrawings() if d.GetClass() == "PCB_TEXT" and d.GetLayer() in (pcbnew.F_SilkS, pcbnew.B_SilkS)}
-tpn = {r: {p.GetNetname().split("/")[-1] for p in fps[r].Pads()} for r in ("TP1", "TP2", "TP3", "TP4") if r in fps}
-check("test points: TP1 +5V, TP2 VBAT+, TP3/TP4 GND (through-hole)", tpn == {"TP1": {"+5V"}, "TP2": {"VBAT+"}, "TP3": {"GND"}, "TP4": {"GND"}}
+tpn = {r: {p.GetNetname().split("/")[-1] for p in fps[r].Pads()} for r in ("TP1", "TP2", "TP3", "TP4", "TP5", "TP6", "TP7", "TP8") if r in fps}
+check("test points: TP1 +5V, TP2 VBAT+, TP3/TP4 GND, TP5/TP6 COTS cell +/-, TP7/TP8 SRAD cell +/- (through-hole)", tpn == {"TP1": {"+5V"}, "TP2": {"VBAT+"}, "TP3": {"GND"}, "TP4": {"GND"},
+      "TP5": {"COTS_BAT+"}, "TP6": {"COTS_BAT-"}, "TP7": {"SRAD_BAT+"}, "TP8": {"SRAD_BAT-"}}
       and all(p.GetAttribute() == pcbnew.PAD_ATTRIB_PTH for r in tpn for p in fps[r].Pads()), str(tpn))
 need = {"CAM PWR SW", "CAMERA", "COTS OUT", "SRAD OUT", "COTS ARM", "SRAD ARM", "CAM 2S PACK", "ANTENNA END", "USB END", "EN", "VIN", "D23", "3V3", "PIN-SWITCH STACK"}
 check("connector labels on silk", need <= labels, str(need - labels) if need - labels else "(%d texts)" % len(labels))

@@ -289,3 +289,14 @@ compared side by side. Project renamed `battery_pcb_30pin` (the footprint/symbol
   J3 pin 1..5 = VCC, GND, Video, TX, RX, the RunCam Split 4's own pad order: the harness is a straight cable. CAM_RX now
   drops to the back at (143.5, 172.7) next to pin 5 (route 2.5 mm shorter); its old via at (146.0, 172.7) is gone.
   Schematic sheet 3 and the back-silk pin legend follow. DRC/ERC/parity unchanged (0). `BatteryPCB` keeps the old order.
+- **Test-point block (11 Oct 2026, later):** six through-hole test points together on the front right edge, between the
+  right rod's washer keep-out and the lower zip-tie cut-out (x 51.5 / 56.5 / 61.5, y 15.5 / 20.5, KiCad): top row TP1 +5V,
+  TP5 COTS +, TP7 SRAD +; bottom row TP3 GND, TP6 COTS −, TP8 SRAD −, labelled on the front silk. TP1/TP3 moved here from
+  the BT3/BT4 gap (hard to reach with cells in); TP5–TP8 are new (schematic sheet 4, `tools/add_testpoints.py`). The COTS /
+  SRAD cells are isolated from GND, so each has its own + and − pair, before the pin switch (reads with the switch open).
+  Routing: +5V from J1-15 along the front under BT4, via at (44, 2), back into TP1 (0.8 mm). COTS + / SRAD + (front, 1.0 mm,
+  Pyro rules) leave the top tabs, pass over J1 pin 1 / under the COTS_SW via, and run down a channel beside BT4 (x 46.0 /
+  47.5). COTS − (front) and SRAD − (via at (41.6, 40), back) leave the bottom tabs and pass under the zip-tie cut-out.
+  GND stitching vias: (50, 20), (60, 20), (55, 30.5) removed (the block and its corridor sit there; TP3 itself stitches both
+  layers), (45, −30 / −10 / 10) moved to x 44.3 and (35, −30) to y −29.6 for the Pyro clearance. The old TP1 feed track is gone;
+  the 'for zipties' label moved beside its cut-out. ERC 0 errors, DRC 0, parity 0, `verify_A.py` checks all eight test points.

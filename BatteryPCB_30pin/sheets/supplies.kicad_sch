@@ -10,6 +10,129 @@
 		(company "Stanford SSI")
 	)
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic:Conn_01x02"
 			(pin_names
 				(offset 1.016)
@@ -1458,5 +1581,205 @@
 				)
 			)
 		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 50.80 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "b1000000-0000-4000-8000-000000000005")
+		(property "Reference" "TP5"
+			(at 53.34 40.64 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "TP_COTS+"
+			(at 53.34 43.18 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 50.80 45.72 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 50.80 45.72 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Description" "Bench test point"
+			(at 50.80 45.72 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "b89d17f6-3655-4388-8c35-30396f8c4df0"))
+		(instances
+			(project "battery_pcb_30pin"
+				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/d30d38cc-20d9-4e05-9f85-c70abea8b778"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts (xy 50.80 45.72) (xy 50.80 50.80))
+		(stroke (width 0) (type default))
+		(uuid "beadcab7-995a-48b3-9550-6e785e927800")
+	)
+	(label "COTS_BAT+"
+		(at 50.80 50.80 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "226e6547-02f4-4508-811f-03bfdac87f8e")
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 66.04 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "b1000000-0000-4000-8000-000000000006")
+		(property "Reference" "TP6"
+			(at 68.58 40.64 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "TP_COTS-"
+			(at 68.58 43.18 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 66.04 45.72 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 66.04 45.72 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Description" "Bench test point"
+			(at 66.04 45.72 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "c2354369-ac32-4adf-a7f0-1996ba7d2643"))
+		(instances
+			(project "battery_pcb_30pin"
+				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/d30d38cc-20d9-4e05-9f85-c70abea8b778"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts (xy 66.04 45.72) (xy 66.04 50.80))
+		(stroke (width 0) (type default))
+		(uuid "1214073f-7bb0-44e2-8416-8d3393bfbd34")
+	)
+	(label "COTS_BAT-"
+		(at 66.04 50.80 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "bd2dad63-c7c4-46da-8e71-738582966227")
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 50.80 101.60 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "b1000000-0000-4000-8000-000000000007")
+		(property "Reference" "TP7"
+			(at 53.34 96.52 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "TP_SRAD+"
+			(at 53.34 99.06 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 50.80 101.60 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 50.80 101.60 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Description" "Bench test point"
+			(at 50.80 101.60 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "8755656e-6edf-41e6-89e3-e017d8a64dd5"))
+		(instances
+			(project "battery_pcb_30pin"
+				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/d30d38cc-20d9-4e05-9f85-c70abea8b778"
+					(reference "TP7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts (xy 50.80 101.60) (xy 50.80 106.68))
+		(stroke (width 0) (type default))
+		(uuid "80ed4ddf-4f59-41d1-ac2f-d8acab780817")
+	)
+	(label "SRAD_BAT+"
+		(at 50.80 106.68 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "b86fd052-114c-4eda-96ed-8cfa7d4a1694")
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 66.04 101.60 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "b1000000-0000-4000-8000-000000000008")
+		(property "Reference" "TP8"
+			(at 68.58 96.52 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Value" "TP_SRAD-"
+			(at 68.58 99.06 0)
+			(effects (font (size 1.27 1.27)) (justify left))
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm"
+			(at 66.04 101.60 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" ""
+			(at 66.04 101.60 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Description" "Bench test point"
+			(at 66.04 101.60 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(pin "1" (uuid "3eabd487-40ab-4681-a633-ac4cb35dbb18"))
+		(instances
+			(project "battery_pcb_30pin"
+				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/d30d38cc-20d9-4e05-9f85-c70abea8b778"
+					(reference "TP8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts (xy 66.04 101.60) (xy 66.04 106.68))
+		(stroke (width 0) (type default))
+		(uuid "e25d69c7-cc6b-4dd8-bc93-1df8396cd265")
+	)
+	(label "SRAD_BAT-"
+		(at 66.04 106.68 0)
+		(fields_autoplaced yes)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "33f532ec-f576-4cea-9b2c-ce9457b8c3bd")
 	)
 )

@@ -3,7 +3,7 @@
 > **This folder is a copy of [`../BatteryPCB`](../BatteryPCB) made on 11 Oct 2026 for a 30-pin ESP32 DevKit V1**
 > (DOIT layout, ESP-WROOM-32, 2 × 15 pins, rows 25.4 mm apart) instead of the 38-pin ESP32-DevKitC. Only the ESP32
 > sockets and what connects to them changed: J1/J2 are 1×15 with pin 1 exactly where the DevKitC's was, the six used
-> pins (5 V, GND, GPIO34, GPIO17, GPIO16, GPIO2) are re-routed, R7/R8, C9/C10 and TP1 moved next to their new pins,
+> pins (5 V, GND, GPIO34, GPIO17, GPIO16, GPIO2) are re-routed, R7/R8 and C9/C10 moved next to their new pins,
 > and the silk and antenna keep-out follow the new board. Same GPIOs, so the firmware is unchanged.
 > See [`LAYOUT_NOTES.md`](LAYOUT_NOTES.md), "30-pin version".
 
@@ -34,7 +34,7 @@ which predates Koichi's zip-tie cut-outs and fails on `BatteryPCB` too. Ready to
 | Camera mount | H7–H10 — four M2 × 5 mm SMT standoffs on a 25.5 mm square, on the back |
 | Status LED | R6 + D2 on GPIO2 |
 | Pack voltage telemetry | R4 100k / R5 39k divider + C8 → GPIO34 (`VBAT_SENSE = VIN × 39/139`, ≤ 2.36 V) |
-| Test points | TP1 +5V (buck output), TP2 VBAT+ (2S pack, before the fuse), TP3/TP4 GND: 2 mm through-hole pads, open on both sides |
+| Test points | 2 mm through-hole pads, open on both sides. **Right-edge block** (front, between the right rod and the lower zip-tie cut-out, top row / bottom row): TP1 +5V / TP3 GND, TP5 COTS cell + / TP6 COTS cell −, TP7 SRAD cell + / TP8 SRAD cell −. **Lower left** by the camera switch: TP2 VBAT+ (2S pack, before the fuse) / TP4 GND |
 | COTS supply | BT3 → SW2 (COTS pin switch plug) → J5 XT30 to the TeleMetrum |
 | SRAD supply | BT4 → SW3 (SRAD pin switch plug) → J6 XT30 to the Aerolotl |
 
@@ -200,8 +200,8 @@ All in mm unless noted.
 
 Connectors (pad centres): J5 XT30 COTS OUT (22.5/27.5, −51.5), J6 XT30 SRAD OUT (37.5/42.5, −51.5), SW1 CAM PWR
 (−30.5/−27.5, −55.1), SW2 COTS ARM (28.3/31.3, 50.4), SW3 SRAD ARM (39.6/42.6, 50.4), J3 camera on the back
-(pins −1.5 … −6.5, −20.45). Test points: TP1 +5V (23.8, −5.84), TP3 GND (23.8, −20.5), TP2 VBAT+ (−36.5, −49.5),
-TP4 GND (−40.5, −49.5).
+(pins −1.5 … −6.5, −20.45). Test points: block at x 51.5 / 56.5 / 61.5, y −15.5 (top row) / −20.5: TP1 +5V, TP5 COTS +, TP7 SRAD +
+over TP3 GND, TP6 COTS −, TP8 SRAD −; TP2 VBAT+ (−36.5, −49.5), TP4 GND (−40.5, −49.5).
 
 Heights above the board: front: holder 14.9 (the cell sits a little higher), pin-switch stack ~20.4 (two 10 mm
 carriers + 0.4 shim), Micro-Fit 10.2, XT30 about 11. Back: ESP32 socket 8.5, the 30-pin DevKit about 14–16 including its module,
@@ -256,7 +256,9 @@ socket pins come up on the front in narrow channels between the battery holders,
    soldering so the two rows stay parallel.
 4. Front through-hole connectors (soldered on the back): SW1–SW3 Micro-Fit, J5/J6 XT30 (XT30 pins need a lot of heat).
 5. Battery holders BT1–BT4 last (big tip, plenty of solder; check the + marks).
-6. Bench test before cells or modules: 7–8 V, ~0.3 A limit into TP2 (+) / TP4 (GND); TP1 should read ~5.0 V.
+6. Bench test before cells or modules: 7–8 V, ~0.3 A limit into TP2 (+) / TP4 (GND); TP1 should read ~5.0 V against TP3.
+   With cells in: the COTS cell reads across TP5 (+) / TP6 (−) and the SRAD cell across TP7 (+) / TP8 (−), whether or not
+   their pin switches are armed. Those two cells are isolated from GND: always measure each across its own pair, never to TP3/TP4.
 
 ## Rebuilding
 
