@@ -300,3 +300,12 @@ compared side by side. Project renamed `battery_pcb_30pin` (the footprint/symbol
   GND stitching vias: (50, 20), (60, 20), (55, 30.5) removed (the block and its corridor sit there; TP3 itself stitches both
   layers), (45, −30 / −10 / 10) moved to x 44.3 and (35, −30) to y −29.6 for the Pyro clearance. The old TP1 feed track is gone;
   the 'for zipties' label moved beside its cut-out. ERC 0 errors, DRC 0, parity 0, `verify_A.py` checks all eight test points.
+- **verify_A cut-out check (11 Oct 2026):** the old "seven edge cut-outs" check counted 21 segments and had failed since the
+  zip-tie cut-outs were added. It now checks the outline's structure: 7 rim notches (3 segments each) + 4 closed 6 x 6 mm
+  zip-tie squares = 37 segments. `verify_A.py` ALL PASS (36 checks).
+- **Hole sizes to the manufacturers' drawings (11 Oct 2026):** XT30 J5/J6 pin holes 1.8 -> 1.9 mm (Amass: 1.9 mm for the
+  1.6 mm pins; 0.55 mm copper ring left on the 3.0 mm pads). Keystone 1042 holder peg holes 3.45 -> 3.5 mm and locator hole
+  2.39 -> 2.4 mm (Keystone M65p27; same positions, 55.2 x 16.0 mm). Changed in `battery_pcb.pretty` and on BT1-BT4 / J5 / J6.
+  Tightest new gap: COTS_SW (back) to a BT4 peg hole 0.375 mm (rule 0.3). Schematic notes brought up to date: Q1 drop
+  0.05 V (was "0.35 V", from the old diode), J5/J6 are XT30 (not "all Micro-Fit"), C9/C10 sit at the ESP32's VIN (J1-15).
+  ERC 0 errors, DRC 0, parity 0, `verify_A.py` ALL PASS.

@@ -960,7 +960,7 @@
 		)
 		(uuid "9af141d1-dd85-48ef-bbdb-80f6ade99a74")
 	)
-	(text "Output caps: C4, C5 (22 uF) and C6 (100 nF) sit at L1 / U1.  C9 (10 uF) and C10 (100 nF) sit at the DevKitC's 5V pin (J1 pin 19) on the board."
+	(text "Output caps: C4, C5 (22 uF) and C6 (100 nF) sit at L1 / U1.  C9 (10 uF) and C10 (100 nF) sit at the ESP32's VIN pin (J1 pin 15) on the board."
 		(exclude_from_sim no)
 		(at 25.4 48.26 0)
 		(effects

@@ -666,7 +666,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Own cell, own switch, per DTEG 6.9.1. SW2 / SW3 take the pin-switch leads; they sit next to the pin-switch stack. All connectors latch (Micro-Fit 3.0)."
+	(text "Own cell, own switch, per DTEG 6.9.1. SW2 / SW3 take the pin-switch leads; they sit next to the pin-switch stack. SW2 / SW3 latch (Micro-Fit 3.0); J5 / J6 are XT30 (friction fit; pin 1 = -, pin 2 = +)."
 		(exclude_from_sim no)
 		(at 20.32 17.78 0)
 		(effects

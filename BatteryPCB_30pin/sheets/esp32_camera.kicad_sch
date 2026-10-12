@@ -1287,7 +1287,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Firmware: VIN = VBAT_SENSE x 139 / 39; pack = VIN + about 0.35 V."
+	(text "Firmware: VIN = VBAT_SENSE x 139 / 39; pack = VIN + about 0.05 V (Q1 PMOS drop)."
 		(exclude_from_sim no)
 		(at 25.4 40.64 0)
 		(effects

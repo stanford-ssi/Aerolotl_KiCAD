@@ -241,20 +241,20 @@
 	)
 	(pad "" np_thru_hole circle
 		(at -36.13 -8)
-		(size 2.39 2.39)
-		(drill 2.39)
+		(size 2.4 2.4)
+		(drill 2.4)
 		(layers "*.Cu" "*.Mask")
 	)
 	(pad "" np_thru_hole circle
 		(at -27.62 8)
-		(size 3.45 3.45)
-		(drill 3.45)
+		(size 3.5 3.5)
+		(drill 3.5)
 		(layers "*.Cu" "*.Mask")
 	)
 	(pad "" np_thru_hole circle
 		(at 27.62 -8)
-		(size 3.45 3.45)
-		(drill 3.45)
+		(size 3.5 3.5)
+		(drill 3.5)
 		(layers "*.Cu" "*.Mask")
 	)
 	(pad "1" smd roundrect

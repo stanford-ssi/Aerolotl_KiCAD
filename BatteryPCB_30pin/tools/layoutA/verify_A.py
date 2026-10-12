@@ -17,7 +17,25 @@ arcs = [d for d in b.GetDrawings() if d.GetLayer() == pcbnew.Edge_Cuts and d.Get
 segs = [d for d in b.GetDrawings() if d.GetLayer() == pcbnew.Edge_Cuts and d.GetShape() == pcbnew.SHAPE_T_SEGMENT]
 radii = [kc.to_mm(a.GetRadius()) for a in arcs]
 check("outline %.2f in (%.2f mm) circle" % (kc.DISC_IN, 2 * R), len(arcs) == 7 and all(abs(r - R) < 0.01 for r in radii), "(%d arcs, r=%s)" % (len(arcs), [round(r, 3) for r in radii]))
-check("seven edge cut-outs (two new spares at the upper left)", len(segs) == 21, "(%d notch segments)" % len(segs))
+# rim cut-outs (3 segments each, open to the outline) + Koichi's square zip-tie cut-outs (closed 4-segment squares inside the board)
+def _k(v): return (round(kc.to_mm(v.x), 3), round(kc.to_mm(v.y), 3))
+_adj = {}
+for s in segs:
+    a, c = _k(s.GetStart()), _k(s.GetEnd()); _adj.setdefault(a, []).append(s); _adj.setdefault(c, []).append(s)
+_seen, _groups = set(), []
+for s in segs:
+    if id(s) in _seen: continue
+    stack, grp = [s], []
+    while stack:
+        u = stack.pop()
+        if id(u) in _seen: continue
+        _seen.add(id(u)); grp.append(u)
+        for e in (_k(u.GetStart()), _k(u.GetEnd())): stack += [w for w in _adj[e] if id(w) not in _seen]
+    _groups.append(grp)
+squares = [g for g in _groups if len(g) == 4 and all(abs(kc.to_mm(x.GetLength()) - 6.0) < 0.05 for x in g)]
+notches = [g for g in _groups if len(g) == 3]
+check("edge cut-outs: 7 rim notches + 4 square zip-tie cut-outs (6 x 6 mm)", len(notches) == 7 and len(squares) == 4 and len(segs) == 37,
+      "(%d notches, %d squares, %d segments)" % (len(notches), len(squares), len(segs)))
 h = {r: (kc.rel(fps[r].GetPosition()), kc.to_mm(list(fps[r].Pads())[0].GetDrillSize().x)) for r in ("H1", "H2", "H3", "H4")}
 check("rod holes 13/32 in, 120 mm apart through the centre", abs(h["H1"][1] - 10.32) < 0.01 and abs(h["H2"][1] - 10.32) < 0.01
       and abs(h["H2"][0][0] - h["H1"][0][0] - 120) < 0.01 and h["H1"][0][1] == h["H2"][0][1] == 0, str(h["H1"]) + str(h["H2"]))
