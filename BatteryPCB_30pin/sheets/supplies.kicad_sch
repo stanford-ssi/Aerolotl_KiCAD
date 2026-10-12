@@ -1036,7 +1036,7 @@
 				)
 			)
 		)
-		(property "MPN" "XT30UPB-F"
+		(property "MPN" "XT30UPB-M"
 			(at 107.95 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -1053,10 +1053,6 @@
 		(pin "2"
 			(uuid "bc6e6add-6119-4c85-986c-c3dc3170654e")
 		)
-		    (property "MPN" "XT30UPB-M"
-      (at 0 0 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
     (instances
 			(project "battery_pcb_30pin"
 				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/d30d38cc-20d9-4e05-9f85-c70abea8b778"
@@ -1142,7 +1138,7 @@
 				)
 			)
 		)
-		(property "MPN" "XT30UPB-F"
+		(property "MPN" "XT30UPB-M"
 			(at 108.585 132.715 0)
 			(hide yes)
 			(show_name no)
@@ -1159,10 +1155,6 @@
 		(pin "2"
 			(uuid "ad35faba-ef96-4911-96cc-507c62f97d3d")
 		)
-		    (property "MPN" "XT30UPB-M"
-      (at 0 0 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
     (instances
 			(project "battery_pcb_30pin"
 				(path "/19ef3a32-de7c-46ee-a850-2420f6d47f94/d30d38cc-20d9-4e05-9f85-c70abea8b778"

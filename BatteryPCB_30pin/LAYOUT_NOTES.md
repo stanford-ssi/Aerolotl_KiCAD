@@ -309,3 +309,13 @@ compared side by side. Project renamed `battery_pcb_30pin` (the footprint/symbol
   Tightest new gap: COTS_SW (back) to a BT4 peg hole 0.375 mm (rule 0.3). Schematic notes brought up to date: Q1 drop
   0.05 V (was "0.35 V", from the old diode), J5/J6 are XT30 (not "all Micro-Fit"), C9/C10 sit at the ESP32's VIN (J1-15).
   ERC 0 errors, DRC 0, parity 0, `verify_A.py` ALL PASS.
+- **KiCad 10.0.6 checks (12 Oct 2026):** two problems that 10.0.0 had hidden.
+  - **Duplicate part numbers:** C1, C4, C5, D2, J5 and J6 each held two Manufacturer / MPN fields: an old value first, the
+    `annotate_mpn.py` value second. 10.0.0 read the second and 10.0.6 reads the first, so a 10.0.6 BOM would have ordered
+    the old parts (C4/C5 CL21A226MOQNNNE 16 V, Lite-On D2, Samsung C1, XT30UPB-F). Each part now has one field with the
+    `annotate_mpn.py` value. No circuit, footprint or board change; the BOM and CPL regenerate byte-identical.
+  - **Standoff pad-to-hole checks:** 10.0.6 also tests a pad against a hole in the same footprint. The standoffs H7-H10 then
+    give 16 hole-clearance errors: Würth's solder ring sits right at its own 3.0 mm pin hole, and the three small dots are
+    0.25 mm from it, by design. `battery_pcb_30pin.kicad_dru` relaxes exactly that pad-to-own-hole pair to 0. A probe rule
+    confirmed everything else, including the standoff holes against the ground pour, is still checked at the full rule.
+  - **Checks (10.0.6):** ERC 0 errors, DRC 0 (3 excluded as before), parity 0.

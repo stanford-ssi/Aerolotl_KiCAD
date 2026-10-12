@@ -15,7 +15,7 @@ Open `battery_pcb_30pin.kicad_pro` in KiCad 10. The board is a 5.72 in (145.3 mm
 for the AV bay, placed and fully routed.
 
 **Status (30-pin version, 11 Oct 2026):** ERC 0 errors · DRC 0 violations (warnings included) under the strict rules below, with full schematic parity
-(3 documented exclusions, as on `BatteryPCB`) · `tools/layoutA/verify_A.py` ALL PASS (36 checks; its cut-out check now counts the 7 rim
+(3 documented exclusions, as on `BatteryPCB`; checked with KiCad 10.0.6, see `battery_pcb_30pin.kicad_dru`) · `tools/layoutA/verify_A.py` ALL PASS (36 checks; its cut-out check now counts the 7 rim
 notches and Koichi's 4 square zip-tie cut-outs). Ready to order: see [Ordering](#ordering).
 [`LAYOUT_NOTES.md`](LAYOUT_NOTES.md) has the history of every layout decision.
 

@@ -258,3 +258,13 @@ Pin numbers didn't change, so the schematic is unchanged. The J5/J6 latches now 
 - The front silk line at x = 127.5 (page) now has a gap at H8.
 - Three documented DRC exclusions in `battery_pcb.kicad_pro`: H9/H10 holes inside the BT1/BT2 courtyards, and BT1's outline silk crossing H9's hole (the fab clips silk at holes).
 - **Checks:** ERC 0 errors; DRC 0 active violations (strict, schematic parity, zones refilled), 3 excluded as above; `verify_A.py` ALL PASS; fab/ regenerated.
+- **KiCad 10.0.6 checks (12 Oct 2026):** two problems that 10.0.0 had hidden.
+  - **Duplicate part numbers:** C1, C4, C5, D2, J5 and J6 each held two Manufacturer / MPN fields: an old value first, the
+    `annotate_mpn.py` value second. 10.0.0 read the second and 10.0.6 reads the first, so a 10.0.6 BOM would have ordered
+    the old parts (C4/C5 CL21A226MOQNNNE 16 V, Lite-On D2, Samsung C1, XT30UPB-F). Each part now has one field with the
+    `annotate_mpn.py` value. No circuit, footprint or board change; the BOM and CPL regenerate byte-identical.
+  - **Standoff pad-to-hole checks:** 10.0.6 also tests a pad against a hole in the same footprint. The standoffs H7-H10 then
+    give 16 hole-clearance errors: Würth's solder ring sits right at its own 3.0 mm pin hole, and the three small dots are
+    0.25 mm from it, by design. `battery_pcb.kicad_dru` relaxes exactly that pad-to-own-hole pair to 0. A probe rule
+    confirmed everything else, including the standoff holes against the ground pour, is still checked at the full rule.
+  - **Checks (10.0.6):** ERC 0 errors, DRC 0 (3 excluded as before), parity 0.

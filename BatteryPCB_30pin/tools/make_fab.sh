@@ -11,7 +11,7 @@ $K pcb export gerbers -l "F.Cu,B.Cu,F.Paste,B.Paste,F.Silkscreen,B.Silkscreen,F.
 $K pcb export drill --format excellon --excellon-separate-th -o $G/ battery_pcb_30pin.kicad_pcb >/dev/null 2>&1
 rm -f fab/battery_pcb_30pin_gerbers.zip; (cd $G && zip -q -j "$OLDPWD/fab/battery_pcb_30pin_gerbers.zip" *)
 P=$(mktemp -d); mkdir $P/battery_pcb_30pin
-cp battery_pcb_30pin.kicad_pro battery_pcb_30pin.kicad_sch battery_pcb_30pin.kicad_pcb fp-lib-table README.md fab/battery_pcb_30pin_schematic.pdf $P/battery_pcb_30pin/
+cp battery_pcb_30pin.kicad_pro battery_pcb_30pin.kicad_dru battery_pcb_30pin.kicad_sch battery_pcb_30pin.kicad_pcb fp-lib-table README.md fab/battery_pcb_30pin_schematic.pdf $P/battery_pcb_30pin/
 cp -R sheets battery_pcb.pretty 3dmodels $P/battery_pcb_30pin/
 rm -f fab/battery_pcb_30pin_kicad_project.zip; (cd $P && zip -qr "$OLDPWD/fab/battery_pcb_30pin_kicad_project.zip" battery_pcb_30pin -x "*.DS_Store")
 unzip -l fab/battery_pcb_30pin_gerbers.zip | awk 'NR>3 && $4 {print "  " $4}' | grep -v "^  ----"

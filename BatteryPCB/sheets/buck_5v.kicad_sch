@@ -2087,7 +2087,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL21A226MOQNNNE"
+		(property "MPN" "CL21A226MAQNNNE"
 			(at 180.34 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -2104,14 +2104,6 @@
 		(pin "2"
 			(uuid "d70e473e-a6a9-429a-bcf5-beb8dbaa7ce7")
 		)
-		    (property "Manufacturer" "Samsung Electro-Mechanics"
-      (at 0 0 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-        (property "MPN" "CL21A226MAQNNNE"
-      (at 0 0 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
         (property "LCSC" "C45783"
       (at 0 0 0)
       (effects (font (size 1.27 1.27)) (hide yes))
@@ -2305,7 +2297,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL21A226MOQNNNE"
+		(property "MPN" "CL21A226MAQNNNE"
 			(at 198.12 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -2322,14 +2314,6 @@
 		(pin "2"
 			(uuid "28bc9c08-a535-4b61-8bfe-1a8c84a074e9")
 		)
-		    (property "Manufacturer" "Samsung Electro-Mechanics"
-      (at 0 0 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-        (property "MPN" "CL21A226MAQNNNE"
-      (at 0 0 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
         (property "LCSC" "C45783"
       (at 0 0 0)
       (effects (font (size 1.27 1.27)) (hide yes))
@@ -3476,7 +3460,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
+		(property "Manufacturer" "YAGEO"
 			(at 78.74 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -3487,7 +3471,7 @@
 				)
 			)
 		)
-		(property "MPN" "CL21B104KBCNNNC"
+		(property "MPN" "CC0805KRX7R9BB104"
 			(at 78.74 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -3504,14 +3488,6 @@
 		(pin "2"
 			(uuid "0c8e9095-9560-44c3-b095-e25a86f7e2bc")
 		)
-		    (property "Manufacturer" "YAGEO"
-      (at 0 0 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-        (property "MPN" "CC0805KRX7R9BB104"
-      (at 0 0 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
         (property "LCSC" "C49678"
       (at 0 0 0)
       (effects (font (size 1.27 1.27)) (hide yes))

@@ -2843,7 +2843,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Lite-On"
+		(property "Manufacturer" "Foshan NationStar Optoelectronics"
 			(at 201.93 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -2854,7 +2854,7 @@
 				)
 			)
 		)
-		(property "MPN" "LTST-C171KRKT"
+		(property "MPN" "NCD0805R1"
 			(at 201.93 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -2871,14 +2871,6 @@
 		(pin "2"
 			(uuid "c38b0fe7-3a4a-46f5-9cba-b8b876f8e5b9")
 		)
-		    (property "Manufacturer" "Foshan NationStar Optoelectronics"
-      (at 0 0 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
-        (property "MPN" "NCD0805R1"
-      (at 0 0 0)
-      (effects (font (size 1.27 1.27)) (hide yes))
-    )
         (property "LCSC" "C84256"
       (at 0 0 0)
       (effects (font (size 1.27 1.27)) (hide yes))
